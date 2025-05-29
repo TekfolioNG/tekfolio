@@ -5515,7 +5515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gsap@npm:^3.12.7":
+"gsap@npm:latest":
   version: 3.13.0
   resolution: "gsap@npm:3.13.0"
   checksum: 40884726718b5bed8cdd6faa621b3eaec64541b6fc163a0af810d3626d750e5d010f7300f4b106327d4474623a9fd5f915a48081d7744eec38c57a1fce20fb62
@@ -8076,7 +8076,7 @@ __metadata:
     "@tailwindcss/typography": ^0.5.10
     autoprefixer: ^10.4.21
     esbuild: ^0.19.5
-    gsap: ^3.12.7
+    gsap: latest
     lucide-vue-next: ^0.474.0
     nodemailer: ^6.10.0
     nuxt: ^3.15.2

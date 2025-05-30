@@ -19,8 +19,8 @@
                             class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto transition-colors duration-300">
                             <Icon name="lucide:code" class="w-8 h-8 text-white" />
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 text-center">Enterprise Web Apps</h3>
-                        <p class="text-[blue-400] font-medium mb-4 text-center">High-performance with higher conversion
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Enterprise Web App Development</h3>
+                        <p class="text-blue-400 font-medium mb-4 text-center">High-performance with higher conversion
                         </p>
                         <p class="text-gray-300 flex-grow mb-6 text-center">We build sleek, scalable, and
                             conversion-driven websites customized to your brand and goals.</p>
@@ -41,7 +41,7 @@
                             class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto transition-colors duration-300">
                             <Icon name="lucide:smartphone" class="w-8 h-8 text-white" />
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 text-center">Business Mobile Apps</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Cross-Platform App Development</h3>
                         <p class="text-blue-400 font-medium mb-4 text-center">One codebase, all devices</p>
                         <p class="text-gray-300 flex-grow mb-6 text-center">Launch apps that run smoothly on web, iOS,
                             and Android — all from a single build.</p>
@@ -126,8 +126,7 @@
                             class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto transition-colors duration-300">
                             <Icon name="lucide:graduation-cap" class="w-8 h-8 text-white" />
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 text-center">Workforce e-Productivity Training
-                        </h3>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Digital Productivity Training</h3>
                         <p class="text-blue-400 font-medium mb-4 text-center">Transform your workforce
                             with efficiency gains</p>
                         <p class="text-gray-300 flex-grow mb-6 text-center">Upskill your team with hands-on training

@@ -141,7 +141,7 @@ onMounted(() => {
 /* Button styles */
 .btn-primary {
   display: inline-block;
-  background-color: #01348F;
+  background-color: #2563eb;
   color: white;
   font-weight: 700;
   padding: 0.75rem 1.5rem;
@@ -151,7 +151,7 @@ onMounted(() => {
 }
 
 .btn-primary:hover {
-  background-color: #1d8ad8;
+  background-color: #1d4ed8;
   transform: translateY(-2px);
 }
 
@@ -169,7 +169,7 @@ onMounted(() => {
 
 .btn-secondary:hover {
   background-color: white;
-  color: #01348F;
+  color: #1d4ed8;
   transform: translateY(-2px);
 }
 
@@ -214,13 +214,13 @@ onMounted(() => {
 
 
   .btn-primary:active {
-    background-color: #01348F;
+    background-color: #1d4ed8;
     transform: translateY(-2px);
   }
 
   .btn-secondary:active {
     background-color: white;
-    color: #1d8ad8;
+    color: #1d4ed8;
     transform: translateY(-2px);
   }
 }

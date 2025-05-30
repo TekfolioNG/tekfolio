@@ -59,7 +59,7 @@ onUnmounted(() => {
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
         <NuxtLink to="/" class="inline-block">
-          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
+          <img src="~/assets/img/tekfolio-logo-final6.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
         </NuxtLink>
 
         <!-- Centered navigation container -->

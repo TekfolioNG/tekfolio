@@ -59,7 +59,7 @@ onUnmounted(() => {
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
         <NuxtLink to="/" class="inline-block">
-          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
+          <img src="~/assets/img/tekfolio-logo-final7.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
         </NuxtLink>
 
         <!-- Centered navigation container -->
@@ -71,7 +71,7 @@ onUnmounted(() => {
                   class="text-sm lg:text-base transition-colors duration-200 flex items-center whitespace-nowrap font-medium"
                   :class="[
                     textColorClass,
-                    'hover:text-[#1d8ad8]'
+                    'hover:text-blue-300'
                   ]">
                   {{ item.title }}
                   <span v-if="item.hasDropdown" class="ml-1">
@@ -93,16 +93,16 @@ onUnmounted(() => {
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 mr-12"
             :class="[
               isDark
-                ? 'text-white hover:text-white hover:bg-[#1d8ad8] border border-[#1d8ad8]'
-                : 'bg-[#01348F] text-white hover:bg-[#1d8ad8]'
+                ? 'text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700'
+                : 'bg-blue-700 text-white hover:bg-blue-800'
             ]">
             CONTACT US
           </NuxtLink>
 
           <ClientOnly v-if="!colorMode?.forced">
-            <div style="background-color: #01348F;" class="rounded-lg p-1">
+            <div style="background-color: #1D4ED8;" class="rounded-lg p-1">
               <UButton :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="white" variant="ghost"
-                class="text-white hover:text-white" @click="isDark = !isDark" />
+                class="text-white hover:text-blue-300" @click="isDark = !isDark" />
             </div>
             <template #fallback>
               <div class="size-8" />

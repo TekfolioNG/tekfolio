@@ -72,7 +72,7 @@ onUnmounted(() => {
                   class="text-sm lg:text-base transition-colors duration-200 flex items-center whitespace-nowrap font-medium"
                   :class="[
                     textColorClass,
-                    'hover:text-[#1d8ad8]'
+                    'hover:text-[#4A9BC4] md:hover:text-[#1d8ad8]'
                   ]">
                   {{ item.title }}
                   <span v-if="item.hasDropdown" class="ml-1">
@@ -94,14 +94,14 @@ onUnmounted(() => {
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-colors duration-200 mr-12"
             :class="[
               isDark
-                ? 'text-white hover:text-white hover:bg-[#1d8ad8] border border-[#1d8ad8]'
-                : 'bg-[#01348F] text-white hover:bg-[#1d8ad8]'
+                ? 'text-white hover:text-white hover:bg-[#4A9BC4] md:hover:bg-[#1d8ad8] border border-[#4A9BC4] md:border-[#1d8ad8]'
+                : 'bg-[#01348F] md:bg-[#01348F] text-white hover:bg-[#4A9BC4] md:hover:bg-[#1d8ad8]'
             ]">
             CONTACT US
           </NuxtLink>
 
           <ClientOnly v-if="!colorMode?.forced">
-            <div class="rounded-lg p-1 bg-[#01348F]">
+            <div class="rounded-lg p-1 bg-[#4A6FA5] md:bg-[#01348F]">
               <UButton :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="white" variant="ghost"
                 class="text-white hover:text-white" @click="isDark = !isDark" />
             </div>
@@ -114,9 +114,9 @@ onUnmounted(() => {
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center ml-auto space-x-4">
           <ClientOnly v-if="!colorMode?.forced" class="mr-2">
-            <div class="rounded-lg p-0.5 bg-[#01348F]">
+            <div class="rounded-lg p-0.5 colormode-mobile-desaturated">
               <UButton :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="white" variant="ghost" size="sm"
-                class="text-white hover:text-blue-300" @click="isDark = !isDark" />
+                class="text-white hover:text-[#A8C5E8] md:hover:text-blue-300" @click="isDark = !isDark" />
             </div>
             <template #fallback>
               <div class="size-6" />
@@ -141,7 +141,7 @@ onUnmounted(() => {
         <div v-show="open" class="md:hidden mt-2 py-2 rounded-lg shadow-lg bg-gray-900/90">
           <div v-for="item in menuitems" :key="item.title" class="block">
             <NuxtLink :to="item.path"
-              class="block px-4 py-3 text-sm font-medium flex justify-between items-center text-gray-100 hover:text-blue-300"
+              class="block px-4 py-3 text-sm font-medium flex justify-between items-center text-gray-100 hover:text-[#A8C5E8] md:hover:text-blue-300"
               @click="open = false">
               {{ item.title }}
               <span v-if="item.hasDropdown">
@@ -154,11 +154,12 @@ onUnmounted(() => {
             </NuxtLink>
           </div>
           <div class="block px-4 py-3">
-            <NuxtLink to="/contact" class="block px-4 py-2 rounded-md text-sm font-medium text-center" :class="[
-              isDark
-                ? 'text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700'
-                : 'bg-blue-700 text-white hover:bg-blue-800'
-            ]" @click="open = false">
+            <NuxtLink to="/contact"
+              class="block px-4 py-2 rounded-md text-sm font-medium text-center contact-mobile-desaturated" :class="[
+                isDark
+                  ? 'text-[#7AA5CE] md:text-blue-700 hover:text-white hover:bg-[#7AA5CE] md:hover:bg-blue-700 border border-[#7AA5CE] md:border-blue-700'
+                  : 'bg-[#7AA5CE] md:bg-blue-700 text-white hover:bg-[#5B94C4] md:hover:bg-blue-800'
+              ]" @click="open = false">
               CONTACT US
             </NuxtLink>
           </div>
@@ -174,10 +175,19 @@ onUnmounted(() => {
   background-color: transparent !important;
 }
 
-/* Active link styling - consistent blue for all screen sizes */
+/* Active link styling - desaturated for mobile */
 :deep(.router-link-active) {
-  color: #60cbfa !important;
+  color: #A8C5E8 !important;
+  /* Desaturated for mobile */
   font-weight: 700;
+}
+
+/* Desktop active link styling */
+@media (min-width: 768px) {
+  :deep(.router-link-active) {
+    color: #60cbfa !important;
+    /* Original vibrant color for desktop */
+  }
 }
 
 /* Transitions */
@@ -188,7 +198,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Mobile contrast */
+/* Mobile contrast and desaturation effects */
 @media (max-width: 767px) {
   .bg-gray-900\/90 a {
     color: #f3f4f6 !important;
@@ -196,6 +206,17 @@ button {
 
   /* Logo desaturation for mobile */
   .logo-mobile-desaturated {
+    filter: saturate(0.5) brightness(1.95);
+  }
+
+  /* Color mode switcher desaturation for mobile */
+  .colormode-mobile-desaturated {
+    background-color: #5B7BB8;
+    filter: saturate(0.5) brightness(1.95);
+  }
+
+  /* Contact button desaturation for mobile */
+  .contact-mobile-desaturated {
     filter: saturate(0.5) brightness(1.95);
   }
 }

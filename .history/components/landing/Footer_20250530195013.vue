@@ -5,10 +5,12 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
         <!-- Column 1: Logo and About (adjusted width) -->
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
-          <NuxtLink to="/" class="logo-mobile-center">
-            <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-              class="h-24 md:h-28 drop-shadow-lg logo-mobile-desaturated mb-6" />
-          </NuxtLink>
+          <div class="w-full flex justify-center md:justify-start mb-6">
+            <NuxtLink to="/">
+              <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
+                class="h-24 md:h-28 drop-shadow-lg logo-mobile-desaturated" />
+            </NuxtLink>
+          </div>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
             PPIL is one of Nigeria's most trusted hybrid construction and infrastructure firms —
@@ -222,13 +224,6 @@
 <style scoped>
 /* Mobile desaturation styles */
 @media (max-width: 768px) {
-
-  /* Logo positioning - shift slightly right on mobile only */
-  .logo-mobile-center {
-    display: block;
-    margin-left: 1.5rem;
-    /* Shift logo right by 24px */
-  }
 
   /* Desaturated blue accent colors for mobile */
   .accent-heading {

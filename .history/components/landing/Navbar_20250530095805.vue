@@ -112,7 +112,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center ml-auto space-x-4">
+        <div class="md:hidden flex items-center ml-auto">
           <ClientOnly v-if="!colorMode?.forced" class="mr-2">
             <div class="rounded-lg p-0.5 bg-[#5B7BB8] md:bg-[#1D4ED8]">
               <UButton :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="white" variant="ghost" size="sm"

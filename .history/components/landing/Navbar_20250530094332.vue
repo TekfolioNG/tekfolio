@@ -59,8 +59,7 @@ onUnmounted(() => {
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
         <NuxtLink to="/" class="inline-block">
-          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-            class="h-16 md:h-18 drop-shadow-lg logo-mobile-desaturated" />
+          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
         </NuxtLink>
 
         <!-- Centered navigation container -->
@@ -112,7 +111,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center ml-auto space-x-4">
+        <div class="md:hidden flex items-center ml-auto">
           <ClientOnly v-if="!colorMode?.forced" class="mr-2">
             <div class="rounded-lg p-0.5 bg-[#5B7BB8] md:bg-[#1D4ED8]">
               <UButton :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="white" variant="ghost" size="sm"
@@ -176,16 +175,14 @@ onUnmounted(() => {
 
 /* Active link styling - desaturated for mobile */
 :deep(.router-link-active) {
-  color: #A8C5E8 !important;
-  /* Desaturated for mobile */
+  color: #A8C5E8 !important; /* Desaturated for mobile */
   font-weight: 700;
 }
 
 /* Desktop active link styling */
 @media (min-width: 768px) {
   :deep(.router-link-active) {
-    color: #60cbfa !important;
-    /* Original vibrant color for desktop */
+    color: #60cbfa !important; /* Original vibrant color for desktop */
   }
 }
 
@@ -201,11 +198,6 @@ button {
 @media (max-width: 767px) {
   .bg-gray-900\/90 a {
     color: #f3f4f6 !important;
-  }
-
-  /* Logo desaturation for mobile */
-  .logo-mobile-desaturated {
-    filter: saturate(0.7) brightness(0.95);
   }
 }
 </style>

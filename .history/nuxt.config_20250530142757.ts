@@ -18,10 +18,6 @@ export default defineNuxtConfig({
   ui: {
     fonts: true
   },
-  image: {
-    format: ['webp', 'jpg', 'svg', 'png'],
-    quality: 80
-  },
   nitro: {
     preset: "cloudflare-pages",
     output: {

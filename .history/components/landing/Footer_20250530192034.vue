@@ -7,7 +7,7 @@
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
           <NuxtLink to="/">
             <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-              class="h-24 md:h-28 drop-shadow-lg logo-mobile-desaturated" />
+              class="h-18 md:h-24 drop-shadow-lg logo-mobile-desaturated" />
           </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">

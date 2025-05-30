@@ -205,7 +205,7 @@ button {
 
   /* Logo desaturation for mobile */
   .logo-mobile-desaturated {
-    filter: saturate(0.5) brightness(1.95);
+    filter: saturate(0.7) brightness(0.95);
   }
 }
 </style>

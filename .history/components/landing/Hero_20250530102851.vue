@@ -4,7 +4,7 @@
     <div class="absolute inset-0 w-screen h-full overflow-hidden z-0">
       <!-- Image with CSS transform to horizontally flip/invert -->
       <img src="~/assets/img/tekfolio-hero-image2.jpg" alt="Tekfolio Hero"
-        class="w-full h-full object-cover scale-x-[-1]" priority fetchpriority="high" preload />
+        class="w-full h-full object-cover scale-x-[-1]" />
       <!-- Darker gradient overlay for better text contrast -->
       <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
     </div>
@@ -243,3 +243,4 @@ onMounted(() => {
   }
 }
 </style>
+</content>

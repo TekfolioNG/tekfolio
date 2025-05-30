@@ -29,6 +29,19 @@ const textColorClass = computed(() => {
   return isScrolled.value ? 'text-gray-800' : 'text-white';
 });
 
+// New computed property for logo styling based on dark mode and mobile
+const logoClass = computed(() => {
+  const baseClasses = 'h-16 md:h-18 drop-shadow-lg transition-all duration-300';
+
+  if (isDark.value) {
+    // Dark mode: brighten and increase contrast
+    return `${baseClasses} logo-dark-mode`;
+  } else {
+    // Light mode: apply mobile desaturation only when background is light/transparent
+    return `${baseClasses} logo-mobile-light`;
+  }
+});
+
 const menuitems = [
   { title: "COMPANY", path: "/who-we-are", hasDropdown: false },
   { title: "SERVICES", path: "/what-we-do", hasDropdown: true },
@@ -57,10 +70,9 @@ onUnmounted(() => {
   <div class="fixed w-full z-50 top-0 left-0 right-0 transition-colors duration-300" :class="navbarBackgroundClass">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <header class="flex items-center py-2">
-        <!-- Left-aligned logo -->
+        <!-- Left-aligned logo with improved contrast -->
         <NuxtLink to="/" class="inline-block">
-          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-            class="h-16 md:h-18 drop-shadow-lg logo-mobile-desaturated" />
+          <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo" :class="logoClass" />
         </NuxtLink>
 
         <!-- Centered navigation container -->
@@ -203,9 +215,42 @@ button {
     color: #f3f4f6 !important;
   }
 
-  /* Logo desaturation for mobile */
-  .logo-mobile-desaturated {
-    filter: saturate(0.5) brightness(1.95);
+  /* Logo styling for light mode on mobile - only desaturate when on light backgrounds */
+  .logo-mobile-light {
+    filter: saturate(0.8) brightness(1.0);
+  }
+
+  /* Logo enhancement for dark mode on mobile */
+  .logo-dark-mode {
+    filter: brightness(1.3) contrast(1.2) saturate(1.1);
   }
 }
+
+/* Desktop logo styling for dark mode */
+@media (min-width: 768px) {
+  .logo-dark-mode {
+    filter: brightness(1.2) contrast(1.1);
+  }
+}
+
+/* Alternative: If you want to use different logo versions */
+/* 
+.logo-dark {
+  display: none;
+}
+
+.logo-light {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-dark {
+    display: block;
+  }
+  
+  .logo-light {
+    display: none;
+  }
+}
+*/
 </style>

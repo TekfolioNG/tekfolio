@@ -31,11 +31,10 @@
         </p>
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
           At <b>Tekfolio</b>, we design and create <strong class="text-[#009ADA]">smart, simple, and secure</strong>
-          digital solutions, fully custom, from the ground up — customized to your vision and engineered to scale. No
-          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software, built by
-          by a cohesive in-house team, that reflects
+          digital solutions— fully custom, from the ground up — tailored to your vision and engineered to scale. No
+          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software that reflects
           your brand’s
-          unique edge.
+          unique edge — and proves it.
         </p>
 
       </div>

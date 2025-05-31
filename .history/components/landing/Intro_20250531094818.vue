@@ -35,7 +35,7 @@
           cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software, built by
           by a cohesive in-house team, that reflects
           your brand’s
-          unique edge.
+          unique edge — and proves it.
         </p>
 
       </div>

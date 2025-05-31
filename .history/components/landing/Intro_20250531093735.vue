@@ -23,19 +23,17 @@
       <div class="mx-auto text-gray-900 dark:text-gray-300">
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
           Your business has outgrown generic WordPress templates or the patchwork of cobbled-together freelance teams
-          that never quite capture your brand. And those 'low-code-no-code', subscription-based web or mobile apps?
-          <br>No backend. No
+          that never quite capture your brand. And those 'low-code-no-code' web or mobile apps? <br>No backend. No
           flexibility.
           No
           control. No thanks.</br>
         </p>
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
           At <b>Tekfolio</b>, we design and create <strong class="text-[#009ADA]">smart, simple, and secure</strong>
-          digital solutions, fully custom, from the ground up — customized to your vision and engineered to scale. No
-          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software, built by
-          by a cohesive in-house team, that reflects
+          digital solutions— fully custom, from the ground up — tailored to your vision and engineered to scale. No
+          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software that reflects
           your brand’s
-          unique edge.
+          unique edge — and proves it.
         </p>
 
       </div>

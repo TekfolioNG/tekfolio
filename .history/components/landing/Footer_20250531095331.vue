@@ -226,7 +226,7 @@
   /* Logo positioning - shift slightly right on mobile only */
   .logo-mobile-center {
     display: block;
-    margin-left: 2rem;
+    margin-left: 2.3rem;
     /* Shift logo right by 24px */
   }
 

@@ -15,8 +15,6 @@
                             font-weight="bold">TEKFOLIO</text>
                     </svg>
                 </div>
-
-                <!-- Loading Text removed as requested -->
             </div>
         </div>
     </Transition>
@@ -53,10 +51,7 @@ const logoLoaded = ref(false);
 const handleLogoLoad = () => {
     console.log('Logo loaded successfully');
     logoLoaded.value = true;
-    // Add small delay to ensure DOM is fully ready
-    setTimeout(() => {
-        startAnimation();
-    }, 50);
+    startAnimation();
 };
 
 // Handle logo load error
@@ -64,9 +59,7 @@ const handleLogoError = () => {
     console.warn('Logo failed to load, using fallback');
     useLogo.value = false;
     logoLoaded.value = true;
-    setTimeout(() => {
-        startAnimation();
-    }, 50);
+    startAnimation();
 };
 
 // Animation timeline
@@ -77,7 +70,10 @@ const startAnimation = async () => {
         try {
             // Import GSAP dynamically
             const { gsap } = await import('gsap');
-            console.log('GSAP loaded, starting animation');
+            console.log('GSAP loaded successfully');
+
+            // Wait a bit for DOM to be ready
+            await new Promise(resolve => setTimeout(resolve, 100));
 
             // Get logo element (either image or SVG)
             const logoElement = logoImage.value || logoContainer.value?.querySelector('.logo');
@@ -87,20 +83,17 @@ const startAnimation = async () => {
                 return;
             }
 
-            console.log('Logo element found, initializing animation');
-
-            // Force initial state to prevent any flashing
+            // Initial state - visible but normal size
             gsap.set(logoElement, {
                 scale: 1,
-                opacity: 1,
-                transformOrigin: "center center",
-                force3D: true // Hardware acceleration
+                opacity: 1
             });
 
-            // Wait one more frame to ensure everything is rendered
-            await new Promise(resolve => requestAnimationFrame(resolve));
-
-            console.log('Starting pulse animation');
+            if (loadingText.value && props.showText) {
+                gsap.set(loadingText.value, {
+                    opacity: 1
+                });
+            }
 
             // Create pulsing/zoom animation
             pulseAnimation = gsap.to(logoElement, {
@@ -109,10 +102,7 @@ const startAnimation = async () => {
                 repeat: -1,
                 yoyo: true,
                 ease: "power2.inOut",
-                transformOrigin: "center center",
-                force3D: true, // Hardware acceleration
-                onStart: () => console.log('Pulse animation started'),
-                onRepeat: () => console.log('Pulse animation repeating')
+                transformOrigin: "center center"
             });
 
         } catch (err) {
@@ -130,25 +120,18 @@ onMounted(async () => {
     console.log('process.client:', process.client);
 
     if (process.client) {
-        // Prevent scrollbar layout shift by reserving scrollbar space
-        document.documentElement.style.overflow = 'hidden';
-
         // Listen to Nuxt app lifecycle hooks
         const nuxtApp = useNuxtApp();
 
         // Hide loading when app is ready
         nuxtApp.hook('app:mounted', () => {
             setTimeout(() => {
-                // Restore scrollbar before hiding loader
-                document.documentElement.style.overflow = '';
                 isLoading.value = false;
             }, 500);
         });
 
         // Auto-hide fallback
         setTimeout(() => {
-            // Restore scrollbar before hiding loader
-            document.documentElement.style.overflow = '';
             isLoading.value = false;
         }, props.duration);
 
@@ -165,11 +148,6 @@ onUnmounted(() => {
     if (pulseAnimation) {
         pulseAnimation.kill();
         pulseAnimation = null;
-    }
-
-    // Ensure scrollbar is restored if component unmounts unexpectedly
-    if (process.client) {
-        document.documentElement.style.overflow = '';
     }
 });
 </script>
@@ -189,10 +167,6 @@ onUnmounted(() => {
     /* Prevent content flash */
     opacity: 1;
     visibility: visible;
-    /* Prevent scrollbar layout shift */
-    overflow: hidden;
-    /* Account for scrollbar space to prevent jumping */
-    width: 100vw;
 }
 
 .loading-content {
@@ -219,17 +193,10 @@ onUnmounted(() => {
     max-height: 100%;
     width: auto;
     height: auto;
-    /* Prevent any visual glitches */
+    /* Prevent initial flash - start visible */
     opacity: 1;
-    transform: scale(1);
+    /* Ensure smooth scaling from center */
     transform-origin: center center;
-    /* Hardware acceleration to prevent glitches */
-    will-change: transform;
-    backface-visibility: hidden;
-    /* Smooth rendering */
-    image-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .loading-text {
@@ -260,4 +227,4 @@ onUnmounted(() => {
 .fade-leave-to {
     opacity: 0;
 }
-</style>.
+</style>

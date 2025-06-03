@@ -30,13 +30,6 @@ const textColorClass = computed(() => {
   return isScrolled.value ? 'text-gray-800' : 'text-white';
 });
 
-const progressBarColor = computed(() => {
-  if (isContactHovered.value) {
-    return 'bg-[#1d8ad8]';
-  }
-  return 'bg-white';
-});
-
 const menuitems = [
   { title: "COMPANY", path: "/who-we-are", hasDropdown: false },
   { title: "SERVICES", path: "/what-we-do", hasDropdown: true },
@@ -51,17 +44,11 @@ const handleScroll = () => {
   isScrolled.value = window.scrollY > 10;
 };
 
-const isContactHovered = ref(false);
-
 const handleContactClick = () => {
   isContactClicked.value = true;
   setTimeout(() => {
     isContactClicked.value = false;
   }, 600);
-};
-
-const handleContactHover = (hovered) => {
-  isContactHovered.value = hovered;
 };
 
 onMounted(() => {
@@ -112,43 +99,14 @@ onUnmounted(() => {
         <!-- Right-aligned contact button and color toggle -->
         <div class="hidden md:flex items-center ml-auto">
           <NuxtLink to="/contact"
-            class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden group"
+            class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden"
             :class="[
-              textColorClass,
-              'border border-transparent bg-transparent',
+              isDark
+                ? 'text-white hover:text-white hover:bg-[#1d8ad8] border border-[#1d8ad8]'
+                : 'bg-[#01348F] text-white hover:bg-[#1d8ad8]',
               isContactClicked ? 'animate-pulse scale-95' : ''
-            ]" @click="handleContactClick" @mouseenter="handleContactHover(true)"
-            @mouseleave="handleContactHover(false)">
+            ]" @click="handleContactClick">
             CONTACT US
-
-            <!-- Animated Border Progress -->
-            <div class="absolute inset-0 rounded-md pointer-events-none">
-              <!-- Top border -->
-              <div class="absolute top-0 left-0 h-0.5 rounded-t-md transition-all duration-300 ease-out" :class="[
-                progressBarColor,
-                isContactHovered || isContactClicked ? 'w-full' : 'w-0'
-              ]"></div>
-              <!-- Right border -->
-              <div class="absolute top-0 right-0 w-0.5 rounded-tr-md transition-all duration-300 ease-out delay-75"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'h-full' : 'h-0'
-                ]"></div>
-              <!-- Bottom border -->
-              <div class="absolute bottom-0 right-0 h-0.5 rounded-br-md transition-all duration-300 ease-out delay-150"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'w-full' : 'w-0'
-                ]"></div>
-              <!-- Left border -->
-              <div
-                class="absolute bottom-0 left-0 w-0.5 rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'h-full' : 'h-0'
-                ]"></div>
-            </div>
-
             <!-- Ripple effect overlay -->
             <span v-if="isContactClicked" class="absolute inset-0 bg-white/20 rounded-md animate-ping"></span>
           </NuxtLink>
@@ -208,35 +166,14 @@ onUnmounted(() => {
           </div>
           <div class="block px-4 py-3">
             <NuxtLink to="/contact"
-              class="block px-4 py-2 rounded-md text-sm font-medium text-center relative overflow-hidden transition-all duration-200 group"
+              class="block px-4 py-2 rounded-md text-sm font-medium text-center relative overflow-hidden transition-all duration-200"
               :class="[
                 isDark
-                  ? 'text-blue-700 hover:text-white border border-blue-700 bg-transparent hover:bg-blue-700/10'
-                  : 'bg-blue-700 text-white hover:bg-blue-800 border border-transparent',
+                  ? 'text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700'
+                  : 'bg-blue-700 text-white hover:bg-blue-800',
                 isContactClicked ? 'animate-pulse scale-95' : ''
-              ]" @click="open = false; handleContactClick()" @mouseenter="handleContactHover(true)"
-              @mouseleave="handleContactHover(false)">
+              ]" @click="open = false; handleContactClick()">
               CONTACT US
-
-              <!-- Mobile Animated Border Progress -->
-              <div class="absolute inset-0 rounded-md pointer-events-none">
-                <!-- Top border -->
-                <div class="absolute top-0 left-0 h-0.5 bg-white rounded-t-md transition-all duration-300 ease-out"
-                  :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
-                <!-- Right border -->
-                <div
-                  class="absolute top-0 right-0 w-0.5 bg-white rounded-tr-md transition-all duration-300 ease-out delay-75"
-                  :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
-                <!-- Bottom border -->
-                <div
-                  class="absolute bottom-0 right-0 h-0.5 bg-white rounded-br-md transition-all duration-300 ease-out delay-150"
-                  :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
-                <!-- Left border -->
-                <div
-                  class="absolute bottom-0 left-0 w-0.5 bg-white rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
-                  :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
-              </div>
-
               <!-- Mobile ripple effect -->
               <span v-if="isContactClicked" class="absolute inset-0 bg-white/20 rounded-md animate-ping"></span>
             </NuxtLink>

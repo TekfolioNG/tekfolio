@@ -179,13 +179,13 @@ onMounted(() => {
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* Subtle Glitch Effect */
+/* Glitch Effect */
 .btn-glitch {
   position: relative;
 }
 
 .btn-glitch:hover {
-  animation: glitch 0.4s ease-in-out;
+  animation: glitch 0.3s ease-in-out;
 }
 
 .btn-glitch::before,
@@ -208,18 +208,18 @@ onMounted(() => {
 }
 
 .btn-glitch:hover::before {
-  animation: glitch-1 0.4s ease-in-out;
-  color: rgba(255, 0, 64, 0.3);
+  animation: glitch-1 0.3s ease-in-out;
+  color: #ff0040;
   z-index: -1;
 }
 
 .btn-glitch:hover::after {
-  animation: glitch-2 0.4s ease-in-out;
-  color: rgba(0, 255, 255, 0.2);
+  animation: glitch-2 0.3s ease-in-out;
+  color: #00ffff;
   z-index: -2;
 }
 
-/* Subtle Glitch Keyframes */
+/* Enhanced Glitch Keyframes */
 @keyframes glitch {
 
   0%,
@@ -228,24 +228,49 @@ onMounted(() => {
     filter: hue-rotate(0deg);
   }
 
+  10% {
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(90deg);
+  }
+
   20% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(5deg);
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(180deg);
+  }
+
+  30% {
+    transform: translate(2px, 2px);
+    filter: hue-rotate(270deg);
   }
 
   40% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(-5deg);
+    transform: translate(2px, -2px);
+    filter: hue-rotate(360deg);
+  }
+
+  50% {
+    transform: translate(-1px, 1px);
+    filter: hue-rotate(45deg);
   }
 
   60% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(3deg);
+    transform: translate(1px, -1px);
+    filter: hue-rotate(135deg);
+  }
+
+  70% {
+    transform: translate(0px, 2px);
+    filter: hue-rotate(225deg);
   }
 
   80% {
+    transform: translate(-2px, 0px);
+    filter: hue-rotate(315deg);
+  }
+
+  90% {
     transform: translate(1px, 1px);
-    filter: hue-rotate(-3deg);
+    filter: hue-rotate(45deg);
   }
 }
 
@@ -257,14 +282,24 @@ onMounted(() => {
     opacity: 0;
   }
 
-  30% {
-    transform: translate(-1px, 1px);
-    opacity: 0.3;
+  20% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
   }
 
-  70% {
-    transform: translate(1px, -1px);
-    opacity: 0.3;
+  40% {
+    transform: translate(-2px, -2px);
+    opacity: 0.8;
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+    opacity: 0.8;
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+    opacity: 0.8;
   }
 }
 
@@ -276,14 +311,19 @@ onMounted(() => {
     opacity: 0;
   }
 
-  40% {
-    transform: translate(1px, -1px);
-    opacity: 0.2;
+  25% {
+    transform: translate(2px, -2px);
+    opacity: 0.6;
   }
 
-  60% {
-    transform: translate(-1px, 1px);
-    opacity: 0.2;
+  50% {
+    transform: translate(-2px, 2px);
+    opacity: 0.6;
+  }
+
+  75% {
+    transform: translate(1px, -1px);
+    opacity: 0.6;
   }
 }
 

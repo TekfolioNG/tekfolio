@@ -31,10 +31,10 @@ const textColorClass = computed(() => {
 });
 
 const progressBarColor = computed(() => {
-  if (isContactHovered.value) {
-    return 'bg-[#1d8ad8]';
+  if (isDark.value) {
+    return 'bg-white';
   }
-  return 'bg-white';
+  return isScrolled.value ? 'bg-[#01348F]' : 'bg-white';
 });
 
 const menuitems = [
@@ -114,8 +114,9 @@ onUnmounted(() => {
           <NuxtLink to="/contact"
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden group"
             :class="[
-              textColorClass,
-              'border border-transparent bg-transparent',
+              isDark
+                ? 'text-white hover:text-[#1d8ad8] border border-[#1d8ad8] bg-transparent hover:bg-[#1d8ad8]/10'
+                : 'bg-[#01348F] text-white hover:bg-[#1d8ad8] border border-transparent',
               isContactClicked ? 'animate-pulse scale-95' : ''
             ]" @click="handleContactClick" @mouseenter="handleContactHover(true)"
             @mouseleave="handleContactHover(false)">

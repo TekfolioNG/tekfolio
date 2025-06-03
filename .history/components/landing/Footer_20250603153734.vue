@@ -30,7 +30,7 @@
 
         <!-- Column 2: Quick Links -->
         <div class="md:col-span-2 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 text-blue-400 accent-heading">
             Quick Links
           </h3>
           <ul class="space-y-4 text-center md:text-left">
@@ -64,7 +64,7 @@
 
         <!-- Column 3: Services -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 text-blue-400 accent-heading">
             Services
           </h3>
           <ul class="space-y-3 text-center md:text-left">
@@ -115,7 +115,7 @@
 
         <!-- Column 4: Contact Info -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 text-blue-400 accent-heading">
             Contact Us
           </h3>
           <ul class="space-y-4 text-center md:text-left">
@@ -220,24 +220,13 @@
 </script>
 
 <style scoped>
-/* Simple gradient styles for headings - Blue to Cyan */
+/* Base gradient styles for headings */
 .accent-heading {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-weight: 600;
-}
-
-/* Lighter shade on hover */
-.accent-heading:hover {
-  background: linear-gradient(135deg, #60a5fa, #22d3ee);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  transition: all 0.3s ease;
 }
 
 /* Mobile desaturation styles */
@@ -250,17 +239,9 @@
     /* Shift logo right by 24px */
   }
 
-  /* Simplified gradient for mobile - blue to cyan */
+  /* Desaturated blue accent colors for mobile */
   .accent-heading {
-    background: linear-gradient(135deg, #7fb3d9, #7ecfd4) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
-  }
-
-  .accent-heading:hover {
-    background: linear-gradient(135deg, #94c5ea, #93d9de) !important;
+    background: linear-gradient(135deg, #7fb3d9, #a3c7e8) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;

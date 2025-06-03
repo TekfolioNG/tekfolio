@@ -176,7 +176,7 @@
     }
 
     50% {
-        transform: scale(1.3) rotate(0deg);
+        transform: scale(1.25) rotate(0deg);
         filter: brightness(1.5);
     }
 

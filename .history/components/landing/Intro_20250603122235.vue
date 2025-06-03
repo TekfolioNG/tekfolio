@@ -18,12 +18,11 @@
         Your vision and goals are unique
       </h3>
       <h4 class="text-lg md:text-2xl lg:text-2xl text-gray-600 dark:text-gray-300 font-normal italic mb-10 md:mb-12">
-        Why shouldn't your brand assets?
+        Why shouldn't your brand's online presence?
       </h4>
       <div class="mx-auto text-gray-900 dark:text-gray-300">
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
-          Your organization has outgrown generic WordPress templates or the patchwork of cobbled-together freelance
-          teams
+          Your business has outgrown generic WordPress templates or the patchwork of cobbled-together freelance teams
           that never quite capture your brand. And those 'low-code-no-code', subscription-based web or mobile apps?
           <br>No backend. No
           flexibility.

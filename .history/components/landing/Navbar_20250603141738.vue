@@ -114,8 +114,7 @@ onUnmounted(() => {
           <NuxtLink to="/contact"
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden group"
             :class="[
-              textColorClass,
-              'border border-transparent bg-transparent',
+              'text-white border border-transparent bg-transparent',
               isContactClicked ? 'animate-pulse scale-95' : ''
             ]" @click="handleContactClick" @mouseenter="handleContactHover(true)"
             @mouseleave="handleContactHover(false)">
@@ -194,7 +193,7 @@ onUnmounted(() => {
         <div v-show="open" class="md:hidden mt-2 py-2 rounded-lg shadow-lg bg-gray-900/90">
           <div v-for="item in menuitems" :key="item.title" class="block">
             <NuxtLink :to="item.path"
-              class="block px-4 py-3 text-sm font-medium flex justify-between items-center text-gray-100 hover:text-blue-300"
+              class="block px-4 py-3 text-sm font-medium justify-between items-center text-gray-100 hover:text-blue-300"
               @click="open = false">
               {{ item.title }}
               <span v-if="item.hasDropdown">

@@ -114,8 +114,7 @@ onUnmounted(() => {
           <NuxtLink to="/contact"
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden group"
             :class="[
-              textColorClass,
-              'border border-transparent bg-transparent',
+              'text-white border border-transparent bg-transparent',
               isContactClicked ? 'animate-pulse scale-95' : ''
             ]" @click="handleContactClick" @mouseenter="handleContactHover(true)"
             @mouseleave="handleContactHover(false)">

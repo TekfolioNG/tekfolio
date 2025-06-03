@@ -44,12 +44,12 @@
           <b><i>Faster than you'd imagined.</i></b>
         </p>
 
-        <!-- Buttons with Glitch Animation -->
+        <!-- Buttons with Wave Animation -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <NuxtLink to="/about" class="btn-primary btn-glitch">
+          <NuxtLink to="/about" class="btn-primary btn-wave">
             <span class="btn-text">How We're Different</span>
           </NuxtLink>
-          <NuxtLink to="/contact" class="btn-secondary btn-glitch">
+          <NuxtLink to="/contact" class="btn-secondary btn-wave">
             <span class="btn-text">Request a Demo</span>
           </NuxtLink>
         </div>
@@ -151,7 +151,7 @@ onMounted(() => {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Primary Button */
+/* Primary Button with Wave Effect */
 .btn-primary {
   background-color: #01348F;
   color: white;
@@ -165,7 +165,7 @@ onMounted(() => {
   box-shadow: 0 10px 25px rgba(29, 138, 216, 0.3);
 }
 
-/* Secondary Button */
+/* Secondary Button with Wave Effect */
 .btn-secondary {
   background-color: transparent;
   color: white;
@@ -179,115 +179,51 @@ onMounted(() => {
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* Subtle Glitch Effect */
-.btn-glitch {
-  position: relative;
+/* Wave Animation Effect */
+.btn-wave {
+  z-index: 1;
 }
 
-.btn-glitch:hover {
-  animation: glitch 0.4s ease-in-out;
-}
-
-.btn-glitch::before,
-.btn-glitch::after {
-  content: attr(data-text);
+.btn-wave::before {
+  content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
-  background: inherit;
-  opacity: 0;
-  pointer-events: none;
-  border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: inherit;
-  padding: inherit;
-}
-
-.btn-glitch:hover::before {
-  animation: glitch-1 0.4s ease-in-out;
-  color: rgba(255, 0, 64, 0.3);
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: left 0.5s;
   z-index: -1;
 }
 
-.btn-glitch:hover::after {
-  animation: glitch-2 0.4s ease-in-out;
-  color: rgba(0, 255, 255, 0.2);
-  z-index: -2;
+.btn-wave:hover::before {
+  left: 100%;
 }
 
-/* Subtle Glitch Keyframes */
-@keyframes glitch {
-
-  0%,
-  100% {
-    transform: translate(0);
-    filter: hue-rotate(0deg);
-  }
-
-  20% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(5deg);
-  }
-
-  40% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(-5deg);
-  }
-
-  60% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(3deg);
-  }
-
-  80% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(-3deg);
-  }
+/* Alternative: Ripple Wave Effect */
+.btn-wave::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: -1;
 }
 
-@keyframes glitch-1 {
-
-  0%,
-  100% {
-    transform: translate(0);
-    opacity: 0;
-  }
-
-  30% {
-    transform: translate(-1px, 1px);
-    opacity: 0.3;
-  }
-
-  70% {
-    transform: translate(1px, -1px);
-    opacity: 0.3;
-  }
+.btn-wave:hover::after {
+  width: 300px;
+  height: 300px;
 }
 
-@keyframes glitch-2 {
-
-  0%,
-  100% {
-    transform: translate(0);
-    opacity: 0;
-  }
-
-  40% {
-    transform: translate(1px, -1px);
-    opacity: 0.2;
-  }
-
-  60% {
-    transform: translate(-1px, 1px);
-    opacity: 0.2;
-  }
-}
-
-/* Text should stay above glitch effects */
+/* Text should stay above wave effects */
 .btn-text {
   position: relative;
   z-index: 2;
@@ -344,29 +280,14 @@ onMounted(() => {
     transform: translateY(-2px);
   }
 
-  /* Reduce glitch effect intensity on mobile */
-  .btn-glitch:hover {
-    animation: glitch-mobile 0.2s ease-in-out;
+  /* Reduce wave effect intensity on mobile */
+  .btn-wave::after {
+    transition: width 0.3s, height 0.3s;
   }
 
-  @keyframes glitch-mobile {
-
-    0%,
-    100% {
-      transform: translate(0);
-    }
-
-    25% {
-      transform: translate(-1px, 1px);
-    }
-
-    50% {
-      transform: translate(1px, -1px);
-    }
-
-    75% {
-      transform: translate(-1px, -1px);
-    }
+  .btn-wave:hover::after {
+    width: 200px;
+    height: 200px;
   }
 }
 </style>

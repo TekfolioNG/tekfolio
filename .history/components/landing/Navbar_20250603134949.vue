@@ -30,13 +30,6 @@ const textColorClass = computed(() => {
   return isScrolled.value ? 'text-gray-800' : 'text-white';
 });
 
-const progressBarColor = computed(() => {
-  if (isContactHovered.value) {
-    return 'bg-[#1d8ad8]';
-  }
-  return 'bg-white';
-});
-
 const menuitems = [
   { title: "COMPANY", path: "/who-we-are", hasDropdown: false },
   { title: "SERVICES", path: "/what-we-do", hasDropdown: true },
@@ -114,8 +107,9 @@ onUnmounted(() => {
           <NuxtLink to="/contact"
             class="px-4 py-2 rounded-md text-sm lg:text-base font-medium whitespace-nowrap transition-all duration-200 mr-12 relative overflow-hidden group"
             :class="[
-              textColorClass,
-              'border border-transparent bg-transparent',
+              isDark
+                ? 'text-white hover:text-white border border-[#1d8ad8] bg-transparent hover:bg-[#1d8ad8]/10'
+                : 'text-white hover:bg-[#1d8ad8] border border-transparent',
               isContactClicked ? 'animate-pulse scale-95' : ''
             ]" @click="handleContactClick" @mouseenter="handleContactHover(true)"
             @mouseleave="handleContactHover(false)">
@@ -124,29 +118,20 @@ onUnmounted(() => {
             <!-- Animated Border Progress -->
             <div class="absolute inset-0 rounded-md pointer-events-none">
               <!-- Top border -->
-              <div class="absolute top-0 left-0 h-0.5 rounded-t-md transition-all duration-300 ease-out" :class="[
-                progressBarColor,
-                isContactHovered || isContactClicked ? 'w-full' : 'w-0'
-              ]"></div>
+              <div class="absolute top-0 left-0 h-0.5 bg-[#1d8ad8] rounded-t-md transition-all duration-500 ease-out"
+                :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
               <!-- Right border -->
-              <div class="absolute top-0 right-0 w-0.5 rounded-tr-md transition-all duration-300 ease-out delay-75"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'h-full' : 'h-0'
-                ]"></div>
+              <div
+                class="absolute top-0 right-0 w-0.5 bg-[#1d8ad8] rounded-tr-md transition-all duration-500 ease-out delay-150"
+                :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
               <!-- Bottom border -->
-              <div class="absolute bottom-0 right-0 h-0.5 rounded-br-md transition-all duration-300 ease-out delay-150"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'w-full' : 'w-0'
-                ]"></div>
+              <div
+                class="absolute bottom-0 right-0 h-0.5 bg-[#1d8ad8] rounded-br-md transition-all duration-500 ease-out delay-300"
+                :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
               <!-- Left border -->
               <div
-                class="absolute bottom-0 left-0 w-0.5 rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
-                :class="[
-                  progressBarColor,
-                  isContactHovered || isContactClicked ? 'h-full' : 'h-0'
-                ]"></div>
+                class="absolute bottom-0 left-0 w-0.5 bg-[#1d8ad8] rounded-bl-md transition-all duration-500 ease-out delay-450"
+                :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
             </div>
 
             <!-- Ripple effect overlay -->
@@ -221,19 +206,19 @@ onUnmounted(() => {
               <!-- Mobile Animated Border Progress -->
               <div class="absolute inset-0 rounded-md pointer-events-none">
                 <!-- Top border -->
-                <div class="absolute top-0 left-0 h-0.5 bg-white rounded-t-md transition-all duration-300 ease-out"
+                <div class="absolute top-0 left-0 h-0.5 bg-blue-400 rounded-t-md transition-all duration-500 ease-out"
                   :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
                 <!-- Right border -->
                 <div
-                  class="absolute top-0 right-0 w-0.5 bg-white rounded-tr-md transition-all duration-300 ease-out delay-75"
+                  class="absolute top-0 right-0 w-0.5 bg-blue-400 rounded-tr-md transition-all duration-500 ease-out delay-150"
                   :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
                 <!-- Bottom border -->
                 <div
-                  class="absolute bottom-0 right-0 h-0.5 bg-white rounded-br-md transition-all duration-300 ease-out delay-150"
+                  class="absolute bottom-0 right-0 h-0.5 bg-blue-400 rounded-br-md transition-all duration-500 ease-out delay-300"
                   :class="isContactHovered || isContactClicked ? 'w-full' : 'w-0'"></div>
                 <!-- Left border -->
                 <div
-                  class="absolute bottom-0 left-0 w-0.5 bg-white rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
+                  class="absolute bottom-0 left-0 w-0.5 bg-blue-400 rounded-bl-md transition-all duration-500 ease-out delay-450"
                   :class="isContactHovered || isContactClicked ? 'h-full' : 'h-0'"></div>
               </div>
 

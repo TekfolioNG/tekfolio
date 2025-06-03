@@ -30,7 +30,7 @@
 
         <!-- Column 2: Quick Links -->
         <div class="md:col-span-2 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 gradient-heading">
             Quick Links
           </h3>
           <ul class="space-y-4 text-center md:text-left">
@@ -64,7 +64,7 @@
 
         <!-- Column 3: Services -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 gradient-heading">
             Services
           </h3>
           <ul class="space-y-3 text-center md:text-left">
@@ -115,7 +115,7 @@
 
         <!-- Column 4: Contact Info -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 accent-heading">
+          <h3 class="text-lg font-semibold mb-6 gradient-heading">
             Contact Us
           </h3>
           <ul class="space-y-4 text-center md:text-left">
@@ -220,24 +220,48 @@
 </script>
 
 <style scoped>
-/* Simple gradient styles for headings - Blue to Cyan */
-.accent-heading {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  -webkit-background-clip: text;
+/* Beautiful gradient headings - Compatible approach */
+.gradient-heading {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 25%, #2563eb 50%, #1d4ed8 75%, #1e40af 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease-in-out infinite;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-weight: 600;
 }
 
-/* Lighter shade on hover */
-.accent-heading:hover {
-  background: linear-gradient(135deg, #60a5fa, #22d3ee);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  transition: all 0.3s ease;
+.gradient-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 50%, #1d4ed8 100%);
+  border-radius: 2px;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.gradient-heading:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Mobile desaturation styles */
@@ -250,23 +274,22 @@
     /* Shift logo right by 24px */
   }
 
-  /* Simplified gradient for mobile - blue to cyan */
-  .accent-heading {
-    background: linear-gradient(135deg, #7fb3d9, #7ecfd4) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
+  /* Desaturated gradient for mobile */
+  .gradient-heading {
+    background: linear-gradient(135deg, #7fb3d9 0%, #6ba3d0 25%, #5a94c4 50%, #4a84b8 75%, #3a74ac 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 
-  .accent-heading:hover {
-    background: linear-gradient(135deg, #94c5ea, #93d9de) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
+  .gradient-heading::after {
+    background: linear-gradient(90deg, #7fb3d9 0%, #6ba3d0 50%, #4a84b8 100%);
   }
 
+  /* Desaturated blue accent colors for mobile */
   .accent-icon {
     color: #7fb3d9 !important;
     /* Desaturated blue-400 */
@@ -290,6 +313,25 @@
   /* Logo desaturation for mobile */
   .logo-mobile-desaturated {
     filter: saturate(0.5) brightness(1.95);
+  }
+}
+
+/* Enhanced hover effects for better interactivity */
+.gradient-heading {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.gradient-heading:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* Responsive gradient adjustments */
+@media (min-width: 769px) {
+  .gradient-heading {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 20%, #2563eb 40%, #1d4ed8 60%, #1e40af 80%, #1e3a8a 100%);
+    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
   }
 }
 </style>

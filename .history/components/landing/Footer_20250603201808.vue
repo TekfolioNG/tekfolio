@@ -220,19 +220,20 @@
 </script>
 
 <style scoped>
-/* Simple gradient styles for headings - Blue to Cyan */
+/* Modern gradient styles for headings - Blue to Purple */
 .accent-heading {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: 600;
+  text-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
 }
 
-/* Lighter shade on hover */
+/* Add a subtle glow effect on hover for headers */
 .accent-heading:hover {
-  background: linear-gradient(135deg, #60a5fa, #22d3ee);
+  background: linear-gradient(135deg, #60a5fa, #a78bfa, #22d3ee);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -250,9 +251,9 @@
     /* Shift logo right by 24px */
   }
 
-  /* Simplified gradient for mobile - blue to cyan */
+  /* Desaturated gradient for mobile - still modern but softer */
   .accent-heading {
-    background: linear-gradient(135deg, #7fb3d9, #7ecfd4) !important;
+    background: linear-gradient(135deg, #7fb3d9, #b4a3e8, #7ecfd4) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -260,7 +261,7 @@
   }
 
   .accent-heading:hover {
-    background: linear-gradient(135deg, #94c5ea, #93d9de) !important;
+    background: linear-gradient(135deg, #94c5ea, #c7b8f0, #93d9de) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;

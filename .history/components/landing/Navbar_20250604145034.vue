@@ -158,27 +158,31 @@ onUnmounted(() => {
 
           <!-- Desktop Toggle Switch -->
           <ClientOnly v-if="!colorMode?.forced">
-            <button @click="isDark = !isDark"
-              class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              :class="isDark ? 'bg-blue-600' : 'bg-yellow-600'">
-              <!-- Toggle Circle with Icon -->
-              <span
-                class="inline-flex h-4 w-4 items-center justify-center transform rounded-full bg-white transition duration-300 ease-in-out"
-                :class="isDark ? 'translate-x-6' : 'translate-x-1'">
-                <!-- Sun Icon (visible in light mode) -->
-                <svg v-if="!isDark" class="w-3 h-3 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    clip-rule="evenodd" />
-                </svg>
-                <!-- Moon Icon (visible in dark mode) -->
-                <svg v-else class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              </span>
-            </button>
+            <div class="flex items-center space-x-3">
+              <!-- Sun Icon -->
+              <svg class="w-4 h-4" :class="!isDark ? 'text-yellow-500' : textColorClass" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              <!-- Toggle Switch -->
+              <button @click="isDark = !isDark"
+                class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                :class="isDark ? 'bg-blue-600' : 'bg-gray-300'">
+                <span class="inline-block h-4 w-4 transform rounded-full bg-white transition duration-300 ease-in-out"
+                  :class="isDark ? 'translate-x-6' : 'translate-x-1'" />
+              </button>
+
+              <!-- Moon Icon -->
+              <svg class="w-4 h-4" :class="isDark ? 'text-blue-400' : textColorClass" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+            </div>
             <template #fallback>
-              <div class="w-11 h-6" />
+              <div class="w-20 h-6" />
             </template>
           </ClientOnly>
         </div>
@@ -187,27 +191,31 @@ onUnmounted(() => {
         <div class="md:hidden flex items-center ml-auto space-x-4">
           <!-- Mobile Toggle Switch -->
           <ClientOnly v-if="!colorMode?.forced" class="mr-2">
-            <button @click="isDark = !isDark"
-              class="relative inline-flex h-5 w-9 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              :class="isDark ? 'bg-blue-600' : 'bg-yellow-400'">
-              <!-- Toggle Circle with Icon -->
-              <span
-                class="inline-flex h-3 w-3 items-center justify-center transform rounded-full bg-white transition duration-300 ease-in-out"
-                :class="isDark ? 'translate-x-5' : 'translate-x-1'">
-                <!-- Sun Icon (visible in light mode) -->
-                <svg v-if="!isDark" class="w-2 h-2 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    clip-rule="evenodd" />
-                </svg>
-                <!-- Moon Icon (visible in dark mode) -->
-                <svg v-else class="w-2 h-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.293 13.293A8 8 0 716.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              </span>
-            </button>
+            <div class="flex items-center space-x-2">
+              <!-- Sun Icon -->
+              <svg class="w-3 h-3" :class="!isDark ? 'text-yellow-500' : textColorClass" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              <!-- Mobile Toggle Switch -->
+              <button @click="isDark = !isDark"
+                class="relative inline-flex h-5 w-9 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                :class="isDark ? 'bg-blue-600' : 'bg-gray-300'">
+                <span class="inline-block h-3 w-3 transform rounded-full bg-white transition duration-300 ease-in-out"
+                  :class="isDark ? 'translate-x-5' : 'translate-x-1'" />
+              </button>
+
+              <!-- Moon Icon -->
+              <svg class="w-3 h-3" :class="isDark ? 'text-blue-400' : textColorClass" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+            </div>
             <template #fallback>
-              <div class="w-9 h-5" />
+              <div class="w-16 h-5" />
             </template>
           </ClientOnly>
 

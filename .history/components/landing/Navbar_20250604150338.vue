@@ -160,7 +160,7 @@ onUnmounted(() => {
           <ClientOnly v-if="!colorMode?.forced">
             <button @click="isDark = !isDark"
               class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              :class="isDark ? 'bg-blue-600' : 'bg-yellow-600'">
+              :class="isDark ? 'bg-blue-600' : 'bg-blue-600'">
               <!-- Toggle Circle with Icon -->
               <span
                 class="inline-flex h-4 w-4 items-center justify-center transform rounded-full bg-white transition duration-300 ease-in-out"

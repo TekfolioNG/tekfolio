@@ -41,7 +41,7 @@
           <span class="hidden md:inline"><br /></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
           secure, and user-optimized software and strategies.
-          <br><b><i>Faster than you'd imagined.</i></b></br>
+          <b><i>Faster than you'd imagined.</i></b>
         </p>
 
         <!-- Buttons with Glitch Animation -->

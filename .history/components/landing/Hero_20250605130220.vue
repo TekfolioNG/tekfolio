@@ -36,21 +36,23 @@
           <br><b><i>Faster than you'd imagined.</i></b></br>
         </p>
 
-        <!-- Buttons with Particle Burst Animation -->
+        <!-- Buttons with Blob Effect Animation -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <NuxtLink to="/about" 
             ref="primaryBtn"
-            class="btn-primary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'primary')"
-            @mouseleave="resetParticles($event)">
+            class="btn-primary btn-blob-effect"
+            @mouseenter="triggerBlobEffect($event, 'primary')"
+            @mouseleave="resetBlobEffect($event)">
             <span class="btn-text">How We're Different</span>
+            <div class="blob-bg"></div>
           </NuxtLink>
           <NuxtLink to="/contact" 
             ref="secondaryBtn"
-            class="btn-secondary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'secondary')"
-            @mouseleave="resetParticles($event)">
+            class="btn-secondary btn-blob-effect"
+            @mouseenter="triggerBlobEffect($event, 'secondary')"
+            @mouseleave="resetBlobEffect($event)">
             <span class="btn-text">Request a Demo</span>
+            <div class="blob-bg"></div>
           </NuxtLink>
         </div>
       </div>
@@ -72,88 +74,70 @@ const primaryBtn = ref(null);
 const secondaryBtn = ref(null);
 const words = ['Smart', 'Simple', 'Secure'];
 
-// Particle burst function
-const triggerParticleBurst = (event, buttonType) => {
+// Blob effect function
+const triggerBlobEffect = (event, buttonType) => {
   const button = event.currentTarget;
-  const rect = button.getBoundingClientRect();
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
+  const blob = button.querySelector('.blob-bg');
   
-  // Create particles
-  const particleCount = 12;
-  const particles = [];
+  // Create morphing blob animation
+  const tl = gsap.timeline();
   
-  for (let i = 0; i < particleCount; i++) {
-    const particle = document.createElement('div');
-    particle.className = `particle ${buttonType === 'primary' ? 'particle-primary' : 'particle-secondary'}`;
-    button.appendChild(particle);
-    particles.push(particle);
-    
-    // Position particle at button center
-    gsap.set(particle, {
-      position: 'absolute',
-      left: centerX,
-      top: centerY,
-      width: '4px',
-      height: '4px',
-      borderRadius: '50%',
-      zIndex: 1,
-      pointerEvents: 'none'
-    });
-  }
-  
-  // Animate particles outward
-  particles.forEach((particle, index) => {
-    const angle = (360 / particleCount) * index;
-    const distance = 60 + Math.random() * 20; // Random distance for organic feel
-    const duration = 0.8 + Math.random() * 0.4;
-    
-    gsap.timeline()
-      .to(particle, {
-        x: Math.cos(angle * Math.PI / 180) * distance,
-        y: Math.sin(angle * Math.PI / 180) * distance,
-        opacity: 1,
-        scale: 1.5,
-        duration: duration * 0.6,
-        ease: "power2.out"
-      })
-      .to(particle, {
-        opacity: 0,
-        scale: 0.5,
-        duration: duration * 0.4,
-        ease: "power2.in"
-      }, "-=0.2")
-      .call(() => {
-        if (particle.parentNode) {
-          particle.parentNode.removeChild(particle);
-        }
-      });
+  // Initial blob appearance
+  tl.set(blob, {
+    scale: 0,
+    opacity: 0,
+    borderRadius: '50%'
+  })
+  .to(blob, {
+    scale: 1.2,
+    opacity: 0.8,
+    duration: 0.4,
+    ease: "power2.out"
+  })
+  // Morph the blob shape continuously
+  .to(blob, {
+    borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
+    duration: 0.6,
+    ease: "sine.inOut"
+  }, "-=0.2")
+  .to(blob, {
+    borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%',
+    duration: 0.8,
+    ease: "sine.inOut"
+  })
+  .to(blob, {
+    borderRadius: '40% 60% 60% 40% / 60% 30% 60% 40%',
+    duration: 0.7,
+    ease: "sine.inOut",
+    repeat: -1,
+    yoyo: true
   });
   
-  // Add button scale effect
+  // Add subtle button lift
   gsap.to(button, {
-    scale: 1.05,
+    y: -3,
     duration: 0.3,
     ease: "power2.out"
   });
 };
 
-const resetParticles = (event) => {
+const resetBlobEffect = (event) => {
   const button = event.currentTarget;
+  const blob = button.querySelector('.blob-bg');
   
-  // Reset button scale
-  gsap.to(button, {
-    scale: 1,
+  // Reset blob
+  gsap.to(blob, {
+    scale: 0,
+    opacity: 0,
     duration: 0.3,
-    ease: "power2.out"
+    ease: "power2.in"
   });
   
-  // Clean up any remaining particles
-  const particles = button.querySelectorAll('.particle');
-  particles.forEach(particle => {
-    if (particle.parentNode) {
-      particle.parentNode.removeChild(particle);
-    }
+  // Reset button position
+  gsap.to(button, {
+    y: 0,
+    duration: 0.3,
+    ease: "power2.out"
   });
 };
 

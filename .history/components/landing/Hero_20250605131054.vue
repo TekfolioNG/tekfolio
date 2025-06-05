@@ -6,19 +6,18 @@
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
     </div>
 
-  <div class="container mx-auto px-4 md:pl-16 lg:pl-20 md:pr-4 h-full flex items-center pt-16 relative z-10">
+    <div class="container mx-auto px-4 md:pl-16 lg:pl-20 md:pr-4 h-full flex items-center pt-16 relative z-10">
       <div class="max-w-3xl text-white w-full md:ml-8 text-center md:text-left">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
-        <div class="flex flex-col md:hidden">
+          <div class="flex flex-col md:hidden">
             <div class="flex items-center justify-center space-x-2">
               <span ref="wordSwitcherMobile" class="text-blue-300 font-black word-switcher-effect text-3xl"></span>
               <span class="lowercase">business</span>
             </div>
-
             <span class="lowercase">solutions that work</span>
           </div>
 
-        <div class="hidden md:flex md:flex-wrap md:items-center">
+          <div class="hidden md:flex md:flex-wrap md:items-center">
             <span class="flex">
               <span ref="wordSwitcher"
                 class="text-blue-300 font-black inline-block min-w-[120px] mr-2 word-switcher-effect"></span>
@@ -28,7 +27,7 @@
           </div>
         </h1>
 
-      <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
+        <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
           Achieve more with scalable, next-gen digital products. Our versed and innovative team
           <span class="hidden md:inline"><br /></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
@@ -36,21 +35,23 @@
           <br><b><i>Faster than you'd imagined.</i></b></br>
         </p>
 
-        <!-- Buttons with Particle Burst Animation -->
+        <!-- Buttons with Blob Animation -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <NuxtLink to="/about" 
             ref="primaryBtn"
-            class="btn-primary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'primary')"
-            @mouseleave="resetParticles($event)">
+            class="btn-primary btn-blob"
+            @mouseenter="animateBlob($event, 'primary')"
+            @mouseleave="resetBlob($event)">
             <span class="btn-text">How We're Different</span>
+            <div class="blob"></div>
           </NuxtLink>
           <NuxtLink to="/contact" 
             ref="secondaryBtn"
-            class="btn-secondary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'secondary')"
-            @mouseleave="resetParticles($event)">
+            class="btn-secondary btn-blob"
+            @mouseenter="animateBlob($event, 'secondary')"
+            @mouseleave="resetBlob($event)">
             <span class="btn-text">Request a Demo</span>
+            <div class="blob"></div>
           </NuxtLink>
         </div>
       </div>
@@ -68,107 +69,76 @@ gsap.registerPlugin(ScrambleTextPlugin);
 
 const wordSwitcher = ref(null);
 const wordSwitcherMobile = ref(null);
-const primaryBtn = ref(null);
-const secondaryBtn = ref(null);
 const words = ['Smart', 'Simple', 'Secure'];
 
-// Particle burst function
-const triggerParticleBurst = (event, buttonType) => {
+// Blob animation functions
+const animateBlob = (event, buttonType) => {
   const button = event.currentTarget;
-  const rect = button.getBoundingClientRect();
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
+  const blob = button.querySelector('.blob');
   
-  // Create particles
-  const particleCount = 12;
-  const particles = [];
-  
-  for (let i = 0; i < particleCount; i++) {
-    const particle = document.createElement('div');
-    particle.className = `particle ${buttonType === 'primary' ? 'particle-primary' : 'particle-secondary'}`;
-    button.appendChild(particle);
-    particles.push(particle);
-    
-    // Position particle at button center
-    gsap.set(particle, {
-      position: 'absolute',
-      left: centerX,
-      top: centerY,
-      width: '4px',
-      height: '4px',
-      borderRadius: '50%',
-      zIndex: 1,
-      pointerEvents: 'none'
-    });
-  }
-  
-  // Animate particles outward
-  particles.forEach((particle, index) => {
-    const angle = (360 / particleCount) * index;
-    const distance = 60 + Math.random() * 20; // Random distance for organic feel
-    const duration = 0.8 + Math.random() * 0.4;
-    
-    gsap.timeline()
-      .to(particle, {
-        x: Math.cos(angle * Math.PI / 180) * distance,
-        y: Math.sin(angle * Math.PI / 180) * distance,
-        opacity: 1,
-        scale: 1.5,
-        duration: duration * 0.6,
-        ease: "power2.out"
-      })
-      .to(particle, {
-        opacity: 0,
-        scale: 0.5,
-        duration: duration * 0.4,
-        ease: "power2.in"
-      }, "-=0.2")
-      .call(() => {
-        if (particle.parentNode) {
-          particle.parentNode.removeChild(particle);
-        }
-      });
+  // Set initial blob position and size
+  gsap.set(blob, {
+    width: '120%',
+    height: '120%',
+    borderRadius: '40%',
+    x: '-10%',
+    y: '-10%',
+    opacity: 0,
+    backgroundColor: buttonType === 'primary' ? '#1d8ad8' : 'white',
+    filter: 'blur(8px)'
   });
-  
-  // Add button scale effect
+
+  // Animate blob
+  gsap.to(blob, {
+    opacity: 0.3,
+    duration: 0.6,
+    ease: 'power2.out'
+  });
+
+  // Morph blob shape
+  gsap.to(blob, {
+    borderRadius: '50% 40% 60% 30% / 60% 30% 70% 40%',
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut'
+  });
+
+  // Button scale effect
   gsap.to(button, {
-    scale: 1.05,
+    scale: 1.02,
     duration: 0.3,
-    ease: "power2.out"
+    ease: 'power2.out'
   });
 };
 
-const resetParticles = (event) => {
+const resetBlob = (event) => {
   const button = event.currentTarget;
+  const blob = button.querySelector('.blob');
   
+  // Fade out blob
+  gsap.to(blob, {
+    opacity: 0,
+    duration: 0.4,
+    ease: 'power2.in'
+  });
+
   // Reset button scale
   gsap.to(button, {
     scale: 1,
     duration: 0.3,
-    ease: "power2.out"
-  });
-  
-  // Clean up any remaining particles
-  const particles = button.querySelectorAll('.particle');
-  particles.forEach(particle => {
-    if (particle.parentNode) {
-      particle.parentNode.removeChild(particle);
-    }
+    ease: 'power2.out'
   });
 };
 
 onMounted(() => {
+  // Existing word switching animations...
   if (wordSwitcher.value) {
     wordSwitcher.value.textContent = words[0];
-
     const tl = gsap.timeline({ repeat: -1 });
-
     words.forEach((word, index) => {
       const nextIndex = (index + 1) % words.length;
-
-      // Hold current word
       tl.to({}, { duration: 2 })
-        // Scramble to next word with letters instead of binary
         .to(wordSwitcher.value, {
           duration: 1.2,
           scrambleText: {
@@ -183,20 +153,12 @@ onMounted(() => {
     });
   }
 
-  // Create animation for mobile version
   if (wordSwitcherMobile.value) {
-    // Initialize with first word
     wordSwitcherMobile.value.textContent = words[0];
-
-    // Create word switching timeline with scramble text effect
     const tlMobile = gsap.timeline({ repeat: -1 });
-
     words.forEach((word, index) => {
       const nextIndex = (index + 1) % words.length;
-
-      // Hold current word
       tlMobile.to({}, { duration: 2 })
-        // Scramble to next word with letters instead of binary
         .to(wordSwitcherMobile.value, {
           duration: 1.2,
           scrambleText: {
@@ -234,7 +196,7 @@ onMounted(() => {
   border-radius: 0.5rem;
   text-align: center;
   position: relative;
-  overflow: visible; /* Changed from hidden to visible for particles */
+  overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
 }
@@ -267,46 +229,23 @@ onMounted(() => {
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* Particle Burst Effects */
-.btn-particle-burst {
+/* Blob Effect Styles */
+.btn-blob {
   position: relative;
-  overflow: visible;
-}
-
-.particle {
-  position: absolute;
-  opacity: 0;
-  transform: scale(0);
   z-index: 1;
-  pointer-events: none;
 }
 
-.particle-primary {
-  background: linear-gradient(45deg, #60a5fa, #3b82f6);
-  box-shadow: 0 0 6px rgba(96, 165, 250, 0.8);
-}
-
-.particle-secondary {
-  background: linear-gradient(45deg, #ffffff, #e5e7eb);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-}
-
-/* Enhanced particle glow effect */
-.particle::before {
-  content: '';
+.blob {
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: inherit;
-  border-radius: inherit;
-  opacity: 0.6;
-  filter: blur(2px);
+  top: 0;
+  left: 0;
   z-index: -1;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  will-change: transform, border-radius;
 }
 
-/* Text should stay above particle effects */
+/* Text should stay above blob effects */
 .btn-text {
   position: relative;
   z-index: 2;
@@ -337,37 +276,30 @@ onMounted(() => {
   /* Mobile touch interactions */
   .btn-primary:active {
     background-color: #1d8ad8;
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-2px);
   }
 
   .btn-secondary:active {
     background-color: white;
     color: #01348F;
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-2px);
   }
 
-  /* Reduce particle count and distance on mobile for performance */
-  .btn-particle-burst {
-    overflow: visible;
-  }
-  
-  /* Smaller particles on mobile */
-  @media (max-width: 768px) {
-    .particle {
-      width: 3px !important;
-      height: 3px !important;
-    }
+  /* Reduce blob size on mobile */
+  .blob {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-  .btn-particle-burst:hover {
-    transform: translateY(-1px);
+  .blob {
+    display: none;
   }
   
-  .particle {
-    display: none;
+  .btn-blob:hover {
+    transform: translateY(-1px) !important;
   }
 }
 </style>

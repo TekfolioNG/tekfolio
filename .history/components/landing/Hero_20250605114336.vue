@@ -36,20 +36,11 @@
           <br><b><i>Faster than you'd imagined.</i></b></br>
         </p>
 
-        <!-- Buttons with Particle Burst Animation -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <NuxtLink to="/about" 
-            ref="primaryBtn"
-            class="btn-primary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'primary')"
-            @mouseleave="resetParticles($event)">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <NuxtLink to="/about" class="btn-primary btn-glitch">
             <span class="btn-text">How We're Different</span>
           </NuxtLink>
-          <NuxtLink to="/contact" 
-            ref="secondaryBtn"
-            class="btn-secondary btn-particle-burst"
-            @mouseenter="triggerParticleBurst($event, 'secondary')"
-            @mouseleave="resetParticles($event)">
+          <NuxtLink to="/contact" class="btn-secondary btn-glitch">
             <span class="btn-text">Request a Demo</span>
           </NuxtLink>
         </div>
@@ -68,94 +59,7 @@ gsap.registerPlugin(ScrambleTextPlugin);
 
 const wordSwitcher = ref(null);
 const wordSwitcherMobile = ref(null);
-const primaryBtn = ref(null);
-const secondaryBtn = ref(null);
 const words = ['Smart', 'Simple', 'Secure'];
-
-// Particle burst function
-const triggerParticleBurst = (event, buttonType) => {
-  const button = event.currentTarget;
-  const rect = button.getBoundingClientRect();
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
-  
-  // Create particles
-  const particleCount = 12;
-  const particles = [];
-  
-  for (let i = 0; i < particleCount; i++) {
-    const particle = document.createElement('div');
-    particle.className = `particle ${buttonType === 'primary' ? 'particle-primary' : 'particle-secondary'}`;
-    button.appendChild(particle);
-    particles.push(particle);
-    
-    // Position particle at button center
-    gsap.set(particle, {
-      position: 'absolute',
-      left: centerX,
-      top: centerY,
-      width: '4px',
-      height: '4px',
-      borderRadius: '50%',
-      zIndex: 1,
-      pointerEvents: 'none'
-    });
-  }
-  
-  // Animate particles outward
-  particles.forEach((particle, index) => {
-    const angle = (360 / particleCount) * index;
-    const distance = 60 + Math.random() * 20; // Random distance for organic feel
-    const duration = 0.8 + Math.random() * 0.4;
-    
-    gsap.timeline()
-      .to(particle, {
-        x: Math.cos(angle * Math.PI / 180) * distance,
-        y: Math.sin(angle * Math.PI / 180) * distance,
-        opacity: 1,
-        scale: 1.5,
-        duration: duration * 0.6,
-        ease: "power2.out"
-      })
-      .to(particle, {
-        opacity: 0,
-        scale: 0.5,
-        duration: duration * 0.4,
-        ease: "power2.in"
-      }, "-=0.2")
-      .call(() => {
-        if (particle.parentNode) {
-          particle.parentNode.removeChild(particle);
-        }
-      });
-  });
-  
-  // Add button scale effect
-  gsap.to(button, {
-    scale: 1.05,
-    duration: 0.3,
-    ease: "power2.out"
-  });
-};
-
-const resetParticles = (event) => {
-  const button = event.currentTarget;
-  
-  // Reset button scale
-  gsap.to(button, {
-    scale: 1,
-    duration: 0.3,
-    ease: "power2.out"
-  });
-  
-  // Clean up any remaining particles
-  const particles = button.querySelectorAll('.particle');
-  particles.forEach(particle => {
-    if (particle.parentNode) {
-      particle.parentNode.removeChild(particle);
-    }
-  });
-};
 
 onMounted(() => {
   if (wordSwitcher.value) {
@@ -234,9 +138,8 @@ onMounted(() => {
   border-radius: 0.5rem;
   text-align: center;
   position: relative;
-  overflow: visible; /* Changed from hidden to visible for particles */
+  overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: center;
 }
 
 /* Primary Button */
@@ -267,49 +170,135 @@ onMounted(() => {
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* Particle Burst Effects */
-.btn-particle-burst {
+/* Subtle Glitch Effect */
+.btn-glitch {
   position: relative;
-  overflow: visible;
 }
 
-.particle {
+.btn-glitch:hover {
+  animation: glitch 0.4s ease-in-out;
+}
+
+.btn-glitch::before,
+.btn-glitch::after {
+  content: attr(data-text);
   position: absolute;
-  opacity: 0;
-  transform: scale(0);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.particle-primary {
-  background: linear-gradient(45deg, #60a5fa, #3b82f6);
-  box-shadow: 0 0 6px rgba(96, 165, 250, 0.8);
-}
-
-.particle-secondary {
-  background: linear-gradient(45deg, #ffffff, #e5e7eb);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-}
-
-/* Enhanced particle glow effect */
-.particle::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: inherit;
+  opacity: 0;
+  pointer-events: none;
   border-radius: inherit;
-  opacity: 0.6;
-  filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: inherit;
+  padding: inherit;
+}
+
+.btn-glitch:hover::before {
+  animation: glitch-1 0.4s ease-in-out;
+  color: rgba(255, 0, 64, 0.3);
   z-index: -1;
 }
 
-/* Text should stay above particle effects */
+.btn-glitch:hover::after {
+  animation: glitch-2 0.4s ease-in-out;
+  color: rgba(0, 255, 255, 0.2);
+  z-index: -2;
+}
+
+/* Subtle Glitch Keyframes */
+@keyframes glitch {
+
+  0%,
+  100% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-1px, 1px);
+    filter: hue-rotate(5deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px);
+    filter: hue-rotate(-5deg);
+  }
+
+  60% {
+    transform: translate(-1px, -1px);
+    filter: hue-rotate(3deg);
+  }
+
+  80% {
+    transform: translate(1px, 1px);
+    filter: hue-rotate(-3deg);
+  }
+}
+
+@keyframes glitch-1 {
+
+  0%,
+  100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(-1px, 1px);
+    opacity: 0.3;
+  }
+
+  70% {
+    transform: translate(1px, -1px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes glitch-2 {
+
+  0%,
+  100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(1px, -1px);
+    opacity: 0.2;
+  }
+
+  60% {
+    transform: translate(-1px, 1px);
+    opacity: 0.2;
+  }
+}
+
+/* Text should stay above glitch effects */
 .btn-text {
   position: relative;
   z-index: 2;
+}
+
+/* Extra styles for scramble text animation */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.text-blink {
+  animation: blink 1s infinite;
 }
 
 /* Word switcher special effects */
@@ -337,37 +326,38 @@ onMounted(() => {
   /* Mobile touch interactions */
   .btn-primary:active {
     background-color: #1d8ad8;
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-2px);
   }
 
   .btn-secondary:active {
     background-color: white;
     color: #01348F;
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-2px);
   }
 
-  /* Reduce particle count and distance on mobile for performance */
-  .btn-particle-burst {
-    overflow: visible;
+  /* Reduce glitch effect intensity on mobile */
+  .btn-glitch:hover {
+    animation: glitch-mobile 0.2s ease-in-out;
   }
-  
-  /* Smaller particles on mobile */
-  @media (max-width: 768px) {
-    .particle {
-      width: 3px !important;
-      height: 3px !important;
+
+  @keyframes glitch-mobile {
+
+    0%,
+    100% {
+      transform: translate(0);
     }
-  }
-}
 
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-  .btn-particle-burst:hover {
-    transform: translateY(-1px);
-  }
-  
-  .particle {
-    display: none;
+    25% {
+      transform: translate(-1px, 1px);
+    }
+
+    50% {
+      transform: translate(1px, -1px);
+    }
+
+    75% {
+      transform: translate(-1px, -1px);
+    }
   }
 }
 </style>

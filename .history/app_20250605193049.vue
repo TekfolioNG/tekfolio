@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-
+// Import the loading component - FIXED PATH
 import AppLoading from '~/components/landing/AppLoading.vue';
 
-</script>

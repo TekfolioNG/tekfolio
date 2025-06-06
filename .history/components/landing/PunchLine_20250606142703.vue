@@ -1,6 +1,6 @@
 <template>
     <section class="py-16 md:py-24 bg-white dark:bg-gray-900 overflow-hidden">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        zfgkm <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Image Column with Animation -->
                 <div class="relative">
@@ -26,7 +26,7 @@
                     </h2>
 
                     <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                        Our team collaborates closely with you to build digital tools that drive your business
+                        Our team collaborates closely with you to build digital tools that drive your business goals and
                         vision and instantly connect with your customers or
                         team. The result? Happier users, higher satisfaction, and improved loyalty.
                     </p>
@@ -36,10 +36,6 @@
                         e-products
                         that are technically sound, easy to use, and fully secure to power your success.
                     </p>
-
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"><strong><i>
-                                ...Because good software should feel as natural as a melody that stays with you.
-                            </i> </strong> </p>
 
                     <div class="flex flex-col sm:flex-row gap-4">
                         <NuxtLink to="/contact"

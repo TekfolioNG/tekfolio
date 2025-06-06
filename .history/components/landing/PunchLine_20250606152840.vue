@@ -1,6 +1,6 @@
 <template>
     <section class="py-16 md:py-24 bg-white dark:bg-gray-900 overflow-hidden">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        zfgkm <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Image Column with Animation -->
                 <div class="relative">

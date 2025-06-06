@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { LandingPunchLine } from '../.nuxt/components';
 
 definePageMeta({
   layout: "landing"

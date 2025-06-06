@@ -189,7 +189,7 @@ onUnmounted(() => {
           <ClientOnly v-if="!colorMode?.forced" class="mr-2">
             <button @click="isDark = !isDark"
               class="relative inline-flex h-5 w-9 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              :class="isDark ? 'bg-blue-600' : 'bg-blue-600'">
+              :class="isDark ? 'bg-blue-600' : 'bg-blue-400'">
               <!-- Toggle Circle with Icon -->
               <span
                 class="inline-flex h-3 w-3 items-center justify-center transform rounded-full bg-white transition duration-300 ease-in-out"
@@ -201,7 +201,7 @@ onUnmounted(() => {
                     clip-rule="evenodd" />
                 </svg>
                 <!-- Moon Icon (visible in dark mode) -->
-                <svg v-else class="w-2 h-2 text-black" fill="currentColor" viewBox="0 0 20 20">
+                <svg v-else class="w-2 h-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M17.293 13.293A8 8 0 716.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                 </svg>
               </span>

@@ -3,10 +3,11 @@
     <div class="container mx-auto">
       <!-- Main Footer -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <!-- Column 1: Logo and About (adjusted width) -->
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
           <NuxtLink to="/" class="logo-mobile-center">
             <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-              class="h-24 md:h-28 drop-shadow-lg mb-6" />
+              class="h-24 md:h-28 drop-shadow-lg logo-mobile-desaturated mb-6" />
           </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
@@ -239,6 +240,7 @@
 </template>
 
 <style scoped>
+/* Simple gradient styles for headings - Blue to Cyan */
 .accent-heading {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   -webkit-background-clip: text;
@@ -248,6 +250,7 @@
   font-weight: 600;
 }
 
+/* Lighter shade on hover */
 .accent-heading:hover {
   background: linear-gradient(135deg, #60a5fa, #22d3ee);
   -webkit-background-clip: text;
@@ -255,5 +258,60 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   transition: all 0.3s ease;
+}
+
+/* Mobile desaturation styles */
+@media (max-width: 768px) {
+
+  /* Logo positioning - shift slightly right on mobile only */
+  .logo-mobile-center {
+    display: block;
+    margin-left: 2rem;
+    /* Shift logo right by 24px */
+  }
+
+  /* Simplified gradient for mobile - blue to cyan */
+  .accent-heading {
+    background: linear-gradient(135deg, #7fb3d9, #7ecfd4) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+  }
+
+  .accent-heading:hover {
+    background: linear-gradient(135deg, #94c5ea, #93d9de) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+  }
+
+  .accent-icon {
+    color: #7fb3d9,
+      #7ecfd4;
+    /* Desaturated blue-400 */
+  }
+
+  .accent-link {
+    color: #7fb3d9,
+      #7ecfd4;
+    /* Desaturated blue-400 */
+  }
+
+  .accent-link:hover {
+    color: #a3c7e8 !important;
+    /* Desaturated blue-300 */
+  }
+
+  .accent-link-hover:hover {
+    color: #7fb3d9 !important;
+    /* Desaturated blue-400 */
+  }
+
+  /* Logo desaturation for mobile */
+  .logo-mobile-desaturated {
+    filter: saturate(0.5) brightness(1.95);
+  }
 }
 </style>

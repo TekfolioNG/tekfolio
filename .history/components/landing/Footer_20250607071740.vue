@@ -3,10 +3,11 @@
     <div class="container mx-auto">
       <!-- Main Footer -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <!-- Column 1: Logo and About (adjusted width) -->
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
           <NuxtLink to="/" class="logo-mobile-center">
             <img src="~/assets/img/tekfolio-logo-final9.svg" alt="Tekfolio Logo"
-              class="h-24 md:h-28 drop-shadow-lg mb-6" />
+              class="h-24 md:h-28 drop-shadow-lg logo-mobile-desaturated mb-6" />
           </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
@@ -239,6 +240,7 @@
 </template>
 
 <style scoped>
+/* Simple gradient styles for headings - Blue to Cyan */
 .accent-heading {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   -webkit-background-clip: text;
@@ -248,6 +250,7 @@
   font-weight: 600;
 }
 
+/* Lighter shade on hover */
 .accent-heading:hover {
   background: linear-gradient(135deg, #60a5fa, #22d3ee);
   -webkit-background-clip: text;

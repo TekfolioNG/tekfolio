@@ -6,7 +6,7 @@
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
           <NuxtLink to="/" class="logo-mobile-center">
             <img src="~/assets/img/tekfolio-logo-final6.svg" alt="Tekfolio Logo"
-              class="h-18 md:h-22 drop-shadow-lg mb-2" />
+              class="h-8 md:h-22 drop-shadow-lg mb-6" />
           </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">

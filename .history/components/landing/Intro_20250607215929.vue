@@ -15,10 +15,10 @@
     <div class="container mx-auto max-w-4xl text-center relative">
       <h3 class="text-2xl md:text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-1 leading-tight"
         style="font-family: 'Barlow Condensed', sans-serif;">
-        Your vision and goals are unique
+        Your vision is unique
       </h3>
       <h4 class="text-lg md:text-2xl lg:text-2xl text-gray-600 dark:text-gray-300 font-normal italic mb-10 md:mb-12">
-        Why shouldn't your e-brand assets?
+        ...And so should your software
       </h4>
       <div class="mx-auto text-gray-900 dark:text-gray-300">
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">

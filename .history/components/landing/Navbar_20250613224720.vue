@@ -314,6 +314,10 @@ button {
     color: #f3f4f6 !important;
   }
 
+  /* Logo desaturation for mobile */
+  .logo-mobile-desaturated {
+    filter: saturate(0.5) brightness(1.95);
+  }
 }
 
 /* Custom animations */

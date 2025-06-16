@@ -4,8 +4,6 @@ import { computed, onMounted, onUnmounted, ref } from 'vue';
 const colorMode = useColorMode();
 const isScrolled = ref(false);
 const isContactClicked = ref(false);
-const lastScrollY = ref(0);
-const isVisible = ref(true);
 
 const isDark = computed({
   get() {
@@ -16,14 +14,20 @@ const isDark = computed({
   }
 });
 
-// Always transparent navbar
 const navbarBackgroundClass = computed(() => {
-  return 'bg-transparent';
+  if (!isScrolled.value) {
+    return 'bg-transparent';
+  }
+  return isDark.value
+    ? 'bg-gray-900/90'
+    : 'bg-white/95';
 });
 
-// Text color - always white for visibility on transparent background
 const textColorClass = computed(() => {
-  return 'text-white';
+  if (isDark.value) {
+    return 'text-white';
+  }
+  return isScrolled.value ? 'text-gray-800' : 'text-white';
 });
 
 const progressBarColor = computed(() => {
@@ -41,18 +45,7 @@ const menuitems = [
 const open = ref(false);
 
 const handleScroll = () => {
-  const currentScrollY = window.scrollY;
-
-  // Show navbar only when at the top of the page
-  if (currentScrollY <= 10) {
-    isVisible.value = true;
-  } else {
-    // Hide navbar when scrolled away from top
-    isVisible.value = false;
-  }
-
-  lastScrollY.value = currentScrollY;
-  isScrolled.value = currentScrollY > 10;
+  isScrolled.value = window.scrollY > 10;
 };
 
 const isContactHovered = ref(false);
@@ -79,10 +72,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="fixed w-full z-50 top-0 left-0 right-0 transition-all duration-300 ease-in-out" :class="[
-    navbarBackgroundClass,
-    isVisible ? 'translate-y-0' : '-translate-y-full'
-  ]">
+  <div class="fixed w-full z-50 top-0 left-0 right-0 transition-colors duration-300" :class="navbarBackgroundClass">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
@@ -100,7 +90,7 @@ onUnmounted(() => {
                   class="text-sm lg:text-base transition-colors duration-200 flex items-center whitespace-nowrap font-medium"
                   :class="[
                     textColorClass,
-                    'hover:text-[#1d8ad8]'
+                    'hover:text-[ #2563EB]'
                   ]">
                   {{ item.title }}
                   <span v-if="item.hasDropdown" class="ml-1">
@@ -299,14 +289,14 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-/* Force transparent background */
+/* Force transparent background only when not scrolled */
 .bg-transparent {
   background-color: transparent !important;
 }
 
 /* Active link styling - consistent blue for all screen sizes */
 :deep(.router-link-active) {
-  color: #2D9CDB !important;
+  color: #2563EB !important;
   font-weight: 700;
 }
 
@@ -323,6 +313,7 @@ button {
   .bg-gray-900\/90 a {
     color: #f3f4f6 !important;
   }
+
 }
 
 /* Custom animations */

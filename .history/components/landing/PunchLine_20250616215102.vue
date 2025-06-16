@@ -42,10 +42,12 @@
                             </i> </strong> </p>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <NuxtLink to="/contact" class="btn-primary">
+                        <NuxtLink to="/contact"
+                            class="px-8 py-3 bg-[#01348F] hover:bg-[#1d8ad8] text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center">
                             Start Your Project
                         </NuxtLink>
-                        <NuxtLink to="/portfolio" class="btn-secondary">
+                        <NuxtLink to="/portfolio"
+                            class="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-center">
                             See Our Work
                         </NuxtLink>
                     </div>
@@ -59,8 +61,6 @@
 import { onMounted, ref } from 'vue'
 
 const isVisible = ref(false)
-
-// Simple hover effects - no particles needed
 
 onMounted(() => {
     isVisible.value = true
@@ -116,95 +116,5 @@ onMounted(() => {
 
 .animate-pulse-slow {
     animation: pulse-slow 8s ease-in-out infinite;
-}
-
-/* Simple Button Styles with Hover Effects */
-.btn-primary,
-.btn-secondary {
-    display: inline-block;
-    font-weight: 600;
-    padding: 0.75rem 2rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    transform: scale(1);
-}
-
-/* Primary Button */
-.btn-primary {
-    background-color: #01348F;
-    color: white;
-    box-shadow: 0 4px 6px rgba(1, 52, 143, 0.2);
-}
-
-.btn-primary:hover {
-    background-color: #1d8ad8;
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(29, 138, 216, 0.3);
-}
-
-/* Secondary Button */
-.btn-secondary {
-    background-color: transparent;
-    color: #374151;
-    border: 2px solid #d1d5db;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-secondary:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
-    border-color: #9ca3af;
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Dark mode button styles */
-.dark .btn-secondary {
-    color: #d1d5db;
-    border-color: #6b7280;
-}
-
-.dark .btn-secondary:hover {
-    background-color: #374151;
-    color: #f9fafb;
-    border-color: #9ca3af;
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-
-    /* Mobile touch interactions */
-    .btn-primary:active {
-        background-color: #1d8ad8;
-        transform: translateY(-2px) scale(1.02);
-    }
-
-    .btn-secondary:active {
-        background-color: #f9fafb;
-        transform: translateY(-2px) scale(1.02);
-    }
-
-    .dark .btn-secondary:active {
-        background-color: #374151;
-    }
-
-    /* Smaller particles on mobile */
-    .particle {
-        width: 3px !important;
-        height: 3px !important;
-    }
-}
-
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-    .btn-particle-burst:hover {
-        transform: translateY(-1px);
-    }
-
-    .particle {
-        display: none;
-    }
 }
 </style>

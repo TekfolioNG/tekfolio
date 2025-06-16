@@ -64,8 +64,7 @@
 
         <!-- Column 3: Services -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3
-            class="text-lg font-semibold mb-6 bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">
+          <h3 class="text-lg font-semibold mb-6 accent-heading">
             Services
           </h3>
           <ul class="space-y-3 text-center md:text-left">
@@ -116,8 +115,7 @@
 
         <!-- Column 4: Contact Info -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3
-            class="text-lg font-semibold mb-6 bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">
+          <h3 class="text-lg font-semibold mb-6 accent-heading">
             Contact Us
           </h3>
           <ul class="space-y-4 text-center md:text-left">

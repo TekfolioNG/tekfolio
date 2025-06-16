@@ -1,11 +1,8 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue';
+import { computed, ref } from 'vue';
 
 const colorMode = useColorMode();
-const isScrolled = ref(false);
 const isContactClicked = ref(false);
-const lastScrollY = ref(0);
-const isVisible = ref(true);
 
 const isDark = computed({
   get() {
@@ -16,14 +13,16 @@ const isDark = computed({
   }
 });
 
-// Always transparent navbar
+// Fixed background - always uses the default state
 const navbarBackgroundClass = computed(() => {
-  return 'bg-transparent';
+  return isDark.value
+    ? 'bg-gray-900'
+    : 'bg-white';
 });
 
-// Text color - always white for visibility on transparent background
+// Fixed text color - always uses the default state
 const textColorClass = computed(() => {
-  return 'text-white';
+  return isDark.value ? 'text-white' : 'text-gray-800';
 });
 
 const progressBarColor = computed(() => {
@@ -39,22 +38,6 @@ const menuitems = [
 ];
 
 const open = ref(false);
-
-const handleScroll = () => {
-  const currentScrollY = window.scrollY;
-
-  // Show navbar only when at the top of the page
-  if (currentScrollY <= 10) {
-    isVisible.value = true;
-  } else {
-    // Hide navbar when scrolled away from top
-    isVisible.value = false;
-  }
-
-  lastScrollY.value = currentScrollY;
-  isScrolled.value = currentScrollY > 10;
-};
-
 const isContactHovered = ref(false);
 
 const handleContactClick = () => {
@@ -67,28 +50,16 @@ const handleContactClick = () => {
 const handleContactHover = (hovered) => {
   isContactHovered.value = hovered;
 };
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-  handleScroll();
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
 </script>
 
 <template>
-  <div class="fixed w-full z-50 top-0 left-0 right-0 transition-all duration-300 ease-in-out" :class="[
-    navbarBackgroundClass,
-    isVisible ? 'translate-y-0' : '-translate-y-full'
-  ]">
+  <div class="fixed w-full z-50 top-0 left-0 right-0 shadow-lg transition-colors duration-300"
+    :class="navbarBackgroundClass">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
         <NuxtLink to="/" class="inline-block">
-          <img src="~/assets/img/tekfolio-logo-final6.svg" alt="Tekfolio Logo"
-            class="h-16 md:h-18 drop-shadow-lg logo-mobile-desaturated" />
+          <img src="~/assets/img/tekfolio-logo-final6.svg" alt="Tekfolio Logo" class="h-16 md:h-18 drop-shadow-lg" />
         </NuxtLink>
 
         <!-- Centered navigation container -->
@@ -299,11 +270,6 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-/* Force transparent background */
-.bg-transparent {
-  background-color: transparent !important;
-}
-
 /* Active link styling - consistent blue for all screen sizes */
 :deep(.router-link-active) {
   color: #2D9CDB !important;

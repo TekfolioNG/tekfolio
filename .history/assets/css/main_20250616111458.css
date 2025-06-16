@@ -29,15 +29,13 @@ h6 {
 }
 
 /* ================ */
-/* Custom Tekfolio Cursors - DISABLED */
+/* Custom Tekfolio Cursors */
 /* ================ */
-/*
-* {
+/* {
   cursor: url("/cursors/square-mouse-pointer.svg") 12 12, auto;
 }
 
 /* Interactive elements */
-/*
 a,
 button,
 [role="button"],
@@ -50,7 +48,6 @@ input[type="button"],
 }
 
 /* Input fields */
-/*
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -60,12 +57,10 @@ textarea,
 }
 
 /* Disabled elements */
-/*
 [disabled],
 [aria-disabled="true"] {
   cursor: not-allowed !important;
 }
-*/
 
 /* ================ */
 /* Dark Mode Adjustments */

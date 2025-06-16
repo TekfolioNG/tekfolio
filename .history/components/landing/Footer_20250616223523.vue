@@ -30,7 +30,7 @@
         <!-- Column 2: Quick Links -->
         <div class="md:col-span-2 flex flex-col items-center md:items-start">
           <h3
-            class="text-lg font-semibold mb-6 bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Quick Links
           </h3>
           <ul class="space-y-4 text-center md:text-left">
@@ -65,7 +65,7 @@
         <!-- Column 3: Services -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
           <h3
-            class="text-lg font-semibold mb-6 bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Services
           </h3>
           <ul class="space-y-3 text-center md:text-left">
@@ -117,20 +117,14 @@
         <!-- Column 4: Contact Info -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
           <h3
-            class="text-lg font-semibold mb-6 bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Contact Us
           </h3>
           <ul class="space-y-4 text-center md:text-left">
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-start mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 accent-icon flex-shrink-0 mt-1" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mt-1 gradient-icon" fill="none"
                   viewBox="0 0 24 24" stroke="url(#iconGradient)">
-                  <defs>
-                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#3b82f6" />
-                      <stop offset="100%" stop-color="#06b6d4" />
-                    </linearGradient>
-                  </defs>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -144,14 +138,8 @@
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-start mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 accent-icon flex-shrink-0 mt-1" fill="none"
-                  viewBox="0 0 24 24" stroke="url(#iconGradient)">
-                  <defs>
-                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#3b82f6" />
-                      <stop offset="100%" stop-color="#06b6d4" />
-                    </linearGradient>
-                  </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mt-1 gradient-icon" fill="none"
+                  viewBox="0 0 24 24" stroke="url(#iconGradient2)">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -165,14 +153,8 @@
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-center mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 accent-icon flex-shrink-0 mt-1" fill="none"
-                  viewBox="0 0 24 24" stroke="url(#iconGradient)">
-                  <defs>
-                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#3b82f6" />
-                      <stop offset="100%" stop-color="#06b6d4" />
-                    </linearGradient>
-                  </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mt-1 gradient-icon" fill="none"
+                  viewBox="0 0 24 24" stroke="url(#iconGradient3)">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -184,14 +166,8 @@
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-center mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 accent-icon flex-shrink-0 mt-1" fill="none"
-                  viewBox="0 0 24 24" stroke="url(#iconGradient)">
-                  <defs>
-                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#3b82f6" />
-                      <stop offset="100%" stop-color="#06b6d4" />
-                    </linearGradient>
-                  </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0 mt-1 gradient-icon" fill="none"
+                  viewBox="0 0 24 24" stroke="url(#iconGradient4)">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -238,7 +214,37 @@
         </div>
       </div>
     </div>
+
+    <!-- SVG Gradients for Icons -->
+    <svg width="0" height="0" class="absolute">
+      <defs>
+        <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2563eb" />
+          <stop offset="50%" stop-color="#9333ea" />
+          <stop offset="100%" stop-color="#4f46e5" />
+        </linearGradient>
+        <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2563eb" />
+          <stop offset="50%" stop-color="#9333ea" />
+          <stop offset="100%" stop-color="#4f46e5" />
+        </linearGradient>
+        <linearGradient id="iconGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2563eb" />
+          <stop offset="50%" stop-color="#9333ea" />
+          <stop offset="100%" stop-color="#4f46e5" />
+        </linearGradient>
+        <linearGradient id="iconGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2563eb" />
+          <stop offset="50%" stop-color="#9333ea" />
+          <stop offset="100%" stop-color="#4f46e5" />
+        </linearGradient>
+      </defs>
+    </svg>
   </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.gradient-icon {
+  filter: drop-shadow(0 0 2px rgba(147, 51, 234, 0.3));
+}
+</style>

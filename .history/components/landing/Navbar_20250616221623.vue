@@ -43,12 +43,16 @@ const open = ref(false);
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
-  // Show navbar only when at the top of the page
+  // Hide navbar when scrolling down, show when scrolling up
+  if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
+    isVisible.value = false;
+  } else if (currentScrollY < lastScrollY.value) {
+    isVisible.value = true;
+  }
+
+  // Show navbar when at top of page
   if (currentScrollY <= 10) {
     isVisible.value = true;
-  } else {
-    // Hide navbar when scrolled away from top
-    isVisible.value = false;
   }
 
   lastScrollY.value = currentScrollY;

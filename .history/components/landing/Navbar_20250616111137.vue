@@ -2,10 +2,8 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 
 const colorMode = useColorMode();
-const isScrolled = ref(false);
+// const isScrolled = ref(false);
 const isContactClicked = ref(false);
-const lastScrollY = ref(0);
-const isVisible = ref(true);
 
 const isDark = computed({
   get() {
@@ -16,18 +14,24 @@ const isDark = computed({
   }
 });
 
-// Always transparent navbar
 const navbarBackgroundClass = computed(() => {
-  return 'bg-transparent';
+  if (!isScrolled.value) {
+    return 'bg-transparent';
+  }
+  return isDark.value
+    ? 'bg-gray-900/90'
+    : 'bg-white/95';
 });
 
-// Text color - always white for visibility on transparent background
 const textColorClass = computed(() => {
-  return 'text-white';
+  if (isDark.value) {
+    return 'text-white';
+  }
+  return isScrolled.value ? 'text-gray-800' : 'text-white';
 });
 
 const progressBarColor = computed(() => {
-  return 'bg-[#1A73E8]';
+  return 'bg-[#1d8ad8]';
 });
 
 const menuitems = [
@@ -41,18 +45,7 @@ const menuitems = [
 const open = ref(false);
 
 const handleScroll = () => {
-  const currentScrollY = window.scrollY;
-
-  // Show navbar only when at the top of the page
-  if (currentScrollY <= 10) {
-    isVisible.value = true;
-  } else {
-    // Hide navbar when scrolled away from top
-    isVisible.value = false;
-  }
-
-  lastScrollY.value = currentScrollY;
-  isScrolled.value = currentScrollY > 10;
+  isScrolled.value = window.scrollY > 10;
 };
 
 const isContactHovered = ref(false);
@@ -79,10 +72,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="fixed w-full z-50 top-0 left-0 right-0 transition-all duration-300 ease-in-out" :class="[
-    navbarBackgroundClass,
-    isVisible ? 'translate-y-0' : '-translate-y-full'
-  ]">
+  <div class="fixed w-full z-50 top-0 left-0 right-0 transition-colors duration-300" :class="navbarBackgroundClass">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <header class="flex items-center py-2">
         <!-- Left-aligned logo -->
@@ -157,7 +147,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Small dash underneath text on hover -->
-            <div class="absolute bottom-0 right-4 h-0.5 bg-[#1A73E8] rounded-full transition-all duration-300 ease-out"
+            <div class="absolute bottom-0 right-4 h-0.5 bg-[#1d8ad8] rounded-full transition-all duration-300 ease-out"
               :class="[
                 isContactHovered ? 'w-8 opacity-100' : 'w-0 opacity-0'
               ]"></div>
@@ -170,7 +160,7 @@ onUnmounted(() => {
           <ClientOnly v-if="!colorMode?.forced">
             <button @click="isDark = !isDark"
               class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              :class="isDark ? 'bg-[#1A73E8]' : 'bg-[#1A73E8]'">
+              :class="isDark ? 'bg-blue-600' : 'bg-blue-600'">
               <!-- Toggle Circle with Icon -->
               <span
                 class="inline-flex h-4 w-4 items-center justify-center transform rounded-full bg-white transition duration-300 ease-in-out"
@@ -256,8 +246,8 @@ onUnmounted(() => {
               class="block px-4 py-2 rounded-md text-sm font-medium text-center relative overflow-hidden transition-all duration-200 group"
               :class="[
                 isDark
-                  ? 'text-[#1A73E8] hover:text-white border border-[#1A73E8] bg-transparent hover:bg-blue-700/10'
-                  : 'bg-[#1A73E8] text-white hover:bg-[#1A73E8] border border-transparent',
+                  ? 'text-blue-700 hover:text-white border border-blue-700 bg-transparent hover:bg-blue-700/10'
+                  : 'bg-blue-700 text-white hover:bg-blue-800 border border-transparent',
                 isContactClicked ? 'animate-pulse scale-95' : ''
               ]" @click="open = false; handleContactClick()" @mouseenter="handleContactHover(true)"
               @mouseleave="handleContactHover(false)">
@@ -266,19 +256,19 @@ onUnmounted(() => {
               <!-- Mobile Animated Border Progress - Reverse logic -->
               <div class="absolute inset-0 rounded-md pointer-events-none">
                 <!-- Top border -->
-                <div class="absolute top-0 left-0 h-0.5 bg-[#1A73E8] rounded-t-md transition-all duration-300 ease-out"
+                <div class="absolute top-0 left-0 h-0.5 bg-[#1d8ad8] rounded-t-md transition-all duration-300 ease-out"
                   :class="!isContactHovered && !isContactClicked ? 'w-full' : 'w-0'"></div>
                 <!-- Right border -->
                 <div
-                  class="absolute top-0 right-0 w-0.5 bg-[#1A73E8] rounded-tr-md transition-all duration-300 ease-out delay-75"
+                  class="absolute top-0 right-0 w-0.5 bg-[#1d8ad8] rounded-tr-md transition-all duration-300 ease-out delay-75"
                   :class="!isContactHovered && !isContactClicked ? 'h-full' : 'h-0'"></div>
                 <!-- Bottom border -->
                 <div
-                  class="absolute bottom-0 right-0 h-0.5 bg-[#1A73E8] rounded-br-md transition-all duration-300 ease-out delay-150"
+                  class="absolute bottom-0 right-0 h-0.5 bg-[#1d8ad8] rounded-br-md transition-all duration-300 ease-out delay-150"
                   :class="!isContactHovered && !isContactClicked ? 'w-full' : 'w-0'"></div>
                 <!-- Left border -->
                 <div
-                  class="absolute bottom-0 left-0 w-0.5 bg-[#1A73E8] rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
+                  class="absolute bottom-0 left-0 w-0.5 bg-[#1d8ad8] rounded-bl-md transition-all duration-300 ease-out delay-[225ms]"
                   :class="!isContactHovered && !isContactClicked ? 'h-full' : 'h-0'"></div>
               </div>
 
@@ -299,14 +289,14 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-/* Force transparent background */
+/* Force transparent background only when not scrolled */
 .bg-transparent {
   background-color: transparent !important;
 }
 
 /* Active link styling - consistent blue for all screen sizes */
 :deep(.router-link-active) {
-  color: #2D9CDB !important;
+  color: #60cbfa !important;
   font-weight: 700;
 }
 
@@ -323,6 +313,7 @@ button {
   .bg-gray-900\/90 a {
     color: #f3f4f6 !important;
   }
+
 }
 
 /* Custom animations */

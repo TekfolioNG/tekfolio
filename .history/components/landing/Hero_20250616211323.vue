@@ -11,7 +11,7 @@
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
           <div class="flex flex-col md:hidden">
             <div class="flex items-center justify-center space-x-2">
-              <span ref="wordSwitcherMobile" class="text-[blue-300] font-black word-switcher-effect text-3xl"></span>
+              <span ref="wordSwitcherMobile" class="text-[#2D9CDB] font-black word-switcher-effect text-3xl"></span>
               <span class="lowercase">business</span>
             </div>
 
@@ -21,7 +21,7 @@
           <div class="hidden md:flex md:flex-wrap md:items-center">
             <span class="flex">
               <span ref="wordSwitcher"
-                class="text-blue-300 font-black inline-block min-w-[120px] mr-2 word-switcher-effect"></span>
+                class="text-[#2D9CDB] font-black inline-block min-w-[120px] mr-2 word-switcher-effect"></span>
               <span class="lowercase">business</span>
             </span>
             <span class="lowercase md:ml-2">solutions that work</span>

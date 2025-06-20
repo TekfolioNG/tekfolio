@@ -21,23 +21,23 @@
                 <div class="lg:pl-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                         Apps that fit <span
-                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">like
+                            class="bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] bg-clip-text text-transparent">like
                             notes in a harmony</span>
                     </h2>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                         Our team collaborates closely with you to build digital tools that drive your business
                         vision and instantly connect with your customers or
                         team. The result? Happier users, higher satisfaction, and improved loyalty.
                     </p>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                         That's because we're more than just your dev team. We're your growth partners, building
                         e-products
                         that are technically sound, easy to use, and fully secure to power your success.
                     </p>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-8 leading-relaxed"><strong><i>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"><strong><i>
                                 ...Because good software should feel as natural as a melody that stays with you.
                             </i> </strong> </p>
 

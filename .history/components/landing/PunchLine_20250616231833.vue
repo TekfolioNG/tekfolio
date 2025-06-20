@@ -25,19 +25,19 @@
                             notes in a harmony</span>
                     </h2>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                         Our team collaborates closely with you to build digital tools that drive your business
                         vision and instantly connect with your customers or
                         team. The result? Happier users, higher satisfaction, and improved loyalty.
                     </p>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                         That's because we're more than just your dev team. We're your growth partners, building
                         e-products
                         that are technically sound, easy to use, and fully secure to power your success.
                     </p>
 
-                    <p class="text-lg text-gray-800 dark:text-gray-300 mb-8 leading-relaxed"><strong><i>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"><strong><i>
                                 ...Because good software should feel as natural as a melody that stays with you.
                             </i> </strong> </p>
 

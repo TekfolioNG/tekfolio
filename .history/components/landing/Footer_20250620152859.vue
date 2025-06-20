@@ -203,8 +203,7 @@
               </NuxtLink>
               <NuxtLink to="https://x.com/tekfoliong" class="text-gray-400 hover:text-white transition-colors"
                 aria-label="X">
-                <img src="~/assets/img/x.png" alt="X"
-                  class="w-5 h-5 invert opacity-60 hover:opacity-100 transition-all" />
+                <Icon name="mdi:close" size="20" />
               </NuxtLink>
 
             </div>

@@ -10,8 +10,7 @@
           </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
-            Tekfolio is a Nigerian digital solutions agency focused on empowering businesses and organizations with
-            cutting-edge and
+            Tekfolio is a Nigerian digital solutions agency focused on empowering businesses with cutting-edge and
             customized
             digital products and services that drive lasting success. We're dedicated to delivering efficient, scalable,
             and fast
@@ -38,23 +37,23 @@
           </h3>
           <ul class="space-y-4 text-center md:text-left">
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                About Tekfolio
+              <NuxtLink to="/who-we-are" class="text-gray-300 hover:text-white transition-colors">
+                Who We Are
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/what-we-do" class="text-gray-300 hover:text-white transition-colors">
-                How We're Different
+                What We Do
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/our-work" class="text-gray-300 hover:text-white transition-colors">
-                Our Competencies
+                Our Work
               </NuxtLink>
             </li>
             <li>
               <NuxtLink to="/our-team" class="text-gray-300 hover:text-white transition-colors">
-                Past Projects
+                Our Team
               </NuxtLink>
             </li>
             <li>
@@ -73,33 +72,45 @@
           </h3>
           <ul class="space-y-3 text-center md:text-left">
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Enterprise Web Apps
+              <NuxtLink to="/what-we-do#design-planning" class="text-gray-300 hover:text-white transition-colors">
+                Design & Planning
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Business Mobile Apps
+              <NuxtLink to="/what-we-do#construction-project" class="text-gray-300 hover:text-white transition-colors">
+                Construction & Project Planning
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Search Engine Optimization
+              <NuxtLink to="/what-we-do#renovation-upgrades" class="text-gray-300 hover:text-white transition-colors">
+                Renovation & Upgrades
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Search Engine Marketing
+              <NuxtLink to="/what-we-do#facility-audit" class="text-gray-300 hover:text-white transition-colors">
+                Facility Audit/
+                Condition Survey
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Email Marketing
+              <NuxtLink to="/what-we-do#facility-management" class="text-gray-300 hover:text-white transition-colors">
+                Facility Management
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#" class="text-gray-300 hover:text-white transition-colors">
-                Staff Training
+              <NuxtLink to="/what-we-do#engineering-procurement"
+                class="text-gray-300 hover:text-white transition-colors">
+                Engineering/Procurement Consultancy
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/what-we-do#import-export" class="text-gray-300 hover:text-white transition-colors">
+                Import & Export
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/what-we-do#general-contractor" class="text-gray-300 hover:text-white transition-colors">
+                General Contractor
               </NuxtLink>
             </li>
           </ul>
@@ -190,23 +201,18 @@
           <div class="order-1 md:order-2 flex flex-col md:flex-row items-center gap-4">
             <div class="text-gray-400 text-sm">Connect:</div>
             <div class="flex gap-3">
-              <NuxtLink to="linkedin.com/company/tekfoilio-ltd" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="LinkedIn">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Icon name="mdi:linkedin" size="20" />
-              </NuxtLink>
-              <NuxtLink to="https://www.facebook.com/tekfolio" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="Facebook">
-                <Icon name="mdi:facebook" size="20" />
-              </NuxtLink>
-              <NuxtLink to="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Icon name="mdi:instagram" size="20" />
-              </NuxtLink>
-              <NuxtLink to="https://x.com/tekfoliong" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="X">
-                <img src="~/assets/img/x.png" alt="X"
-                  class="w-5 h-5 invert opacity-60 hover:opacity-100 transition-all" />
-              </NuxtLink>
-
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="X">
+                <Icon name="mdi:twitter" size="20" />
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                <Icon name="mdi:facebook" size="20" />
+              </a>
             </div>
           </div>
 

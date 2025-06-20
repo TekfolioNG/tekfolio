@@ -190,23 +190,18 @@
           <div class="order-1 md:order-2 flex flex-col md:flex-row items-center gap-4">
             <div class="text-gray-400 text-sm">Connect:</div>
             <div class="flex gap-3">
-              <NuxtLink to="linkedin.com/company/tekfoilio-ltd" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="LinkedIn">
+              <NuxtLink to="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Icon name="mdi:linkedin" size="20" />
-              </NuxtLink>
-              <NuxtLink to="https://www.facebook.com/tekfolio" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="Facebook">
-                <Icon name="mdi:facebook" size="20" />
               </NuxtLink>
               <NuxtLink to="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Icon name="mdi:instagram" size="20" />
               </NuxtLink>
-              <NuxtLink to="https://x.com/tekfoliong" class="text-gray-400 hover:text-white transition-colors"
-                aria-label="X">
-                <img src="~/assets/img/x.png" alt="X"
-                  class="w-5 h-5 invert opacity-60 hover:opacity-100 transition-all" />
+              <NuxtLink to="#" class="text-gray-400 hover:text-white transition-colors" aria-label="X">
+                <Icon name="mdi:twitter" size="20" />
               </NuxtLink>
-
+              <NuxtLink to="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                <Icon name="mdi:facebook" size="20" />
+              </NuxtLink>
             </div>
           </div>
 

@@ -62,7 +62,7 @@ const allTechs = computed(() => [
     { name: 'Svelte', image: '/img/svelte.png' },
     { name: 'Jamstack', image: '/img/jamstack.png' },
     { name: 'Python', image: '/img/python.png' },
-    { name: 'Go', image: '/img/go.png' },
+    { name: 'Go-Logo', image: '/img/go-logo.png' },
     { name: 'R', image: '/img/R-logo.png' },
     { name: 'SQL', image: '/img/sql.png' },
     { name: 'PostgreSQL', image: '/img/postgre.png' },

@@ -410,8 +410,7 @@
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
                                             class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
-                                            We don't chase trends. We focus on building with stable, modern tools that
-                                            adapt as your
+                                            We don't chase trends. We build with stable, modern tools that adapt as your
                                             product and
                                             users evolve.
                                         </p>

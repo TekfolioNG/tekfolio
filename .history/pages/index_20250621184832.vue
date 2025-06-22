@@ -32,12 +32,10 @@ useHead({
     <LandingContainer>
       <LandingPunchLine></LandingPunchLine>
     </LandingContainer>
-    <LandingClientLogos></LandingClientLogos>
     <LandingContainer>
+      <LandingClientLogos></LandingClientLogos>
       <LandingWhyChoose></LandingWhyChoose>
-    </LandingContainer>
-    <LandingTechStack></LandingTechStack>
-    <LandingContainer>
+      <LandingTechStack></LandingTechStack>
       <LandingCta></LandingCta>
     </LandingContainer>
   </div>

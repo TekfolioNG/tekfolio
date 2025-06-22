@@ -35,9 +35,7 @@ useHead({
     <LandingClientLogos></LandingClientLogos>
     <LandingContainer>
       <LandingWhyChoose></LandingWhyChoose>
-    </LandingContainer>
-    <LandingTechStack></LandingTechStack>
-    <LandingContainer>
+      <LandingTechStack></LandingTechStack>
       <LandingCta></LandingCta>
     </LandingContainer>
   </div>

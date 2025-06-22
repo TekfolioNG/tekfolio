@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-
 definePageMeta({
   layout: "landing"
 });
@@ -35,9 +34,6 @@ useHead({
     <LandingClientLogos></LandingClientLogos>
     <LandingContainer>
       <LandingWhyChoose></LandingWhyChoose>
-    </LandingContainer>
-    <LandingTechStack></LandingTechStack>
-    <LandingContainer>
       <LandingCta></LandingCta>
     </LandingContainer>
   </div>

@@ -20,7 +20,7 @@
                 <!-- Right Column - Technology Grid (3/4) -->
                 <div class="lg:col-span-3">
                     <div
-                        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-12 lg:gap-4 xl:gap-3">
+                        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 lg:gap-2 xl:gap-1">
                         <div v-for="tech in allTechs" :key="tech.name"
                             class="group flex flex-col items-center transition-all duration-300 hover:-translate-y-1">
                             <div :class="[

@@ -1,16 +1,16 @@
 <template>
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header Text -->
             <div class="text-center mb-12">
-                <h4 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h4 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
                     Trusted by organizations you trust
                 </h4>
-                <p class="text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-lg text-gray-900 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                     From startups to large corporations, we simplify business processes with smart,
                     purposeful tech; so clients can focus on what they do best.
                 </p>
-                <p class="text-sm text-[#01348F] mt-2 font-medium"><b>
+                <p class="text-sm text-[#01348F] dark:text-gray-400 mt-2 font-medium"><b>
                         Click a logo to explore the digital solutions we built for them.
                     </b> </p>
             </div>
@@ -19,42 +19,47 @@
             <div class="relative overflow-hidden">
                 <!-- Gradient Overlays -->
                 <div
-                    class="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none">
+                    class="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-100 to-transparent dark:from-gray-900 z-10 pointer-events-none">
                 </div>
                 <div
-                    class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none">
+                    class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-100 to-transparent dark:from-gray-900 z-10 pointer-events-none">
                 </div>
 
                 <!-- Scrolling Logo Container -->
                 <div class="flex animate-scroll-seamless" :class="{ 'paused': isHovered }"
                     @mouseenter="isHovered = true" @mouseleave="isHovered = false">
                     <!-- First set of logos -->
-                    <div class="flex logo-set">
-                        <NuxtLink v-for="(logo, index) in logos" :key="`first-${index}`" :to="logo.link"
-                            class="flex-shrink-0 group" :class="getSpacingClass(index)">
-                            <div
-                                class="w-36 h-24 flex items-center justify-center p-2 transition-all duration-300 group-hover:scale-105">
-                                <img :src="logo.src" :alt="logo.alt"
-                                    class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
-                                    loading="lazy" />
-                            </div>
-                        </NuxtLink>
-                    </div>
-                    <!-- Duplicate set of logos for seamless loop -->
-                    <div class="flex logo-set">
-                        <NuxtLink v-for="(logo, index) in logos" :key="`second-${index}`" :to="logo.link"
-                            class="flex-shrink-0 group" :class="getSpacingClass(index)">
-                            <div
-                                class="w-36 h-24 flex items-center justify-center p-2 transition-all duration-300 group-hover:scale-105">
-                                <img :src="logo.src" :alt="logo.alt"
-                                    class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
-                                    loading="lazy" />
-                            </div>
-                        </NuxtLink>
-                    </div>
+                    <NuxtLink v-for="(logo, index) in logos" :key="`first-${index}`" :to="logo.link"
+                        class="flex-shrink-0 group" :class="getSpacingClass(index)">
+                        <div
+                            class="w-36 h-24 flex items-center justify-center p-2 transition-all duration-300 group-hover:scale-105">
+                            <img :src="logo.src" :alt="logo.alt"
+                                class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
+                                loading="lazy" />
+                        </div>
+                    </NuxtLink>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <NuxtLink v-for="(logo, index) in logos" :key="`second-${index}`" :to="logo.link"
+                        class="flex-shrink-0 group" :class="getSpacingClass(index)">
+                        <div
+                            class="w-36 h-24 flex items-center justify-center p-2 transition-all duration-300 group-hover:scale-105">
+                            <img :src="logo.src" :alt="logo.alt"
+                                class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
+                                loading="lazy" />
+                        </div>
+                    </NuxtLink>
                 </div>
             </div>
 
+            <!-- Optional: Show selected logo info -->
+            <div v-if="selectedLogo" class="mt-8 text-center">
+                <div class="inline-block bg-blue-50 dark:bg-blue-900/30 rounded-lg px-6 py-3">
+                    <p class="text-blue-800 dark:text-blue-200 font-medium">
+                        Loading case study...
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -108,32 +113,36 @@ onMounted(() => {
 
 <style scoped>
 @keyframes scroll-seamless {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
+    100% {
+        /* Move exactly the width of one complete set of logos */
+        /* This ensures the duplicate set aligns perfectly with the start position */
         transform: translateX(-50%);
     }
 }
 
 .animate-scroll-seamless {
-    display: flex;
-    width: fit-content;
-    animation: scroll-seamless 20s linear infinite;
+    animation: scroll-seamless 30s linear infinite;
+    /* Since we're moving exactly 50%, we can use a consistent duration */
 }
 
 .animate-scroll-seamless.paused {
     animation-play-state: paused;
 }
 
-.logo-set {
-    display: flex;
-    flex-shrink: 0;
+/* Responsive adjustments with consistent 50% movement */
+@media (max-width: 640px) {
+    .animate-scroll-seamless {
+        animation-duration: 25s;
+    }
 }
 
-/* Logo item styling */
-.animate-scroll-seamless>* {
-    flex: 0 0 auto;
+@media (max-width: 480px) {
+    .animate-scroll-seamless {
+        animation-duration: 20s;
+    }
 }
 </style>

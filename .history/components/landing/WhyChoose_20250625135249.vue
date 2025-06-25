@@ -106,7 +106,7 @@
                                         <Icon name="lucide:target" class="w-8 h-8 text-white feature-icon" />
                                     </div>
                                     <h3 class="text-xl font-bold mb-3 text-center">Strategy first <br>before
-                                        development</br></h3>
+                                        design & development</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Business
                                         goals first</p>
                                     <div class="flex-grow"></div>
@@ -154,8 +154,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:heart" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We're tech-led,
-                                        <br>human-centered</br>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Althought we're so much about tech,
+                                        <br>we're human-centered</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Next-gen
                                         tools, user-first experiences</p>
@@ -203,10 +203,9 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:users" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We're true partners,
-                                        <br>not just a vendor
-                                        </br>
-                                    </h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">We aim to be true business partners,
+                                        <br>not just another vendor
+                                        </br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Your goals
                                         become our mission</p>
                                     <div class="flex-grow"></div>
@@ -252,10 +251,9 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:trending-up" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We build for growth
-                                        <br>and
-                                        change</br>
-                                    </h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">We build for your organizational
+                                        <br>growth and
+                                        change</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Systems that
                                         scale with you</p>
                                     <div class="flex-grow"></div>
@@ -304,9 +302,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:message-circle" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Agile, transparent
-                                        <br>at every phase</br>
-                                    </h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Phased, Transparent Development</h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">No
                                         surprises, clear communication</p>
                                     <div class="flex-grow"></div>
@@ -352,8 +348,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:clock" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">On-time. On-budget. <br>No
-                                        drama.</br></h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">On-Time. On-Budget. <br>No
+                                        Drama.</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">We deliver
                                         when we say we will</p>
                                     <div class="flex-grow"></div>
@@ -399,7 +395,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:shield-check" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Future-ready <br>by default</br></h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Future-Ready <br>by Default</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Built to
                                         last and adapt</p>
                                     <div class="flex-grow"></div>

@@ -5,7 +5,7 @@
             <div class="text-center mb-16">
                 <!-- Kicker/Preamble -->
                 <p class="text-gray-300 text-sm md:text-base font-medium uppercase tracking-wider mb-4">
-                    But we can do more for you...
+                    But we do more...
                 </p>
 
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">

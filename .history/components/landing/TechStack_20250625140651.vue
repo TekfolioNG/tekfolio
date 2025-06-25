@@ -6,16 +6,15 @@
 
                 <!-- Left Column - Header Text (1/4) -->
                 <div class="lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:py-8">
-                    <!-- Kicker -->
-                    <h3 class="text-gray-900 text-sm md:text-base font-medium uppercase tracking-wider mb-3">
-                        Plus we're...
-                    </h3>
-
-                    <h2 class="text-4xl lg:text-5xl font-bold text-[#01348F] leading-tight mb-6">
-                        Quality & Security Certified
-                    </h2>
-
-                    <p class="text-lg text-gray-800 leading-relaxed">
+                    <div class="flex items-start gap-3 mb-6">
+                        <p class="text-gray-300 text-sm md:text-base font-medium uppercase tracking-wider mb-4">
+                            plus we're are
+                        </p>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-[#01348F] dark:text-white leading-tight">
+                            Quality & Security Certified
+                        </h2>
+                    </div>
+                    <p class="text-lg text-gray-800 dark:text-gray-300 leading-relaxed">
                         We use modern, intuitive technologies to build software that's secure, scalable, and
                         future-ready.
                     </p>

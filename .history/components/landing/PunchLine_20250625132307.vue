@@ -20,7 +20,7 @@
                 <!-- Content Column -->
                 <div class="lg:pl-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                        Own apps that fit <span
+                        Want apps that fit <span
                             class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">like
                             notes in a harmony?</span>
                     </h2>

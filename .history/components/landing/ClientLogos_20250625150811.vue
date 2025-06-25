@@ -1,16 +1,16 @@
 <template>
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header Text -->
             <div class="text-center mb-12">
-                <h4 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h4 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
                     Trusted by organizations you trust
                 </h4>
-                <p class="text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-lg text-gray-900 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                     From startups to large corporations, we simplify business processes with smart,
                     purposeful tech; so clients can focus on what they do best.
                 </p>
-                <p class="text-sm text-[#01348F] mt-2 font-medium"><b>
+                <p class="text-sm text-[#01348F] dark:text-gray-400 mt-2 font-medium"><b>
                         Click a logo to explore the digital solutions we built for them.
                     </b> </p>
             </div>
@@ -19,10 +19,10 @@
             <div class="relative overflow-hidden">
                 <!-- Gradient Overlays -->
                 <div
-                    class="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none">
+                    class="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-100 to-transparent dark:from-gray-900 z-10 pointer-events-none">
                 </div>
                 <div
-                    class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none">
+                    class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-100 to-transparent dark:from-gray-900 z-10 pointer-events-none">
                 </div>
 
                 <!-- Scrolling Logo Container -->

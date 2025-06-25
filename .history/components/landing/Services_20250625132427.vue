@@ -3,11 +3,6 @@
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <!-- Section Heading -->
             <div class="text-center mb-16">
-                <!-- Kicker/Preamble -->
-                <p class="text-gray-300 text-sm md:text-base font-medium uppercase tracking-wider mb-4">
-                    But we can do more for you...
-                </p>
-
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
                     Our full 'tekfolio' of services
                 </h2>

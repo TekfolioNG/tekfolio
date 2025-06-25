@@ -30,7 +30,7 @@
           No
           control. No thanks.</br>
         </p>
-        <p class="text-base md:text-lg lg:text-lg leading-relaxed">
+        <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-2">
           At <b>Tekfolio</b>, we design and create <strong class="text-[#01348F]">smart, simple, and secure</strong>
           digital solutions, fully custom, from the ground up — customized to your vision and engineered to scale. No
           cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software, built

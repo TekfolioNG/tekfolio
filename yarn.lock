@@ -8323,32 +8323,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ppil-website@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ppil-website@workspace:."
-  dependencies:
-    "@lottiefiles/dotlottie-vue": ^0.6.3
-    "@nuxt/image": ^1.10.0
-    "@nuxt/kit": ^3.5.0
-    "@nuxt/ui": ^3.0.2
-    "@paystack/inline-js": ^2.22.2
-    "@tailwindcss/postcss": ^4.1.4
-    "@tailwindcss/typography": ^0.5.10
-    autoprefixer: ^10.4.21
-    esbuild: ^0.19.5
-    gsap: latest
-    lucide-vue-next: ^0.474.0
-    nodemailer: ^6.10.0
-    nuxt: ^3.15.2
-    nuxt-icon: ^0.6.8
-    postcss: ^8.5.3
-    tailwindcss: ^4.1.4
-    typescript: latest
-    vue: ^3.4.3
-    vue-router: ^4.2.5
-  languageName: unknown
-  linkType: soft
-
 "prebuild-install@npm:^7.1.1":
   version: 7.1.3
   resolution: "prebuild-install@npm:7.1.3"
@@ -9621,6 +9595,32 @@ __metadata:
   checksum: 8485350c0688331c94493031f417df069b778aadb25598abdad51862e007c39d1dd5310702c7be4a6784731a174799d8885d2fde0484269aea205b724d7b2ffa
   languageName: node
   linkType: hard
+
+"tekfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tekfolio@workspace:."
+  dependencies:
+    "@lottiefiles/dotlottie-vue": ^0.6.3
+    "@nuxt/image": ^1.10.0
+    "@nuxt/kit": ^3.5.0
+    "@nuxt/ui": ^3.0.2
+    "@paystack/inline-js": ^2.22.2
+    "@tailwindcss/postcss": ^4.1.4
+    "@tailwindcss/typography": ^0.5.10
+    autoprefixer: ^10.4.21
+    esbuild: ^0.19.5
+    gsap: latest
+    lucide-vue-next: ^0.474.0
+    nodemailer: ^6.10.0
+    nuxt: ^3.15.2
+    nuxt-icon: ^0.6.8
+    postcss: ^8.5.3
+    tailwindcss: ^4.1.4
+    typescript: latest
+    vue: ^3.4.3
+    vue-router: ^4.2.5
+  languageName: unknown
+  linkType: soft
 
 "terser@npm:^5.17.4":
   version: 5.39.0

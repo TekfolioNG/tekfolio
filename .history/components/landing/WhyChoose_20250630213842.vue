@@ -104,8 +104,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:brain" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Smart software, <br>thoughtfully
-                                        built</br></h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Smart Software, <br>Thoughtfully
+                                        Built</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">No
                                         buzzwords. Just results.</p>
                                     <div class="flex-grow"></div>

@@ -18,23 +18,25 @@
         Your vision and goals are unique
       </h3>
       <h4 class="text-lg md:text-2xl lg:text-2xl text-gray-600 dark:text-gray-300 font-normal italic mb-10 md:mb-12">
-        Why shouldn't your brand's digital products?
+        Why shouldn't your digital assets?
       </h4>
       <div class="mx-auto text-gray-900 dark:text-gray-300">
         <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
-          Your business has outgrown generic WordPress templates or the patchwork of cobbled-together freelance teams
+          Your organization has outgrown generic WordPress templates or the patchwork of cobbled-together freelance
+          teams
           that never quite capture your brand. And those 'low-code-no-code', subscription-based web or mobile apps?
           <br>No backend. No
           flexibility.
           No
           control. No thanks.</br>
         </p>
-        <p class="text-base md:text-lg lg:text-lg leading-relaxed mb-6">
-          At <b>Tekfolio</b>, we design and create <strong class="text-[#009ADA]">smart, simple, and secure</strong>
-          digital solutions— fully custom, from the ground up — tailored to your vision and engineered to scale. No
-          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software that reflects
+        <p class="text-base md:text-lg lg:text-lg leading-relaxed">
+          At <b>Tekfolio</b>, we design and create <strong class="text-[#01348F]">smart, simple, and secure</strong>
+          digital solutions, fully custom, from the ground up — customized to your vision and engineered to scale. No
+          cookie-cutter clones. No vendor lock-ins. No Frankenstein teams. Just performant software, built
+          by a cohesive in-house team, that reflects
           your brand’s
-          unique edge — and proves it.
+          unique edge.
         </p>
 
       </div>

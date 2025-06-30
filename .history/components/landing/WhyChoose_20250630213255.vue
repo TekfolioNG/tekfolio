@@ -104,8 +104,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:brain" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Smart software, <br>thoughtfully
-                                        built</br></h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Smart Software, <br>Thoughtfully
+                                        Built</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">No
                                         buzzwords. Just results.</p>
                                     <div class="flex-grow"></div>
@@ -124,8 +124,8 @@
                                             class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             We don't overcomplicate things. Every line of code, every design decision,
                                             every recommendation we make has one goal: solving your real business
-                                            problems. We start by understanding your goals, then build the smartest path
-                                            to achieve them.
+                                            problems. We start by understanding what you're actually trying to achieve,
+                                            then build the smartest path to get you there.
                                         </p>
                                     </div>
                                     <NuxtLink to="/smart-solutions"
@@ -154,8 +154,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:sparkles" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Sophistication is
-                                        <br>simple</br>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Simple is
+                                        <br>sophisticated</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">True
                                         elegance hides complexity</p>

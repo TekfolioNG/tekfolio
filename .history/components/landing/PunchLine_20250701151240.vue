@@ -20,7 +20,7 @@
                 <!-- Content Column -->
                 <div class="lg:pl-12">
                     <h1
-                        class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight barlow-condensed">
+                        class="text-4xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight barlow-condensed">
                         Smart, custom e-solutions <span
                             class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"><br>that
                             fit like a glove<br></span>

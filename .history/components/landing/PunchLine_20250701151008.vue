@@ -19,12 +19,12 @@
 
                 <!-- Content Column -->
                 <div class="lg:pl-12">
-                    <h1
-                        class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight barlow-condensed">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight barlow-condensed">
                         Smart, custom e-solutions <span
-                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"><br>that
-                            fit like a glove<br></span>
-                    </h1>
+                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">that
+                            fit like a glove</span>
+                    </h2>
 
                     <p class="text-lg text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
                         Our team collaborates closely with you to build digital tools that drive your business

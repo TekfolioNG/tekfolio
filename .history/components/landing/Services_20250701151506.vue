@@ -8,7 +8,7 @@
                     But we can do more for you...
                 </p>
 
-                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white barlow-condensed">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white barlow-condensed">
                     Our full 'tekfolio' of services
                 </h2>
                 <div class="w-24 h-1 bg-white mx-auto"></div>

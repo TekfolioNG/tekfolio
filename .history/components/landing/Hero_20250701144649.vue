@@ -8,23 +8,29 @@
 
     <div class="container mx-auto px-4 md:pl-16 lg:pl-20 md:pr-4 h-full flex items-center pt-16 relative z-10">
       <div class="max-w-3xl text-white w-full md:ml-8 text-center md:text-left">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 barlow-condensed">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
           <div class="flex flex-col md:hidden">
             <div class="flex items-center justify-center space-x-2">
-              <span ref="wordSwitcherMobile" class="text-[blue-300] font-black word-switcher-effect text-3xl"></span>
+              <span ref="wordSwitcherMobile" class="text-[blue-300] font-black word-switcher-effect text-3xl"
+                style="font-family: 'Barlow Condensed', sans-serif;"></span>
               <span class="lowercase">business</span>
             </div>
 
-            <span class="lowercase">solutions that work</span>
+            <span class="lowercase">solutions that work
+              style="font-family: 'Barlow Condensed', sans-serif;"
+            </span>
           </div>
 
           <div class="hidden md:flex md:flex-wrap md:items-center">
             <span class="flex">
               <span ref="wordSwitcher"
-                class="text-blue-300 font-black inline-block min-w-[120px] mr-2 word-switcher-effect"></span>
+                class="text-blue-300 font-black inline-block min-w-[120px] mr-2 word-switcher-effect"
+                style="font-family: 'Barlow Condensed', sans-serif;"></span>
               <span class="lowercase">business</span>
             </span>
-            <span class="lowercase md:ml-2">solutions that work</span>
+            <span class="lowercase md:ml-2">solutions that work
+              style="font-family: 'Barlow Condensed', sans-serif;"
+            </span>
           </div>
         </h1>
 
@@ -208,13 +214,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Import Barlow Condensed font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-.barlow-condensed {
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
 /* Edge-to-edge coverage */
 .w-screen {
   width: 100vw;

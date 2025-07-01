@@ -28,7 +28,7 @@
           </div>
         </h1>
 
-        <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
+        <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white barlow-condensed">
           Achieve more with scalable, next-gen digital products. Our versed and innovative team
           <span class="hidden md:inline"><br /></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
@@ -38,11 +38,11 @@
 
         <!-- Buttons with Particle Burst Animation -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <NuxtLink to="/about" ref="primaryBtn" class="btn-primary btn-particle-burst"
+          <NuxtLink to="/about" ref="primaryBtn" class="btn-primary btn-particle-burst barlow-condensed"
             @mouseenter="triggerParticleBurst($event, 'primary')" @mouseleave="resetParticles($event)">
             <span class="btn-text">How We're Different</span>
           </NuxtLink>
-          <NuxtLink to="/contact" ref="secondaryBtn" class="btn-secondary btn-particle-burst"
+          <NuxtLink to="/contact" ref="secondaryBtn" class="btn-secondary btn-particle-burst barlow-condensed"
             @mouseenter="triggerParticleBurst($event, 'secondary')" @mouseleave="resetParticles($event)">
             <span class="btn-text">Request a Demo</span>
           </NuxtLink>

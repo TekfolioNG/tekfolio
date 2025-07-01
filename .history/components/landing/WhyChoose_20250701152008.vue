@@ -6,7 +6,7 @@
             <div class="relative mb-16">
                 <div class="text-center mb-12 max-w-3xl mx-auto">
                     <!-- Centralized Heading Content -->
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6 barlow-condensed">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 barlow-condensed">
                         Here's why ambitious brands prefer us as their go-to tech partner
                     </h2>
                     <div class="w-24 h-1 bg-[#01348F] mb-6 mx-auto"></div>

@@ -8,7 +8,7 @@
 
     <div class="container mx-auto px-4 md:pl-16 lg:pl-20 md:pr-4 h-full flex items-center pt-16 relative z-10">
       <div class="max-w-3xl text-white w-full md:ml-8 text-center md:text-left">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 barlow-condensed">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
           <div class="flex flex-col md:hidden">
             <div class="flex items-center justify-center space-x-2">
               <span ref="wordSwitcherMobile" class="text-[blue-300] font-black word-switcher-effect text-3xl"></span>
@@ -208,13 +208,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Import Barlow Condensed font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-.barlow-condensed {
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
 /* Edge-to-edge coverage */
 .w-screen {
   width: 100vw;

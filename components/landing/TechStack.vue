@@ -29,7 +29,7 @@
                             class="group flex flex-col items-center transition-all duration-300 hover:-translate-y-1">
                             <div :class="[
                                 'flex items-center justify-center',
-                                isGoogleCert(tech.image) ? 'w-28 h-28' : 'w-20 h-20'
+                                isGoogleCert(tech.image) ? 'w-20 h-28' : 'w-20 h-20'
                             ]">
                                 <img :src="tech.image" :alt="tech.name"
                                     class="w-full h-full object-contain group-hover:grayscale transition-all duration-300"

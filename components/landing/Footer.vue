@@ -105,8 +105,8 @@
                 <Icon name="heroicons:map-pin" class="h-5 w-5 text-[#D2691E] flex-shrink-0 mt-1" />
               </div>
               <div class="text-gray-300 text-sm">
-                <strong class="block text-white mb-1">Head Office:</strong>
-                Lagos, Nigeria
+                <strong class="block text-white mb-1">Office Address:</strong>
+                32 Owulade Street Irawo Bus Stop, Bako Estate, along Ikorodu Road Lagos
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
@@ -115,7 +115,7 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Tel:</strong>
-                +234 805 524 8406
+                +234 802 200 7759
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">

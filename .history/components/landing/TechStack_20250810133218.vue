@@ -1,8 +1,8 @@
 <template>
-    <section class="py-16 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
+    <section class="py-20 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
         <div class="container mx-auto px-16 max-w-7xl">
             <!-- Main Content - Side by Side Layout -->
-            <div class="grid lg:grid-cols-4 gap-16 items-start">
+            <div class="grid lg:grid-cols-4 gap-16 items-start mb-16">
 
                 <!-- Left Column - Header Text (1/4) -->
                 <div class="lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:py-8 text-center lg:text-left">

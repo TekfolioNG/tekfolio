@@ -6,8 +6,8 @@
             <div class="relative mb-16">
                 <div class="text-center mb-12 max-w-3xl mx-auto">
                     <!-- Centralized Heading Content -->
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6 barlow-condensed">
-                        Why ambitious brands love<br>working with us &#128522 </br>
+                    <h2 class="text-2xl md:text-5xl font-bold mb-6 barlow-condensed">
+                        Ambitious brands love us&#128522! <br>Here's why...</br>
                     </h2>
                     <div class="w-24 h-1 bg-[#01348F] mb-6 mx-auto"></div>
                     <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">
@@ -15,7 +15,7 @@
                         launching bold new ideas or refining what's already working, we're in it for the long game.
                     </p>
                     <p class="text-lg text-[#01348F] dark:text-blue-400 font-bold">
-                        It's why visionary organizations choose and stick with us.
+                        It's why forward-thinking founders and teams don't just choose us; they stick with us.
                     </p>
                 </div>
             </div>

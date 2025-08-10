@@ -1,8 +1,8 @@
 <template>
-    <section class="py-16 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
+    <section class="py-20 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
         <div class="container mx-auto px-16 max-w-7xl">
             <!-- Main Content - Side by Side Layout -->
-            <div class="grid lg:grid-cols-4 gap-16 items-start">
+            <div class="grid lg:grid-cols-4 gap-16 items-start mb-16">
 
                 <!-- Left Column - Header Text (1/4) -->
                 <div class="lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:py-8 text-center lg:text-left">
@@ -12,7 +12,7 @@
                     </h3>
 
                     <!-- Stacked Boxes Heading -->
-                    <div class="flex flex-wrap items-end gap-3 mb-6 justify-center lg:justify-start">
+                    <div class="flex flex-wrap items-end gap-3 mb-6 text-center lg:text-left">
                         <div
                             class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-4 py-3 -rotate-2 shadow-lg transform hover:rotate-0 hover:-translate-y-1 transition-all duration-300">
                             <span class="text-3xl lg:text-5xl font-bold barlow-condensed">Quality</span>

@@ -19,14 +19,14 @@
             <div class="relative overflow-hidden">
                 <!-- Gradient Overlays -->
                 <div
-                    class="absolute left-0 top-0 w-2 h-full bg-gradient-to-r from-gray-100/10 to-transparent pointer-events-none">
+                    class="absolute left-0 top-0 w-5 h-full bg-gradient-to-r from-gray-100 to-transparent pointer-events-none">
                 </div>
                 <div
-                    class="absolute right-0 top-0 w-2 h-full bg-gradient-to-l from-gray-100/10 to-transparent pointer-events-none">
+                    class="absolute right-0 top-0 w-5 h-full bg-gradient-to-l from-gray-100 to-transparent pointer-events-none">
                 </div>
 
                 <!-- Scrolling Logo Container -->
-                <div class="flex animate-scroll-seamless -mx-4" :class="{ 'paused': isHovered }"
+                <div class="flex animate-scroll-seamless" :class="{ 'paused': isHovered }"
                     @mouseenter="isHovered = true" @mouseleave="isHovered = false">
                     <!-- First set of logos -->
                     <div class="flex logo-set">

@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
+    <section class="py-20 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
         <div class="container mx-auto px-16 max-w-7xl">
             <!-- Main Content - Side by Side Layout -->
             <div class="grid lg:grid-cols-4 gap-16 items-start">

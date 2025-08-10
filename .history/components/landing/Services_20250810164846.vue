@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
+                                        class="text-2xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
                                         Enterprise Web
                                         Apps</h3>
                                     <p
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
+                                        class="text-2xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
                                         Business Mobile
                                         Apps</h3>
                                     <p
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
+                                        class="text-2xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
                                         Search Engine
                                         Optimization</h3>
                                     <p

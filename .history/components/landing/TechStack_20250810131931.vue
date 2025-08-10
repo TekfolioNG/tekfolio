@@ -1,36 +1,33 @@
 <template>
-    <section class="py-16 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
+    <section class="py-20 bg-gray-100 dark:from-gray-900 dark:to-slate-800">
         <div class="container mx-auto px-16 max-w-7xl">
             <!-- Main Content - Side by Side Layout -->
-            <div class="grid lg:grid-cols-4 gap-16 items-start">
+            <div class="grid lg:grid-cols-4 gap-16 items-start mb-16">
 
                 <!-- Left Column - Header Text (1/4) -->
-                <div class="lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:py-8 text-center lg:text-left">
-                    <!-- Kicker -->
+                <div class="relative">
                     <h3 class="text-gray-900 text-sm md:text-base font-medium uppercase tracking-wider mb-3">
                         Plus we're...
                     </h3>
 
-                    <!-- Stacked Boxes Heading -->
-                    <div class="flex flex-wrap items-end gap-3 mb-6 justify-center lg:justify-start">
+                    <div class="relative inline-block">
+                        <!-- Stacked box effect -->
                         <div
-                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-4 py-3 -rotate-2 shadow-lg transform hover:rotate-0 hover:-translate-y-1 transition-all duration-300">
-                            <span class="text-3xl lg:text-5xl font-bold barlow-condensed">Quality</span>
+                            class="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 transform -skew-y-3 -z-10">
                         </div>
                         <div
-                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-4 py-3 rotate-1 shadow-lg transform hover:rotate-0 hover:-translate-y-1 transition-all duration-300 -mb-2">
-                            <span class="text-3xl lg:text-5xl font-bold barlow-condensed">&amp; Security</span>
+                            class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 transform -skew-y-2 -z-10 opacity-80">
                         </div>
                         <div
-                            class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-4 py-3 -rotate-1 shadow-lg transform hover:rotate-0 hover:-translate-y-1 transition-all duration-300">
-                            <span class="text-3xl lg:text-5xl font-bold barlow-condensed">Certified</span>
+                            class="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 transform -skew-y-1 -z-10 opacity-60">
                         </div>
-                    </div>
 
-                    <p class="text-lg text-gray-900 leading-relaxed">
-                        We use modern, intuitive technologies to build software that's secure, scalable, and
-                        future-ready.
-                    </p>
+                        <!-- Main heading -->
+                        <h2
+                            class="relative text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 barlow-condensed px-4 py-2">
+                            Quality & Security Certified
+                        </h2>
+                    </div>
                 </div>
 
                 <!-- Right Column - Technology Grid (3/4) -->

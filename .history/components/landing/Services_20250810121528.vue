@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 md:py-18 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white w-full">
+    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white w-full">
         <div class="container mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
             <!-- Section Heading -->
             <div class="text-center mb-16">
@@ -8,10 +8,8 @@
                     But we can do more for you...
                 </p>
                 <h1
-                    class="text-3xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white barlow-condensed leading-tight">
-                    Our full <span
-                        class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">'tekfolio'</span>
-                    of services
+                    class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white barlow-condensed leading-tight">
+                    Our full <span class="text-blue-600 dark:text-blue-400">'tekfolio'</span> of services
                 </h1>
                 <div class="w-32 h-1.5 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
             </div>
@@ -22,100 +20,77 @@
                 <!-- Services Column -->
                 <div class="lg:col-span-3 space-y-8">
                     <!-- Service 1 -->
-                    <NuxtLink to="/web-dev" class="group block">
+                    <NuxtLink to="/services/web-development" class="group block">
                         <div
                             class="service-item p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
-                            <!-- Mobile: Stack vertically, Desktop: Horizontal -->
-                            <div
-                                class="flex flex-col items-center text-center space-y-4 lg:flex-row lg:items-start lg:text-left lg:space-y-0 lg:space-x-6">
+                            <div class="flex items-start space-x-6">
                                 <div
                                     class="w-16 h-16 icon-bg rounded-xl flex items-center justify-center shrink-0 transform group-hover:rotate-6 transition-transform duration-300">
                                     <Icon name="lucide:code" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Enterprise Web
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Enterprise Web
                                         Apps</h3>
-                                    <p
-                                        class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
+                                    <p class="text-blue-600 dark:text-blue-400 font-medium text-lg mb-3">
                                         High-performance with higher conversion</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We build
-                                        sleek, scalable, and
+                                    <p class="text-gray-600 dark:text-gray-300 text-base">We build sleek, scalable, and
                                         conversion-driven websites customized to your brand and goals.</p>
                                 </div>
-                                <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
-                                    class="hidden lg:block w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
+                                    class="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
                             </div>
                         </div>
                     </NuxtLink>
 
                     <!-- Service 2 -->
-                    <NuxtLink to="/app-dev" class="group block">
+                    <NuxtLink to="/services/app-development" class="group block">
                         <div
                             class="service-item p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
-                            <!-- Mobile: Stack vertically, Desktop: Horizontal -->
-                            <div
-                                class="flex flex-col items-center text-center space-y-4 lg:flex-row lg:items-start lg:text-left lg:space-y-0 lg:space-x-6">
+                            <div class="flex items-start space-x-6">
                                 <div
                                     class="w-16 h-16 icon-bg rounded-xl flex items-center justify-center shrink-0 transform group-hover:rotate-6 transition-transform duration-300">
                                     <Icon name="lucide:smartphone" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Business Mobile
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Business Mobile
                                         Apps</h3>
-                                    <p
-                                        class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
-                                        One codebase,
+                                    <p class="text-blue-600 dark:text-blue-400 font-medium text-lg mb-3">One codebase,
                                         all devices</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Launch apps
-                                        that run smoothly
+                                    <p class="text-gray-600 dark:text-gray-300 text-base">Launch apps that run smoothly
                                         on web, iOS, and Android — all from a single build.</p>
                                 </div>
-                                <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
-                                    class="hidden lg:block w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
+                                    class="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
                             </div>
                         </div>
                     </NuxtLink>
 
                     <!-- Service 3 -->
-                    <NuxtLink to="/seo" class="group block">
+                    <NuxtLink to="/services/seo" class="group block">
                         <div
                             class="service-item p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
-                            <!-- Mobile: Stack vertically, Desktop: Horizontal -->
-                            <div
-                                class="flex flex-col items-center text-center space-y-4 lg:flex-row lg:items-start lg:text-left lg:space-y-0 lg:space-x-6">
+                            <div class="flex items-start space-x-6">
                                 <div
                                     class="w-16 h-16 icon-bg rounded-xl flex items-center justify-center shrink-0 transform group-hover:rotate-6 transition-transform duration-300">
-                                    <Icon name="lucide:bar-chart-4" class="w-8 h-8 text-white" />
+                                    <Icon name="lucide:trending-up" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Search Engine
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Search Engine
                                         Optimization</h3>
-                                    <p
-                                        class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
-                                        Rank higher,
+                                    <p class="text-blue-600 dark:text-blue-400 font-medium text-lg mb-3">Rank higher,
                                         sell more</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We combine
-                                        SEO and content
+                                    <p class="text-gray-600 dark:text-gray-300 text-base">We combine SEO and content
                                         strategy to grow your visibility, engagement, and sales.</p>
                                 </div>
-                                <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
-                                    class="hidden lg:block w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
+                                    class="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:translate-x-2 transition-transform duration-300 mt-2" />
                             </div>
                         </div>
                     </NuxtLink>
                 </div>
 
-                <!-- Images Column - Now visible on mobile -->
-                <div class="lg:col-span-2 relative h-full min-h-[300px] lg:min-h-[500px]">
+                <!-- Images Column -->
+                <div class="lg:col-span-2 relative h-full min-h-[500px] hidden lg:block">
                     <!-- Main Image with Tilt and Scale Effect -->
                     <div
                         class="absolute top-0 left-0 w-full h-3/4 rounded-3xl overflow-hidden shadow-2xl z-20 animate-tilt-scale">
@@ -249,49 +224,14 @@
     background-color: #2563eb;
 }
 
-/* Mobile responsiveness improvements */
-@media (max-width: 1023px) {
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .lg\:col-span-3 {
+        grid-column: span 1;
+    }
 
-    /* Make images section more mobile-friendly */
     .lg\:col-span-2 {
-        min-height: 300px !important;
-        margin-top: 2rem;
-    }
-
-    /* Adjust service items for mobile stacking */
-    .service-item {
-        padding: 2rem 1.5rem;
-    }
-
-    /* Center icons and text on mobile */
-    .service-item h3 {
-        font-size: 1.5rem;
-    }
-
-    .service-item p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 640px) {
-
-    /* Further mobile optimizations */
-    .lg\:col-span-2 {
-        min-height: 250px !important;
-    }
-
-    .service-item {
-        padding: 1.5rem 1rem;
-    }
-
-    .service-item h3 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .service-item p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        grid-column: span 1;
     }
 }
 

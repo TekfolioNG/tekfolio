@@ -32,7 +32,7 @@
           <!-- Buttons -->
           <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
             <!-- Primary Button -->
-            <NuxtLink to="/contact"
+            <button
               class="group relative px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold rounded-xl hover:scale-105 hover:shadow-xl transform transition-all duration-300 inter-font text-base overflow-hidden">
               <span class="relative z-10">Start Your Project</span>
               <svg
@@ -45,7 +45,7 @@
               <div
                 class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out">
               </div>
-            </NuxtLink>
+            </button>
 
             <!-- Secondary Button -->
             <NuxtLink to="/case-studies"

@@ -16,13 +16,13 @@
             </div>
 
             <!-- Logo Carousel Container -->
-            <div class="relative overflow-hidden">
+            <div class="relative">
                 <!-- Gradient Overlays -->
                 <div
-                    class="absolute left-0 top-0 w-2 h-full bg-gradient-to-r from-gray-100/10 to-transparent pointer-events-none">
+                    class="absolute left-0 top-0 w-5 h-full bg-gradient-to-r from-gray-100 to-transparent -z-10 pointer-events-none">
                 </div>
                 <div
-                    class="absolute right-0 top-0 w-2 h-full bg-gradient-to-l from-gray-100/10 to-transparent pointer-events-none">
+                    class="absolute right-0 top-0 w-5 h-full bg-gradient-to-l from-gray-100 to-transparent -z-10 pointer-events-none">
                 </div>
 
                 <!-- Scrolling Logo Container -->

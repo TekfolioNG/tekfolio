@@ -16,7 +16,7 @@
             </div>
 
             <!-- Logo Carousel Container -->
-            <div class="relative overflow-hidden">
+            <div class="relative overflow-auto">
                 <!-- Gradient Overlays -->
                 <div
                     class="absolute left-0 top-0 w-2 h-full bg-gradient-to-r from-gray-100/10 to-transparent pointer-events-none">

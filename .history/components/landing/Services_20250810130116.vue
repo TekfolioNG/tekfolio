@@ -33,9 +33,7 @@
                                     <Icon name="lucide:code" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Enterprise Web
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Enterprise Web
                                         Apps</h3>
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
@@ -63,9 +61,7 @@
                                     <Icon name="lucide:smartphone" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Business Mobile
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Business Mobile
                                         Apps</h3>
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
@@ -91,12 +87,10 @@
                                 class="flex flex-col items-center text-center space-y-4 lg:flex-row lg:items-start lg:text-left lg:space-y-0 lg:space-x-6">
                                 <div
                                     class="w-16 h-16 icon-bg rounded-xl flex items-center justify-center shrink-0 transform group-hover:rotate-6 transition-transform duration-300">
-                                    <Icon name="lucide:bar-chart-4" class="w-8 h-8 text-white" />
+                                    <Icon name="lucide:target" class="w-8 h-8 text-white" />
                                 </div>
                                 <div class="flex-1">
-                                    <h3
-                                        class="text-3xl font-bold text-gray-900 dark:text-white mb-2 barlow-condensed leading-tight">
-                                        Search Engine
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Search Engine
                                         Optimization</h3>
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">

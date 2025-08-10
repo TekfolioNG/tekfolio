@@ -97,7 +97,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             Every line of code, every design decision, every recommendation we make has
                                             one goal: solving your real business
                                             problems.
@@ -142,7 +142,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             We don't overcomplicate things. We create solutions that your
                                             team adopts immediately. That means your app is interactive and
                                             beautifully simple. Your target users will love it instantly.
@@ -193,7 +193,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             Security isn't a checkbox we tick at the end; it's built into every decision
                                             we make. You sleep well, your users trust you, and compliance just works.
                                         </p>
@@ -239,7 +239,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             When you succeed, we succeed. So, expect us to challenge assumptions,
                                             suggest
                                             better approaches, and think three steps ahead of your competition.
@@ -285,7 +285,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             We know you want to explore
                                             technology as a competitive advantage. And we're your joker. With us by your
                                             side,
@@ -335,7 +335,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             We respect your timeline because we respect your business. No last-minute
                                             surprises, no missed deadlines, no excuses. We plan properly, communicate
                                             clearly, and deliver exactly when promised.
@@ -381,7 +381,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             With every digital asset we develop, configure, or integrate, we add a
                                             competitive edge that makes your brand pop in crowded market. As your tech
                                             partner, we ensure
@@ -429,7 +429,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
                                     <div class="flex-grow flex items-center justify-center">
                                         <p
-                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            class="text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
                                             The relationship doesn't end at launch. Need a quick fix? Want to add a
                                             feature? Scaling up? We're here. Not because we want to upsell you, but
                                             because great partnerships create great results.

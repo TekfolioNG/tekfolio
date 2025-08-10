@@ -18,7 +18,7 @@
           <!-- Headline -->
           <h2 class="text-3xl md:text-5xl font-bold mb-6 barlow-condensed text-white leading-tight inter-font">
             Let's Build Something <span
-              class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-500 bg-clip-text text-transparent">Smart,
+              class="bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">Smart,
               Simple & Secure</span> Together
           </h2>
 

@@ -31,9 +31,9 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:shield-check" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:award" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">First-class
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">First-class
                                         quality,
                                         <br>no
                                         compromises</br>
@@ -83,10 +83,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:brain" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Smart software,
-                                        <br>thoughtfully
-                                        built</br>
-                                    </h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Smart software, <br>thoughtfully
+                                        built</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">No
                                         buzzwords. Just results.</p>
                                     <div class="flex-grow"></div>
@@ -127,7 +125,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:lightbulb" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:sparkles" class="w-8 h-8 text-white feature-icon" />
                                     </div>
                                     <h3 class="text-xl font-bold mb-3 text-center">Sophistication =
                                         <br>simple</br>
@@ -165,6 +163,151 @@
                 </div>
             </div>
 
+            <!-- Service Cards - Second Row (3 cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-12 px-4 sm:px-0">
+
+                <div class="group feature-card">
+                    <div class="card-container">
+                        <div class="card-inner">
+                            <!-- Front Side -->
+                            <div class="card-front">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
+                                    <div
+                                        class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
+                                        <Icon name="lucide:shield-check" class="w-8 h-8 text-white feature-icon" />
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Security without
+                                        <br>the headaches
+                                        </br>
+                                    </h3>
+                                    <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Protected by
+                                        default, not by afterthought</p>
+                                    <div class="flex-grow"></div>
+                                    <div
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link">
+                                        <span class="mr-2 font-bold">Here's How</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="card-back">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
+                                    <div class="flex-grow flex items-center justify-center">
+                                        <p
+                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            Security isn't a checkbox we tick at the end; it's built into every decision
+                                            we make. You sleep well, your users trust you, and compliance just works.
+                                        </p>
+                                    </div>
+                                    <NuxtLink to="/case-studies"
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link hover:text-blue-600 dark:hover:text-blue-300 mt-auto">
+                                        <span class="mr-2 font-bold">Learn More</span>
+                                        <Icon name="lucide:arrow-right" class="w-5 h-5 cta-arrow" />
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 5 -->
+                <div class="group feature-card">
+                    <div class="card-container">
+                        <div class="card-inner">
+                            <!-- Front Side -->
+                            <div class="card-front">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
+                                    <div
+                                        class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
+                                        <Icon name="lucide:heart-handshake" class="w-8 h-8 text-white feature-icon" />
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Your vision becomes
+                                        <br>our mission</br>
+                                    </h3>
+                                    <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">We're
+                                        invested, not just hired</p>
+                                    <div class="flex-grow"></div>
+                                    <div
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link">
+                                        <span class="mr-2 font-bold">Here's How</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="card-back">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
+                                    <div class="flex-grow flex items-center justify-center">
+                                        <p
+                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            When you succeed, we succeed. So, expect us to challenge assumptions,
+                                            suggest
+                                            better approaches, and think three steps ahead of your competition.
+                                        </p>
+                                    </div>
+                                    <NuxtLink to="/case-studies"
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link hover:text-blue-600 dark:hover:text-blue-300 mt-auto">
+                                        <span class="mr-2 font-bold">Learn More</span>
+                                        <Icon name="lucide:arrow-right" class="w-5 h-5 cta-arrow" />
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature Card 6 -->
+                <div class="group feature-card">
+                    <div class="card-container">
+                        <div class="card-inner">
+                            <!-- Front Side -->
+                            <div class="card-front">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
+                                    <div
+                                        class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
+                                        <Icon name="lucide:rocket" class="w-8 h-8 text-white feature-icon" />
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Tekfolio means digital
+                                        <br>transformation</br>
+                                    </h3>
+                                    <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Not just
+                                        another website or app</p>
+                                    <div class="flex-grow"></div>
+                                    <div
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link">
+                                        <span class="mr-2 font-bold">Here's How</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="card-back">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col justify-center">
+                                    <div class="flex-grow flex items-center justify-center">
+                                        <p
+                                            class="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-6 leading-relaxed text-center">
+                                            We know you want to explore
+                                            technology as a competitive advantage. And we're your joker. With us by your
+                                            side,
+                                            digital transformation is no longer a buzzword; it becomes a bottom-line
+                                            impact.
+                                        </p>
+                                    </div>
+                                    <NuxtLink to="/case-studies"
+                                        class="flex items-center justify-center text-[#01348F] dark:text-blue-400 cta-link hover:text-blue-600 dark:hover:text-blue-300 mt-auto">
+                                        <span class="mr-2 font-bold">Learn More</span>
+                                        <Icon name="lucide:arrow-right" class="w-5 h-5 cta-arrow" />
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Service Cards - Third Row (3 cards) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 px-4 sm:px-0">
                 <div class="group feature-card">
@@ -178,8 +321,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:calendar-check" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Your deadlines
-                                        <br>are sacred</br>
+                                    <h3 class="text-xl font-bold mb-3 text-center">Your deadlines <br>are sacred</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">When we say
                                         Tuesday, we mean Tuesday</p>
@@ -222,11 +364,10 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:rocket" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:trending-up" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We keep you ahead
-                                        <br>of the
-                                        crowd</br>
+                                    <h3 class="text-xl font-bold mb-3 text-center">We keep you ahead <br>of your
+                                        industry</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Lead, don't
                                         follow</p>
@@ -274,10 +415,8 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:handshake" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We're partners
-                                        <br>for the long
-                                        haul</br>
-                                    </h3>
+                                    <h3 class="text-xl font-bold mb-3 text-center">We're partners <br>for the long
+                                        haul</br></h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Still here
                                         when you need us</p>
                                     <div class="flex-grow"></div>

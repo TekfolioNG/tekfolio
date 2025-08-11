@@ -127,7 +127,7 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:lightbulb" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:sparkles" class="w-8 h-8 text-white feature-icon" />
                                     </div>
                                     <h3 class="text-xl font-bold mb-3 text-center">Sophistication =
                                         <br>simple</br>
@@ -222,11 +222,11 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:rocket" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:trending-up" class="w-8 h-8 text-white feature-icon" />
                                     </div>
                                     <h3 class="text-xl font-bold mb-3 text-center">We keep you ahead
-                                        <br>of the
-                                        crowd</br>
+                                        <br>of your
+                                        industry</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Lead, don't
                                         follow</p>

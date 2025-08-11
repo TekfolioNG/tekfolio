@@ -225,8 +225,8 @@
                                         <Icon name="lucide:rocket" class="w-8 h-8 text-white feature-icon" />
                                     </div>
                                     <h3 class="text-xl font-bold mb-3 text-center">We keep you ahead
-                                        <br>of the
-                                        crowd</br>
+                                        <br>of your
+                                        industry</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Lead, don't
                                         follow</p>

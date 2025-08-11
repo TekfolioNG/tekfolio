@@ -33,7 +33,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:shield-check" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">First-class
+                                    <h3 class="text-2xl font-bold mb-3 text-center">First-class
                                         quality,
                                         <br>no
                                         compromises</br>
@@ -83,7 +83,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:brain" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Smart software,
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">Smart software,
                                         <br>thoughtfully
                                         built</br>
                                     </h3>
@@ -127,9 +127,9 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:lightbulb" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:sparkles" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Sophistication =
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">Sophistication =
                                         <br>simple</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">True
@@ -165,6 +165,13 @@
                 </div>
             </div>
 
+            <!-- Service Cards - Second Row (3 cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-12 px-4 sm:px-0">
+
+
+
+            </div>
+
             <!-- Service Cards - Third Row (3 cards) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 px-4 sm:px-0">
                 <div class="group feature-card">
@@ -178,7 +185,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:calendar-check" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">Your deadlines
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">Your deadlines
                                         <br>are sacred</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">When we say
@@ -222,11 +229,11 @@
                                     class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 h-full flex flex-col">
                                     <div
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
-                                        <Icon name="lucide:rocket" class="w-8 h-8 text-white feature-icon" />
+                                        <Icon name="lucide:trending-up" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We keep you ahead
-                                        <br>of the
-                                        crowd</br>
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">We keep you ahead
+                                        <br>of your
+                                        industry</br>
                                     </h3>
                                     <p class="text-[#01348F] dark:text-blue-400 font-bold mb-4 text-center">Lead, don't
                                         follow</p>
@@ -274,7 +281,7 @@
                                         class="w-16 h-16 icon-bg rounded-lg flex items-center justify-center mb-6 mx-auto icon-container">
                                         <Icon name="lucide:handshake" class="w-8 h-8 text-white feature-icon" />
                                     </div>
-                                    <h3 class="text-xl font-bold mb-3 text-center">We're partners
+                                    <h3 class="text-2xl font-bold mb-3 text-center barlow-condensed">We're partners
                                         <br>for the long
                                         haul</br>
                                     </h3>

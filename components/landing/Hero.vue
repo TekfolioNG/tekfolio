@@ -61,6 +61,7 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 
 // Import images with new paths
+import carRentalImage from '~/assets/img/car-rental-bot.png';
 import oilGasImage from '~/assets/img/oil-and-gas-bot.png';
 import realEstateImage from '~/assets/img/real-estate-bot.png';
 import travelImage from '~/assets/img/travel-agency-bot.jpg';
@@ -68,8 +69,16 @@ import travelImage from '~/assets/img/travel-agency-bot.jpg';
 const SLIDE_DURATION = 8000; // 8 seconds per slide
 const slides = [
   {
+    image: carRentalImage,
+    alt: 'Car Rental Services',
+    title: 'Safe, Fast, and Affordable Car Rentals',
+    description: 'Inbound and outbound Lagos travel for individuals, families, and groups — in comfortable cars, hatchbacks, and buses.',
+    buttonLink: '/car-rentals',
+    buttonText: 'Book Your Ride'
+  },
+  {
     image: travelImage,
-    alt: 'Travel Agency Services',
+    alt: 'Car Rental Services',
     title: 'Travel the World with Ease',
     description: 'Local or international, we handle all your flight and travel bookings, totally hassle-free.',
     buttonLink: '/travel',

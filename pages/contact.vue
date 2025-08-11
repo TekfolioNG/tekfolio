@@ -338,7 +338,8 @@ useHead({
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Call Us</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Available Monday to Friday, 9AM-6PM</p>
             <a href="tel:+1234567890" class="text-[#D2691E] font-semibold hover:text-amber-600 transition-colors">
-              +234 802 200 7759
+              +234 805 524 8406
+              <br>+234 802 200 7759</br>
             </a>
           </div>
 

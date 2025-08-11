@@ -176,38 +176,6 @@ useHead({
             </div>
         </section>
 
-        <!-- Car Rentals -->
-        <section class="py-20 bg-white dark:bg-gray-800">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div class="lg:order-2 space-y-6">
-                            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
-                                Car Rentals
-                            </h2>
-                            <p class="text-lg text-gray-900 dark:text-gray-300">
-                                Need a ride? We arrange clean, insured, and reliable rental cars within Nigeria and
-                                select international cities, with or without a driver.
-                            </p>
-                            <NuxtLink to="/contact"
-                                class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#D2691E] to-amber-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
-                                Rent A Car
-                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </NuxtLink>
-                        </div>
-                        <div class="lg:order-1 relative">
-                            <img src="assets/img/car-rental-bot.png" alt="Car Rentals"
-                                class="w-full h-80 object-cover rounded-2xl shadow-lg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Travel Insurance -->
         <section class="py-20">
             <div class="container mx-auto px-6">

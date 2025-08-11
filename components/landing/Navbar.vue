@@ -4,9 +4,9 @@ import { onMounted, onUnmounted, ref } from 'vue';
 const menuitems = [
   { title: "HOME", path: "/" },
   { title: "TRAVEL", path: "/travel" },
+  { title: "CAR RENTALS", path: "/car-rentals" },
   { title: "PROPERTIES", path: "/properties" },
   { title: "OIL & GAS", path: "/oil-gas" },
-  { title: "CONTACT", path: "/contact" },
 ];
 
 const open = ref(false);
@@ -61,7 +61,7 @@ onUnmounted(() => {
                 <a href="tel:+2348022007759"
                   :class="isScrolled ? 'text-gray-700 hover:text-[#D2691E]' : 'text-gray-200 hover:text-white'"
                   class="text-sm font-medium transition-colors">
-                  +234 802 200 7759
+                  +234 805 524 8406, 0802 200 7759
                 </a>
               </div>
               <div class="flex items-center justify-end space-x-1.5">

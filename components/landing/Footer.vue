@@ -115,7 +115,8 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Tel:</strong>
-                +234 802 200 7759
+                +234 805 524 8406
+                <br>+234 802 200 7759</br>
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">

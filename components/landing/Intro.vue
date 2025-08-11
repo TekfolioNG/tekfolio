@@ -42,7 +42,7 @@
       </div>
 
       <!-- Service highlights grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
 
         <!-- Travel & Ticketing -->
         <div
@@ -59,6 +59,29 @@
               </p>
             </div>
             <NuxtLink to="/travel"
+              class="text-[#D2691E] font-medium text-sm hover:text-[#B8591A] transition-colors duration-200 flex items-center">
+              Learn More
+              <Icon name="heroicons:chevron-right"
+                class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+            </NuxtLink>
+          </div>
+        </div>
+
+        <!-- Car Rentals -->
+        <div
+          class="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+          <div class="flex flex-col items-center text-center space-y-4">
+            <div
+              class="w-16 h-16 bg-[#D2691E] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <Icon name="heroicons:truck" class="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Car Rentals</h3>
+              <p class="text-base text-gray-900 leading-relaxed">
+                Safe, fast, and affordable rentals for individuals, families, and groups.
+              </p>
+            </div>
+            <NuxtLink to="/car-rentals"
               class="text-[#D2691E] font-medium text-sm hover:text-[#B8591A] transition-colors duration-200 flex items-center">
               Learn More
               <Icon name="heroicons:chevron-right"
@@ -96,7 +119,7 @@
           <div class="flex flex-col items-center text-center space-y-4">
             <div
               class="w-16 h-16 bg-[#D2691E] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Icon name="heroicons:truck" class="w-8 h-8 text-white" />
+              <Icon name="heroicons:fire" class="w-8 h-8 text-white" />
             </div>
             <div>
               <h3 class="text-lg font-bold text-gray-900 mb-2">Oil & Gas Supply</h3>

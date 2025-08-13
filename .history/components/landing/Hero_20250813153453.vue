@@ -8,7 +8,7 @@
 
     <div class="container mx-auto px-4 md:pl-16 lg:pl-20 md:pr-4 h-full flex items-center pt-16 relative z-10">
       <div class="max-w-3xl text-white w-full md:ml-8 text-center md:text-left">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 barlow-condensed">
           <div class="flex flex-col md:hidden">
             <div class="flex items-center justify-center space-x-2">
               <span ref="wordSwitcherMobile" class="text-[blue-300] font-black word-switcher-effect text-3xl"></span>
@@ -29,11 +29,11 @@
         </h1>
 
         <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
-          Achieve more with scalable, next-gen digital products. Our versed and innovative team
+          Achieve more with scalable, next-gen digital products. Our forward-thinking and experienced team
           <span class="hidden md:inline"><br /></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
-          secure, and user-optimized software and strategies.
-          <br><b><i>Faster than you'd imagined.</i></b></br>
+          secure, and user-optimized software and e-marketing strategies.
+          <b><i>Faster than you'd imagined.</i></b>
         </p>
 
         <!-- Buttons with Particle Burst Animation -->
@@ -208,6 +208,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* Import Barlow Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.barlow-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 /* Edge-to-edge coverage */
 .w-screen {
   width: 100vw;
@@ -242,8 +249,8 @@ onMounted(() => {
 }
 
 .btn-primary:hover {
-  background-color: #1d8ad8;
-  border-color: #1d8ad8;
+  background-color: #1A73E8;
+  border-color: #1A73E8;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(29, 138, 216, 0.3);
 }
@@ -257,7 +264,7 @@ onMounted(() => {
 
 .btn-secondary:hover {
   background-color: white;
-  color: #01348F;
+  color: #00007E;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
@@ -331,7 +338,7 @@ onMounted(() => {
 
   /* Mobile touch interactions */
   .btn-primary:active {
-    background-color: #1d8ad8;
+    background-color: #0078d4;
     transform: translateY(-2px) scale(1.02);
   }
 

@@ -67,15 +67,13 @@
 
         <!-- Right Column - Lottie Animation -->
         <div class="flex justify-center lg:justify-end">
-          <div class="w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-            <div class="relative">
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-blue-400/50 to-blue-400/60 rounded-3xl transform rotate-6">
-              </div>
-              <div class="relative bg-white/85 rounded-3xl shadow-2xl">
-                <DotLottieVue class="w-full h-full sm:h-80 md:h-[28rem] lg:h-[32rem] xl:h-[32rem] 2xl:h-[36rem]"
-                  autoplay loop src="https://lottie.host/2611cf13-290b-4bf0-a754-78b0849f114e/pXxDlFafiG.lottie" />
-              </div>
+          <div class="relative w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#99cc33]/30 to-[#8bb829]/30 rounded-3xl transform rotate-6">
+            </div>
+            <div class="relative bg-white rounded-3xl shadow-4xl">
+              <DotLottieVue class="w-full h-72 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] 2xl:h-[36rem]" autoplay loop
+                src="https://lottie.host/2611cf13-290b-4bf0-a754-78b0849f114e/pXxDlFafiG.lottie" />
             </div>
           </div>
         </div>

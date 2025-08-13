@@ -29,11 +29,11 @@
         </h1>
 
         <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
-          Achieve more with scalable, next-gen digital products. Our versed and innovative team
-          <span class="hidden md:inline"><br /></span>
+          Achieve more with scalable, next-gen digital products. Our forward-thinking and experienced team
+          <span class="hidden md:inline"></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
-          secure, and user-optimized software and strategies.
-          <br><b><i>Faster than you'd imagined.</i></b></br>
+          secure, and user-optimized software and e-marketing strategies.
+          <b><i>Faster than you'd imagined.</i></b>
         </p>
 
         <!-- Buttons with Particle Burst Animation -->

@@ -28,21 +28,21 @@
           </div>
         </h1>
 
-        <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white barlow-condensed">
-          Achieve more with scalable, next-gen digital products. Our versed and innovative team
-          <span class="hidden md:inline"><br /></span>
+        <p class="text-lg md:text-xl mt-6 mb-10 leading-relaxed text-white">
+          Achieve more with scalable, next-gen digital products. Our forward-thinking and experienced team
+          <span class="hidden md:inline"></span>
           of tech geeks breathe life into your vision and help you maximize your business's potential with modern,
-          secure, and user-optimized software and strategies.
-          <br><b><i>Faster than you'd imagined.</i></b></br>
+          secure, and user-optimized software and e-marketing strategies.
+          <b><i>Faster than you'd imagined.</i></b>
         </p>
 
         <!-- Buttons with Particle Burst Animation -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <NuxtLink to="/about" ref="primaryBtn" class="btn-primary btn-particle-burst barlow-condensed"
+          <NuxtLink to="/about" ref="primaryBtn" class="btn-primary btn-particle-burst"
             @mouseenter="triggerParticleBurst($event, 'primary')" @mouseleave="resetParticles($event)">
             <span class="btn-text">How We're Different</span>
           </NuxtLink>
-          <NuxtLink to="/contact" ref="secondaryBtn" class="btn-secondary btn-particle-burst barlow-condensed"
+          <NuxtLink to="/contact" ref="secondaryBtn" class="btn-secondary btn-particle-burst"
             @mouseenter="triggerParticleBurst($event, 'secondary')" @mouseleave="resetParticles($event)">
             <span class="btn-text">Request a Demo</span>
           </NuxtLink>
@@ -249,8 +249,8 @@ onMounted(() => {
 }
 
 .btn-primary:hover {
-  background-color: #1d8ad8;
-  border-color: #1d8ad8;
+  background-color: #1A73E8;
+  border-color: #1A73E8;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(29, 138, 216, 0.3);
 }
@@ -264,7 +264,7 @@ onMounted(() => {
 
 .btn-secondary:hover {
   background-color: white;
-  color: #01348F;
+  color: #00007E;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
@@ -338,7 +338,7 @@ onMounted(() => {
 
   /* Mobile touch interactions */
   .btn-primary:active {
-    background-color: #1d8ad8;
+    background-color: #0078d4;
     transform: translateY(-2px) scale(1.02);
   }
 

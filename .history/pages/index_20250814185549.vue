@@ -30,14 +30,7 @@ useSeoMeta({
     alt: 'Tekfolio - Modern Web Development & Cloud Solutions'
   },
   twitterImage: 'https://tekfol.io/tekfolio-home.png'
-}),
-
-  useHead({
-    meta: [
-      { property: 'og:image:type', content: 'image/png' },
-      { property: 'og:image:secure_url', content: 'https://tekfol.io/tekfolio-home.png' }
-    ]
-  })
+})
 
 
 

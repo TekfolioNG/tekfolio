@@ -74,7 +74,8 @@
                                         all devices</p>
                                     <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Launch apps
                                         that run smoothly
-                                        on web, iOS, and Android — all from a single build.</p>
+                                        on web, iOS, and Android; all from a single build. We design for performance,
+                                        user engagement, and easy updates so you can reach your audience anywhere.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -102,9 +103,10 @@
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         Secure, scalable, future-ready</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Migrate
-                                        your systems to the cloud with enterprise-grade security, automated backups, and
-                                        99.9% uptime guarantees.</p>
+                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Transition
+                                        to the cloud with zero guesswork. With enterprise-grade security, automated
+                                        backups and 99.9% uptime guarantees, , we ensure you get the agility,
+                                        scalability, and protection your business needs to compete globally.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -149,23 +151,15 @@
                 <div class="lg:col-span-2 relative h-full min-h-[300px] lg:min-h-[600px]">
                     <!-- Main Image with Tilt and Scale Effect -->
                     <div
-                        class="absolute top-0 left-0 w-full h-2/5 rounded-3xl overflow-hidden shadow-2xl z-20 animate-tilt-scale">
+                        class="absolute top-0 left-0 w-full h-3/4 rounded-3xl overflow-hidden shadow-2xl z-20 animate-tilt-scale">
                         <img src="/assets/img/coding-tekfolio.jpg" alt="Web development"
                             class="w-full h-full object-cover transition-all duration-1000 hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
                     </div>
 
-                    <!-- Cloud Migration Image -->
+                    <!-- Secondary Image with Parallax Effect -->
                     <div
-                        class="absolute top-1/3 right-0 w-3/4 h-1/3 rounded-2xl overflow-hidden shadow-xl z-30 animate-parallax">
-                        <img src="/assets/img/cloud-migration-tekfolio.jpg" alt="Cloud migration and security"
-                            class="w-full h-full object-cover transition-all duration-1000 hover:scale-105" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-
-                    <!-- API Development Image -->
-                    <div
-                        class="absolute bottom-0 left-0 w-4/5 h-1/3 rounded-2xl overflow-hidden shadow-xl z-25 animate-float">
+                        class="absolute bottom-0 right-0 w-4/5 h-2/5 rounded-2xl overflow-hidden shadow-xl z-30 animate-parallax">
                         <img src="/assets/img/api-tekfolio.jpg" alt="API development"
                             class="w-full h-full object-cover transition-all duration-1000 hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -174,9 +168,7 @@
                     <!-- Decorative Elements -->
                     <div class="absolute top-8 right-8 w-4 h-4 bg-blue-500 rounded-full opacity-80 animate-pulse"></div>
                     <div
-                        class="absolute bottom-16 right-8 w-3 h-3 bg-emerald-500 rounded-full opacity-60 animate-pulse-slow">
-                    </div>
-                    <div class="absolute top-1/2 left-4 w-2 h-2 bg-purple-500 rounded-full opacity-70 animate-pulse">
+                        class="absolute bottom-16 left-8 w-3 h-3 bg-emerald-500 rounded-full opacity-60 animate-pulse-slow">
                     </div>
                 </div>
             </div>
@@ -255,23 +247,18 @@
     }
 }
 
-/* Floating Animation for third image */
-@keyframes float {
+@keyframes pulse-slow {
 
     0%,
     100% {
-        transform: translateY(0) scale(1);
-        filter: brightness(1);
+        opacity: 0.6;
+        transform: scale(1);
     }
 
     50% {
-        transform: translateY(-5px) scale(1.01);
-        filter: brightness(1.02);
+        opacity: 0.8;
+        transform: scale(1.05);
     }
-}
-
-.animate-float {
-    animation: float 10s ease-in-out infinite 4s;
 }
 
 .animate-tilt-scale {

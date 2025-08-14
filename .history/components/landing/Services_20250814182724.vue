@@ -41,9 +41,9 @@
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         Cloud-native platforms that drive revenue</p>
                                     <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We
-                                        transform static websites into modern, cloud-based applications with integrated
-                                        payments, e-commerce, CRMs, ERPs, dashboards, analytics, and real-time features
-                                        that deliver measurable business value.</p>
+                                        transform static websites into modern, cloud-based web applications with
+                                        integrated payments, e-commerce, CRMs, ERPs, dashboards, analytics, and
+                                        real-time features that drive real business value.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -143,7 +143,7 @@
                                         visibility into market leadership with qualified traffic, higher
                                         engagement, and measurable impacts in competitive markets. More clicks,
                                         better
-                                        conversions, higher sales, stronger brand authority.
+                                        conversions, higher sales, and stronger brand authority.
                                     </p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->

@@ -40,10 +40,12 @@
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         Cloud-native platforms that drive revenue</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We
-                                        transform static websites into modern, cloud-based applications with integrated
-                                        payments, e-commerce, CRMs, ERPs, dashboards, analytics, and real-time features
-                                        that deliver measurable business value.</p>
+                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We replace
+                                        your existing static website with
+                                        modern, cloud-based, and interactive web applications that integrate payment
+                                        systems, e-commerce, CRMs, ERPs, user
+                                        dashboards, analytics, and real-time features that generate actual business
+                                        value.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -72,12 +74,9 @@
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         One codebase,
                                         all devices</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Launch
-                                        apps
+                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Launch apps
                                         that run smoothly
-                                        on web, iOS, and Android; all from a single build. We design for performance,
-                                        user engagement, and easy updates so you can reach your audience anywhere.
-                                    </p>
+                                        on web, iOS, and Android — all from a single build.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -105,12 +104,9 @@
                                     <p
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         Secure, scalable, future-ready</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">
-                                        Transition to the cloud with zero guesswork. With enterprise-grade security,
-                                        automated
-                                        backups and 99.9% uptime guarantees, we ensure you get the agility,
-                                        scalability, and protection your business needs to compete globally.
-                                    </p>
+                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Migrate
+                                        your systems to the cloud with enterprise-grade security, automated backups, and
+                                        99.9% uptime guarantees.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"
@@ -139,12 +135,9 @@
                                         class="text-blue-600 dark:text-blue-400 text-sm md:text-base font-semibold tracking-wider mb-4 drop-shadow-sm">
                                         Rank higher,
                                         sell more</p>
-                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">Turn
-                                        visibility into market leadership with qualified traffic, higher
-                                        engagement, and measurable impacts in competitive markets. More clicks,
-                                        better
-                                        conversions, higher sales, stronger brand authority.
-                                    </p>
+                                    <p class="text-lg text-gray-900 dark:text-gray-300 mb-6 leading-relaxed">We combine
+                                        SEO and content
+                                        strategy to grow your visibility, engagement, and sales.</p>
                                 </div>
                                 <!-- Arrow hidden on mobile, visible on desktop -->
                                 <Icon name="lucide:arrow-right"

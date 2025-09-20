@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Nuxtship - Nuxt SAAS Starter Website Template
 
@@ -101,3 +102,6 @@ Original Astroship Template: **[https://astroship.web3templates.com/](https://as
 # the_empowerment_initiative
 
 > > > > > > > 38f07a3292f0a1adbd587a4f2bcb55a38c14f725
+=======
+# syntanium
+>>>>>>> dcb36138ec205144daa4723dbde021199c5f64cd

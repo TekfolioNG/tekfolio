@@ -7,7 +7,7 @@
                     OUR EXPERTISE
                 </h2>
                 <p
-                    class="text-xl md:text-2xl font-barlow-thin text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    class="text-xl md:text-2xl font-barlow-thin text-gray-900 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
                     Syntanium's specialized capabilities span the entire lifecycle of industrial projects, delivering
                     integrated solutions that drive operational excellence and sustainable growth across multiple
                     sectors.
@@ -29,7 +29,7 @@
                         <h3 class="text-xl md:text-xl font-barlow-extrabold text-[#fe4135] mb-4">
                             ENGINEERING
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed font-barlow-thin">
+                        <p class="text-gray-900 dark:text-gray-300 leading-relaxed font-barlow-thin">
                             From initial concept through detailed design, Syntanium provides comprehensive engineering
                             services that transform industrial visions into viable, efficient realities for our clients.
                         </p>
@@ -61,7 +61,7 @@
                         <h3 class="text-xl md:text-xl font-barlow-extrabold text-[#fe4135] mb-4">
                             CONSTRUCTION
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed font-barlow-thin">
+                        <p class="text-gray-900 dark:text-gray-400 leading-relaxed font-barlow-thin">
                             Our team handles industrial installations and turnkey projects, including pipelines,
                             processing plants, and supporting critical infrastructure for energy and petrochemical
                             facilities.
@@ -94,7 +94,7 @@
                         <h3 class="text-xl md:text-xl font-barlow-extrabold text-[#fe4135] mb-4">
                             MAINTENANCE
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed font-barlow-thin">
+                        <p class="text-gray-900 dark:text-gray-400 leading-relaxed font-barlow-thin">
                             Syntanium's maintenance expertise ensures continuous facility performance through proactive
                             upkeep, strategic modernization, and regulatory compliance programs that maximize asset
                             value and operational efficiency.

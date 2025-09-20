@@ -1,7 +1,7 @@
 <script setup>
 // Page meta configuration
 definePageMeta({
-    layout: "landing"
+    layout: "home"
 })
 
 useHead({

@@ -1,31 +1,37 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: "landing"
+  layout: "home"
 });
 
 useHead({
-  title: 'Vera Verde | Ignite a sustainable future',
+  title: 'Syntanium Energy | Industrial Solutions & Engineering Services',
   meta: [
-    { property: 'og:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
-    { property: 'og:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa. VeraVerde connects innovation with impact in agriculture and renewable energy.' },
-    { property: 'og:image', content: '/veraverde-og.jpg' },
+    { name: 'description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services. Professional maintenance and construction solutions.' },
+    { name: 'keywords', content: 'petrochemical processing, corrosion management, oil and gas, industrial engineering, maintenance services, construction solutions, asset integrity, pipeline installation' },
+    { property: 'og:title', content: 'Syntanium Energy | Industrial Solutions & Engineering Services' },
+    { property: 'og:description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://syntaniumenergy.com' },
+    { property: 'og:image', content: '/syntanium-og.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'VeraVerde - Climate-Smart Agriculture & Clean Energy' },
+    { property: 'og:image:alt', content: 'Syntanium Energy - Industrial Solutions & Engineering Services' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
-    { name: 'twitter:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa.' },
-    { name: 'twitter:image', content: '/veraverde-og.jpg' }
+    { name: 'twitter:title', content: 'Syntanium Energy | Industrial Solutions & Engineering Services' },
+    { name: 'twitter:description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services.' },
+    { name: 'twitter:image', content: '/syntanium-og.jpg' }
   ]
 });
 
 </script>
 
 <template>
-  <LandingContainer>
-    <LandingHero></LandingHero>
-    <LandingIntro></LandingIntro>
-    <LandingServices></LandingServices>
-  </LandingContainer>
-  <LandingCta></LandingCta>
+  <HomeContainer>
+    <HomeHero />
+  </HomeContainer>
+  <HomeSolution />
+  <HomeBrandEssence />
+  <HomeExpertise />
+  <HomeIndustries />
+  <HomeCta2></HomeCta2>
 </template>

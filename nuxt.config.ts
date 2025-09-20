@@ -1,78 +1,85 @@
 export default defineNuxtConfig({
-  // Runtime configuration
+  ssr: true,
+
   runtimeConfig: {
-    public: {
-    baseURL: process.env.NUXT_PUBLIC_BASE_URL || (process.env.NODE_ENV === 'production' ? 'https://veraverde.org' : 'http://localhost:3000')
-    }
+    // Private keys (only available on server-side)
+    web3formsKey: process.env.WEB3FORMS_KEY,
   },
 
-  // CSS and PostCSS
   css: ["~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       autoprefixer: {},
     },
   },
 
-  // Modules
   modules: [
-    "nuxt-icon",
-    "@nuxt/ui",
-    "@nuxt/image"
+    "@nuxt/icon",
+    "@nuxt/ui", 
+    "@nuxt/image",
   ],
 
-  // UI configuration
-  ui: {
-    fonts: true
+  image: {
+    format: ['webp', 'avif', 'jpg', 'png', 'svg'],
+    quality: 85,
+    densities: [1, 2],
+    domains: [],
   },
 
-  // Nitro configuration for Cloudflare Pages
+  app: {
+    baseURL: "/",
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico'
+        }
+      ]
+    }
+  },
+
+  vite: {
+    server: {
+      hmr: {
+        timeout: 30000,
+      },
+      watch: {
+        usePolling: true,
+        interval: 1000
+      }
+    },
+    build: {
+      chunkSizeWarningLimit: 1000
+    }
+  },
+
   nitro: {
     preset: "cloudflare-pages",
     output: {
-      dir: '.output',
-      publicDir: '.output/public'
-    },
-    experimental: {
-      wasm: true
+      publicDir: ".output/public",
+      serverDir: '.output/server'
     },
     prerender: {
       failOnError: false,
       crawlLinks: true,
-    },
-    
-    // Route rules for API
-    routeRules: {
-      '/api/**': { 
-        cors: true,
-        headers: { 
-          'Access-Control-Allow-Origin': '',
-          'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Accept'
-        }
-      }
+      routes: [
+        '/',
+        '/who-we-are',
+        '/solutions-expertise',
+        '/our-commitment', 
+        '/careers',
+        '/contact'
+      ]
     }
   },
 
-  // Experimental features
   experimental: {
     payloadExtraction: false,
   },
 
-  // SSR configuration
-  ssr: false, // SPA mode enabled
-
-  // App configuration
-  app: {
-    baseURL: "/",
-  },
-
-  // Compatibility date
   compatibilityDate: "2025-01-25",
-
-  // Build configuration
-  build: {
-    transpile: ['@nuxt/ui']
-  }
-
 });

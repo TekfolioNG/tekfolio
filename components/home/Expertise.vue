@@ -127,12 +127,6 @@
     font-style: normal;
 }
 
-.font-barlow-thin {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
 /* Horizontal separators for mobile */
 @media (max-width: 767px) {
     .grid>div:not(:last-child) {

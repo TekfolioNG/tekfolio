@@ -50,12 +50,6 @@
     font-style: normal;
 }
 
-.font-barlow-thin {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
 /* Enhanced mobile responsive adjustments */
 @media (max-width: 1024px) {
     .grid {

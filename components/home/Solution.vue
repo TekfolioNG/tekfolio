@@ -107,12 +107,6 @@
     font-style: normal;
 }
 
-.font-barlow-thin {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
 /* Simple hover bob animation */
 @keyframes bob {
 

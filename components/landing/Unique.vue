@@ -255,11 +255,6 @@ onMounted(() => {
     font-family: 'Barlow', sans-serif;
 }
 
-.font-barlow-thin {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-}
-
 /* Custom letter spacing for large headings */
 .tracking-tight {
     letter-spacing: -0.02em;

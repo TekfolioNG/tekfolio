@@ -15,7 +15,7 @@
             </div>
 
             <!-- Expertise Grid with Vertical Separators -->
-            <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-4">
                 <!-- Engineering -->
                 <div class="flex flex-col items-center text-center p-8 md:p-10 relative">
                     <div class="mb-8">
@@ -102,6 +102,34 @@
                     </div>
                     <div>
                         <NuxtLink to="/maintenance"
+                            class="inline-flex items-center text-[#fe4135] dark:text-red-400 font-medium group">
+                            Find out more
+                            <Icon name="lucide:arrow-right"
+                                class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <!-- Oil and Gas -->
+                <div class="flex flex-col items-center text-center p-8 md:p-10">
+                    <div class="mb-8">
+                        <div
+                            class="w-16 h-24 md:w-20 md:h-28 bg-[#fe4135] skew-x-[-15deg] flex items-center justify-center mx-auto mb-6">
+                            <div class="skew-x-[15deg]">
+                                <img src="~/assets/img/oil-gas-operations2.png" alt="Maintenance"
+                                    class="w-12 h-18 md:w-14 md:h-18 object-contain filter brightness-0 invert" />
+                            </div>
+                        </div>
+                        <h3 class="text-xl md:text-xl font-barlow-extrabold text-[#fe4135] mb-4">
+                            OIL & GAS
+                        </h3>
+                        <p class="text-gray-900 dark:text-gray-400 leading-relaxed font-barlow-thin">
+                            We deliver safe, reliable, and sustainable oil and gas solutions to end users while also
+                            supporting upstream and midstream players with technical
+                            and engineering services that strengthen asset performance and energy delivery.
+                        </p>
+                    </div>
+                    <div>
+                        <NuxtLink to="/oil-and-gas"
                             class="inline-flex items-center text-[#fe4135] dark:text-red-400 font-medium group">
                             Find out more
                             <Icon name="lucide:arrow-right"

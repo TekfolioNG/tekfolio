@@ -1,11 +1,11 @@
 <template>
     <div class="min-h-screen bg-gray-700 dark:bg-gray-900">
 
-        <section class="relative w-full h-96 md:h-[500px] overflow-hidden border-b-1 border-white">
+        <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Flushed Right -->
             <div class="absolute inset-0">
                 <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
-                    class="absolute top-0 right-0 h-full w-full md:w-3/4 object-cover object-right sharp-image" />
+                    class="absolute top-0 right-0 h-full w-full md:w-full object-cover object-right sharp-image" />
             </div>
             <!-- Content Overlay - Left Side -->
             <div class="relative z-10 h-full flex items-center">

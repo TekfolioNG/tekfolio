@@ -36,7 +36,7 @@
                     <div class="order-2 lg:order-1 px-2 md:pl-6 lg:pl-8 md:pr-4 lg:pr-6">
                         <div class="space-y-4 md:space-y-6 text-center lg:text-left">
                             <p class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 dark:text-gray-300">
-                                At Syntanium, we believe a career is more than a job. It's an opportunity to
+                                At Syntanium Energy, we believe a career is more than a job. It's an opportunity to
                                 <span class="text-[#fe4135] font-semibold">grow, innovate, and make a lasting
                                     impact</span>.
                             </p>

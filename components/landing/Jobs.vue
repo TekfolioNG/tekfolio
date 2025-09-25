@@ -11,10 +11,10 @@
             <div class="absolute inset-0 flex items-center justify-end pr-4 md:pr-8 lg:pr-16">
                 <div class="max-w-lg text-white text-center lg:text-right">
                     <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-                        Life at <span class="text-red-500">Syntanium</span>
+                        Life at <span class="text-red-500">Syntanium Energy</span>
                     </h1>
                     <p class="text-sm md:text-xl lg:text-2xl leading-snug px-4 lg:px-0"><i>
-                            Syntanium is a workplace where safety comes first, learning never stops, and every
+                            Syntanium Energy is a workplace where safety comes first, learning never stops, and every
                             contribution
                             drives collective success. We invest in training, mentorship, and growth opportunities that
                             empower our people to achieve their best.
@@ -149,7 +149,7 @@
 
 <script setup>
 // Import images from assets directory
-import heroImage from '~/assets/img/gas-pipelines3.jpg';
+import heroImage from '~/assets/img/career-image.png';
 import submitIcon from '~/assets/img/submit.png';
 </script>
 

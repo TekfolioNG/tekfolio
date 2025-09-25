@@ -62,30 +62,30 @@
 
                 <!-- Project & Contract Management -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="project-management" class="group block">
+                    <NuxtLink to="marine-vessel" class="group block">
                         <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/contract-management.png" alt="Project & Contract Management"
+                            <img src="~/assets/img/cargo-boat.png" alt="Project & Contract Management"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
                                 style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
                         </div>
                         <h3
                             class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            PROJECT & CONTRACT <br>MANAGEMENT</br>
+                            MARINE VESSEL <br>OPERATIONS</br>
                         </h3>
                     </NuxtLink>
                 </div>
 
                 <!-- Manpower Services -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="manpower-services" class="group block">
+                    <NuxtLink to="supply-chain" class="group block">
                         <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/manpower-services.png" alt="Manpower Services"
+                            <img src="~/assets/img/supply-chain-mgt.png" alt="Manpower Services"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
                                 style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
                         </div>
                         <h3
                             class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            MANPOWER <br>SERVICES</br>
+                            SUPPLY CHAIN<br>MANAGEMENT</br>
                         </h3>
                     </NuxtLink>
                 </div>

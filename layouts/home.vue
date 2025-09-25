@@ -1,5 +1,5 @@
 <template>
-  <HomeNavbar v-if="$route.path !== '/careers'"></HomeNavbar>
+  <HomeNavbar></HomeNavbar>
   <slot></slot>
   <HomeFooter></HomeFooter>
 </template>

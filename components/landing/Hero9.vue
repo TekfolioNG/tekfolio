@@ -1,11 +1,13 @@
 <template>
     <div class="min-h-screen bg-gray-700 dark:bg-gray-900">
 
-        <section class="relative w-full h-96 md:h-[500px] overflow-hidden border-b-1 border-white">
+        <section class="relative w-full h-[600px] md:h-[500px] overflow-hidden">
             <!-- Background Image - Flushed Right -->
             <div class="absolute inset-0">
                 <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
                     class="absolute top-0 right-0 h-full w-full md:w-3/4 object-cover object-right sharp-image" />
+                <!-- Subtle overlay -->
+                <div class="absolute top-0 right-0 h-full w-full md:w-3/4 bg-black/20"></div>
             </div>
             <!-- Content Overlay - Left Side -->
             <div class="relative z-10 h-full flex items-center">
@@ -13,7 +15,7 @@
                     <div class="max-w-2xl">
                         <h1
                             class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                            MAINTENANCE
+                            CAREERS
                         </h1>
                         <div class="mt-4 w-20 h-1 bg-red-500"></div>
                     </div>
@@ -23,25 +25,12 @@
             <!-- Dark overlay for better text readability on mobile -->
             <div class="absolute inset-0 bg-black/40 md:bg-transparent"></div>
         </section>
-
-        <!-- Description Section -->
-        <section class="w-full bg-gray-700 dark:bg-gray-900 py-16 lg:py-20">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <p class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed lg:leading-relaxed font-light">
-                        Syntanium delivers maintenance solutions that keep oil and gas facilities safe, efficient, and
-                        productive. By combining preventive programs with rapid-response services, we reduce downtime,
-                        optimize performance, and safeguard the value of critical infrastructure.
-                    </p>
-                </div>
-            </div>
-        </section>
     </div>
 </template>
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/maintenance-syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/career-syntanium-hero.png';
 </script>
 
 <style scoped>

@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-    <LandingHero3 />
+    <LandingHero9 />
     <LandingCareer />
     <LandingJobs />
     <LandingForm2 />

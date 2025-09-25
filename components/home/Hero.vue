@@ -87,9 +87,8 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 
 // Import images with new paths
+import oilGasImage from '~/assets/img/oil-rig-syntanium2.png';
 import engineeringImage from '~/assets/img/syntanium-home.jpg';
-import sustainabilityImage from '~/assets/img/syntanium-home11.jpg';
-import oilGasImage from '~/assets/img/syntanium-home3.jpg';
 import maintenanceImage from '~/assets/img/syntanium-home4.jpg';
 import constructionImage from '~/assets/img/syntanium-home5.jpg';
 
@@ -121,15 +120,8 @@ const slides = [
     alt: 'Oil & Gas Services',
     category: 'OIL & GAS',
     title: 'Expertise across every operation',
-    buttonLink: '/oil-gas'
+    buttonLink: '/oil-and-gas'
   },
-  {
-    image: sustainabilityImage,
-    alt: 'Sustainability Services',
-    category: 'SUSTAINABILITY',
-    title: 'Safety, quality, responsibility',
-    buttonLink: '/sustainability'
-  }
 ]
 
 const currentSlide = ref(0)

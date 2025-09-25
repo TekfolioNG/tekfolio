@@ -27,6 +27,7 @@ useHead({
 
 <template>
   <HomeContainer>
+    <HomeHero2 />
     <HomeHero />
   </HomeContainer>
   <HomeSolution />

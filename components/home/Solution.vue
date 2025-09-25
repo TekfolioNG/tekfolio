@@ -17,7 +17,7 @@
             <div class="grid grid-cols-1 md:grid-cols-5">
                 <!-- Products & Applications -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="#" class="group block">
+                    <NuxtLink to="/products-applications" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/products-applications.png" alt="Products & Applications"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
@@ -32,7 +32,7 @@
 
                 <!-- Oil & Gas Operations -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="#" class="group block">
+                    <NuxtLink to="oil-and-gas" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/oil-gas-operations.png" alt="Oil & Gas Operations"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
@@ -47,7 +47,7 @@
 
                 <!-- Corrosion & Integrity Management -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="#" class="group block">
+                    <NuxtLink to="corrosion-integrity" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/corossion-management.png" alt="Corrosion & Integrity Management"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
@@ -62,7 +62,7 @@
 
                 <!-- Project & Contract Management -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="#" class="group block">
+                    <NuxtLink to="project-management" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/contract-management.png" alt="Project & Contract Management"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
@@ -77,7 +77,7 @@
 
                 <!-- Manpower Services -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="#" class="group block">
+                    <NuxtLink to="manpower-services" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/manpower-services.png" alt="Manpower Services"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"

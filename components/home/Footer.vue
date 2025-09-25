@@ -37,12 +37,13 @@
           <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#fe4135] pb-2">Quick Links</h3>
           <ul class="space-y-3">
             <li>
-              <NuxtLink to="/about" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
+              <NuxtLink to="/who-we-are" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
                 Who We Are
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/solutions" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
+              <NuxtLink to="/products-applications"
+                class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
                 Products & Applications
               </NuxtLink>
             </li>
@@ -69,28 +70,28 @@
           <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#fe4135] pb-2">Our Services</h3>
           <ul class="space-y-3">
             <li>
-              <NuxtLink to="#"
+              <NuxtLink to="/engineering"
                 class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200 flex items-center justify-center md:justify-start">
                 <Icon name="lucide:hard-hat" class="w-4 h-4 mr-2 text-[#fe4135]" />
                 Engineering
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#"
+              <NuxtLink to="/construction"
                 class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200 flex items-center justify-center md:justify-start">
                 <Icon name="lucide:building" class="w-4 h-4 mr-2 text-[#fe4135]" />
                 Construction
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#"
+              <NuxtLink to="/maintenance"
                 class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200 flex items-center justify-center md:justify-start">
                 <Icon name="lucide:settings" class="w-4 h-4 mr-2 text-[#fe4135]" />
                 Maintenance
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#"
+              <NuxtLink to="/oil-and-gas"
                 class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200 flex items-center justify-center md:justify-start">
                 <Icon name="lucide:droplets" class="w-4 h-4 mr-2 text-[#fe4135]" />
                 Oil & Gas

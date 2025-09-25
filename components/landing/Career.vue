@@ -1,29 +1,43 @@
 <template>
     <section class="relative -mt-8">
-        <!-- Full Width Hero Image Section -->
-        <div class="hero-image relative w-full h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden mobile-no-gap">
-            <img :src="heroImage" alt="Career Opportunities at Syntanium"
-                class="w-full h-full object-cover object-center" />
-            <!-- Optional overlay for better text contrast if needed -->
-            <div class="absolute inset-0 bg-black/20"></div>
-        </div>
-
         <!-- Content Section -->
-        <section class="py-8 md:py-16 px-4 md:px-6 bg-white dark:bg-gray-900 mobile-no-gap">
+        <section class="py-8 md:py-16 px-4 md:px-16 bg-white dark:bg-gray-900 mobile-no-gap">
             <div class="max-w-7xl mx-auto">
-                <!-- Desktop: Two Column Layout -->
-                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                    <!-- Left Column - Text Content -->
-                    <div class="order-2 lg:order-1 px-2 md:pl-8 lg:pl-12 md:pr-8 lg:pr-12">
-                        <h2
-                            class="hero-heading text-xl md:text-2xl lg:text-4xl font-barlow font-bold text-gray-900 dark:text-white mb-6 md:mb-8 leading-tight text-center lg:text-left">
-                            Why Work <span class="text-red-500">With Us?</span>
-                        </h2>
+                <!-- Centered Stacked Boxes Heading -->
+                <div class="flex justify-center mb-12 md:mb-16">
+                    <div class="relative">
 
+                        <div class="relative mb-2 md:mb-3 ml-24 md:ml-32">
+                            <div
+                                class="bg-gradient-to-r from-[#fe4135] via-red-500 to-red-600 rounded-lg px-6 md:px-8 py-3 md:py-4 shadow-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <h2
+                                    class="text-xl md:text-2xl lg:text-3xl font-barlow font-bold text-white text-center leading-tight">
+                                    Why Work
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- Second Box - "With Us?" - Shifted more to the right -->
+                        <div class="relative ml-14 md:ml-24">
+                            <div
+                                class="bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-lg px-6 md:px-8 py-3 md:py-4 shadow-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                                <h2
+                                    class="text-xl md:text-2xl lg:text-3xl font-barlow font-bold text-white text-center leading-tight">
+                                    With Us?
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Two Column Layout - Reduced gap on desktop -->
+                <div class="grid lg:grid-cols-2 gap-1 lg:gap-0 items-center">
+                    <!-- Left Column - Text Content -->
+                    <div class="order-2 lg:order-1 px-2 md:pl-6 lg:pl-8 md:pr-4 lg:pr-6">
                         <div class="space-y-4 md:space-y-6 text-center lg:text-left">
                             <p class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 dark:text-gray-300">
-                                At Syntanium, a career is more than a job. It's an opportunity to
-                                <span class="text-red-500 font-semibold">grow, innovate, and make a lasting
+                                At Syntanium, we believe a career is more than a job. It's an opportunity to
+                                <span class="text-[#fe4135] font-semibold">grow, innovate, and make a lasting
                                     impact</span>.
                             </p>
 
@@ -36,30 +50,56 @@
 
                         <!-- Accent Elements -->
                         <div class="mt-6 md:mt-8 flex items-center justify-center lg:justify-start">
-                            <div class="w-12 md:w-16 h-1 bg-red-500 mr-3 md:mr-4"></div>
+                            <div class="w-12 md:w-16 h-1 bg-[#fe4135] mr-3 md:mr-4"></div>
                             <div class="w-6 md:w-8 h-1 bg-gray-300 dark:bg-gray-600 mr-2"></div>
                             <div class="w-3 md:w-4 h-1 bg-gray-300 dark:bg-gray-600"></div>
                         </div>
                     </div>
 
-                    <!-- Right Column - Image -->
-                    <div class="order-1 lg:order-2 mobile-full-width px-4 md:px-0">
-                        <div class="relative">
-                            <!-- Background accent shapes - hidden on mobile -->
-                            <div class="absolute -top-4 -right-4 w-32 h-32 bg-red-500/10 rounded-full hidden lg:block">
-                            </div>
+                    <!-- Right Column - Content Container -->
+                    <div class="order-1 lg:order-2 flex justify-center lg:justify-end px-4 md:px-0">
+                        <div class="relative max-w-lg">
+                            <!-- Background accent shape -->
                             <div
-                                class="absolute -bottom-6 -left-6 w-24 h-24 bg-gray-900/5 dark:bg-white/5 rounded-full hidden lg:block">
+                                class="absolute inset-0 bg-gradient-to-br from-[#fe4135]/10 to-gray-900/20 dark:to-white/20 rounded-2xl transform transition-all duration-1000 rotate-1 scale-105">
                             </div>
 
-                            <!-- Main image container -->
+                            <!-- Content container -->
                             <div
-                                class="relative bg-white dark:bg-gray-800 shadow-xl overflow-hidden mobile-content-image lg:-mt-16 mr-0 lg:-mr-8">
-                                <img :src="contentImage" alt="Syntanium Team at Work"
-                                    class="w-full h-48 md:h-64 lg:h-[400px] object-cover" />
+                                class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform transition-all duration-1000 hover:rotate-0 hover:shadow-2xl -rotate-1">
+                                <!-- Header accent -->
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-0.5 bg-[#fe4135] mr-3"></div>
+                                    <h3
+                                        class="text-sm font-bold text-gray-800 dark:text-gray-200 uppercase tracking-widest">
+                                        Team Up
+                                    </h3>
+                                </div>
 
-                                <!-- Image overlay with gradient -->
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                <!-- Main text -->
+                                <div class="space-y-2">
+                                    <p
+                                        class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
+                                        <span class="font-semibold text-[#fe4135]">Join a team</span> where your
+                                    </p>
+                                    <p
+                                        class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
+                                        <span class="font-bold text-gray-900 dark:text-white">skills shape the
+                                            future</span>
+                                    </p>
+                                    <p
+                                        class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
+                                        of <span class="text-[#fe4135] font-semibold">energy</span>.
+                                    </p>
+                                </div>
+
+                                <!-- Optional CTA or additional content -->
+                                <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                    <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                                        <div class="w-2 h-2 bg-[#fe4135] rounded-full mr-2"></div>
+                                        <span class="font-medium">Building tomorrow's energy solutions</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -70,9 +110,7 @@
 </template>
 
 <script setup>
-// Import images from assets directory
-import heroImage from '~/assets/img/who-we-are-syntanium3.png';
-import contentImage from '~/assets/img/who-we-are3.jpg';
+// No image import needed anymore
 </script>
 
 <style scoped>
@@ -84,13 +122,7 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
     font-family: 'Barlow', sans-serif;
 }
 
-/* Ensure full width for hero image section */
-.relative.w-full {
-    margin-left: calc(-50vw + 50%);
-    width: 100vw;
-}
-
-/* Mobile-specific fixes to remove gaps and make content image full width */
+/* Mobile-specific fixes */
 @media (max-width: 768px) {
 
     /* Remove all top gaps on mobile */
@@ -99,21 +131,8 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
         padding-top: -70px !important;
     }
 
-    /* Hero image - completely remove any top spacing */
-    .hero-image {
-        margin-top: -70px !important;
-        padding-top: -70px !important;
-        top: -70px !important;
-    }
-
     /* Target the parent section to ensure no gaps */
     .relative.-mt-8 {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-    }
-
-    /* Ensure the hero section starts at the very top */
-    section.relative {
         margin-top: 0 !important;
         padding-top: 0 !important;
     }
@@ -124,32 +143,14 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
         padding-bottom: 2rem;
     }
 
-    /* Make content image container full width on mobile */
-    .mobile-full-width {
-        margin-left: calc(-50vw + 50%);
-        width: 100vw;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Content image - remove top margin and make full width */
-    .mobile-content-image {
-        margin-top: 0 !important;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
     /* Remove gaps and ensure seamless layout on mobile */
     .grid {
-        gap: 0;
+        gap: 1rem;
     }
 
-    /* Mobile typography adjustments */
-    .hero-heading {
+    /* Mobile typography adjustments for stacked heading */
+    .text-2xl {
         font-size: 1.5rem;
-        line-height: 1.2;
     }
 
     /* Center align all content on mobile */
@@ -157,17 +158,33 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
         text-align: center;
     }
 
-    /* Ensure text content has proper spacing after full-width image */
+    /* Ensure text content has proper spacing */
     .order-2.lg\:order-1 {
-        padding-top: 2rem;
+        padding-top: 1rem;
+    }
+
+    /* Adjust content container for mobile */
+    .relative.max-w-lg {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Reduce padding in content container on mobile */
+    .p-6 {
+        padding: 1.5rem;
+    }
+
+    /* Adjust stacked boxes heading spacing */
+    .mb-12 {
+        margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
 
     /* Tablet adjustments */
-    .hero-heading {
-        font-size: 2rem;
+    .text-2xl {
+        font-size: 1.875rem;
     }
 }
 
@@ -181,18 +198,25 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
     .lg\:justify-start {
         justify-content: flex-start;
     }
+
+    .lg\:justify-end {
+        justify-content: flex-end;
+    }
 }
 
-/* Hover effects */
-.relative:hover .absolute.-top-4.-right-4 {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+/* Hover effects for content container */
+.relative.bg-white\/90:hover {
+    transform: rotate(0deg) scale(1.02);
 }
 
 /* Dark mode specific adjustments */
 @media (prefers-color-scheme: dark) {
-    .bg-gradient-to-t {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    .bg-gradient-to-r {
+        background: linear-gradient(to right, #fe4135, #dc2626);
+    }
+
+    .shadow-xl {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -205,10 +229,23 @@ import contentImage from '~/assets/img/who-we-are3.jpg';
     letter-spacing: 0.05em;
 }
 
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
 /* Smooth transitions for interactive elements */
 * {
-    transition-property: color, background-color, border-color, transform, opacity;
-    transition-duration: 200ms;
+    transition-property: color, background-color, border-color, transform, opacity, box-shadow;
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
+}
+
+/* Stacked boxes hover effect */
+.relative:hover .absolute.-top-2.-left-2 {
+    transform: rotate(3deg) scale(1.02);
+}
+
+.relative:hover .absolute.-top-1.-left-1 {
+    transform: rotate(-2deg) scale(1.01);
 }
 </style>

@@ -138,12 +138,12 @@
 
 <script setup>
 // Import images from assets directory
-import downstreamImage from '~/assets/img/downstream-Syntanium.jpg';
-import midstreamImage from '~/assets/img/gas-pipelines-Syntanium.jpg';
-import industrialServicesImage from '~/assets/img/industrial-services-Syntanium.jpg';
-import marineImage from '~/assets/img/marine-Syntanium.jpg';
-import petrochemicalsImage from '~/assets/img/petrochemicals-Syntanium.jpg';
-import upstreamImage from '~/assets/img/upstream-Syntanium.jpg';
+import downstreamImage from '~/assets/img/downstream-syntanium.jpg';
+import midstreamImage from '~/assets/img/gas-pipelines-syntanium.jpg';
+import industrialServicesImage from '~/assets/img/industrial-services-syntanium.jpg';
+import marineImage from '~/assets/img/marine-syntanium.jpg';
+import petrochemicalsImage from '~/assets/img/petrochemicals-syntanium.jpg';
+import upstreamImage from '~/assets/img/upstream-syntanium.jpg';
 </script>
 
 <style scoped>

@@ -15,7 +15,7 @@
                             class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                             MAINTENANCE
                         </h1>
-                        <div class="mt-4 w-20 h-1 bg-red-600"></div>
+                        <div class="mt-4 w-20 h-1 bg-red-500"></div>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/maintenance-syntanium-hero.jpg';
+import whoWeAreImage from '~/assets/img/maintenance-syntanium-new.jpg';
 </script>
 
 <style scoped>

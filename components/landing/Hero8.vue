@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import whoWeAreImage from '~/assets/img/oilgas-Syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/oilgas-syntanium-hero.png';
 </script>
 
 <style scoped>

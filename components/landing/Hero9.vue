@@ -30,7 +30,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/career-Syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/career-syntanium-hero.png';
 </script>
 
 <style scoped>

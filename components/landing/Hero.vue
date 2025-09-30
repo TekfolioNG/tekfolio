@@ -25,7 +25,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/about-Syntanium-hero.jpg';
+import whoWeAreImage from '~/assets/img/about-syntanium-hero.jpg';
 </script>
 
 <style scoped>

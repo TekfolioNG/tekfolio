@@ -24,7 +24,8 @@
                 <!-- Right Column - Body Text -->
                 <div class="text-left lg:pl-8">
                     <p class="text-lg md:text-xl lg:text-2xl font-barlow-thin text-white leading-relaxed mb-6">
-                        Syntanium’s specialization spans engineering, construction, and maintenance solutions that fuel
+                        Syntanium Energy’s specialization spans engineering, construction, and maintenance solutions
+                        that fuel
                         reliable operations across the oil and gas sector.
                     </p>
                     <p class="text-lg md:text-xl lg:text-2xl font-barlow-thin text-white leading-relaxed">

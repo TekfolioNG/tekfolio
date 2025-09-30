@@ -2,7 +2,7 @@
     <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
         <!-- Background Image - Flushed Right -->
         <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/50 to-transparent">
-            <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
+            <img :src="whoWeAreImage" alt="Who We Are - Syntanium Energy"
                 class="absolute top-0 right-0 h-full w-full md:w-3/4 object-cover object-right sharp-image" />
         </div>
         <!-- Content Overlay - Left Side -->
@@ -25,7 +25,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/about-syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/about-Syntanium-hero.jpg';
 </script>
 
 <style scoped>

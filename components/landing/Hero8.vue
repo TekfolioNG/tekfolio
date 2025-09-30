@@ -4,7 +4,7 @@
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Flushed Right -->
             <div class="absolute inset-0">
-                <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
+                <img :src="whoWeAreImage" alt="Who We Are - Syntanium Energy"
                     class="absolute top-0 right-0 h-full w-full md:w-full object-cover object-right sharp-image" />
             </div>
             <!-- Content Overlay - Left Side -->
@@ -29,7 +29,7 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <p class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed lg:leading-relaxed font-light">
-                        At Syntanium, our operations are rooted in the energy sector, where we drive efficiency,
+                        At Syntanium Energy, our operations are rooted in the energy sector, where we drive efficiency,
                         safety, and sustainability in production and distribution. Beyond this, we provide
                         technical and engineering support to upstream and midstream organizations, ensuring performance
                         and reliability across the wider industry.
@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import whoWeAreImage from '~/assets/img/oilgas-syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/oilgas-Syntanium-hero.png';
 </script>
 
 <style scoped>

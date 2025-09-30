@@ -42,7 +42,7 @@
                         <div class="relative z-10">
                             <p
                                 class="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300 font-light mb-6">
-                                Syntanium is an engineering and energy solutions company serving the oil and gas
+                                Syntanium Energy is an engineering and energy solutions company serving the oil and gas
                                 industry across
                                 <span class="text-red-500 font-medium">upstream, midstream, and downstream</span>
                                 operations.
@@ -92,7 +92,7 @@
                             <div class="space-y-5 relative z-10">
                                 <p
                                     class="text-base md:text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-light">
-                                    Syntanium was founded on the belief that <span
+                                    Syntanium Energy was founded on the belief that <span
                                         class="text-red-500 font-semibold">complex energy challenges demand simple,
                                         effective, and dependable solutions</span>. From <span
                                         class="font-semibold text-gray-900 dark:text-white">engineering design to

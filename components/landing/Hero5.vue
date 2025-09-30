@@ -4,7 +4,7 @@
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Flushed Right -->
             <div class="absolute inset-0">
-                <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
+                <img :src="whoWeAreImage" alt="Who We Are - Syntanium Energy"
                     class="absolute top-0 right-0 h-full w-full md:w-full object-cover object-right sharp-image" />
             </div>
             <!-- Content Overlay - Left Side -->
@@ -29,7 +29,8 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <p class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed lg:leading-relaxed font-light">
-                        Syntanium's engineering capability spans the full project cycle, from early design to detailed
+                        Syntanium Energy's engineering capability spans the full project cycle, from early design to
+                        detailed
                         studies and execution support. We combine technical expertise with deep industry knowledge to
                         deliver safe, efficient, and cost-effective solutions that strengthen assets and support
                         long-term growth.
@@ -42,7 +43,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/engineering-syntanium.png';
+import whoWeAreImage from '~/assets/img/engineering-Syntanium.jpg';
 </script>
 
 <style scoped>

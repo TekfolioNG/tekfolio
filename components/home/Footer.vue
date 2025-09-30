@@ -7,12 +7,12 @@
         <div class="col-span-1 md:col-span-2 lg:col-span-1">
           <div class="mb-6">
             <NuxtLink to="/" class="inline-block">
-              <img src="/assets/img/syntanium-logo-temp2.png" alt="Syntanium Energy Logo"
+              <img src="/assets/img/Syntanium-logo-temp2.png" alt="Syntanium Energy Logo"
                 class="h-10 md:h-14 lg:h-16 drop-shadow-lg" />
             </NuxtLink>
           </div>
           <p class="text-gray-300 mb-6 max-w-md mx-auto md:mx-0">
-            Syntanium provides engineering, construction, and maintenance solutions for the oil, gas, and energy
+            Syntanium Energy provides engineering, construction, and maintenance solutions for the oil, gas, and energy
             sectors. With a focus on safety, quality, and sustainability, we help industries protect assets and achieve
             long-term performance.
           </p>

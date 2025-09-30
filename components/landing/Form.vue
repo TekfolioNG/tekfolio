@@ -16,7 +16,7 @@
                 class="bg-red-100 dark:bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100 dark:border-gray-700">
                 <!-- Hidden input for Web3Forms -->
                 <input type="hidden" name="access_key" value="your-web3forms-access-key">
-                <input type="hidden" name="subject" value="New Contact Form Submission from Syntanium Website">
+                <input type="hidden" name="subject" value="New Contact Form Submission from Syntanium Energy Website">
                 <input type="hidden" name="from_name" value="Syntanium Energy Website">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 

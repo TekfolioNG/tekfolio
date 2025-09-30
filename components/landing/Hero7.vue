@@ -4,7 +4,7 @@
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Flushed Right -->
             <div class="absolute inset-0">
-                <img :src="whoWeAreImage" alt="Who We Are - Syntanium"
+                <img :src="whoWeAreImage" alt="Who We Are - Syntanium Energy"
                     class="absolute top-0 right-0 h-full w-full md:w-full object-cover object-right sharp-image" />
             </div>
             <!-- Content Overlay - Left Side -->
@@ -29,7 +29,8 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <p class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed lg:leading-relaxed font-light">
-                        Syntanium delivers maintenance solutions that keep oil and gas facilities safe, efficient, and
+                        Syntanium Energy delivers maintenance solutions that keep oil and gas facilities safe,
+                        efficient, and
                         productive. By combining preventive programs with rapid-response services, we reduce downtime,
                         optimize performance, and safeguard the value of critical infrastructure.
                     </p>
@@ -41,7 +42,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/maintenance-syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/maintenance-Syntanium-hero.jpg';
 </script>
 
 <style scoped>

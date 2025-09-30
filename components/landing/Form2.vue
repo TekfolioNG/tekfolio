@@ -4,7 +4,7 @@
             <!-- Form Header -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                    Apply to Join <span class="text-red-500">Syntanium</span>
+                    Apply to Join <span class="text-red-500">Syntanium Energy</span>
                 </h2>
                 <p class="text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
                     Ready to take the next step in your career? Submit your application and become part of our dynamic
@@ -17,8 +17,8 @@
                 class="bg-red-50 dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-10 border border-red-100 dark:border-gray-700">
                 <!-- Hidden inputs for Web3Forms -->
                 <input type="hidden" name="access_key" value="your-web3forms-access-key">
-                <input type="hidden" name="subject" value="New Job Application from Syntanium Website">
-                <input type="hidden" name="from_name" value="Syntanium Careers Portal">
+                <input type="hidden" name="subject" value="New Job Application from Syntanium Energy Website">
+                <input type="hidden" name="from_name" value="Syntanium Energy Careers Portal">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <!-- Personal Information Section -->
@@ -264,16 +264,16 @@
                         Additional Information
                     </h3>
 
-                    <!-- Why Syntanium -->
+                    <!-- Why Syntanium Energy -->
                     <div class="mb-6">
-                        <label for="whySyntanium"
+                        <label for="whySyntanium Energy"
                             class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                            Why do you want to work at Syntanium? *
+                            Why do you want to work at Syntanium Energy? *
                         </label>
-                        <textarea id="whySyntanium" name="whySyntanium" v-model="formData.whySyntanium" required
-                            rows="4"
+                        <textarea id="whySyntanium Energy" name="whySyntanium Energy" v-model="formData.whySyntanium"
+                            required rows="4"
                             class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm"
-                            placeholder="Tell us what attracts you to Syntanium and how you can contribute to our mission..."></textarea>
+                            placeholder="Tell us what attracts you to Syntanium Energy and how you can contribute to our mission..."></textarea>
                     </div>
 
                     <!-- Additional Comments -->
@@ -455,7 +455,7 @@ const submitForm = async () => {
     } catch (error) {
         // Network or other errors
         console.error('Form submission error:', error)
-        submitMessage.value = 'Sorry, there was an error submitting your application. Please try again later or email us directly at careers@syntanium.com'
+        submitMessage.value = 'Sorry, there was an error submitting your application. Please try again later or email us directly at careers@syntaniumenergy.com'
         submitMessageClass.value = 'bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-500/30'
     } finally {
         isSubmitting.value = false

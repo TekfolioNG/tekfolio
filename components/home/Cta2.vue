@@ -41,7 +41,7 @@
 
                             <!-- Description -->
                             <p class="text-lg md:text-xl text-gray-800 dark:text-gray-300 mb-6 leading-relaxed">
-                                Syntanium delivers practical engineering, construction, and maintenance solutions
+                                Syntanium Energy delivers practical engineering, construction, and maintenance solutions
                                 designed to support growth and protect assets. Our focus is on safety, quality, and
                                 sustainability in every project.
                             </p>
@@ -88,7 +88,7 @@
                         class="col-span-5 lg:col-span-2 relative flex justify-center lg:justify-end order-1 lg:order-2">
                         <div class="relative group w-full max-w-md lg:max-w-full">
                             <!-- Main Image (no container/background) -->
-                            <img src="/assets/img/engineer2.png" alt="Syntanium Energy - Engineering Solutions"
+                            <img src="/assets/img/engineer2.png" alt="Syntanium Energy Energy - Engineering Solutions"
                                 class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
 
                             <!-- Floating Elements -->
@@ -118,7 +118,7 @@ defineProps({
     },
     description: {
         type: String,
-        default: 'At Syntanium, we provide solutions that keep industries moving with safety, quality, and sustainability at the core. From engineering and construction to long-term maintenance, our expertise helps partners achieve lasting results.'
+        default: 'At Syntanium Energy, we provide solutions that keep industries moving with safety, quality, and sustainability at the core. From engineering and construction to long-term maintenance, our expertise helps partners achieve lasting results.'
     },
     imageSrc: {
         type: String,

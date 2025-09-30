@@ -73,7 +73,8 @@
                         <div class="mb-8">
                             <p
                                 class="text-lg md:text-xl font-barlow-thin text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                                At Syntanium, we do more than deliver projects. We enable progress by staying true to
+                                At Syntanium Energy, we do more than deliver projects. We enable progress by staying
+                                true to
                                 our core values of
                                 <span class="font-semibold text-gray-900 dark:text-white">integrity, excellence, safety,
                                     innovation, and responsibility</span>.

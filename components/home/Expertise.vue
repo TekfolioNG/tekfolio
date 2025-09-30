@@ -8,7 +8,8 @@
                 </h2>
                 <p
                     class="text-xl md:text-2xl font-barlow-thin text-gray-900 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                    Syntanium's specialized capabilities span the entire lifecycle of industrial projects, delivering
+                    Syntanium Energy's specialized capabilities span the entire lifecycle of industrial projects,
+                    delivering
                     integrated solutions that drive operational excellence and sustainable growth across multiple
                     sectors.
                 </p>
@@ -30,7 +31,8 @@
                             ENGINEERING
                         </h3>
                         <p class="text-gray-900 dark:text-gray-300 leading-relaxed font-barlow-thin">
-                            From initial concept through detailed design, Syntanium provides comprehensive engineering
+                            From initial concept through detailed design, Syntanium Energy provides comprehensive
+                            engineering
                             services that transform industrial visions into viable, efficient realities for our clients.
                         </p>
                     </div>
@@ -95,7 +97,8 @@
                             MAINTENANCE
                         </h3>
                         <p class="text-gray-900 dark:text-gray-400 leading-relaxed font-barlow-thin">
-                            Syntanium's maintenance expertise ensures continuous facility performance through proactive
+                            Syntanium Energy's maintenance expertise ensures continuous facility performance through
+                            proactive
                             upkeep, strategic modernization, and regulatory compliance programs that maximize asset
                             value and operational efficiency.
                         </p>

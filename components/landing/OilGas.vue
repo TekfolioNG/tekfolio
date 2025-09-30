@@ -64,7 +64,8 @@
                 <!-- Image - 1/4 width on desktop, hidden on mobile -->
                 <div class="lg:w-1/4 flex justify-center lg:justify-end">
                     <div class="relative w-full max-w-xs lg:max-w-none">
-                        <img src="/assets/img/oilgas-page-syntanium2.png" alt="Engineering at Syntanium Energy"
+                        <img src="/assets/img/oilgas-page-Syntanium2.png"
+                            alt="Engineering at Syntanium Energy Energy Energy"
                             class="w-full h-full object-cover rounded-lg shadow-lg" />
                     </div>
                 </div>
@@ -74,7 +75,7 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
+import { onMounted } from 'vue';
 
 export default {
     name: 'EngineeringServices',

@@ -6,7 +6,7 @@
             </h2>
             <p
                 class="text-center text-xl md:text-2xl font-barlow-thin text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed mb-18 mt-0 px-4">
-                Syntanium supports vital operations across the oil and gas industry,
+                Syntanium Energy supports vital operations across the oil and gas industry,
                 delivering solutions that strengthen infrastructure, safeguard assets,
                 and ensure reliable energy supply.
             </p>
@@ -138,12 +138,12 @@
 
 <script setup>
 // Import images from assets directory
-import downstreamImage from '~/assets/img/downstream-syntanium.jpg';
-import midstreamImage from '~/assets/img/gas-pipelines-syntanium2.jpg';
-import industrialServicesImage from '~/assets/img/industrial-services-syntanium.jpg';
-import marineImage from '~/assets/img/marine-syntanium.jpg';
-import petrochemicalsImage from '~/assets/img/petrochemicals-syntanium.jpg';
-import upstreamImage from '~/assets/img/upstream-syntanium.jpg';
+import downstreamImage from '~/assets/img/downstream-Syntanium.jpg';
+import midstreamImage from '~/assets/img/gas-pipelines-Syntanium.jpg';
+import industrialServicesImage from '~/assets/img/industrial-services-Syntanium.jpg';
+import marineImage from '~/assets/img/marine-Syntanium.jpg';
+import petrochemicalsImage from '~/assets/img/petrochemicals-Syntanium.jpg';
+import upstreamImage from '~/assets/img/upstream-Syntanium.jpg';
 </script>
 
 <style scoped>

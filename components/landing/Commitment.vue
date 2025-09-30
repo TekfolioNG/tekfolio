@@ -26,7 +26,7 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-2">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/commitment-syntanium5.jpg" alt="Safety at Syntanium Energy"
+                            <img src="/assets/img/commitment-Syntanium5.jpg" alt="Safety at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-1">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/construction-syntanium.jpg" alt="Quality at Syntanium Energy"
+                            <img src="/assets/img/construction-Syntanium.jpg" alt="Quality at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -83,7 +83,8 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-2">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/gas-pipelines-syntanium.jpg" alt="Sustainability at Syntanium Energy"
+                            <img src="/assets/img/gas-pipelines-Syntanium.jpg"
+                                alt="Sustainability at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -95,7 +96,7 @@
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-1">
                         <div class="w-full max-w-xs lg:max-w-sm">
                             <img src="/assets/img/empowerment_toei.jpg"
-                                alt="Community Responsibility at Syntanium Energy"
+                                alt="Community Responsibility at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -146,8 +147,8 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-2">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/commitment-syntanium6.jpg"
-                                alt="Ethical Governance at Syntanium Energy"
+                            <img src="/assets/img/commitment-Syntanium6.jpg"
+                                alt="Ethical Governance at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -158,7 +159,7 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-1">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/commitment-syntanium7.jpg" alt="Innovation at Syntanium Energy"
+                            <img src="/assets/img/commitment-Syntanium7.jpg" alt="Innovation at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -211,7 +212,8 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-2">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/commitment-syntanium8.jpg" alt="Collaboration at Syntanium Energy"
+                            <img src="/assets/img/commitment-Syntanium8.jpg"
+                                alt="Collaboration at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>
@@ -222,8 +224,8 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-1">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/who-we-are-syntanium4.png"
-                                alt="Excellence in Delivery at Syntanium Energy"
+                            <img src="/assets/img/who-we-are-Syntanium4.png"
+                                alt="Excellence in Delivery at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>

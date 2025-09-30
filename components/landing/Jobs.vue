@@ -2,7 +2,8 @@
     <div class="careers-component">
         <!-- Section 1: Life at Syntanium with Hero Image -->
         <section class="relative w-full h-[300px] md:h-[450px] lg:h-[500px] lg:mt-24 overflow-hidden">
-            <img :src="heroImage" alt="Gas Pipelines at Syntanium" class="w-full h-full object-cover object-center" />
+            <img :src="heroImage" alt="Gas Pipelines at Syntanium Energy"
+                class="w-full h-full object-cover object-center" />
 
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
@@ -110,7 +111,7 @@
                         <div class="max-w-2xl">
                             <p class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300">
                                 Interested? Submit your application below and take the next step toward building your
-                                future with Syntanium.
+                                future with Syntanium Energy.
                             </p>
                         </div>
 

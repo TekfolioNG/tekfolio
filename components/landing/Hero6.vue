@@ -43,7 +43,7 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/construction-syntanium-hero.png';
+import whoWeAreImage from '~/assets/img/construction-new.jpg';
 </script>
 
 <style scoped>

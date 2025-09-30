@@ -26,7 +26,7 @@
                     <!-- Image Column -->
                     <div class="flex items-center justify-center p-4 lg:p-2 order-2 lg:order-2">
                         <div class="w-full max-w-xs lg:max-w-sm">
-                            <img src="/assets/img/commitment-Syntanium5.jpg" alt="Safety at Syntanium Energy Energy"
+                            <img src="/assets/img/commitment-syntanium5.jpg" alt="Safety at Syntanium Energy Energy"
                                 class="w-full h-auto shadow-lg object-cover">
                         </div>
                     </div>

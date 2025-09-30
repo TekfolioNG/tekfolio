@@ -2,7 +2,7 @@
     <section class="relative min-h-screen overflow-hidden">
         <!-- Hero Background Image -->
         <div class="absolute inset-0">
-            <img src="/assets/img/commitment-Syntanium2.png" alt="Syntanium Energy Commitment"
+            <img src="/assets/img/commitment-syntanium2.png" alt="Syntanium Energy Commitment"
                 class="w-full h-full object-cover object-center" />
         </div>
 

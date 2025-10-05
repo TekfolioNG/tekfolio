@@ -7,8 +7,8 @@
         <div class="col-span-1 md:col-span-2 lg:col-span-1">
           <div class="mb-6">
             <NuxtLink to="/" class="inline-block">
-              <img src="/assets/img/syntanium-logo-temp2.png" alt="Syntanium Energy Logo"
-                class="h-10 md:h-14 lg:h-16 drop-shadow-lg" />
+              <img src="/assets/img/syntanium-logo.png" alt="Syntanium Energy Logo"
+                class="h-16 md:h-18 lg:h-20 drop-shadow-lg" />
             </NuxtLink>
           </div>
           <p class="text-gray-300 mb-6 max-w-md mx-auto md:mx-0">
@@ -42,9 +42,25 @@
               </NuxtLink>
             </li>
             <li>
+              <NuxtLink to="/corrosion-integrity-management"
+                class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
+                Corrosion & Integrity Management
+              </NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="/products-applications"
                 class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
                 Products & Applications
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/marine-vessel" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
+                Marine Vessel Operations
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/supply-chain" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
+                Supply Chain Management
               </NuxtLink>
             </li>
             <li>
@@ -55,11 +71,6 @@
             <li>
               <NuxtLink to="/careers" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
                 Careers
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/contact" class="text-gray-300 hover:text-[#fe4135] transition-colors duration-200">
-                Contact Us
               </NuxtLink>
             </li>
           </ul>
@@ -125,25 +136,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- Newsletter Subscription -->
-      <div class="border-t border-gray-700 pt-8 mb-8">
-        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <div class="mb-4 md:mb-0">
-            <h3 class="text-lg font-semibold text-white mb-2">Stay Updated</h3>
-            <p class="text-gray-300">Subscribe to our newsletter for the latest updates</p>
-          </div>
-          <div class="flex w-full md:w-auto">
-            <input type="email" placeholder="Your email address"
-              class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#fe4135] w-full md:w-64">
-            <button
-              class="bg-[#fe4135] hover:bg-[#dc2626] px-4 py-2 rounded-r-lg text-white font-medium transition-colors duration-200">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
-
       <!-- Bottom Footer with Darker Background -->
       <div class="bg-gray-950 -mx-4 sm:-mx-6 lg:-mx-8 px-4 -my-6 sm:px-6 lg:px-8 border-t border-gray-700 pt-6 pb-6">
         <div

@@ -21,7 +21,7 @@ export default <Partial<Config>> {
         heading: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        syntanium: {
+        Syntanium: {
           50: '#fff7ed',
           100: '#ffedd5',
           200: '#fed7aa',
@@ -34,7 +34,7 @@ export default <Partial<Config>> {
           900: '#9a3412',
           950: '#431407',
         },
-      syntanium2: {
+      Syntanium2: {
           50: '#f9fafb',
           100: '#f3f4f6',
           200: '#e5e7eb',

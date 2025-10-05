@@ -9,12 +9,15 @@
           <div class="flex items-center space-x-3">
             <!-- Logo section -->
             <NuxtLink to="/" class="inline-block">
-              <img src="/assets/img/syntanium-logo-temp.png" alt="Syntanium Energy Logo"
-                class="h-10 md:h-12 lg:h-14 drop-shadow-lg dark:invert" />
+              <!-- Light mode logo -->
+              <img src="/assets/img/syntanium-logo3.png" alt="Syntanium Energy Logo"
+                class="h-12 md:h-16 lg:h-18 drop-shadow-lg dark:hidden" />
+              <!-- Dark mode logo -->
+              <img src="/assets/img/syntanium-logo.png" alt="Syntanium Energy Logo"
+                class="h-12 md:h-16 lg:h-18 drop-shadow-lg hidden dark:block" />
             </NuxtLink>
           </div>
         </div>
-
         <!-- Desktop Navigation - Centered -->
         <div class="hidden lg:flex lg:items-center lg:justify-center lg:flex-1 lg:space-x-4">
           <!-- Who We Are - Simple Link -->
@@ -106,7 +109,7 @@
               class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-lg shadow-lg border border-gray-200/60 dark:border-gray-700 py-4 z-50">
               <div class="grid grid-cols-2 gap-2 px-2">
                 <!-- Products & Applications -->
-                <NuxtLink to="/products-and-applications"
+                <NuxtLink to="/products-applications"
                   class="flex items-center space-x-3 px-3 py-3 rounded-md hover:bg-red-50/80 dark:hover:bg-gray-700/80 transition-colors cursor-pointer group/item"
                   @click="activeDropdown = null">
                   <Icon name="lucide:beaker" class="w-5 h-5 text-[#fe4135] dark:text-[#fe4135] flex-shrink-0" />
@@ -119,7 +122,7 @@
                   </div>
                 </NuxtLink>
                 <!-- Corrosion & Integrity Management -->
-                <NuxtLink to="/corrosion-and-integrity-management"
+                <NuxtLink to="/corrosion-integrity-management"
                   class="flex items-center space-x-3 px-3 py-3 rounded-md hover:bg-red-50/80 dark:hover:bg-gray-700/80 transition-colors cursor-pointer group/item"
                   @click="activeDropdown = null">
                   <Icon name="lucide:shield-half" class="w-5 h-5 text-[#fe4135] dark:text-[#fe4135] flex-shrink-0" />
@@ -145,7 +148,7 @@
                   </div>
                 </NuxtLink>
                 <!-- Supply Chain Manegement -->
-                <NuxtLink to="/ssupply-chain"
+                <NuxtLink to="/supply-chain"
                   class="flex items-center space-x-3 px-3 py-3 rounded-md hover:bg-red-50/80 dark:hover:bg-gray-700/80 transition-colors cursor-pointer group/item"
                   @click="activeDropdown = null">
                   <Icon name="lucide:forklift" class="w-5 h-5 text-[#fe4135] dark:text-[#fe4135] flex-shrink-0" />
@@ -286,7 +289,7 @@
           </button>
           <div v-show="activeMobileDropdown === 'solutions'" class="mt-3 ml-4 space-y-4">
             <!-- Products & Applications -->
-            <NuxtLink to="/products-and-applications"
+            <NuxtLink to="/products-applications"
               class="flex items-center space-x-3 py-2 hover:text-[#dc2626] dark:hover:text-[#f87171] transition-colors"
               @click="mobileMenuOpen = false; activeMobileDropdown = null">
               <Icon name="lucide:beaker" class="w-5 h-5 text-[#fe4135] dark:text-[#fe4135] flex-shrink-0" />
@@ -296,7 +299,7 @@
               </div>
             </NuxtLink>
             <!-- Corrosion & Integrity Management -->
-            <NuxtLink to="/corrosion-and-integrity-management"
+            <NuxtLink to="/corrosion-integrity-management"
               class="flex items-center space-x-3 py-2 hover:text-[#dc2626] dark:hover:text-[#f87171] transition-colors"
               @click="mobileMenuOpen = false; activeMobileDropdown = null">
               <Icon name="lucide:shield-half" class="w-5 h-5 text-[#fe4135] dark:text-[#fe4135] flex-shrink-0" />
@@ -398,7 +401,7 @@ const isActiveSection = (section) => {
     case 'expertise':
       return ['/engineering', '/construction', '/maintenance', '/oil-and-gas'].includes(route.path)
     case 'solutions':
-      return ['/products-and-applications', '/corrosion-and-integrity-management', '/project-and-contract-management', '/manpower-services'].includes(route.path)
+      return ['/products-applications', '/corrosion-integrity-management', '/project-and-contract-management', '/manpower-services'].includes(route.path)
     case 'commitment':
       return route.path.startsWith('/commitment')
     default:

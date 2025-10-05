@@ -37,7 +37,7 @@
                 </div>
             </div>
         </section>
-    </div>f
+    </div>
 </template>
 
 <script setup>

@@ -8,7 +8,8 @@
                 </h2>
                 <p
                     class="text-xl md:text-2xl font-barlow-thin text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                    Syntanium Energy provides practical solutions that keep oil and gas operations running smoothly
+                    Syntanium Energy Energy provides practical solutions that keep oil and gas operations running
+                    smoothly
                     across
                     upstream, midstream, and downstream activities.
                 </p>
@@ -47,7 +48,7 @@
 
                 <!-- Corrosion & Integrity Management -->
                 <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="corrosion-integrity" class="group block">
+                    <NuxtLink to="corrosion-integrity-management" class="group block">
                         <div class="mb-4 hover-bob">
                             <img src="~/assets/img/corossion-management.png" alt="Corrosion & Integrity Management"
                                 class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"

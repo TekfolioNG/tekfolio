@@ -15,7 +15,7 @@
             <form ref="form" @submit.prevent="submitForm"
                 class="bg-red-100 dark:bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100 dark:border-gray-700">
                 <!-- Hidden input for Web3Forms -->
-                <input type="hidden" name="access_key" value="your-web3forms-access-key">
+                <input type="hidden" name="access_key" value="5963118d-6851-4a27-8602-d722d6e51dea">
                 <input type="hidden" name="subject" value="New Contact Form Submission from Syntanium Energy Website">
                 <input type="hidden" name="from_name" value="Syntanium Energy Website">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -133,7 +133,7 @@ const submitForm = async () => {
     try {
         // Prepare form data for Web3Forms
         const formDataToSend = new FormData()
-        formDataToSend.append('access_key', 'your-web3forms-access-key') // Replace with your actual key
+        formDataToSend.append('access_key', '5963118d-6851-4a27-8602-d722d6e51dea') // Replace with your actual key
         formDataToSend.append('name', formData.name)
         formDataToSend.append('email', formData.email)
         formDataToSend.append('phone', formData.phone)

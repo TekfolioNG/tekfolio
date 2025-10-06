@@ -222,37 +222,53 @@
                     </div>
                 </div>
 
-                <!-- Document Uploads Section -->
+                <!-- Resume/CV Information Section -->
                 <div class="mb-8">
                     <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                         <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-                        Documents
+                        Resume/CV Information
                     </h3>
 
+                    <!-- Instructions -->
+                    <div
+                        class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+                        <p class="text-sm text-blue-800 dark:text-blue-200">
+                            <strong>Before submitting:</strong> Please upload your resume and cover letter to a cloud
+                            storage service
+                            (Google Drive, Dropbox, OneDrive, etc.) and ensure the sharing settings are set to "Anyone
+                            with the link can view".
+                            Then paste the links below.
+                        </p>
+                    </div>
+
                     <div class="grid md:grid-cols-2 gap-6">
-                        <!-- Resume Upload -->
+                        <!-- Resume Link -->
                         <div>
-                            <label for="resume" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Resume/CV *
+                            <label for="resumeLink"
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Resume/CV Link *
                             </label>
-                            <input type="file" id="resume" name="resume" @change="handleFileUpload" required
-                                accept=".pdf,.doc,.docx"
-                                class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:bg-red-500 file:text-white hover:file:bg-red-600">
-                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Accepted formats: PDF, DOC, DOCX
-                                (Max 5MB)</p>
+                            <input type="url" id="resumeLink" name="resumeLink" v-model="formData.resumeLink" required
+                                class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm"
+                                placeholder="https://drive.google.com/file/...">
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                                Google Drive, Dropbox, OneDrive, or similar cloud storage link
+                            </p>
                         </div>
 
-                        <!-- Cover Letter Upload -->
+                        <!-- Cover Letter Link -->
                         <div>
-                            <label for="coverLetter"
+                            <label for="coverLetterLink"
                                 class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Cover Letter (Optional)
+                                Cover Letter Link (Optional)
                             </label>
-                            <input type="file" id="coverLetter" name="coverLetter" @change="handleFileUpload"
-                                accept=".pdf,.doc,.docx"
-                                class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:bg-red-500 file:text-white hover:file:bg-red-600">
-                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Accepted formats: PDF, DOC, DOCX
-                                (Max 5MB)</p>
+                            <input type="url" id="coverLetterLink" name="coverLetterLink"
+                                v-model="formData.coverLetterLink"
+                                class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm"
+                                placeholder="https://drive.google.com/file/...">
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                                Link to your cover letter if available
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -266,12 +282,12 @@
 
                     <!-- Why Syntanium Energy -->
                     <div class="mb-6">
-                        <label for="whySyntanium Energy"
+                        <label for="whySyntanium"
                             class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                             Why do you want to work at Syntanium Energy? *
                         </label>
-                        <textarea id="whySyntanium Energy" name="whySyntanium Energy" v-model="formData.whySyntanium"
-                            required rows="4"
+                        <textarea id="whySyntanium" name="whySyntanium" v-model="formData.whySyntanium" required
+                            rows="4"
                             class="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-red-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900 dark:text-white transition-colors duration-300 shadow-sm"
                             placeholder="Tell us what attracts you to Syntanium Energy and how you can contribute to our mission..."></textarea>
                     </div>
@@ -356,6 +372,8 @@ const formData = reactive({
     education: '',
     fieldOfStudy: '',
     keySkills: '',
+    resumeLink: '',
+    coverLetterLink: '',
     whySyntanium: '',
     additionalInfo: '',
     linkedinProfile: '',
@@ -374,15 +392,6 @@ const handlePositionTypeChange = () => {
     formData.preferredDepartment = ''
 }
 
-// Handle file uploads
-const handleFileUpload = (event) => {
-    const file = event.target.files[0]
-    if (file && file.size > 5 * 1024 * 1024) { // 5MB limit
-        alert('File size must be less than 5MB')
-        event.target.value = ''
-    }
-}
-
 // Form submission
 const submitForm = async () => {
     isSubmitting.value = true
@@ -392,26 +401,18 @@ const submitForm = async () => {
         // Prepare form data for Web3Forms
         const formDataToSend = new FormData()
 
-        // Add all form fields
+        // Add Web3Forms required fields
         formDataToSend.append('access_key', 'your-web3forms-access-key') // Replace with your actual key
+        formDataToSend.append('subject', 'New Job Application from Syntanium Energy Website')
+        formDataToSend.append('from_name', 'Syntanium Energy Careers Portal')
+        formDataToSend.append('botcheck', '')
+
+        // Add all form fields
         Object.keys(formData).forEach(key => {
-            if (formData[key] !== null && formData[key] !== undefined) {
+            if (formData[key] !== null && formData[key] !== undefined && formData[key] !== '') {
                 formDataToSend.append(key, formData[key])
             }
         })
-
-        // Add files if selected
-        const resumeFile = document.getElementById('resume').files[0]
-        const coverLetterFile = document.getElementById('coverLetter').files[0]
-
-        if (resumeFile) {
-            formDataToSend.append('resume', resumeFile)
-        }
-        if (coverLetterFile) {
-            formDataToSend.append('coverLetter', coverLetterFile)
-        }
-
-        formDataToSend.append('botcheck', '') // Anti-bot field
 
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -439,15 +440,18 @@ const submitForm = async () => {
                 education: '',
                 fieldOfStudy: '',
                 keySkills: '',
+                resumeLink: '',
+                coverLetterLink: '',
                 whySyntanium: '',
                 additionalInfo: '',
                 linkedinProfile: '',
                 privacyConsent: false
             })
 
-            // Reset file inputs
-            document.getElementById('resume').value = ''
-            document.getElementById('coverLetter').value = ''
+            // Scroll to success message
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+            }, 100)
         } else {
             // Error from Web3Forms
             throw new Error(result.message || 'Failed to submit application')
@@ -487,15 +491,6 @@ select {
     transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-/* File input styling */
-input[type="file"] {
-    cursor: pointer;
-}
-
-input[type="file"]::-webkit-file-upload-button {
-    cursor: pointer;
-}
-
 /* Enhanced shadow for light and dark mode */
 form {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -513,17 +508,6 @@ h3 {
 
 .dark h3 {
     border-bottom: 1px solid rgba(107, 114, 128, 0.2);
-}
-
-/* Smooth transitions for conditional fields */
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
 }
 
 /* Custom checkbox styling for light and dark modes */

@@ -144,14 +144,14 @@
             © {{ new Date().getFullYear() }} Syntanium Energy. All rights reserved.
           </p>
           <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
-            <div class="flex space-x-6">
-              <NuxtLink to="#" class="text-gray-400 hover:text-[#fe4135] text-sm transition-colors duration-200">
-                Privacy Policy
-              </NuxtLink>
-              <NuxtLink to="#" class="text-gray-400 hover:text-[#fe4135] text-sm transition-colors duration-200">
-                Terms of Service
-              </NuxtLink>
-            </div>
+            <button @click="showPrivacyPolicy = true"
+              class="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+              Privacy Policy
+            </button>
+            <button @click="showTermsOfService = true"
+              class="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+              Terms of Service
+            </button>
             <div class="text-gray-400 text-sm">
               Design & Developed by
               <NuxtLink to="https://tekfol.io" target="_blank"
@@ -162,10 +162,19 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal Components -->
+      <PrivacyPolicyModal v-model="showPrivacyPolicy" />
+      <TermsOfServiceModal v-model="showTermsOfService" />
     </div>
   </footer>
 </template>
 
 <script setup>
-// No script needed for basic footer functionality
+import { ref } from 'vue';
+import PrivacyPolicyModal from '~/components/home/PrivacyPolicyModal.vue';
+import TermsOfServiceModal from '~/components/home/TermsOfServiceModal.vue';
+
+const showPrivacyPolicy = ref(false);
+const showTermsOfService = ref(false);
 </script>

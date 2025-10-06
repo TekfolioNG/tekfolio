@@ -16,7 +16,7 @@
             <form ref="form" @submit.prevent="submitForm"
                 class="bg-red-50 dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-10 border border-red-100 dark:border-gray-700">
                 <!-- Hidden inputs for Web3Forms -->
-                <input type="hidden" name="access_key" value="your-web3forms-access-key">
+                <input type="hidden" name="access_key" value="0eb7506c-766c-4aa9-9dc2-2ca773456052">
                 <input type="hidden" name="subject" value="New Job Application from Syntanium Energy Website">
                 <input type="hidden" name="from_name" value="Syntanium Energy Careers Portal">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -402,7 +402,7 @@ const submitForm = async () => {
         const formDataToSend = new FormData()
 
         // Add Web3Forms required fields
-        formDataToSend.append('access_key', 'your-web3forms-access-key') // Replace with your actual key
+        formDataToSend.append('access_key', '0eb7506c-766c-4aa9-9dc2-2ca773456052')
         formDataToSend.append('subject', 'New Job Application from Syntanium Energy Website')
         formDataToSend.append('from_name', 'Syntanium Energy Careers Portal')
         formDataToSend.append('botcheck', '')

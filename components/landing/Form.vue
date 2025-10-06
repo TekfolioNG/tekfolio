@@ -133,7 +133,7 @@ const submitForm = async () => {
     try {
         // Prepare form data for Web3Forms
         const formDataToSend = new FormData()
-        formDataToSend.append('access_key', '5963118d-6851-4a27-8602-d722d6e51dea') // Replace with your actual key
+        formDataToSend.append('access_key', '5963118d-6851-4a27-8602-d722d6e51dea')
         formDataToSend.append('name', formData.name)
         formDataToSend.append('email', formData.email)
         formDataToSend.append('phone', formData.phone)

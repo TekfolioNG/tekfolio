@@ -447,11 +447,6 @@ const submitForm = async () => {
                 linkedinProfile: '',
                 privacyConsent: false
             })
-
-            // Scroll to success message
-            setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-            }, 100)
         } else {
             // Error from Web3Forms
             throw new Error(result.message || 'Failed to submit application')

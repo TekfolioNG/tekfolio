@@ -67,6 +67,19 @@ export default defineNuxtConfig({
       failOnError: false,
       crawlLinks: true,
       routes: ['/']
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          include: ['/*'],
+          exclude: [
+            '/favicon.ico',
+            '/assets/*',
+            '/_nuxt/*',
+            '/api/*'
+          ]
+        }
+      }
     }
   },
 

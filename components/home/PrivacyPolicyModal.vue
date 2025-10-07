@@ -52,7 +52,7 @@
 
                         <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
                             <p class="text-gray-700 dark:text-gray-300">
-                                Questions? Contact us at <a href="mailto:legal@syntaniumenergy.com"
+                                Questions? Contact us at <a href="mailto:info@syntaniumenergy.com"
                                     class="text-red-500 hover:text-red-600 font-medium">legal@syntaniumenergy.com</a>
                             </p>
                         </div>

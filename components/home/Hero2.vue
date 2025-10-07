@@ -41,14 +41,14 @@
                                 <div class="flex items-center mb-4">
                                     <div class="w-8 h-0.5 bg-[#fe4135] mr-3"></div>
                                     <h3 class="text-sm font-bold text-gray-800 uppercase tracking-widest">
-                                        The Syntanium Energy Energy Edge
+                                        The Syntanium Energy Edge
                                     </h3>
                                 </div>
 
                                 <!-- Main text -->
                                 <div class="space-y-4 card-content">
                                     <p class="text-lg md:text-xl lg:text-2xl leading-normal font-light text-black">
-                                        Syntanium Energy Energy delivers engineering, construction, maintenance, and oil
+                                        Syntanium Energy delivers engineering, construction, maintenance, and oil
                                         and
                                         gas
                                         solutions that strengthen performance, protect assets, and create lasting value

@@ -100,9 +100,7 @@ useHead({
 })
 
 // Set proper HTTP status code for Nuxt
-const props = defineProps({
-    error: Object
-})
+setResponseStatus(404);
 </script>
 
 <style scoped>

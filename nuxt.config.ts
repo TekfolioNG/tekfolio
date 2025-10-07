@@ -72,7 +72,8 @@ export default defineNuxtConfig({
         '/solutions-expertise',
         '/our-commitment', 
         '/careers',
-        '/contact'
+        '/contact',
+        '/404'
       ]
     }
   },

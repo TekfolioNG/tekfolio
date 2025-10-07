@@ -100,7 +100,12 @@ useHead({
 })
 
 // Set proper HTTP status code for Nuxt
-setResponseStatus(404);
+const props = defineProps({
+    error: Object
+})
+
+// IMPORTANT: Set 404 status code
+setResponseStatus(404)
 </script>
 
 <style scoped>

@@ -66,15 +66,17 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       crawlLinks: true,
-      routes: [
-        '/',
-        '/who-we-are',
-        '/solutions-expertise',
-        '/our-commitment', 
-        '/careers',
-        '/contact',
-        '/404'
-      ]
+      routes: ['/']
+    }
+  },
+
+  hooks: {
+    'pages:extend'(pages) {
+      pages.push({
+        name: '404',
+        path: '/:catchAll(.*)*',
+        file: '~/error.vue'
+      })
     }
   },
 

@@ -153,10 +153,10 @@
               Terms of Service
             </button>
             <div class="text-gray-400 text-sm">
-              Design & Developed by
+              Design & Development by
               <NuxtLink to="https://tekfol.io" target="_blank"
                 class="text-[#fe4135] hover:text-white transition-colors duration-200">
-                Tekfolio Ltd
+                Tekfolio
               </NuxtLink>
             </div>
           </div>

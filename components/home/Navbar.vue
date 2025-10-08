@@ -27,6 +27,13 @@
             WHO WE ARE
           </NuxtLink>
 
+          <NuxtLink to="/about"
+            class="text-base text-gray-800 dark:text-gray-100 hover:text-[#fe4135] dark:hover:text-[#fe4135] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#fe4135] dark:hover:border-[#fe4135] pb-1"
+            :class="{ 'text-[#fe4135] dark:text-[#fe4135] border-[#fe4135] dark:border-[#fe4135]': $route.path === '/who-we-are' }">
+            about
+          </NuxtLink>
+
+
           <!-- Our Expertise (renamed from Solutions & Expertise) -->
           <div class="relative group">
             <button

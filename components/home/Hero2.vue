@@ -11,7 +11,7 @@
                         <div
                             class="inline-block px-4 py-2 bg-black/40 backdrop-blur-sm rounded-full mb-6 category-badge">
                             <span class="text-white/90 text-sm font-bold uppercase tracking-widest">
-                                Syntanium Energy ENERGY
+                                Syntanium Energy
                             </span>
                         </div>
 

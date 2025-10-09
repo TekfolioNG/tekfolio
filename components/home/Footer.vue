@@ -123,7 +123,7 @@
             </li>
             <li class="flex items-center justify-center md:justify-start">
               <Icon name="lucide:phone" class="w-5 h-5 mr-3 text-[#fe4135] flex-shrink-0" />
-              <span class="text-gray-300">(+234) 814 857 1524</span>
+              <span class="text-gray-300">(+234) 805 484 4581, <br>(+234) 805 484 4582</br></span>
             </li>
             <li class="flex items-center justify-center md:justify-start">
               <Icon name="lucide:mail" class="w-5 h-5 mr-3 text-[#fe4135] flex-shrink-0" />

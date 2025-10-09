@@ -8,7 +8,7 @@
                 </h2>
                 <p
                     class="text-xl md:text-2xl font-barlow-thin text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                    Syntanium Energy Energy provides practical solutions that keep oil and gas operations running
+                    Syntanium Energy provides practical solutions that keep oil and gas operations running
                     smoothly
                     across
                     upstream, midstream, and downstream activities.

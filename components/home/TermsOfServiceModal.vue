@@ -62,8 +62,8 @@
 
                         <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
                             <p class="text-gray-700 dark:text-gray-300">
-                                Questions? Contact us at <a href="mailto:info@syntaniumenergy.com"
-                                    class="text-red-500 hover:text-red-600 font-medium">legal@syntaniumenergy.com</a>
+                                Questions? Contact us at <a href="mailto:info@elevationconsulting.com.ng"
+                                    class="text-[#006688] font-medium">legal@levationconsulting.com.ng</a>
                             </p>
                         </div>
                     </div>

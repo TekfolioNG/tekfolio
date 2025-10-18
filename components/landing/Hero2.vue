@@ -1,6 +1,6 @@
 <template>
     <section
-        class="relative w-full h-96 md:h-[500px] overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
+        class="relative w-full h-96 md:h-[500px] overflow-hidden bg-gradient-to-br from-[#012430] via-[#023d52] to-[#014a63]">
         <!-- Desktop Layout -->
         <div class="hidden md:flex h-full items-center">
             <!-- Left Side - Content -->
@@ -9,9 +9,9 @@
                     <h1 class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-1">
                         Contact Us
                     </h1>
-                    <div class="w-20 h-1 bg-red-500 mx-auto lg:mx-0 mb-6"></div>
-                    <p class="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-md">
-                        Ready to discuss your project? Get in touch with our team of experts.
+                    <div class="w-20 h-1 bg-[#0077AA] mx-auto lg:mx-0 mb-6"></div>
+                    <p class="text-lg lg:text-xl text-gray-200 leading-relaxed max-w-md">
+                        Let's discuss how we can help strengthen your business and unlock new opportunities for growth.
                     </p>
                 </div>
             </div>
@@ -20,9 +20,9 @@
             <div class="flex-1 flex items-center justify-center">
                 <div class="relative">
                     <!-- Subtle background circle for visual interest -->
-                    <div class="absolute inset-0 bg-red-500/10 rounded-full transform scale-110"></div>
-                    <DotLottieVue style="height: 400px; width: 400px" autoplay loop
-                        src="https://lottie.host/9570133c-2003-42f9-8837-7df31d26106d/QSdJfTeuzt.lottie" />
+                    <div class="absolute inset-0 bg-[#0077AA]/10 rounded-full transform scale-110"></div>
+                    <DotLottieVue style="height: 500px; width: 500px" autoplay loop
+                        src="https://lottie.host/99fee936-f9a0-472a-aa92-1c34b7ec8c95/QJXzQIubnl.lottie" />
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <!-- Lottie as background -->
             <div class="absolute inset-0 flex items-center justify-center opacity-30">
                 <DotLottieVue style="height: 300px; width: 300px" autoplay loop
-                    src="https://lottie.host/9570133c-2003-42f9-8837-7df31d26106d/QSdJfTeuzt.lottie" />
+                    src="https://lottie.host/99fee936-f9a0-472a-aa92-1c34b7ec8c95/QJXzQIubnl.lottie" />
             </div>
 
             <!-- Content overlay -->
@@ -44,20 +44,20 @@
                     <h1 class="font-barlow-extrabold text-4xl text-white leading-tight mb-4">
                         Contact Us
                     </h1>
-                    <div class="w-20 h-1 bg-red-500 mx-auto mb-4"></div>
+                    <div class="w-20 h-1 bg-[#0077AA] mx-auto mb-4"></div>
                     <p class="text-lg text-gray-200 leading-relaxed max-w-sm mx-auto">
-                        Get in touch with our team of experts
+                        Let's discuss your business growth together
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Decorative elements -->
-        <div class="absolute top-8 right-8 w-2 h-2 bg-red-500 rounded-full opacity-60"></div>
-        <div class="absolute bottom-8 left-8 w-1.5 h-1.5 bg-red-500 rounded-full opacity-40"></div>
+        <div class="absolute top-8 right-8 w-2 h-2 bg-[#0077AA] rounded-full opacity-60"></div>
+        <div class="absolute bottom-8 left-8 w-1.5 h-1.5 bg-[#0077AA] rounded-full opacity-40"></div>
 
         <!-- Subtle geometric shapes for visual interest -->
-        <div class="absolute top-1/4 right-1/4 w-32 h-32 border border-red-500/10 rounded-full hidden lg:block"></div>
+        <div class="absolute top-1/4 right-1/4 w-32 h-32 border border-[#0077AA]/10 rounded-full hidden lg:block"></div>
         <div class="absolute bottom-1/3 left-1/4 w-24 h-24 border border-gray-400/20 rounded-full hidden lg:block">
         </div>
     </section>

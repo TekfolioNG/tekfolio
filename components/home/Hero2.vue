@@ -1,7 +1,7 @@
 <template>
     <main class="relative w-screen h-screen overflow-hidden">
         <!-- Extended Red Background Section -->
-        <div class="absolute inset-0 bg-[#fe4135] h-full" style="top: 0;">
+        <div class="absolute inset-0 bg-[#00D4FF] h-full" style="top: 0;">
             <!-- Hero Content -->
             <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-32 lg:pt-40">
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between max-w-full">
@@ -39,7 +39,7 @@
 
                                 <!-- Header accent -->
                                 <div class="flex items-center mb-4">
-                                    <div class="w-8 h-0.5 bg-[#fe4135] mr-3"></div>
+                                    <div class="w-8 h-0.5 bg-[#00D4FF] mr-3"></div>
                                     <h3 class="text-sm font-bold text-gray-800 uppercase tracking-widest">
                                         The Syntanium Energy Edge
                                     </h3>
@@ -59,7 +59,7 @@
                                 <!-- CTA Button -->
                                 <div class="mt-6">
                                     <NuxtLink to="/who-we-are"
-                                        class="inline-flex items-center px-6 py-3 bg-[#fe4135] text-white font-semibold rounded-lg hover:bg-[#fe4135]/90 transform hover:scale-105 transition-all duration-300 group cta-button">
+                                        class="inline-flex items-center px-6 py-3 bg-[#00D4FF] text-white font-semibold rounded-lg hover:bg-[#00D4FF]/90 transform hover:scale-105 transition-all duration-300 group cta-button">
                                         Learn More
                                         <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,56 +1,52 @@
 <template>
-    <div class="min-h-screen bg-white dark:bg-gray-950">
+    <div class="min-h-screen bg-white">
 
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Full Width -->
             <div class="absolute inset-0">
-                <img :src="whoWeAreImage" alt="Corrosion & Integrity Management - Syntanium Energy"
+                <img :src="aboutUsImage" alt="About Us - Elevation Consulting"
                     class="w-full h-full object-cover sharp-image" />
             </div>
 
             <!-- Subtle overlay for depth -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/40"></div>
 
             <!-- Content Overlay - Right Side -->
             <div class="relative z-10 h-full flex items-center justify-end">
                 <div class="container mx-auto px-6 md:px-12">
-                    <div
-                        class="max-w-md ml-auto bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
-                        <h1
-                            class="font-barlow text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-                            Products & Applications
-                        </h1>
-                        <div class="mt-4 w-16 h-1 bg-red-500"></div>
+                    <div class="max-w-md ml-auto bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
+                        <h2
+                            class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight tracking-wide">
+                            Advisory
+                        </h2>
+                        <div class="mt-4 w-16 h-1 bg-[#0077AA]"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Description Section - Reduced Margins -->
-        <section
-            class="w-full bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-12 lg:py-16">
+        <section class="w-full bg-gradient-to-b from-gray-50 to-white py-12 lg:py-16">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Main Description -->
                 <div class="mb-8">
                     <div class="max-w-4xl mx-auto">
                         <p
-                            class="text-xl sm:text-2xl lg:text-3xl text-gray-800 dark:text-gray-100 leading-relaxed lg:leading-relaxed font-light text-center mb-2">
-                            Our specialty chemicals at Syntanium Energy are designed to solve real operational
-                            challenges in oil, gas, and
-                            industrial systems.
+                            class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
+                            We Help Turn Ideas into Scalable, Sustainable Businesses
                         </p>
-                        <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center">
-                            Each formulation delivers measurable value to
-                            <span class="font-semibold text-gray-900 dark:text-white">prevent corrosion, improve
-                                process
-                                efficiency, and extend the life</span> of critical assets across demanding environments.
+                        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
+                            Through data-informed strategy, operational guidance, and hands-on execution support, we
+                            help startups and MSMEs bridge the gap between ambition and results, empowering them to
+                            scale
+                            competitively and sustainably.
                         </p>
                     </div>
                 </div>
 
                 <!-- Divider -->
                 <div class="flex justify-center mb-8">
-                    <div class="w-24 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
+                    <div class="w-24 h-px bg-gradient-to-r from-transparent via-[#0077AA] to-transparent"></div>
                 </div>
             </div>
         </section>
@@ -59,15 +55,17 @@
 
 <script setup>
 // Import image from assets directory
-import whoWeAreImage from '~/assets/img/researching-laboratory-syntanium.jpg';
+import aboutUsImage from '~/assets/img/elevation-consulting-hero.jpg';
 </script>
 
 <style scoped>
 /* Import Barlow font if not already imported globally */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
 
-.font-barlow {
+.font-barlow-extrabold {
     font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* Ensure smooth transitions */
@@ -83,7 +81,7 @@ import whoWeAreImage from '~/assets/img/researching-laboratory-syntanium.jpg';
 
 /* Custom responsive adjustments */
 @media (max-width: 768px) {
-    .font-barlow {
+    .font-barlow-extrabold {
         letter-spacing: 0.025em;
     }
 }

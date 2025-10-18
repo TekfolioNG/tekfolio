@@ -27,12 +27,11 @@ useHead({
 
 <template>
   <HomeContainer>
-    <HomeHero2 />
     <HomeHero />
   </HomeContainer>
+  <HomePreview />
   <HomeSolution />
-  <HomeBrandEssence />
-  <HomeExpertise />
-  <HomeIndustries />
+  <HomeValues />
+  <HomeClients />
   <HomeCta2></HomeCta2>
 </template>

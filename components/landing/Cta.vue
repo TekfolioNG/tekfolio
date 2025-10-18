@@ -11,7 +11,7 @@
 
     <!-- Floating Background Elements -->
     <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-[#fe4135]/10 dark:bg-[#fe4135]/20 rounded-full blur-3xl">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-[#00D4FF]/10 dark:bg-[#00D4FF]/20 rounded-full blur-3xl">
       </div>
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-200/10 dark:bg-amber-400/20 rounded-full blur-3xl">
       </div>
@@ -25,7 +25,7 @@
             <div class="max-w-2xl mx-auto lg:mx-0">
               <!-- Badge -->
               <div
-                class="inline-flex items-center px-4 py-2 bg-[#fe4135]/20 backdrop-blur-sm rounded-full text-[#fe4135] text-sm font-medium mb-6">
+                class="inline-flex items-center px-4 py-2 bg-[#00D4FF]/20 backdrop-blur-sm rounded-full text-[#00D4FF] text-sm font-medium mb-6">
                 <Icon name="lucide:zap" class="w-4 h-4 mr-2" />
                 Build Tomorrow Today
               </div>
@@ -33,7 +33,7 @@
               <!-- Heading -->
               <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-6 leading-tight">
                 Engineering Confidence,
-                <span class="text-[#fe4135]">Every Step</span>
+                <span class="text-[#00D4FF]">Every Step</span>
               </h2>
 
               <!-- Description -->
@@ -52,7 +52,7 @@
 
               <div class="flex justify-center lg:justify-start">
                 <NuxtLink to="/contact"
-                  class="group inline-flex items-center justify-center px-8 py-4 bg-[#fe4135] text-white font-semibold rounded-lg shadow-lg hover:bg-[#dc2626] transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                  class="group inline-flex items-center justify-center px-8 py-4 bg-[#00D4FF] text-white font-semibold rounded-lg shadow-lg hover:bg-[#dc2626] transition-all duration-300 hover:scale-105 hover:shadow-xl">
                   <Icon name="lucide:phone-call" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                   Contact Us
                   <Icon name="lucide:arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -64,15 +64,15 @@
                 <div
                   class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-gray-700 dark:text-gray-300">
                   <div class="flex items-center">
-                    <Icon name="lucide:shield-check" class="w-5 h-5 text-[#fe4135] mr-2" />
+                    <Icon name="lucide:shield-check" class="w-5 h-5 text-[#00D4FF] mr-2" />
                     <span class="text-sm">Safety First</span>
                   </div>
                   <div class="flex items-center">
-                    <Icon name="lucide:award" class="w-5 h-5 text-[#fe4135] mr-2" />
+                    <Icon name="lucide:award" class="w-5 h-5 text-[#00D4FF] mr-2" />
                     <span class="text-sm">Quality Assured</span>
                   </div>
                   <div class="flex items-center">
-                    <Icon name="lucide:leaf" class="w-5 h-5 text-[#fe4135] mr-2" />
+                    <Icon name="lucide:leaf" class="w-5 h-5 text-[#00D4FF] mr-2" />
                     <span class="text-sm">Sustainable Solutions</span>
                   </div>
                 </div>
@@ -90,11 +90,11 @@
               <!-- Floating Elements -->
               <div
                 class="absolute -top-4 -right-4 w-12 h-12 bg-white/90 dark:bg-gray-800/90 rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                <Icon name="lucide:zap" class="w-6 h-6 text-[#fe4135]" />
+                <Icon name="lucide:zap" class="w-6 h-6 text-[#00D4FF]" />
               </div>
 
               <div
-                class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#fe4135]/90 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#00D4FF]/90 rounded-full flex items-center justify-center shadow-lg animate-pulse">
                 <Icon name="lucide:hard-hat" class="w-8 h-8 text-white" />
               </div>
             </div>

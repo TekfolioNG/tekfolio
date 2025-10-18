@@ -1,47 +1,36 @@
 <template>
-    <div class="min-h-screen bg-white dark:bg-gray-900 flex flex-col relative overflow-hidden">
-        <!-- Large Background 404 - Significantly increased size, moved further up and right -->
-        <div class="large-bg-404">
-            <span class="large-bg-404-text">
-                404
-            </span>
-        </div>
+    <div class="min-h-screen bg-[#012430] flex flex-col relative overflow-hidden">
 
         <!-- Header with Centered Logo -->
         <header class="w-full py-6 px-4 md:px-8 relative z-10">
             <div class="flex justify-center">
                 <NuxtLink to="/" class="inline-block">
                     <!-- Light mode logo -->
-                    <img src="/assets/img/syntanium-logo3.png" alt="Syntanium Energy Logo"
+                    <img src="/assets/img/elevation-logo2.png" alt="Syntanium Energy Logo"
                         class="h-12 md:h-16 w-auto dark:hidden" />
-                    <!-- Dark mode logo -->
-                    <img src="/assets/img/syntanium-logo.png" alt="Syntanium Energy Logo"
-                        class="h-12 md:h-16 w-auto hidden dark:block" />
                 </NuxtLink>
             </div>
         </header>
 
         <!-- Main Content -->
-        <main class="flex-1 flex items-center justify-center px-2 py-12 relative z-10">
+        <main class="flex-1 flex items-center justify-center px-2 py-2 relative z-10">
             <div class="max-w-4xl w-full">
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Left Column - Text Content -->
                     <div class="content-column">
                         <!-- Heading -->
                         <h1 class="main-heading">
-                            Oops... This Page Missed the Pipeline
+                            ...Looks Like We Missed a Step
                         </h1>
 
                         <!-- Body Text -->
                         <div class="body-text">
                             <p>
-                                We couldn't locate the page you requested. It returned an <strong
-                                    class="text-gray-900 dark:text-white">error 404,</strong> which means it may have
-                                been rerouted, is no longer in operation, or the URL might have a missing or extra
-                                character.
+                                Seems the link you followed isn’t active or has changed, which is why it returned an
+                                <strong class="text-[#00D4FF]">error 404.</strong>
                             </p>
-                            <p class="text-lg md:text-xl font-medium text-gray-900 dark:text-white">
-                                Either way, let's get you back on track.
+                            <p class="text-lg md:text-xl font-medium text-white">
+                                Either way, let’s get your journey back on course.
                             </p>
                         </div>
 
@@ -68,8 +57,8 @@
                         </div>
 
                         <!-- Lottie Animation -->
-                        <DotLottieVue style="height: 400px; width: 400px" autoplay loop
-                            src="https://lottie.host/66a01047-0d2a-4949-9073-ff028533edb1/iBDVEVatet.lottie"
+                        <DotLottieVue style="height: 700px; width: 700px" autoplay loop
+                            src="https://lottie.host/b31ba03d-be30-4390-b136-5f0d881b09f0/elo9NCqtft.lottie"
                             aria-label="404 Animation" class="max-w-full relative z-10" />
                     </div>
                 </div>
@@ -77,10 +66,10 @@
         </main>
 
         <!-- Footer -->
-        <footer class="w-full py-6 px-4 md:px-8 border-t border-gray-200 dark:border-gray-700 relative z-10">
+        <footer class="w-full py-6 px-4 md:px-8 border-t border-gray-200 relative z-10">
             <div class="max-w-7xl mx-auto text-center">
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                    &copy; {{ new Date().getFullYear() }} Syntanium Energy. All rights reserved.
+                <p class="text-sm text-gray-400">
+                    &copy; {{ new Date().getFullYear() }} Elevation Consulting. All rights reserved.
                 </p>
             </div>
         </footer>
@@ -175,7 +164,7 @@ setResponseStatus(404)
     font-size: 2.25rem;
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
-    color: rgb(17 24 39);
+    color: rgb(244, 245, 248);
     line-height: 1.2;
     animation: fadeInUp 0.6s ease-out 0.1s backwards;
 }
@@ -199,7 +188,7 @@ setResponseStatus(404)
 /* Body Text */
 .body-text {
     font-size: 1rem;
-    color: rgb(55 65 81);
+    color: rgb(244, 245, 248);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -235,7 +224,7 @@ setResponseStatus(404)
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fe4135;
+    background-color: #0077AA;
     color: white;
     font-weight: 600;
     font-size: 1.125rem;
@@ -245,7 +234,7 @@ setResponseStatus(404)
 }
 
 .cta-button:hover {
-    background-color: rgba(254, 65, 53, 0.9);
+    background-color: #011c27;
     transform: scale(1.05);
 }
 

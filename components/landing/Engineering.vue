@@ -119,7 +119,7 @@ export default {
 
 /* Brand color */
 .text-brand-red {
-    color: #fe4135;
+    color: #00D4FF;
 }
 
 /* Maintenance icon styling with brand color filter */

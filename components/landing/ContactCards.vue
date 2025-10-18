@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20 px-6 bg-white dark:bg-gray-900">
+    <section class="py-20 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <!-- Contact Cards -->
             <div class="grid md:grid-cols-3 gap-8 mb-16">
@@ -15,7 +15,7 @@
                     </div>
                     <h3 class="contact-title">Our Location</h3>
                     <p class="contact-text">
-                        11 Oromineke Layout, Off Wogu Street, D-Line, Port Harcourt, Nigeria
+                        120 Lewis Street, Lagos Island, Lagos, Nigeria
                     </p>
                 </div>
 
@@ -28,9 +28,17 @@
                         </svg>
                     </div>
                     <h3 class="contact-title">Call Us</h3>
-                    <a href="tel:+2348148571524" class="contact-link">
-                        (+234) 814 857 1524
-                    </a>
+                    <div class="space-y-1">
+                        <a href="tel:+2348033377366" class="contact-link block">
+                            (+234) 803 337 7366
+                        </a>
+                        <a href="tel:+2348038786056" class="contact-link block">
+                            (+234) 803 878 6056
+                        </a>
+                        <a href="tel:+2349026944592" class="contact-link block">
+                            (+234) 902 694 4592
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Email Card -->
@@ -42,46 +50,52 @@
                         </svg>
                     </div>
                     <h3 class="contact-title">Email Us</h3>
-                    <a href="mailto:info@syntaniumenergy.com" class="contact-link break-all">
-                        info@syntaniumenergy.com
-                    </a>
+                    <div class="space-y-1">
+                        <a href="mailto:info@elevationconsulting.com.ng" class="contact-link block font-medium">
+                            info@elevationconsulting.com.ng
+                        </a>
+                        <a href="mailto:elevationconsultingsg@gmail.com" class="contact-link block font-medium">
+                            elevationconsultingsg@gmail.com
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Map Section -->
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg">
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
                 <div class="grid md:grid-cols-2">
                     <!-- Map Info -->
                     <div class="p-8 md:p-12">
-                        <h3 class="text-2xl font-barlow font-bold text-gray-900 dark:text-white mb-6">
+                        <h3 class="text-2xl font-barlow-extrabold text-gray-900 mb-6">
                             Visit Our Office
                         </h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                            Come discuss your energy projects and discover how we can support your operations.
+                        <p class="text-gray-800 mb-6 font-medium">
+                            Come discuss your business goals and discover how we can help you achieve sustainable
+                            growth.
                         </p>
 
                         <div class="space-y-4">
                             <div class="flex items-start">
-                                <svg class="w-5 h-5 text-red-500 mt-1 mr-3 flex-shrink-0" fill="none"
+                                <svg class="w-5 h-5 text-[#0077AA] mt-1 mr-3 flex-shrink-0" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <p class="text-gray-600 dark:text-gray-300">
-                                    11 Oromineke Layout, Off Wogu Street, D-Line, Port Harcourt, Nigeria
+                                <p class="text-gray-900 font-medium">
+                                    120 Lewis Street, Lagos Island, Lagos, Nigeria
                                 </p>
                             </div>
 
                             <div class="flex items-center">
-                                <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-[#0077AA] mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <p class="text-gray-600 dark:text-gray-300">
-                                    Monday - Friday: 8:00 AM - 5:00 PM
+                                <p class="text-gray-900 font-medium">
+                                    Monday - Friday: 8:00 AM - 6:00 PM
                                 </p>
                             </div>
                         </div>
@@ -90,9 +104,8 @@
                     <!-- Map Embed -->
                     <div class="h-80 md:h-auto">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.952428207506!2d6.998414274756657!3d4.817920341266972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce2517db5a1f%3A0x8e8e2b4e8e2b4e8e!2sPort%20Harcourt%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1634032345678!5m2!1sen!2sng"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            class="dark:grayscale dark:opacity-90" />
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6401088831966!2d3.3927767!3d6.4387811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b3b3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2s120%20Lewis%20St%2C%20Lagos%20Island%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1634032345678!5m2!1sen!2sng"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -105,23 +118,22 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
 
-.font-barlow {
+.font-barlow-extrabold {
     font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* Contact card base styles */
 .contact-card {
     background-color: rgb(249 250 251);
-    /* gray-50 */
     border-radius: 0.75rem;
-    /* rounded-xl */
     padding: 2rem;
-    /* p-8 */
     text-align: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .contact-card:hover {
@@ -129,26 +141,13 @@
     transform: translateY(-0.5rem);
 }
 
-/* Dark mode for contact cards */
-html.dark .contact-card,
-.dark .contact-card,
-[data-theme="dark"] .contact-card {
-    background-color: rgb(31 41 55);
-    /* dark:bg-gray-800 */
-}
-
 /* Contact icon styles */
 .contact-icon {
     width: 4rem;
-    /* w-16 */
     height: 4rem;
-    /* h-16 */
-    background-color: rgb(239 68 68);
-    /* bg-red-500 */
+    background-color: #0077AA;
     border-radius: 0.75rem;
-    /* rounded-xl */
     margin: 0 auto 1.5rem auto;
-    /* mx-auto mb-6 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,65 +162,38 @@ html.dark .contact-card,
 /* Contact title styles */
 .contact-title {
     font-size: 1.25rem;
-    /* text-xl */
     font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    /* font-bold */
+    font-weight: 800;
     color: rgb(17 24 39);
-    /* text-gray-900 */
     margin-bottom: 1rem;
-    /* mb-4 */
-}
-
-/* Dark mode for contact title */
-html.dark .contact-title,
-.dark .contact-title,
-[data-theme="dark"] .contact-title {
-    color: rgb(255 255 255);
-    /* dark:text-white */
 }
 
 /* Contact text styles */
 .contact-text {
-    color: rgb(55 65 81);
-    /* text-gray-700 */
+    color: rgb(31 41 55);
     line-height: 1.625;
-    /* leading-relaxed */
-}
-
-/* Dark mode for contact text */
-html.dark .contact-text,
-.dark .contact-text,
-[data-theme="dark"] .contact-text {
-    color: rgb(209 213 219);
-    /* dark:text-gray-300 */
 }
 
 /* Contact link styles */
 .contact-link {
-    color: rgb(55 65 81);
-    /* text-gray-700 */
+    color: rgb(31 41 55);
     transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
 }
 
 .contact-link:hover {
-    color: rgb(239 68 68);
-    /* hover:text-red-500 */
+    color: #0077AA;
 }
 
-/* Dark mode for contact links */
-html.dark .contact-link,
-.dark .contact-link,
-[data-theme="dark"] .contact-link {
-    color: rgb(209 213 219);
-    /* dark:text-gray-300 */
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 1.5rem;
+    }
 
-html.dark .contact-link:hover,
-.dark .contact-link:hover,
-[data-theme="dark"] .contact-link:hover {
-    color: rgb(248 113 113);
-    /* dark:hover:text-red-400 */
+    .contact-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 }
 </style>

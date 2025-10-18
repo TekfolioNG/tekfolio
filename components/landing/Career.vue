@@ -9,7 +9,7 @@
 
                         <div class="relative mb-2 md:mb-3 ml-24 md:ml-32">
                             <div
-                                class="bg-gradient-to-r from-[#fe4135] via-red-500 to-red-600 rounded-lg px-6 md:px-8 py-3 md:py-4 shadow-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                                class="bg-gradient-to-r from-[#00D4FF] via-red-500 to-red-600 rounded-lg px-6 md:px-8 py-3 md:py-4 shadow-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
                                 <h2
                                     class="text-xl md:text-2xl lg:text-3xl font-barlow font-bold text-white text-center leading-tight">
                                     Why Work
@@ -38,7 +38,7 @@
                             <p class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 dark:text-gray-300">
                                 At Syntanium Energy, we believe a career is more than a job. It's an opportunity
                                 to
-                                <span class="text-[#fe4135] font-semibold">grow, innovate, and make a lasting
+                                <span class="text-[#00D4FF] font-semibold">grow, innovate, and make a lasting
                                     impact</span>.
                             </p>
 
@@ -51,7 +51,7 @@
 
                         <!-- Accent Elements -->
                         <div class="mt-6 md:mt-8 flex items-center justify-center lg:justify-start">
-                            <div class="w-12 md:w-16 h-1 bg-[#fe4135] mr-3 md:mr-4"></div>
+                            <div class="w-12 md:w-16 h-1 bg-[#00D4FF] mr-3 md:mr-4"></div>
                             <div class="w-6 md:w-8 h-1 bg-gray-300 dark:bg-gray-600 mr-2"></div>
                             <div class="w-3 md:w-4 h-1 bg-gray-300 dark:bg-gray-600"></div>
                         </div>
@@ -62,7 +62,7 @@
                         <div class="relative max-w-lg">
                             <!-- Background accent shape -->
                             <div
-                                class="absolute inset-0 bg-gradient-to-br from-[#fe4135]/10 to-gray-900/20 dark:to-white/20 rounded-2xl transform transition-all duration-1000 rotate-1 scale-105">
+                                class="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/10 to-gray-900/20 dark:to-white/20 rounded-2xl transform transition-all duration-1000 rotate-1 scale-105">
                             </div>
 
                             <!-- Content container -->
@@ -70,7 +70,7 @@
                                 class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform transition-all duration-1000 hover:rotate-0 hover:shadow-2xl -rotate-1">
                                 <!-- Header accent -->
                                 <div class="flex items-center mb-4">
-                                    <div class="w-8 h-0.5 bg-[#fe4135] mr-3"></div>
+                                    <div class="w-8 h-0.5 bg-[#00D4FF] mr-3"></div>
                                     <h3
                                         class="text-sm font-bold text-gray-800 dark:text-gray-200 uppercase tracking-widest">
                                         Team Up
@@ -81,7 +81,7 @@
                                 <div class="space-y-2">
                                     <p
                                         class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
-                                        <span class="font-semibold text-[#fe4135]">Join a team</span> where your
+                                        <span class="font-semibold text-[#00D4FF]">Join a team</span> where your
                                     </p>
                                     <p
                                         class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
@@ -90,14 +90,14 @@
                                     </p>
                                     <p
                                         class="text-xl md:text-2xl lg:text-3xl leading-tight font-light text-gray-900 dark:text-gray-100">
-                                        of <span class="text-[#fe4135] font-semibold">energy</span>.
+                                        of <span class="text-[#00D4FF] font-semibold">energy</span>.
                                     </p>
                                 </div>
 
                                 <!-- Optional CTA or additional content -->
                                 <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
                                     <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                                        <div class="w-2 h-2 bg-[#fe4135] rounded-full mr-2"></div>
+                                        <div class="w-2 h-2 bg-[#00D4FF] rounded-full mr-2"></div>
                                         <span class="font-medium">Building tomorrow's energy solutions</span>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@
 /* Dark mode specific adjustments */
 @media (prefers-color-scheme: dark) {
     .bg-gradient-to-r {
-        background: linear-gradient(to right, #fe4135, #dc2626);
+        background: linear-gradient(to right, #00D4FF, #dc2626);
     }
 
     .shadow-xl {

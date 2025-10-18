@@ -1,93 +1,140 @@
 <template>
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section class="py-16 md:py-24 bg-white transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <h2 class="text-2xl lg:text-3xl font-barlow-extrabold text-[#fe4135] mb-6 tracking-wide">
+                <h2 class="text-2xl lg:text-3xl font-barlow-extrabold text-gray-900 mb-6 tracking-wide">
                     SOLUTIONS WE PROVIDE
                 </h2>
-                <p
-                    class="text-xl md:text-2xl font-barlow-thin text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                    Syntanium Energy provides practical solutions that keep oil and gas operations running
-                    smoothly
-                    across
-                    upstream, midstream, and downstream activities.
+                <p class="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-normal">
+                    We offer tailored solutions that help businesses operate efficiently, scale sustainably, and stay
+                    competitive in changing markets.
                 </p>
             </div>
-            <!-- Solutions Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-5">
-                <!-- Products & Applications -->
-                <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="/products-applications" class="group block">
-                        <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/products-applications.png" alt="Products & Applications"
-                                class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
+
+            <!-- Solutions Grid - Now 4 cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+                <!-- Consulting Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#006688]/20 p-6 group shadow-md">
+                    <NuxtLink to="/consulting" class="block">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="mb-4 hover-bob">
+                                <img src="/assets/img/consulting-elevation.png" alt="Consulting"
+                                    class="w-16 h-20 md:w-18 md:h-22 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                    style="filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(1523%) hue-rotate(161deg) brightness(95%) contrast(101%);" />
+                            </div>
+                            <h3
+                                class="text-lg md:text-xl font-barlow-extrabold text-gray-900 uppercase leading-tight group-hover:text-[#006688] transition-colors duration-300 mb-3">
+                                CONSULTING
+                            </h3>
                         </div>
-                        <h3
-                            class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            PRODUCTS <br>& APPLICATIONS</br>
-                        </h3>
+                        <p class="text-gray-800 leading-relaxed mb-6 text-center font-medium">
+                            Strategy, process optimization, and performance improvement for sustainable results.
+                        </p>
+                        <div class="flex justify-center">
+                            <span
+                                class="inline-flex items-center text-[#006688] font-semibold text-sm group-hover:translate-x-1 transition-transform duration-300">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
                     </NuxtLink>
                 </div>
 
-                <!-- Oil & Gas Operations -->
-                <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="oil-and-gas" class="group block">
-                        <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/oil-gas-operations.png" alt="Oil & Gas Operations"
-                                class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
+                <!-- Advisory Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#006688]/20 p-6 group shadow-md">
+                    <NuxtLink to="/advisory" class="block">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="mb-4 hover-bob">
+                                <img src="/assets/img/advisory-elevation.png" alt="Advisory"
+                                    class="w-16 h-20 md:w-18 md:h-22 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                    style="filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(1523%) hue-rotate(161deg) brightness(95%) contrast(101%);" />
+                            </div>
+                            <h3
+                                class="text-lg md:text-xl font-barlow-extrabold text-gray-900 uppercase leading-tight group-hover:text-[#006688] transition-colors duration-300 mb-3">
+                                ADVISORY
+                            </h3>
                         </div>
-                        <h3
-                            class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            OIL & GAS <br>OPERATIONS</br>
-                        </h3>
+                        <p class="text-gray-800 leading-relaxed mb-6 text-center font-medium">
+                            Business continuity, impact assessment, and growth strategy support.
+                        </p>
+                        <div class="flex justify-center">
+                            <span
+                                class="inline-flex items-center text-[#006688] font-semibold text-sm group-hover:translate-x-1 transition-transform duration-300">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
                     </NuxtLink>
                 </div>
 
-                <!-- Corrosion & Integrity Management -->
-                <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="corrosion-integrity-management" class="group block">
-                        <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/corossion-management.png" alt="Corrosion & Integrity Management"
-                                class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
+                <!-- Training Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#006688]/20 p-6 group shadow-md">
+                    <NuxtLink to="/training" class="block">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="mb-4 hover-bob">
+                                <img src="/assets/img/training-elevation.png" alt="Training"
+                                    class="w-16 h-20 md:w-18 md:h-22 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                    style="filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(1523%) hue-rotate(161deg) brightness(95%) contrast(101%);" />
+                            </div>
+                            <h3
+                                class="text-lg md:text-xl font-barlow-extrabold text-gray-900 uppercase leading-tight group-hover:text-[#006688] transition-colors duration-300 mb-3">
+                                TRAINING
+                            </h3>
                         </div>
-                        <h3
-                            class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            CORROSION & INTEGRITY <br>MANAGEMENT</br>
-                        </h3>
+                        <p class="text-gray-800 leading-relaxed mb-6 text-center font-medium">
+                            Practical programs designed to build leadership, management, and enterprise skills.
+                        </p>
+                        <div class="flex justify-center">
+                            <span
+                                class="inline-flex items-center text-[#006688] font-semibold text-sm group-hover:translate-x-1 transition-transform duration-300">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
                     </NuxtLink>
                 </div>
 
-                <!-- Project & Contract Management -->
-                <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="marine-vessel" class="group block">
-                        <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/cargo-boat.png" alt="Project & Contract Management"
-                                class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
+                <!-- Business Development Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#006688]/20 p-6 group shadow-md">
+                    <NuxtLink to="/business-development" class="block">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="mb-4 hover-bob">
+                                <img src="/assets/img/development-elevation.png" alt="Business Development"
+                                    class="w-16 h-20 md:w-18 md:h-22 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
+                                    style="filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(1523%) hue-rotate(161deg) brightness(95%) contrast(101%);" />
+                            </div>
+                            <h3
+                                class="text-lg md:text-xl font-barlow-extrabold text-gray-900 uppercase leading-tight group-hover:text-[#006688] transition-colors duration-300 mb-3">
+                                BUSINESS DEVELOPMENT
+                            </h3>
                         </div>
-                        <h3
-                            class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            MARINE VESSEL <br>OPERATIONS</br>
-                        </h3>
-                    </NuxtLink>
-                </div>
-
-                <!-- Manpower Services -->
-                <div class="flex flex-col items-center text-center">
-                    <NuxtLink to="supply-chain" class="group block">
-                        <div class="mb-4 hover-bob">
-                            <img src="~/assets/img/supply-chain-mgt.png" alt="Manpower Services"
-                                class="w-18 h-22 md:w-20 md:h-24 object-contain mx-auto transition-transform duration-300 group-hover:scale-110"
-                                style="filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(6842%) hue-rotate(356deg) brightness(97%) contrast(95%);" />
+                        <p class="text-gray-800 leading-relaxed mb-6 text-center font-medium">
+                            Research, growth facilitation, and trade partnerships that open new opportunities.
+                        </p>
+                        <div class="flex justify-center">
+                            <span
+                                class="inline-flex items-center text-[#006688] font-semibold text-sm group-hover:translate-x-1 transition-transform duration-300">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
                         </div>
-                        <h3
-                            class="text-sm md:text-base font-barlow-extrabold text-gray-700 dark:text-gray-300 uppercase leading-tight group-hover:text-[#fe4135] transition-colors duration-300">
-                            SUPPLY CHAIN<br>MANAGEMENT</br>
-                        </h3>
                     </NuxtLink>
                 </div>
             </div>
@@ -108,6 +155,12 @@
     font-style: normal;
 }
 
+.font-barlow-thin {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
 /* Simple hover bob animation */
 @keyframes bob {
 
@@ -117,7 +170,7 @@
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
 
@@ -125,17 +178,42 @@
     animation: bob 0.6s ease-in-out infinite;
 }
 
+/* Enhanced card hover effects */
+.group:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 767px) {
     .grid {
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+
+    .p-6 {
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 640px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .text-center p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-6 {
+        padding: 1.25rem;
+    }
+
+    .text-lg {
+        font-size: 1.125rem;
     }
 }
 </style>

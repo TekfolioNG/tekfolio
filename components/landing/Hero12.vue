@@ -33,13 +33,14 @@
                     <div class="max-w-4xl mx-auto">
                         <p
                             class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
-                            We Help Turn Ideas into Scalable, Sustainable Businesses
+                            We Help Businesses Build Clarity, Resilience, and Value
                         </p>
                         <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
-                            Through data-informed strategy, operational guidance, and hands-on execution support, we
-                            help startups and MSMEs bridge the gap between ambition and results, empowering them to
-                            scale
-                            competitively and sustainably.
+                            We provide practical guidance that helps organizations make smarter decisions, improve
+                            efficiency, and prepare for growth. Our advisory approach combines strategic insight,
+                            performance analysis, and hands-on
+                            expertise to strengthen operations and deliver lasting results.
+
                         </p>
                     </div>
                 </div>
@@ -54,8 +55,7 @@
 </template>
 
 <script setup>
-// Import image from assets directory
-import aboutUsImage from '~/assets/img/elevation-consulting-hero.jpg';
+import aboutUsImage from '~/assets/img/elevation-advisory.jpg';
 </script>
 
 <style scoped>

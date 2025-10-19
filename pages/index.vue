@@ -4,24 +4,26 @@ definePageMeta({
 });
 
 useHead({
-  title: 'Syntanium Energy Energy Energy | Industrial Solutions & Engineering Services',
+  title: 'Elevation Consulting | Business Advisory, Training & Enterprise Development',
   meta: [
-    { name: 'description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services. Professional maintenance and construction solutions.' },
-    { name: 'keywords', content: 'petrochemical processing, corrosion management, oil and gas, industrial engineering, maintenance services, construction solutions, asset integrity, pipeline installation' },
-    { property: 'og:title', content: 'Syntanium Energy Energy Energy | Industrial Solutions & Engineering Services' },
-    { property: 'og:description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services.' },
+    { name: 'description', content: 'Elevation Consulting is a boutique business and enterprise support firm helping African entrepreneurs and organizations strengthen systems, build capacity, and drive sustainable growth.' },
+    { name: 'keywords', content: 'business consulting, enterprise development, capacity building, management training, SME growth, business advisory, strategic planning, organizational development, performance improvement' },
+    { property: 'og:title', content: 'Elevation Consulting | Business Advisory, Training & Enterprise Development' },
+    { property: 'og:description', content: 'We help businesses and entrepreneurs across Africa grow sustainably through strategy, advisory, and hands-on capacity development programs.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://Syntanium Energy Energyenergy.com' },
-    { property: 'og:image', content: '/Syntanium Energy Energy-og.jpg' },
+    { property: 'og:url', content: 'https://elevationconsultinga.com.ng' },
+    { property: 'og:image', content: '/elevation-advisory.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Syntanium Energy Energy Energy - Industrial Solutions & Engineering Services' },
+    { property: 'og:image:alt', content: 'Elevation Consulting – Business Advisory, Training & Enterprise Development' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Syntanium Energy Energy Energy | Industrial Solutions & Engineering Services' },
-    { name: 'twitter:description', content: 'Leading provider of petrochemical processing, corrosion management, oil & gas solutions, and industrial engineering services.' },
-    { name: 'twitter:image', content: '/Syntanium Energy Energy-og.jpg' }
+    { name: 'twitter:title', content: 'Elevation Consulting | Business Advisory, Training & Enterprise Development' },
+    { name: 'twitter:description', content: 'Partnering with African enterprises to build stronger systems, scale operations, and create lasting impact through strategic business solutions.' },
+    { name: 'twitter:image', content: '/elevation-advisory.jpg' }
   ]
 });
+
+
 
 </script>
 

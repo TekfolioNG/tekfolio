@@ -30,10 +30,10 @@
             <!-- Content Container -->
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <!-- Left Column - Main Description (No Heading) -->
-                <div class="max-w-md -mt-24 mx-auto lg:ml-auto lg:mr-16" ref="contentRef">
+                <div class="max-w-md mt-0 lg:-mt-24 mx-auto lg:ml-auto lg:mr-16" ref="contentRef">
                     <!-- Content without card -->
                     <div class="space-y-6">
-                        <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                        <p class="text-center md:text-left text-lg md:text-xl leading-relaxed text-gray-700">
                             Elevation Consulting is a <span class="text-[#0099CC] font-semibold">boutique enterprise
                                 support firm</span> dedicated to helping Small and Growing Businesses (SGBs) and
                             organizations achieve measurable, sustainable growth. We design strategies that strengthen

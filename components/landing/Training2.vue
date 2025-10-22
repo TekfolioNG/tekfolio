@@ -193,27 +193,16 @@
                 <!-- Right Column: Images and Entrepreneurship Development -->
                 <div class="space-y-8">
                     <!-- Images Grid -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="relative rounded-xl overflow-hidden shadow-lg group">
-                            <img src="/assets/img/elevation-training2.jpg" alt="Business Training Session"
+                    <div>
+
+                        <div class="relative rounded-xl overflow-hidden shadow-lg group mb-4">
+                            <img src="/assets/img/elevation-training9.jpg" alt="Team Training Workshop"
                                 class="w-full h-64 md:h-72 lg:h-84 object-cover group-hover:scale-105 transition-transform duration-700" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60">
                             </div>
                         </div>
                         <div class="relative rounded-xl overflow-hidden shadow-lg group">
-                            <img src="/assets/img/elevation-training3.jpg" alt="Professional Skills Development"
-                                class="w-full h-64 md:h-72 lg:h-84 object-cover group-hover:scale-105 transition-transform duration-700" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60">
-                            </div>
-                        </div>
-                        <div class="relative rounded-xl overflow-hidden shadow-lg group">
-                            <img src="/assets/img/elevation-training4.jpg" alt="Team Training Workshop"
-                                class="w-full h-64 md:h-72 lg:h-84 object-cover group-hover:scale-105 transition-transform duration-700" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60">
-                            </div>
-                        </div>
-                        <div class="relative rounded-xl overflow-hidden shadow-lg group">
-                            <img src="/assets/img/elevation-training5.jpg" alt="Entrepreneurship Training"
+                            <img src="/assets/img/elevation-training8.jpg" alt="Entrepreneurship Training"
                                 class="w-full h-64 md:h-72 lg:h-84 object-cover group-hover:scale-105 transition-transform duration-700" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60">
                             </div>

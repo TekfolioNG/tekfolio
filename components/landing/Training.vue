@@ -214,7 +214,7 @@
                     <!-- Image -->
                     <div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                            <img src="/assets/img/consulting-elevation2.jpg" alt="Elevation Consulting - Our Approach"
+                            <img src="/assets/img/consulting-elevation3.jpg" alt="Elevation Consulting - Our Approach"
                                 class="w-full h-80 md:h-96 lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                         </div>

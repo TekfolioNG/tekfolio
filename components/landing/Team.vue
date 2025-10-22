@@ -18,8 +18,8 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-400 overflow-hidden group">
                     <div class="relative">
-                        <img src="/assets/img/gbolahan-shelika2.png" alt="Gbolahan Shelika - Lead Consultant"
-                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <img src="/assets/img/gbolahan-shelika.png" alt="Gbolahan Shelika - Lead Consultant"
+                            class="w-full h-110 object-cover group-hover:scale-105 transition-transform duration-700" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
@@ -41,9 +41,9 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-400 overflow-hidden group">
                     <div class="relative">
-                        <img src="/assets/img/funm-shelika.jpg"
+                        <img src="/assets/img/funm-shelika.png"
                             alt="Oluwafunmilola Shelika - Director, Enterprise Development"
-                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            class="w-full h-110 object-cover group-hover:scale-105 transition-transform duration-700" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
@@ -67,7 +67,7 @@
                     <div class="relative">
                         <img src="/assets/img/james-ladipo.png"
                             alt="James Alpheus - Faculty Advisor, Performance and Strategy"
-                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            class="w-full h-110 object-cover group-hover:scale-105 transition-transform duration-700" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>

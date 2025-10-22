@@ -18,8 +18,8 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60"></div>
                     </div>
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                        <img src="/assets/img/about-elevation5.jpg" alt="Elevation Consulting strategic approach"
-                            class="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="/assets/img/about-elevation7.jpg" alt="Elevation Consulting strategic approach"
+                            class="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105 -scale-x-100" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60"></div>
                     </div>
                 </div>

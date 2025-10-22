@@ -47,9 +47,8 @@
                 <div class="relative" ref="visualRef">
                     <!-- Mission Sticky Note Card -->
                     <div class="relative animate-float">
-                        <!-- Sticky note with shadow and rotation -->
-                        <div class="relative bg-[#FFFACD] rounded-sm p-8 md:p-10 transform transition-all duration-500 hover:rotate-0 hover:scale-105 sticky-note"
-                            :class="{ 'rotate-2': !isVisible, 'rotate-1': isVisible }"
+                        <!-- Sticky note with shadow - NO ROTATION -->
+                        <div class="relative bg-[#FFFACD] rounded-sm p-8 md:p-10 transform transition-all duration-500 hover:scale-105 sticky-note"
                             style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);">
 
                             <!-- Subtle top shadow for sticky note effect -->
@@ -71,7 +70,7 @@
                             <div class="space-y-5 relative z-10">
                                 <p class="text-base md:text-lg leading-relaxed text-gray-800 font-normal">
                                     Our mission is to <span class="text-[#0099CC] font-bold">discover, empower, and
-                                        scale viable ventures</span>, uiding them through each stage of development to
+                                        scale viable ventures</span>, guiding them through each stage of development to
                                     create an ecosystem of resilient, impact-driven businesses contributing to <span
                                         class="font-semibold text-gray-900">Africa's economic growth</span>.
                                 </p>

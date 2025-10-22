@@ -55,9 +55,16 @@
           <NuxtLink to="/monitoring-evaluation"
             class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
             :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/monitoring-evaluation' }">
-            MONITORING/EVALUATION
+            EVALUATION
+          </NuxtLink>
+          <!-- Programs & Events -->
+          <NuxtLink to="/programs-events"
+            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
+            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/programs-events' }">
+            PROGRAMS
           </NuxtLink>
         </div>
+
 
 
 
@@ -121,7 +128,13 @@
           class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
           :class="{ 'text-[#00D4FF] underline': $route.path === '/monitoring-evaluation' }"
           @click="mobileMenuOpen = false">
-          MONITORING & EVALUATION
+          EVALUATION
+        </NuxtLink>
+
+        <!-- Mobile Program & Events -->
+        <NuxtLink to="/programs-event" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
+          :class="{ 'text-[#00D4FF] underline': $route.path === '/program-sevent' }" @click="mobileMenuOpen = false">
+          PROGRAMS
         </NuxtLink>
 
 

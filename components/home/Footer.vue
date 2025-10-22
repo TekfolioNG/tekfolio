@@ -29,13 +29,17 @@
               class="text-gray-400 hover:text-[#0077AA] transition-colors duration-200">
               <Icon name="lucide:instagram" class="w-6 h-6" />
             </a>
+            <a href="https://wa.me/2349026944592" target="_blank" rel="noopener noreferrer"
+              class="hover:opacity-80 transition-opacity duration-200">
+              <img src="/assets/img/whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
+            </a>
           </div>
         </div>
 
         <!-- Quick Links (Navbar Items) -->
         <div>
           <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#0077AA] pb-2">Quick Links</h3>
-          <ul class="space-y-3">
+          <ul class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-3">
             <li>
               <NuxtLink to="/about-us" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
                 About Us
@@ -63,6 +67,12 @@
               </NuxtLink>
             </li>
             <li>
+              <NuxtLink to="/evaluation-monitoring"
+                class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
+                Evaluation & Monitoring
+              </NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="/contact-us" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
                 Contact Us
               </NuxtLink>
@@ -76,7 +86,7 @@
           <ul class="space-y-4">
             <li class="flex items-start justify-center md:justify-start">
               <Icon name="lucide:map-pin" class="w-5 h-5 mt-0.5 mr-3 text-[#0077AA] flex-shrink-0" />
-              <span class="text-gray-300 text-left">120 Lewis Street Lagos Island,
+              <span class="text-gray-300 text-left">20 Lewis Street Lagos Island,
                 Lagos, Nigeria</span>
             </li>
             <li class="flex items-center justify-center md:justify-start">
@@ -128,6 +138,16 @@
       <PrivacyPolicyModal v-model="showPrivacyPolicy" />
       <TermsOfServiceModal v-model="showTermsOfService" />
     </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2349026944592" target="_blank" rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 bg-[#29a71a] p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 group">
+      <img src="/assets/img/whatsapp.png" alt="WhatsApp" class="w-12 h-12" />
+      <span
+        class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        Chat with us on WhatsApp
+      </span>
+    </a>
   </footer>
 </template>
 

@@ -10,17 +10,17 @@
             <!-- Logo section -->
             <NuxtLink to="/" class="inline-block">
               <img src="/assets/img/elevation-logo2.png" alt="Syntanium Energy Logo"
-                class="h-12 md:h-14 lg:h-16 drop-shadow-lg" />
+                class="h-10 md:h-12 lg:h-14 drop-shadow-lg" />
             </NuxtLink>
           </div>
         </div>
 
         <!-- Desktop Navigation - Centered -->
-        <div class="hidden lg:flex lg:items-center lg:justify-center lg:flex-1 lg:space-x-8">
+        <div class="hidden lg:flex lg:items-center lg:justify-center lg:flex-1 lg:space-x-6">
           <!-- Who We Are -->
           <NuxtLink to="/about-us"
             class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/who-we-are' }">
+            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/about-us' }">
             ABOUT US
           </NuxtLink>
 
@@ -41,17 +41,25 @@
           <!-- Training -->
           <NuxtLink to="/training"
             class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/commitment' }">
+            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/training' }">
             TRAINING
           </NuxtLink>
 
           <!-- Business Development -->
           <NuxtLink to="/business-development"
             class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/careers' }">
-            BUSINESS DEVELOPMENT
+            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/business-development' }">
+            BUSINESS DEV
+          </NuxtLink>
+          <!-- Monitoring & Evaluation -->
+          <NuxtLink to="/monitoring-evaluation"
+            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
+            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/monitoring-evaluation' }">
+            MONITORING/EVALUATION
           </NuxtLink>
         </div>
+
+
 
         <!-- Right Side - Contact Us -->
         <div class="flex items-center space-x-4 lg:space-x-6 ml-6 lg:ml-10">
@@ -101,12 +109,21 @@
         </NuxtLink>
 
         <!-- Mobile Business Development -->
-        <NuxtLink to="/business development"
+        <NuxtLink to="/business-development"
           class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
           :class="{ 'text-[#00D4FF] underline': $route.path === '/business-development' }"
           @click="mobileMenuOpen = false">
           BUSINESS DEVELOPMENT
         </NuxtLink>
+
+        <!-- Mobile Monitoring & Evaluation -->
+        <NuxtLink to="/monitoring-evaluation"
+          class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
+          :class="{ 'text-[#00D4FF] underline': $route.path === '/monitoring-evaluation' }"
+          @click="mobileMenuOpen = false">
+          MONITORING & EVALUATION
+        </NuxtLink>
+
 
         <!-- Mobile Contact Us -->
         <NuxtLink to="/contact"

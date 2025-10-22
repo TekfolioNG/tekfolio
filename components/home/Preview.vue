@@ -9,7 +9,7 @@
 
                 <!-- Main heading with Barlow font -->
                 <h2
-                    class="text-2xl md:text-3xl lg:text-4xl font-barlow font-extrabold text-gray-900 mb-3 tracking-tight">
+                    class="text-2xl md:text-3xl lg:text-4xl font-barlow font-extrabold text-gray-900 mb-3 tracking-normal">
                     SCALE FROM POTENTIAL TO PERFORMANCE
                 </h2>
 

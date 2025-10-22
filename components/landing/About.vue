@@ -7,17 +7,10 @@
                 <div class="order-2 lg:order-1">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="col-span-2">
-                            <img :src="aboutImage2" alt="Elevation Consulting Team"
-                                class="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg" />
-                        </div>
-                        <div>
                             <img :src="aboutImage3" alt="Business Strategy Session"
-                                class="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg" />
+                                class="w-full h-full object-cover rounded-xl shadow-lg" />
                         </div>
-                        <div>
-                            <img :src="aboutImage4" alt="Enterprise Development"
-                                class="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg" />
-                        </div>
+
                     </div>
                 </div>
 
@@ -25,11 +18,11 @@
                 <div class="order-1 lg:order-2">
                     <h2
                         class="text-3xl md:text-4xl text-center md:text-left font-barlow-extrabold text-gray-900 mb-6 uppercase">
-                        Our Objectives
+                        Our Expert Solutions for Ambitious Businesses
                     </h2>
                     <div class="w-20 h-1 bg-[#0077AA] mb-6 mx-auto md:items-start"></div>
 
-                    <p class="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 font-semibold">
+                    <p class="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 font-sans">
                         Every business we work with is unique, yet the goal remains the same: Sustainable growth built
                         on sound strategy.
                     </p>
@@ -40,8 +33,8 @@
                         drive inclusive economic progress.
                     </p>
 
-                    <p class="text-base md:text-lg text-gray-800 font-semibold mb-4">
-                        Our key objectives include:
+                    <p class="text-base md:text-lg text-gray-800 font-normal mb-4">
+                        Our key objectives for ambitious businesses include:
                     </p>
 
                     <ul class="space-y-3">
@@ -51,8 +44,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span class="text-gray-700">Helping business owners optimize performance through targeted
-                                professional support.</span>
+                            <span class="text-gray-800 font-semibold">Identify and overcome growth barriers</span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
@@ -60,8 +52,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span class="text-gray-700">Providing capacity-building opportunities that strengthen
-                                individuals and organizations.</span>
+                            <span class="text-gray-800 bold font-semibold">Develop tailored strategies for sustainable
+                                growth</span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
@@ -69,8 +61,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span class="text-gray-700">Developing and implementing strategies that deliver measurable
-                                impact.</span>
+                            <span class="text-gray-800 font-semibold"> Integrate ESG principles into business operations
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
@@ -78,17 +70,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span class="text-gray-700">Supporting change management across every stage of the business
-                                lifecycle.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Conducting needs assessments and designing fit-for-purpose
-                                solutions that enhance productivity and competitiveness.</span>
+                            <span class="text-gray-800 font-semibold">Drive impact and outcomes through data-driven
+                                decision-making.
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -99,9 +83,7 @@
 
 <script setup>
 // Import images from assets directory
-import aboutImage2 from '~/assets/img/about-elevation2.jpg';
-import aboutImage3 from '~/assets/img/about-elevation3.jpg';
-import aboutImage4 from '~/assets/img/about-elevation4.jpg';
+import aboutImage3 from '~/assets/img/about-us-elevation4.jpg';
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-    <section class="py-8 md:py-12 bg-white transition-colors duration-300">
+    <section class="py-4 md:py-6 bg-white transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
@@ -13,12 +13,12 @@
                 <!-- Left Column: Images -->
                 <div class="space-y-6 lg:space-y-6">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                        <img src="/assets/img/about-elevation5.jpg" alt="Elevation Consulting vision and mission"
+                        <img src="/assets/img/bdsp-elevation.jpg" alt="Elevation Consulting vision and mission"
                             class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60"></div>
                     </div>
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                        <img src="/assets/img/about-elevation6.jpg" alt="Elevation Consulting strategic approach"
+                        <img src="/assets/img/about-elevation5.jpg" alt="Elevation Consulting strategic approach"
                             class="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60"></div>
                     </div>

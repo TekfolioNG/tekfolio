@@ -160,11 +160,15 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <div class="flex items-center space-x-2">
                                 <div class="w-2 h-2 bg-[#006688] rounded-full flex-shrink-0"></div>
-                                <span class="text-gray-900 text-base">Digital Business</span>
+                                <span class="text-gray-900 text-base">Digital Literacy </span>
                             </div>
                             <div class="flex items-center space-x-2">
                                 <div class="w-2 h-2 bg-[#006688] rounded-full flex-shrink-0"></div>
                                 <span class="text-gray-900 text-base">Accounting and Financial Planning</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-[#006688] rounded-full flex-shrink-0"></div>
+                                <span class="text-gray-900 text-base">Financial Literacy</span>
                             </div>
                             <div class="flex items-center space-x-2">
                                 <div class="w-2 h-2 bg-[#006688] rounded-full flex-shrink-0"></div>

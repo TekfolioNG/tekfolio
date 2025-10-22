@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="text-center mb-16">
                 <h2 class="text-2xl lg:text-3xl font-barlow-extrabold text-gray-900 mb-6 tracking-wide">
-                    Our Lead Consultants
+                    Our Team
                 </h2>
                 <p class="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-normal">
                     Meet our team of experienced consultants and industry experts dedicated to <br>driving your business
@@ -18,7 +18,7 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-400 overflow-hidden group">
                     <div class="relative">
-                        <img src="/assets/img/gbolahan-shelika.jpg" alt="Gbolahan Shelika - Lead Consultant"
+                        <img src="/assets/img/gbolahan-shelika2.png" alt="Gbolahan Shelika - Lead Consultant"
                             class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">

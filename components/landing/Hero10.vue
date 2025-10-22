@@ -33,16 +33,18 @@
                     <div class="max-w-4xl mx-auto">
                         <p
                             class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
-                            We Help Entrepreneurs & Enterprises Grow, Compete, and Succeed
+                            At Elevation Consulting, Sustainability is at Our Core
                         </p>
                         <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
-                            Across Africa's private sector, small and growing businesses face barriers that limit their
-                            potential: Access to resources, strategy gaps, and fragmented support systems. Elevation
-                            Consulting exists to change that narrative.
+                            We believe that business growth and sustainability go hand-in-hand. That's why we're
+                            committed to promoting ESG Integration in every engagement, leveraging data-driven insights
+                            to inform our strategies and drive meaningful outcomes.
                         </p>
                         <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center">
-                            We are a boutique enterprise support firm committed to advancing business excellence and
-                            building a thriving ecosystem of sustainable, investment-ready enterprises.
+                            Our goal is to empower SGBs (small and growing businesses) to thrive in a sustainable
+                            business environment, creating lasting value for both their organizations and the
+                            communities they serve.
+
                         </p>
                     </div>
                 </div>

@@ -64,7 +64,8 @@ const services = [
   'Consulting',
   'Advisory',
   'Training',
-  'Business Development'
+  'Business Development',
+  'Monitoring & Evaluation'
 ];
 
 const currentService = ref(0);

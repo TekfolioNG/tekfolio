@@ -16,7 +16,7 @@
             <form ref="form" @submit.prevent="submitForm"
                 class="bg-blue-50 rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
                 <!-- Hidden input for Web3Forms -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="access_key" value="59310f29-a1aa-4e2f-9cfc-ad41b973abfe">
                 <input type="hidden" name="subject"
                     value="New Contact Form Submission from Elevation Consulting Website">
                 <input type="hidden" name="from_name" value="Elevation Consulting Website">
@@ -136,7 +136,7 @@ const submitForm = async () => {
     try {
         // Prepare form data for Web3Forms
         const formDataToSend = new FormData()
-        formDataToSend.append('access_key', 'YOUR_ACCESS_KEY_HERE') // Replace with actual key
+        formDataToSend.append('access_key', '59310f29-a1aa-4e2f-9cfc-ad41b973abfe') // Replace with actual key
         formDataToSend.append('name', formData.name)
         formDataToSend.append('email', formData.email)
         formDataToSend.append('phone', formData.phone)

@@ -15,7 +15,7 @@
                     </div>
                     <h3 class="contact-title">Our Location</h3>
                     <p class="contact-text">
-                        120 Lewis Street, Lagos Island, Lagos, Nigeria
+                        20 Lewis Street, Lagos Island, Lagos, Nigeria
                     </p>
                 </div>
 

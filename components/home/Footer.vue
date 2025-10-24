@@ -67,9 +67,9 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/evaluation-monitoring"
+              <NuxtLink to="/monitoring-evaluation"
                 class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Evaluation & Monitoring
+                Monitoring & Evaluation
               </NuxtLink>
             </li>
             <li>

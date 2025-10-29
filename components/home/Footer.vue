@@ -73,8 +73,8 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact-us" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Contact Us
+              <NuxtLink to="/programs-events" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
+                Programs & Events
               </NuxtLink>
             </li>
           </ul>

@@ -31,7 +31,7 @@
                 <!-- Main Description -->
                 <div class="mb-8">
                     <div class="max-w-4xl mx-auto">
-                        <p class="text-lg sm:text-xl md:text-3xl text-gray-800 leading-2.5 text-center">
+                        <p class="text-lg sm:text-xl md:text-3xl text-gray-800 leading-normal text-center">
                             A visual journey through our training sessions, advisory programs, and collaborative
                             initiatives
                             that drive business growth and community development across Nigeria and West Africa.

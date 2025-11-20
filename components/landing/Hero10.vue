@@ -1,57 +1,110 @@
 <template>
     <div class="min-h-screen bg-white">
 
+        <!-- Hero Section - 2 Columns on Desktop -->
+
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Full Width -->
             <div class="absolute inset-0">
-                <img :src="aboutUsImage" alt="About Us - Elevation Consulting"
-                    class="w-full h-full object-cover sharp-image" />
+                <img :src="aboutUsImage" alt="About Us - LiteraForge" class="w-full h-full object-cover sharp-image" />
             </div>
 
             <!-- Subtle overlay for depth -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/50"></div>
 
             <!-- Content Overlay - Right Side -->
             <div class="relative z-10 h-full flex items-center justify-end">
                 <div class="container mx-auto px-6 md:px-12">
-                    <div class="max-w-md ml-auto bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
-                        <h2
-                            class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight tracking-wide">
-                            About Us
-                        </h2>
-                        <div class="mt-4 w-16 h-1 bg-[#0077AA]"></div>
+                    <div class="max-w-[180px] md:max-w-md ml-auto">
+                        <!-- Card with clip path for unique shape -->
+                        <div class="relative bg-gradient-to-br from-white/80 to-gray-50/75 backdrop-blur-sm p-4 md:p-8 shadow-2xl"
+                            style="clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);">
+                            <h1
+                                class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-2 md:mb-3">
+                                About Us
+                            </h1>
+                            <p class="text-sm md:text-lg text-[#4D7EFF] font-semibold italic">
+                                Clarity, Structure, and<br class="md:hidden"> Meaningful Impact
+                            </p>
+                            <div class="mt-4 md:mt-5 w-12 md:w-16 h-1 bg-gradient-to-r from-[#4D7EFF] to-blue-300">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Our Story Section - 2 Columns on Desktop -->
+        <section class="w-full bg-gradient-to-br from-white via-blue-50/30 to-white py-16 lg:py-24 mt-8">
+            <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Text Content - Left Column -->
+                    <div class="order-1 lg:order-1 text-center lg:text-left">
+                        <!-- Section Title -->
+                        <div class="mb-8">
+                            <div class="inline-flex items-center gap-3 mb-4 mx-auto lg:mx-0">
+                                <div class="w-3 h-3 bg-[#4D7EFF] rounded-full"></div>
+                                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 uppercase tracking-wide">
+                                    Our Story
+                                </h2>
+                            </div>
+                        </div>
 
-        <!-- Description Section - Reduced Margins -->
-        <section class="w-full bg-gradient-to-b from-gray-50 to-white py-12 lg:py-16">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Main Description -->
-                <div class="mb-8">
-                    <div class="max-w-4xl mx-auto">
-                        <p
-                            class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
-                            At Elevation Consulting, Sustainability is at Our Core
-                        </p>
-                        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
-                            We believe that business growth and sustainability go hand-in-hand. That's why we're
-                            committed to promoting ESG Integration in every engagement, leveraging data-driven insights
-                            to inform our strategies and drive meaningful outcomes.
-                        </p>
-                        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center">
-                            Our goal is to empower SGBs (small and growing businesses) to thrive in a sustainable
-                            business environment, creating lasting value for both their organizations and the
-                            communities they serve.
+                        <!-- Content -->
+                        <div class="space-y-6 text-gray-900">
+                            <p class="text-lg md:text-xl leading-relaxed">
+                                <strong class="text-gray-900">Litera-Forge exists to help individuals and organizations
+                                    communicate with clarity, operate efficiently, and bring their ideas to
+                                    life.</strong> We blend strategy, creativity, and execution to transform ideas into
+                                work that inspires, informs, and leads.
+                            </p>
 
-                        </p>
+                            <p class="text-lg leading-relaxed">
+                                <strong class="text-gray-900">Litera-Forge was built on a simple belief: every idea
+                                    deserves structure.</strong> Many leaders, founders, and authors know what they want
+                                to say but struggle to shape it into something clear and compelling. We stepped in to
+                                bridge that gap.
+                            </p>
+
+                            <p class="text-lg leading-relaxed">
+                                Over the years, we've supported clients across multiple industries through advisory,
+                                productivity training, ghostwriting, and publishing—helping them articulate their voice,
+                                refine their vision, and execute with confidence.
+                            </p>
+                        </div>
+
+                        <!-- Accent Element -->
+                        <div class="mt-8 flex items-center gap-4 justify-center lg:justify-start">
+                            <div class="w-12 h-0.5 bg-[#4D7EFF]"></div>
+                            <div class="text-sm text-[#4D7EFF] font-semibold uppercase tracking-wide">Building Stories
+                                That Last</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Divider -->
-                <div class="flex justify-center mb-8">
-                    <div class="w-24 h-px bg-gradient-to-r from-transparent via-[#0077AA] to-transparent"></div>
+                    <!-- Image - Right Column -->
+                    <div class="order-2 lg:order-2">
+                        <div class="relative group">
+                            <!-- Vertical Image Container -->
+                            <div
+                                class="aspect-[3/4] h-[400px] lg:h-[650px] max-w-md mx-auto lg:max-w-full rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+                                <img :src="ourStoryImage" alt="Our Story - LiteraForge"
+                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+
+                            <!-- Decorative Elements -->
+                            <div
+                                class="absolute -top-4 -right-4 w-8 h-8 bg-[#4D7EFF] rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -left-4 w-6 h-6 bg-[#012430] rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                            </div>
+
+                            <!-- Image Label -->
+                            <div
+                                class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
+                                <p class="text-sm font-semibold text-gray-900">Crafting Your Narrative</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -59,20 +112,12 @@
 </template>
 
 <script setup>
-// Import image from assets directory
-import aboutUsImage from '~/assets/img/about-us-elevation.jpg';
+// Import images from assets directory
+import aboutUsImage from '~/assets/img/about-us-literaforge.jpg';
+import ourStoryImage from '~/assets/img/our-story-literaforge.jpg';
 </script>
 
 <style scoped>
-/* Import Barlow font if not already imported globally */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
-
-.font-barlow-extrabold {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
 /* Ensure smooth transitions */
 .transition-all {
     transition: all 0.3s ease;
@@ -86,8 +131,13 @@ import aboutUsImage from '~/assets/img/about-us-elevation.jpg';
 
 /* Custom responsive adjustments */
 @media (max-width: 768px) {
-    .font-barlow-extrabold {
+    h1 {
         letter-spacing: 0.025em;
     }
+}
+
+/* Hover effects */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
 }
 </style>

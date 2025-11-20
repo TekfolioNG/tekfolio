@@ -1,25 +1,34 @@
 <template>
     <div class="min-h-screen bg-white">
 
+        <!-- Hero Section -->
+
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Full Width -->
             <div class="absolute inset-0">
-                <img :src="aboutUsImage" alt="About Us - Elevation Consulting"
-                    class="w-full h-full object-cover sharp-image" />
+                <img :src="bizSolutions" alt="Business Solutions"
+                    class="w-full h-[650px] object-cover sharp-image flip-horizontal" />
+
             </div>
 
             <!-- Subtle overlay for depth -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/50"></div>
 
             <!-- Content Overlay - Right Side -->
             <div class="relative z-10 h-full flex items-center justify-end">
                 <div class="container mx-auto px-6 md:px-12">
-                    <div class="max-w-md ml-auto bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
-                        <h2
-                            class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight tracking-wide">
-                            Business Development
-                        </h2>
-                        <div class="mt-4 w-16 h-1 bg-[#0077AA]"></div>
+                    <div class="max-w-[180px] md:max-w-md ml-auto">
+                        <!-- Card with clip path for unique shape -->
+                        <div class="relative bg-gradient-to-br from-white/80 to-gray-50/75 backdrop-blur-sm p-4 md:p-8 shadow-2xl"
+                            style="clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);">
+                            <h1
+                                class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-2 md:mb-3">
+                                Business Solutions
+                            </h1>
+
+                            <div class="mt-4 md:mt-5 w-12 md:w-16 h-1 bg-gradient-to-r from-[#4D7EFF] to-blue-300">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,18 +42,16 @@
                     <div class="max-w-4xl mx-auto">
                         <p
                             class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
-                            Design Thinking. Practical Execution. Sustainable Growth
+                            Build Stronger Systems, Better Teams & Sustainable Growth
                         </p>
                         <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
-                            Our business development expertise covers a full range of support services — from growth
-                            consulting
-                            and business acceleration to market entry strategies, research, and more. We take an
-                            innovative,
-                            hands-on approach and collaborate with strategic partners to create programs that deliver
-                            measurable
-                            impact. Using design thinking and practical execution, we help small and growing businesses
-                            scale
-                            sustainably and become investment-ready.
+                            We help organizations operate more effectively by providing clarity, structure, and
+                            strategic guidance. Our business solutions are built to address real challenges, strengthen
+                            internal processes, and position your team for long-term success.
+                            Whether you're navigating change, building capacity, or refining your operations, our
+                            approach is simple:
+                            <br><b>understand the problem → design a clear path → support effective execution.</b></br>
+
 
                         </p>
                     </div>
@@ -60,7 +67,7 @@
 </template>
 
 <script setup>
-import aboutUsImage from '~/assets/img/biz-dev-elevation3.jpg';
+import bizSolutions from '~/assets/img/why-literaforge.jpg';
 </script>
 
 <style scoped>
@@ -82,6 +89,10 @@ import aboutUsImage from '~/assets/img/biz-dev-elevation3.jpg';
 .sharp-image {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
 }
 
 /* Custom responsive adjustments */

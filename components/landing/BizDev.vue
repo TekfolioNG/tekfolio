@@ -1,164 +1,135 @@
 <template>
-    <section class="py-4 md:py-6 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-
-            <!-- Business Formation and Growth Section -->
-            <div class="grid lg:grid-cols-2 gap-12 items-start mb-24">
-                <!-- Left: Content -->
-                <div class="order-2 lg:order-1">
-                    <h3 class="text-2xl md:text-3xl font-barlow-extrabold text-gray-900 mb-4">
-                        Business Formation and Growth
-                    </h3>
-                    <div class="w-20 h-1 bg-[#0077AA] mb-6"></div>
-
-                    <p class="text-base md:text-lg text-gray-900 leading-relaxed mb-6">
-                        We guide founders through every stage of setting up and scaling their businesses — from
-                        validating ideas to building strong operational systems. Our approach blends structure,
-                        strategy, and sustainability to position enterprises for long-term success.
-                    </p>
-
-                    <p class="text-base md:text-lg text-gray-900 font-semibold mb-4">
-                        Our services include:
-                    </p>
-
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Bringing your idea to life</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Developing your business plan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Structuring and organizing your business</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Embedding sustainability practices</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Driving digital transformation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Conducting market research and reporting</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Providing business management and administration support</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-[#0077AA] mr-3 flex-shrink-0 mt-0.5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-gray-800">Acting as a broker for professional services</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Right: Image -->
-                <div class="order-1 lg:order-2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                        <img :src="bizDevImage4" alt="Business Formation and Growth"
-                            class="w-full h-96 md:h-[32rem] object-cover transition-transform duration-700 group-hover:scale-105" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-[#0077AA]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Two Column Section: Capacity Building & Financial Advisory -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-24">
-                <!-- Capacity Building -->
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-barlow-extrabold text-gray-900 mb-4">
-                        Capacity Building and Entrepreneurship Support
-                    </h3>
-                    <div class="w-20 h-1 bg-[#0077AA] mb-6"></div>
-
-                    <p class="text-base md:text-lg text-gray-900 leading-relaxed">
-                        We design and implement capacity-building programs that develop entrepreneurial skills,
-                        leadership competence, and organizational capability. Through tailored coaching, mentoring, and
-                        workshops, we help individuals and teams build the confidence and resilience needed to compete
-                        and thrive in dynamic markets.
-                    </p>
-                </div>
-
-                <!-- Financial Advisory -->
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-barlow-extrabold text-gray-900 mb-4">
-                        Financial and Funding Advisory
-                    </h3>
-                    <div class="w-20 h-1 bg-[#0077AA] mb-6"></div>
-
-                    <p class="text-base md:text-lg text-gray-900 leading-relaxed">
-                        We support businesses in accessing finance through sound planning and strategic preparation. Our
-                        team provides guidance on proposal development, investor engagement, and financial management to
-                        ensure enterprises are ready to attract, utilize, and sustain investment effectively.
-                    </p>
-                </div>
-            </div>
-            <!-- Two Column Section: Capacity Building & Financial Advisory -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-24">
-
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="col-span-2 relative rounded-2xl overflow-hidden shadow-2xl group">
-                        <img :src="bizDevImage2" alt="Market Access Strategies"
-                            class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-[#0077AA]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+    <section class="px-6 bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
+        <div class="max-w-7xl mx-auto">
+            <!-- Services Grid -->
+            <div class="space-y-8 lg:space-y-12">
+                <!-- First Row: Image Left, Two Cards Right -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Left Column: First Image -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-lg">
+                        <div class="relative h-full min-h-[300px] lg:min-h-[500px] overflow-hidden">
+                            <img :src="businessEthicsImage" alt="Business Advisory - LiteraForge"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Right Column: Two Service Cards Stacked -->
+                    <div class="space-y-6 lg:space-y-8">
+                        <!-- Business Advisory Card -->
+                        <div
+                            class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 p-6 lg:p-8">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div
+                                    class="w-12 h-12 bg-[#4D7EFF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-[#4D7EFF]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Business Advisory</h3>
+                                    <div class="w-16 h-1 bg-[#4D7EFF]"></div>
+                                </div>
+                            </div>
+                            <p class="text-gray-900 leading-relaxed text-base lg:text-lg">
+                                Clear, practical guidance to help leaders make informed decisions, respond to industry
+                                shifts, and uncover new opportunities. We work with you to refine strategies, strengthen
+                                direction, and turn uncertainty into clarity.
+                            </p>
+                        </div>
+
+                        <!-- Business Restructuring Card -->
+                        <div
+                            class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 p-6 lg:p-8">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div
+                                    class="w-12 h-12 bg-[#4D7EFF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-[#4D7EFF]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Business Restructuring
+                                    </h3>
+                                    <div class="w-16 h-1 bg-[#4D7EFF]"></div>
+                                </div>
+                            </div>
+                            <p class="text-gray-900 leading-relaxed text-base lg:text-lg">
+                                Support for organizations seeking improved performance and stronger internal alignment.
+                                We help streamline systems, optimize workflows, and build structures that are agile,
+                                efficient, and ready for growth.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Market Access -->
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-barlow-extrabold text-gray-900 mb-4">
-                        Market Access and Development
-                    </h3>
-                    <div class="w-20 h-1 bg-[#0077AA] mb-6"></div>
+                <!-- Second Row: Two Cards Left, Image Right -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Left Column: Two Service Cards Stacked -->
+                    <div class="space-y-6 lg:space-y-8">
+                        <!-- Executive Coaching Card -->
+                        <div
+                            class="group relative bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 p-6 lg:p-8">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div
+                                    class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white mb-2">Executive Coaching</h3>
+                                    <div class="w-16 h-1 bg-white/50"></div>
+                                </div>
+                            </div>
+                            <p class="text-white/95 leading-relaxed text-base lg:text-lg">
+                                Leadership development tailored to executives who want to improve clarity,
+                                communication, decision-making, and strategic performance. We help leaders lead with
+                                confidence, structure, and greater impact.
+                            </p>
+                        </div>
 
-                    <p class="text-base md:text-lg text-gray-900 leading-relaxed">
-                        We help businesses expand into new markets by identifying opportunities, building networks, and
-                        enhancing visibility. Through data-driven strategies and market intelligence, we enable clients
-                        to strengthen their competitiveness and connect with high-value customers across local and
-                        international markets.
-                    </p>
+                        <!-- Consultation Card -->
+                        <div
+                            class="group relative bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 p-6 lg:p-8">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div
+                                    class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white mb-2">Consultation</h3>
+                                    <div class="w-16 h-1 bg-white/50"></div>
+                                </div>
+                            </div>
+                            <p class="text-white/95 leading-relaxed text-base lg:text-lg">
+                                Hands-on support for operational efficiency and strategic implementation. We help you
+                                align processes, refine workflows, and strengthen systems that support daily operations
+                                and long-term goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Second Image -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-lg">
+                        <div class="relative h-full min-h-[300px] lg:min-h-[500px] overflow-hidden">
+                            <img :src="bizAdvisoryImage" alt="Business Restructuring - LiteraForge"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,16 +138,18 @@
 
 <script setup>
 // Import images from assets directory
-import bizDevImage2 from '~/assets/img/biz-dev-elevation2.jpg';
-import bizDevImage4 from '~/assets/img/biz-dev-elevation4.jpg';
+import bizAdvisoryImage from '~/assets/img/bizadivosory-literaforge.avif';
+import businessEthicsImage from '~/assets/img/business-ethics-literaforge.jpg';
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+/* Ensure smooth transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
 
-.font-barlow-extrabold {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 800;
-    font-style: normal;
+/* Hover effects */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
 }
 </style>

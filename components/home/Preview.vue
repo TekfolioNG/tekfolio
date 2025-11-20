@@ -1,210 +1,221 @@
 <template>
-    <section class="py-20 px-6 bg-gray-50 overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-            <!-- Section Header - Centered -->
-            <div class="mb-10 text-center" ref="headerRef">
-                <!-- Small accent line above heading -->
-                <div class="w-16 h-0.5 bg-[#0099CC] mx-auto mb-4 transform transition-all duration-700"
-                    :class="{ 'w-24': isVisible }"></div>
+    <section class="py-16 md:py-24 bg-gradient-to-br from-white to-blue-50/30 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-blue-100/40 rounded-full blur-xl"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-blue-200/30 rounded-full blur-2xl"></div>
 
-                <!-- Main heading with Barlow font -->
-                <h2
-                    class="text-2xl md:text-3xl lg:text-4xl font-barlow font-extrabold text-gray-900 mb-3 tracking-normal">
-                    SCALE FROM POTENTIAL TO PERFORMANCE
+        <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center max-w-4xl mx-auto mb-16 md:mb-20">
+                <div class="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full mb-6">
+                    <div class="w-2 h-2 bg-[#4D7EFF] rounded-full"></div>
+                    <span class="text-[#4D7EFF] font-semibold text-sm uppercase tracking-wide">Our Services</span>
+                </div>
+                <h2 class="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-6">
+                    What We <span class="text-[#4D7EFF]">Do</span>
                 </h2>
+                <p class="text-xl md:text-2xl text-gray-700 font-semibold mb-8">
+                    Clarity, Structure & Impact that Lasts
+                </p>
+                <p class="text-lg text-gray-900 leading-relaxed max-w-3xl mx-auto">
+                    At Litera-Forge, <b>we bridge strategy and creativity</b>, enabling businesses, leaders, and authors
+                    bring
+                    <b><i>clarity to their ideas, structure to their vision, and the execution support</i></b> they need
+                    to
+                    move
+                    forward. Our work spans four core areas that drive growth and transformation:
 
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    We help small and growing businesses scale, strengthen systems,
-                    and achieve measurable results in record time.
                 </p>
 
-                <!-- Decorative elements -->
-                <div class="flex items-center justify-center mt-6">
-                    <div class="w-20 h-px bg-gradient-to-r from-transparent to-gray-300"></div>
-                    <div class="w-3 h-3 bg-[#0099CC] rounded-full mx-4 transform transition-all duration-500"
-                        :class="{ 'scale-125': isVisible }"></div>
-                    <div class="w-20 h-px bg-gradient-to-l from-transparent to-gray-300"></div>
-                </div>
             </div>
 
-            <!-- Content Container -->
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <!-- Left Column - Main Description (No Heading) -->
-                <div class="max-w-md mt-0 lg:-mt-24 mx-auto lg:ml-auto lg:mr-16" ref="contentRef">
-                    <!-- Content without card -->
-                    <div class="space-y-6">
-                        <p class="text-center md:text-left text-lg md:text-xl leading-relaxed text-gray-700">
-                            Elevation Consulting is a <span class="text-[#0099CC] font-semibold">boutique enterprise
-                                support firm</span> dedicated to helping Small and Growing Businesses (SGBs) and
-                            organizations achieve measurable, sustainable growth. We design strategies that strengthen
-                            systems, build capacity, and position enterprises for <span
-                                class="font-semibold text-gray-900">investment and long-term success</span>.
-                        </p>
+            <!-- Service Grid with Interactive Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
+                <!-- Business Advisory & Restructuring -->
+                <NuxtLink to="/business-solutions"
+                    class="group relative bg-white rounded-2xl p-8 transition-all duration-500 hover:transform hover:scale-[1.02] border border-blue-100/50 hover:border-[#4D7EFF]/20 hover:shadow-2xl hover:shadow-blue-500/10 shadow-lg shadow-gray-200/50 cursor-pointer">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     </div>
-                </div>
-
-                <!-- Right Column - Mission Sticky Note -->
-                <div class="relative" ref="visualRef">
-                    <!-- Mission Sticky Note Card -->
-                    <div class="relative animate-float">
-                        <!-- Sticky note with shadow - NO ROTATION -->
-                        <div class="relative bg-[#FFFACD] rounded-sm p-8 md:p-10 transform transition-all duration-500 hover:scale-105 sticky-note"
-                            style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1);">
-
-                            <!-- Subtle top shadow for sticky note effect -->
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6 mb-4">
                             <div
-                                class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-b from-black/5 to-transparent rounded-t-sm">
+                                class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#4D7EFF] to-blue-400 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-500 mx-auto md:mx-0">
+                                <TrendingUp class="w-8 h-8 text-white" />
                             </div>
-
-                            <!-- Mission Header with handwritten-style accent -->
-                            <div class="mb-6 relative">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-8 h-0.5 bg-[#0099CC] mr-3"></div>
-                                    <h3 class="text-xl md:text-2xl font-barlow font-bold text-gray-900 tracking-wide">
-                                        Our Focus
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <!-- Content Text -->
-                            <div class="space-y-5 relative z-10">
-                                <p class="text-base md:text-lg leading-relaxed text-gray-800 font-normal">
-                                    Our mission is to <span class="text-[#0099CC] font-bold">discover, empower, and
-                                        scale viable ventures</span>, guiding them through each stage of development to
-                                    create an ecosystem of resilient, impact-driven businesses contributing to <span
-                                        class="font-semibold text-gray-900">Africa's economic growth</span>.
+                            <div class="flex-1 text-center md:text-left">
+                                <h3
+                                    class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4D7EFF] transition-colors duration-300">
+                                    Business Advisory & Restructuring
+                                </h3>
+                                <p class="text-gray-900 leading-relaxed text-lg">
+                                    Strategic guidance and organizational alignment to help you operate efficiently,
+                                    stay agile, and grow sustainably.
                                 </p>
                             </div>
-
-                            <!-- CTA Button -->
-                            <div class="mt-8">
-                                <NuxtLink to="/about-us"
-                                    class="inline-flex items-center gap-2 px-6 py-3 bg-[#0099CC] text-white font-semibold rounded-sm transition-all duration-300 hover:bg-gray-900 transform hover:scale-105 group shadow-md">
-                                    WHAT WE DO
-                                    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
-                                    </svg>
-                                </NuxtLink>
-                            </div>
-
-                            <!-- Decorative corner fold effect -->
-                            <div class="absolute bottom-0 right-0 w-16 h-16 overflow-hidden">
-                                <div
-                                    class="absolute bottom-0 right-0 w-0 h-0 border-l-[60px] border-l-transparent border-b-[60px] border-b-gray-200/40 transform origin-bottom-right">
-                                </div>
-                            </div>
-
-                            <!-- Subtle pin/tack effect at top -->
-                            <div
-                                class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-[#0099CC] rounded-full shadow-md">
-                            </div>
+                        </div>
+                        <div
+                            class="flex items-center text-[#4D7EFF] font-semibold mt-6 transform transition-all duration-500 justify-center md:justify-start">
+                            <span>Explore advisory</span>
+                            <ArrowRight class="w-5 h-5 ml-2" />
                         </div>
                     </div>
-                </div>
+                </NuxtLink>
+
+                <!-- Employee Productivity Training -->
+                <NuxtLink to="/training"
+                    class="group relative bg-white rounded-2xl p-8 transition-all duration-500 hover:transform hover:scale-[1.02] border border-blue-100/50 hover:border-[#4D7EFF]/20 hover:shadow-2xl hover:shadow-blue-500/10 shadow-lg shadow-gray-200/50 cursor-pointer">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6 mb-4">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#4D7EFF] to-blue-400 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-500 mx-auto md:mx-0">
+                                <Users class="w-8 h-8 text-white" />
+                            </div>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3
+                                    class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4D7EFF] transition-colors duration-300">
+                                    Employee Productivity Training
+                                </h3>
+                                <p class="text-gray-900 leading-relaxed text-lg">
+                                    Interactive sessions that help teams work smarter, collaborate better, and perform
+                                    at their best.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center text-[#4D7EFF] font-semibold mt-6 transform transition-all duration-500 justify-center md:justify-start">
+                            <span>Discover training</span>
+                            <ArrowRight class="w-5 h-5 ml-2" />
+                        </div>
+                    </div>
+                </NuxtLink>
+
+                <!-- Ghostwriting Services -->
+                <NuxtLink to="/ghostwriting"
+                    class="group relative bg-white rounded-2xl p-8 transition-all duration-500 hover:transform hover:scale-[1.02] border border-blue-100/50 hover:border-[#4D7EFF]/20 hover:shadow-2xl hover:shadow-blue-500/10 shadow-lg shadow-gray-200/50 cursor-pointer">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6 mb-4">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#4D7EFF] to-blue-400 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-500 mx-auto md:mx-0">
+                                <PenTool class="w-8 h-8 text-white" />
+                            </div>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3
+                                    class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4D7EFF] transition-colors duration-300">
+                                    Ghostwriting Services
+                                </h3>
+                                <p class="text-gray-900 leading-relaxed text-lg">
+                                    Transform your insights, stories, and expertise into powerful written assets—books,
+                                    proposals, and profiles.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center text-[#4D7EFF] font-semibold mt-6 transform transition-all duration-500 justify-center md:justify-start">
+                            <span>Start writing</span>
+                            <ArrowRight class="w-5 h-5 ml-2" />
+                        </div>
+                    </div>
+                </NuxtLink>
+
+                <!-- Book Publishing -->
+                <NuxtLink to="/publishing"
+                    class="group relative bg-white rounded-2xl p-8 transition-all duration-500 hover:transform hover:scale-[1.02] border border-blue-100/50 hover:border-[#4D7EFF]/20 hover:shadow-2xl hover:shadow-blue-500/10 shadow-lg shadow-gray-200/50 cursor-pointer">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6 mb-4">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#4D7EFF] to-blue-400 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-500 mx-auto md:mx-0">
+                                <BookOpen class="w-8 h-8 text-white" />
+                            </div>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3
+                                    class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4D7EFF] transition-colors duration-300">
+                                    Book Publishing
+                                </h3>
+                                <p class="text-gray-900 leading-relaxed text-lg">
+                                    End-to-end publishing support that turns your manuscript into a polished,
+                                    market-ready book.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center text-[#4D7EFF] font-semibold mt-6 transform transition-all duration-500 justify-center md:justify-start">
+                            <span>Publish now</span>
+                            <ArrowRight class="w-5 h-5 ml-2" />
+                        </div>
+                    </div>
+                </NuxtLink>
             </div>
+
+            <!-- Additional CTA Button -->
+            <div class="text-center mt-12">
+                <NuxtLink to="/contact"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-[#4D7EFF] text-white font-semibold rounded-lg shadow-lg hover:bg-[#3D6EEF] transition-all duration-300 hover:scale-105 hover:shadow-xl uppercase tracking-wide group">
+                    Get Started Today
+                    <ArrowRight class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </NuxtLink>
+            </div>
+
         </div>
     </section>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
-
-// Reactive references for animations
-const contentRef = ref(null)
-const visualRef = ref(null)
-const headerRef = ref(null)
-const isVisible = ref(false)
-
-// Intersection Observer for scroll animations
-onMounted(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    isVisible.value = true
-                }
-            })
-        },
-        { threshold: 0.3 }
-    )
-
-    if (contentRef.value) observer.observe(contentRef.value)
-    if (visualRef.value) observer.observe(visualRef.value)
-    if (headerRef.value) observer.observe(headerRef.value)
-})
+import { ArrowRight, BookOpen, PenTool, TrendingUp, Users } from 'lucide-vue-next';
 </script>
 
 <style scoped>
-/* Import Barlow font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&display=swap');
-
-/* Apply Barlow font family */
-.font-barlow {
-    font-family: 'Barlow', sans-serif;
+/* Custom smooth transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
 }
 
-/* Custom letter spacing for large headings */
-.tracking-tight {
-    letter-spacing: -0.02em;
+/* Enhanced hover effects */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
 }
 
-/* Sticky note subtle float animation */
-@keyframes float {
+/* Improved focus styles for accessibility */
+a:focus {
+    outline: 2px solid #4D7EFF;
+    outline-offset: 4px;
+    border-radius: 16px;
+}
 
-    0%,
-    100% {
-        transform: translateY(0px);
+/* Better cursor indication */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Smooth scaling for all interactive elements */
+a {
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .grid-cols-1>* {
+        margin-bottom: 1rem;
     }
 
-    50% {
-        transform: translateY(-8px);
+    a:hover {
+        transform: scale(1.01);
     }
-}
-
-.animate-float {
-    animation: float 6s ease-in-out infinite;
-}
-
-/* Enhanced sticky note effect */
-.sticky-note {
-    position: relative;
-    background: linear-gradient(135deg, #FFFACD 0%, #FFF8DC 100%);
-}
-
-.sticky-note::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        repeating-linear-gradient(0deg,
-            transparent,
-            transparent 31px,
-            rgba(0, 153, 204, 0.03) 31px,
-            rgba(0, 153, 204, 0.03) 32px);
-    pointer-events: none;
-    border-radius: inherit;
-}
-
-/* Smooth entrance animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Apply animations when component mounts */
-.space-y-6 {
-    animation: fadeInUp 0.8s ease-out forwards;
 }
 </style>

@@ -1,54 +1,90 @@
 <template>
   <main class="relative w-screen h-screen overflow-hidden">
-    <!-- Background Image -->
-    <div class="absolute inset-0 w-screen h-full overflow-hidden z-0">
-      <img src="/assets/img/elevation-hero3.jpg" alt="Elevation Consulting"
-        class="w-full h-full object-cover object-top" style="filter: contrast(1.1) brightness(1.05) saturate(1.1);" />
-      <!-- Enhanced overlay for better text readability -->
-      <div class="absolute inset-0 bg-black/40"></div>
+    <!-- Navy Blue Paper Texture Background -->
+    <div class="absolute inset-0 w-full h-full z-0">
+      <img src="/assets/img/paper-bg4.avif" alt="Paper Texture" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-navy-overlay"></div>
     </div>
 
     <!-- Content Container -->
-    <div class="absolute inset-0 z-10 flex items-center pt-16 md:pt-20">
-      <div class="container mx-auto px-4 md:px-8 lg:px-12">
-        <div class="flex justify-center md:justify-start">
-          <!-- Text Content - No background box -->
-          <div class="text-center md:text-left max-w-xl">
-            <!-- Hero Heading with text shadow -->
-            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 drop-shadow-lg">
-              Elevating Enterprises,<br />
-              Empowering Growth.
-            </h1>
+    <div class="absolute inset-0 z-10 flex items-center pt-4 md:pt-20 pb-4 md:pb-8">
+      <div class="container mx-auto px-4 md:px-8 lg:px-12 h-full max-h-screen overflow-y-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center min-h-full py-4 md:py-0">
 
-            <!-- Rotating Service Areas -->
-            <div class="h-10 mb-4 flex justify-center md:justify-start">
-              <transition name="fade-service" mode="out-in">
-                <p :key="currentService" class="text-[#00D4FF] text-xl md:text-2xl font-semibold drop-shadow-md">
-                  {{ services[currentService] }}
-                </p>
-              </transition>
+          <!-- Left Side - Hero Text Content -->
+          <div class="text-center lg:text-left order-2 lg:order-1 space-y-3 md:space-y-4">
+            <!-- Static Headlines -->
+            <div class="space-y-1 md:space-y-2">
+              <h1
+                class="text-white text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight drop-shadow-lg">
+                We Transform Ideas<br />Into Impact
+              </h1>
+              <h3
+                class="text-gold text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight drop-shadow-md">
+                …And Your Story Into Published Legacy
+              </h3>
             </div>
 
-            <!-- Description with improved contrast -->
-            <p class="text-white text-sm md:text-lg leading-normal mb-6 font-medium">
-              Elevation Consulting supports organizations and entrepreneurs in building stronger,
-              more sustainable businesses. Through practical strategies, advisory services, and
-              capacity development, we help clients achieve measurable results and long-term impact.
+            <!-- Description -->
+            <p
+              class="text-gray-100 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
+              We help businesses, leaders, and authors bring bold visions to life, turning them into structured
+              solutions through advisory, productivity training, ghostwriting, and publishing.
             </p>
 
-            <!-- CTA Button -->
-            <div class="flex justify-center md:justify-start">
+            <!-- Stats - Hidden on mobile -->
+            <div class="hidden md:flex flex-wrap justify-center lg:justify-start gap-2 md:gap-4 text-white py-2">
+              <div class="text-center">
+                <p class="text-lg md:text-2xl font-bold text-gold">80+</p>
+                <p class="text-xs md:text-sm text-gray-300">Books Published</p>
+              </div>
+              <div class="text-center">
+                <p class="text-lg md:text-2xl font-bold text-gold">70+</p>
+                <p class="text-xs md:text-sm text-gray-300">Ghostwriting Projects</p>
+              </div>
+              <div class="text-center">
+                <p class="text-lg md:text-2xl font-bold text-gold">500+</p>
+                <p class="text-xs md:text-sm text-gray-300">Employees Trained</p>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center lg:justify-start pt-2">
+              <!-- Primary CTA -->
               <NuxtLink to="/about-us"
-                class="group inline-flex items-center gap-3 px-8 py-4 bg-[#00D4FF] hover:bg-[#00B8E6] text-gray-900 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                Learn More
-                <!-- Chevron arrow -->
-                <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 md:px-6 py-3 md:py-3 bg-[#0246d5] hover:bg-[#0236b5] text-white font-bold text-sm md:text-base rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                How We're Different
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </NuxtLink>
+
+              <!-- Secondary CTA -->
+              <NuxtLink to="/contact"
+                class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 md:px-6 py-3 md:py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold text-sm md:text-base rounded-lg transition-all duration-300">
+                Book a Clarity Session
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </NuxtLink>
             </div>
           </div>
+
+          <!-- Right Side - Scrolling Book Covers (Desktop) / Top (Mobile) -->
+          <div
+            class="relative h-[300px] sm:h-[320px] md:h-[380px] lg:h-[520px] order-1 lg:order-2 flex items-center justify-center pt-4 md:pt-0">
+            <div class="book-display-container">
+              <transition name="fade-book" mode="out-in">
+                <div :key="currentBookIndex" class="book-item-display">
+                  <img :src="books[currentBookIndex]" :alt="`Book Cover ${currentBookIndex + 1}`"
+                    class="w-full h-auto rounded-lg shadow-2xl book-cover-image" />
+                </div>
+              </transition>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -58,98 +94,139 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 
-const ROTATION_DURATION = 3000; // 3 seconds per service
+// Import book cover images
+import book9 from '~/assets/img/book-literaforge11.png';
+import book12 from '~/assets/img/book-literaforge17.png';
+import book2 from '~/assets/img/book-literaforge2.png';
+import book8 from '~/assets/img/book-literaforge22.png';
+import book4 from '~/assets/img/book-literaforge4.png';
+import book5 from '~/assets/img/book-literaforge5.png';
+import book3 from '~/assets/img/book-literaforge7.png';
+import { default as book10 } from '~/assets/img/book-literaforge8.png';
+import book7 from '~/assets/img/book-literaforge9.png';
 
-const services = [
-  'Consulting',
-  'Advisory',
-  'Training',
-  'Business Development',
-  'Monitoring & Evaluation'
-];
+const books = [book2, book3, book4, book5, book7, book8, book9, book10, book12];
 
-const currentService = ref(0);
-let timer = null;
+const currentBookIndex = ref(0);
+let bookTimer = null;
 
-const rotateServices = () => {
-  timer = setInterval(() => {
-    currentService.value = (currentService.value + 1) % services.length;
-  }, ROTATION_DURATION);
+// Rotate books every 3 seconds (1 second faster)
+const rotateBooks = () => {
+  bookTimer = setInterval(() => {
+    currentBookIndex.value = (currentBookIndex.value + 1) % books.length;
+  }, 4000);
 };
 
 onMounted(() => {
-  rotateServices();
+  // Start book rotation
+  rotateBooks();
 });
 
 onBeforeUnmount(() => {
-  if (timer) clearInterval(timer);
+  if (bookTimer) clearInterval(bookTimer);
 });
 </script>
 
 <style scoped>
-/* Service rotation fade transition */
-.fade-service-enter-active,
-.fade-service-leave-active {
-  transition: all 0.6s ease-in-out;
+/* Custom colors */
+.text-gold {
+  color: #D4AF37;
 }
 
-.fade-service-enter-from {
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+.bg-gold-dark {
+  background-color: #C9A32B;
+}
+
+.bg-blue-brand {
+  background-color: #4D7EFF;
+}
+
+.bg-navy-overlay {
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+/* Book fade transition - faster (1.2s instead of 1.6s) */
+.fade-book-enter-active,
+.fade-book-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-book-enter-from {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateX(30px);
 }
 
-.fade-service-leave-to {
+.fade-book-leave-to {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateX(-30px);
 }
 
-/* Ensure full width */
+/* Book display container */
+.book-display-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.book-item-display {
+  width: 100%;
+}
+
+/* Enhanced book cover images - sharper and better quality */
+.book-cover-image {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  filter: contrast(1.08) brightness(1.02);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Enhanced text shadows */
+.drop-shadow-md {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.drop-shadow-lg {
+  text-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+/* Full width */
 .w-screen {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
 
-/* Enhanced text shadows for better readability */
-.drop-shadow {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.drop-shadow-md {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-}
-
-.drop-shadow-lg {
-  text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-}
-
-/* Mobile responsive adjustments */
-@media (max-width: 767px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  /* Center content on mobile */
-  h1 {
-    font-size: 2rem;
-  }
-
-  .h-10 {
-    height: 2.5rem;
+/* Mobile responsive - slightly larger sizes */
+@media (max-width: 640px) {
+  .book-display-container {
+    max-width: 220px;
   }
 }
 
-/* Tablet adjustments */
+/* Small mobile adjustments - slightly larger */
+@media (min-width: 640px) and (max-width: 767px) {
+  .book-display-container {
+    max-width: 260px;
+  }
+}
+
+/* Tablet adjustments - slightly larger */
 @media (min-width: 768px) and (max-width: 1023px) {
-  h1 {
-    font-size: 2.25rem;
+  .book-display-container {
+    max-width: 280px;
   }
 }
 
-/* Large screen adjustments */
+/* Desktop - slightly larger */
 @media (min-width: 1024px) {
-  .max-w-xl {
-    max-width: 36rem;
+  .book-display-container {
+    max-width: 360px;
   }
 }
 </style>

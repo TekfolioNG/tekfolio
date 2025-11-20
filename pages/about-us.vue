@@ -7,8 +7,7 @@ definePageMeta({
 
 <template>
     <LandingHero10 />
-    <LandingAbout />
     <LandingVision />
-    <LandingTeam />
+    <HomeValues />
     <HomeCta2></HomeCta2>
 </template>

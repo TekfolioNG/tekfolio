@@ -1,25 +1,35 @@
 <template>
     <div class="min-h-screen bg-white">
 
+        <!-- Hero Section -->
+
         <section class="relative w-full h-96 md:h-[500px] overflow-hidden">
             <!-- Background Image - Full Width -->
             <div class="absolute inset-0">
-                <img :src="aboutUsImage" alt="About Us - Elevation Consulting"
-                    class="w-full h-full object-cover sharp-image" />
+                <img :src="ghostwritingImage" alt="  Employee Productivity Training"
+                    class="w-full h-[650px] object-cover sharp-image flip-horizontal" />
+
             </div>
 
             <!-- Subtle overlay for depth -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/50"></div>
 
             <!-- Content Overlay - Right Side -->
             <div class="relative z-10 h-full flex items-center justify-end">
                 <div class="container mx-auto px-6 md:px-12">
-                    <div class="max-w-md ml-auto bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
-                        <h2
-                            class="font-barlow-extrabold text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight tracking-wide">
-                            Advisory
-                        </h2>
-                        <div class="mt-4 w-16 h-1 bg-[#0077AA]"></div>
+                    <div class="max-w-[180px] md:max-w-md ml-auto">
+                        <!-- Card with clip path for unique shape -->
+                        <div class="relative bg-gradient-to-br from-white/80 to-gray-50/75 backdrop-blur-sm p-4 md:p-8 shadow-2xl"
+                            style="clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);">
+                            <h1
+                                class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-2 md:mb-3">
+                                Ghostwriting Services
+
+                            </h1>
+
+                            <div class="mt-4 md:mt-5 w-12 md:w-16 h-1 bg-gradient-to-r from-[#4D7EFF] to-blue-300">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,15 +43,18 @@
                     <div class="max-w-4xl mx-auto">
                         <p
                             class="text-xl sm:text-2xl lg:text-3xl text-gray-800 leading-relaxed lg:leading-relaxed font-light text-center mb-6">
-                            We Help Businesses Build Clarity, Resilience, and Value
-                        </p>
-                        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
-                            We provide practical guidance that helps organizations make smarter decisions, improve
-                            efficiency, and prepare for growth. Our advisory approach combines strategic insight,
-                            performance analysis, and hands-on
-                            expertise to strengthen operations and deliver lasting results.
+                            Your Ideas. Your Voice. Our Craft.
 
                         </p>
+                        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed text-center mb-4">
+                            We help thought leaders, professionals, and organizations turn their insights into
+                            well-crafted, impactful writing—without the stress of doing it yourself. You retain full
+                            ownership; we provide the structure, clarity, and creative skill needed to bring your ideas
+                            to life. From authoring a book to preparing strategic documents, or shaping your personal
+                            story, we ensure the final work reflects <b>your voice, your vision, and your message.</b>
+
+                        </p>
+
                     </div>
                 </div>
 
@@ -55,7 +68,7 @@
 </template>
 
 <script setup>
-import aboutUsImage from '~/assets/img/elevation-advisory.jpg';
+import ghostwritingImage from '~/assets/img/ghostwritinghero-literaforge.avif';
 </script>
 
 <style scoped>

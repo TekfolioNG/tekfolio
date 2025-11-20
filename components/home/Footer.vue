@@ -1,80 +1,74 @@
 <template>
-  <footer class="bg-[#012430] text-white pt-16 pb-8">
+  <footer class="bg-[#1a1a2e] text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 text-center md:text-left">
         <!-- Company Info & Logo -->
         <div>
-          <div class="mb-6">
-            <NuxtLink to="/" class="inline-block">
-              <img src="/assets/img/elevation-logo2.png" alt="Elevation Consulting Logo"
-                class="h-12 md:h-14 lg:h-16 drop-shadow-lg" />
+          <div class="flex-shrink-0 flex items-center mb-6 justify-center md:justify-start">
+            <NuxtLink to="/"
+              class="inline-block bg-white rounded-lg px-3 py-2 shadow-md hover:shadow-lg transition-shadow duration-200">
+              <img src="/assets/img/literaforge-logo.png" alt="LiteraForge Logo" class="h-10 md:h-12 lg:h-16" />
             </NuxtLink>
           </div>
           <p class="text-gray-300 mb-6 max-w-md mx-auto md:mx-0">
-            We are a boutique consulting firm dedicated to strengthening Nigeria's and Africa's private sector through
-            enterprise support, capacity development, and strategic advisory.
+            Litera-Forge helps leaders, businesses, and authors shape ideas into clear strategies and compelling
+            stories. Through advisory, training, ghostwriting, and publishing support, we bring structure to vision and
+            create work that makes a lasting impact.
           </p>
           <div class="flex space-x-4 justify-center md:justify-start">
-            <a href="https://web.facebook.com/people/Elevation-Consulting/100066769537474/?rdid=U7skCPT9dg2Lv9yE&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F19AcbTS8GT%2F%3F_rdc%3D1%26_rdr"
-              target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-[#0077AA] transition-colors duration-200">
+            <a href="https://www.facebook.com/profile.php?id=61569124947585" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-[#4D7EFF] transition-colors duration-200">
               <Icon name="lucide:facebook" class="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/elevation-consulting" target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-[#0077AA] transition-colors duration-200">
+            <a href="https://www.linkedin.com/company/literaforge" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-[#4D7EFF] transition-colors duration-200">
               <Icon name="lucide:linkedin" class="w-6 h-6" />
             </a>
-            <a href="https://www.instagram.com/consultingelevation" target="_blank" rel="noopener noreferrer"
-              class="text-gray-400 hover:text-[#0077AA] transition-colors duration-200">
+            <a href="https://www.instagram.com/litera_forge?igsh=MXdyZWYzdnBmNnE5aw==" target="_blank"
+              rel="noopener noreferrer" class="text-gray-400 hover:text-[#4D7EFF] transition-colors duration-200">
               <Icon name="lucide:instagram" class="w-6 h-6" />
             </a>
-            <a href="https://wa.me/2349026944592" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/2348132924637" target="_blank" rel="noopener noreferrer"
               class="hover:opacity-80 transition-opacity duration-200">
               <img src="/assets/img/whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
             </a>
           </div>
         </div>
 
-        <!-- Quick Links (Navbar Items) -->
+        <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#0077AA] pb-2">Quick Links</h3>
+          <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#4D7EFF] pb-2">Quick Links</h3>
           <ul class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-3">
             <li>
-              <NuxtLink to="/about-us" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
+              <NuxtLink to="/about-us" class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
                 About Us
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/consulting" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Consulting
+              <NuxtLink to="/business-solutions"
+                class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
+                Business Solutions
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/advisory" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Advisory
+              <NuxtLink to="/training" class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
+                Staff Training
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/training" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Training
+              <NuxtLink to="/ghostwriting" class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
+                Ghostwriting
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/business-development"
-                class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Business Development
+              <NuxtLink to="/publishing" class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
+                Publishing
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/monitoring-evaluation"
-                class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Monitoring & Evaluation
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/programs-events" class="text-gray-300 hover:text-[#0077AA] transition-colors duration-200">
-                Programs & Events
+              <NuxtLink to="/contact" class="text-gray-300 hover:text-[#4D7EFF] transition-colors duration-200">
+                Contact Us
               </NuxtLink>
             </li>
           </ul>
@@ -82,26 +76,24 @@
 
         <!-- Contact Information -->
         <div>
-          <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#0077AA] pb-2">Contact Us</h3>
+          <h3 class="text-lg font-semibold mb-6 text-white border-b border-[#4D7EFF] pb-2">Contact Us</h3>
           <ul class="space-y-4">
             <li class="flex items-start justify-center md:justify-start">
-              <Icon name="lucide:map-pin" class="w-5 h-5 mt-0.5 mr-3 text-[#0077AA] flex-shrink-0" />
-              <span class="text-gray-300 text-left">20 Lewis Street Lagos Island,
-                Lagos, Nigeria</span>
+              <Icon name="lucide:map-pin" class="w-5 h-5 mt-0.5 mr-3 text-[#4D7EFF] flex-shrink-0" />
+              <span class="text-gray-300 text-left">11 Adeshina Street, Off Olowu Street, Off Obafemi Awolowo Way,
+                Ikeja, Lagos</span>
             </li>
             <li class="flex items-center justify-center md:justify-start">
-              <Icon name="lucide:phone" class="w-5 h-5 mr-3 text-[#0077AA] flex-shrink-0" />
-              <span class="text-gray-300">(+234) 803 337 7366, <br>(+234) 803 878 6056</br><br>(+234)
-                902 694 4592</br></span>
+              <Icon name="lucide:phone" class="w-5 h-5 mr-3 text-[#4D7EFF] flex-shrink-0" />
+              <span class="text-gray-300">+234 813 292 4637</span>
             </li>
             <li class="flex items-center justify-center md:justify-start">
-              <Icon name="lucide:mail" class="w-5 h-5 mr-3 text-[#0077AA] flex-shrink-0" />
-              <span class="text-gray-300">info@elevationconsulting.com.ng,<br>
-                elevationconsultingsg@gmail.com</br></span>
+              <Icon name="lucide:mail" class="w-5 h-5 mr-3 text-[#4D7EFF] flex-shrink-0" />
+              <span class="text-gray-300">info@literaforge.com</span>
             </li>
             <li class="flex items-center justify-center md:justify-start">
-              <Icon name="lucide:clock" class="w-5 h-5 mr-3 text-[#0077AA] flex-shrink-0" />
-              <span class="text-gray-300">Mon - Fri: 8:00 AM - 6:00 PM</span>
+              <Icon name="lucide:clock" class="w-5 h-5 mr-3 text-[#4D7EFF] flex-shrink-0" />
+              <span class="text-gray-300">Mon - Fri: 9:00 AM - 5:00 PM</span>
             </li>
           </ul>
         </div>
@@ -112,7 +104,7 @@
         <div
           class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
           <p class="text-gray-400 text-sm">
-            © {{ new Date().getFullYear() }} Elevation Consulting. All rights reserved.
+            © {{ new Date().getFullYear() }} Litera-Forge Ltd. All rights reserved.
           </p>
           <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
             <button @click="showPrivacyPolicy = true"
@@ -125,8 +117,8 @@
             </button>
             <div class="text-gray-400 text-sm">
               Design & Development by
-              <a href="https://tekfol.io" target="_blank" rel="noopener noreferrer"
-                class="text-[#0077AA] hover:text-white transition-colors duration-200">
+              <a href="https://tekfolio.ng" target="_blank" rel="noopener noreferrer"
+                class="text-[#4D7EFF] hover:text-white transition-colors duration-200">
                 Tekfolio
               </a>
             </div>
@@ -140,7 +132,7 @@
     </div>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2349026944592" target="_blank" rel="noopener noreferrer"
+    <a href="https://wa.me/2348132924637" target="_blank" rel="noopener noreferrer"
       class="fixed bottom-6 right-6 z-50 bg-[#29a71a] p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 group">
       <img src="/assets/img/whatsapp.png" alt="WhatsApp" class="w-12 h-12" />
       <span

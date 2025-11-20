@@ -27,7 +27,7 @@
                         <div class="body-text">
                             <p>
                                 Seems the link you followed isn’t active or has changed, which is why it returned an
-                                <strong class="text-[#00D4FF]">error 404.</strong>
+                                <strong class="text-[#B0E0E6]">error 404.</strong>
                             </p>
                             <p class="text-lg md:text-xl font-medium text-white">
                                 Either way, let’s get your journey back on course.

@@ -2,83 +2,65 @@
   <nav
     class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-200/60 transition-all duration-300"
     :class="{ '-translate-y-full': !navVisible }">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
       <div class="flex justify-between items-center h-18 lg:h-24">
-        <!-- Logo and Company Name -->
+        <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <div class="flex items-center space-x-3">
-            <!-- Logo section -->
-            <NuxtLink to="/" class="inline-block">
-              <img src="/assets/img/elevation-logo2.png" alt="Syntanium Energy Logo"
-                class="h-10 md:h-12 lg:h-14 drop-shadow-lg" />
-            </NuxtLink>
-          </div>
+          <NuxtLink to="/"
+            class="inline-block bg-white rounded-lg px-3 py-2 shadow-md hover:shadow-lg transition-shadow duration-200">
+            <img src="/assets/img/literaforge-logo.png" alt="LiteraForge Logo" class="h-10 md:h-12 lg:h-16" />
+          </NuxtLink>
         </div>
 
-        <!-- Desktop Navigation - Centered -->
-        <div class="hidden lg:flex lg:items-center lg:justify-center lg:flex-1 lg:space-x-6">
-          <!-- Who We Are -->
+        <!-- Desktop Navigation - Slightly Left of Center -->
+        <div class="hidden lg:flex lg:items-center lg:absolute lg:left-[45%] lg:-translate-x-1/2 lg:space-x-6">
+          <!-- About Us -->
           <NuxtLink to="/about-us"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/about-us' }">
-            ABOUT US
+            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
+            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/about-us' }">
+            About Us
           </NuxtLink>
 
-          <!-- Consulting -->
-          <NuxtLink to="/consulting"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/consulting' }">
-            CONSULTING
+          <!-- Business Solutions -->
+          <NuxtLink to="/business-solutions"
+            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
+            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/business-solutions' }">
+            Business Solutions
           </NuxtLink>
 
-          <!-- Advisory -->
-          <NuxtLink to="/advisory"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/advisory' }">
-            ADVISORY
-          </NuxtLink>
-
-          <!-- Training -->
+          <!-- Staff Training -->
           <NuxtLink to="/training"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/training' }">
-            TRAINING
+            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
+            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/training' }">
+            Staff Training
           </NuxtLink>
 
-          <!-- Business Development -->
-          <NuxtLink to="/business-development"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/business-development' }">
-            BUSINESS DEV
+          <!-- Ghostwriting -->
+          <NuxtLink to="/ghostwriting"
+            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
+            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/ghostwriting' }">
+            Ghostwriting
           </NuxtLink>
-          <!-- Monitoring & Evaluation -->
-          <NuxtLink to="/monitoring-evaluation"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/monitoring-evaluation' }">
-            EVALUATION
-          </NuxtLink>
-          <!-- Programs & Events -->
-          <NuxtLink to="/programs-events"
-            class="text-base text-white hover:text-[#00D4FF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#00D4FF] pb-1"
-            :class="{ 'text-[#00D4FF] border-[#00D4FF]': $route.path === '/programs-events' }">
-            PROGRAMS
+
+          <!-- Publishing -->
+          <NuxtLink to="/publishing"
+            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
+            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/publishing' }">
+            Publishing
           </NuxtLink>
         </div>
 
-
-
-
-        <!-- Right Side - Contact Us -->
-        <div class="flex items-center space-x-4 lg:space-x-6 ml-6 lg:ml-10">
+        <!-- Right Side - Contact Button -->
+        <div class="flex items-center space-x-4 lg:space-x-6 ml-auto">
           <!-- Contact Us - Desktop Only -->
           <NuxtLink to="/contact"
-            class="hidden lg:inline-flex items-center px-5 py-2.5 bg-[#00D4FF] hover:bg-[#00B8E6] hover:shadow-lg hover:scale-105 text-gray-900 font-medium rounded-lg transition-all duration-200">
-            Contact Us
+            class="hidden lg:inline-flex items-center px-5 py-2.5 bg-[#4D7EFF] hover:bg-[#3D6EEF] hover:shadow-lg hover:shadow-[#4D7EFF]/30 hover:scale-105 text-white font-medium rounded-lg transition-all duration-200 uppercase">
+            Book A Clarity Session
           </NuxtLink>
 
           <!-- Mobile Menu Button -->
           <button @click="toggleMobileMenu"
-            class="lg:hidden p-2 rounded-lg text-white hover:bg-gray-800/80 hover:text-[#00D4FF] transition-colors duration-200"
+            class="lg:hidden p-2 rounded-lg text-white hover:bg-gray-800/80 hover:text-[#4D7EFF] transition-colors duration-200"
             aria-label="Toggle mobile menu">
             <Icon v-if="!mobileMenuOpen" name="lucide:menu" class="w-6 h-6" />
             <Icon v-else name="lucide:x" class="w-6 h-6" />
@@ -87,90 +69,88 @@
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div v-show="mobileMenuOpen"
-      class="lg:hidden absolute right-0 bg-gray-900/95 w-2/3 h-screen backdrop-blur-md border-t border-gray-200/60 z-10">
-      <div class="px-4 py-6 space-y-6">
-        <!-- Mobile About Us -->
-        <NuxtLink to="/about-us" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/about-us' }" @click="mobileMenuOpen = false">
-          ABOUT US
-        </NuxtLink>
-
-        <!-- Mobile Consulting -->
-        <NuxtLink to="/consulting" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/consulting' }" @click="mobileMenuOpen = false">
-          CONSULTING
-        </NuxtLink>
-
-        <!-- Mobile Advisory -->
-        <NuxtLink to="/advisory" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/advisory' }" @click="mobileMenuOpen = false">
-          ADVISORY
-        </NuxtLink>
-
-        <!-- Mobile Training -->
-        <NuxtLink to="/training" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/training' }" @click="mobileMenuOpen = false">
-          TRAINING
-        </NuxtLink>
-
-        <!-- Mobile Business Development -->
-        <NuxtLink to="/business-development"
-          class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/business-development' }"
-          @click="mobileMenuOpen = false">
-          BUSINESS DEVELOPMENT
-        </NuxtLink>
-
-        <!-- Mobile Monitoring & Evaluation -->
-        <NuxtLink to="/monitoring-evaluation"
-          class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/monitoring-evaluation' }"
-          @click="mobileMenuOpen = false">
-          EVALUATION
-        </NuxtLink>
-
-        <!-- Mobile Program & Events -->
-        <NuxtLink to="/programs-event" class="block font-medium text-white hover:text-[#00D4FF] py-2 transition-colors"
-          :class="{ 'text-[#00D4FF] underline': $route.path === '/program-sevent' }" @click="mobileMenuOpen = false">
-          PROGRAMS
-        </NuxtLink>
-
-
-        <!-- Mobile Contact Us -->
-        <NuxtLink to="/contact"
-          class="block w-full text-center px-4 py-3 bg-[#00D4FF] hover:bg-[#00B8E6] hover:shadow-lg hover:scale-105 text-gray-900 font-medium rounded-lg transition-all duration-200"
-          @click="mobileMenuOpen = false">
-          Contact Us
-        </NuxtLink>
+    <!-- Mobile Menu Overlay -->
+    <Transition name="fade">
+      <div v-if="mobileMenuOpen" @click="mobileMenuOpen = false"
+        class="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40" :style="{ top: navHeight + 'px' }">
       </div>
-    </div>
+    </Transition>
+
+    <!-- Mobile Menu -->
+    <Transition name="slide">
+      <div v-if="mobileMenuOpen"
+        class="lg:hidden fixed right-0 bg-gray-900/98 backdrop-blur-md border-l border-gray-200/60 overflow-y-auto z-50 w-80 max-w-full h-[calc(100vh-72px)]">
+        <div class="px-4 py-6 space-y-1">
+          <!-- Mobile About Us -->
+          <NuxtLink to="/about-us"
+            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
+            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/about-us' }" @click="closeMobileMenu">
+            About Us
+          </NuxtLink>
+
+          <!-- Mobile Business Solutions -->
+          <NuxtLink to="/business-solutions"
+            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
+            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/business-solutions' }" @click="closeMobileMenu">
+            Business Solutions
+          </NuxtLink>
+
+          <!-- Mobile Staff Training -->
+          <NuxtLink to="/training"
+            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
+            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/training' }" @click="closeMobileMenu">
+            Staff Training
+          </NuxtLink>
+
+          <!-- Mobile Ghostwriting -->
+          <NuxtLink to="/ghostwriting"
+            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
+            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/ghostwriting' }" @click="closeMobileMenu">
+            Ghostwriting
+          </NuxtLink>
+
+          <!-- Mobile Publishing -->
+          <NuxtLink to="/publishing"
+            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
+            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/publishing' }" @click="closeMobileMenu">
+            Publishing
+          </NuxtLink>
+
+          <!-- Mobile Contact Button -->
+          <NuxtLink to="/contact"
+            class="block w-full text-center mt-6 px-4 py-3 bg-[#4D7EFF] hover:bg-[#3D6EEF] hover:shadow-lg text-white font-medium rounded-lg transition-all duration-200 uppercase"
+            @click="closeMobileMenu">
+            Book A Clarity Session
+          </NuxtLink>
+        </div>
+      </div>
+    </Transition>
   </nav>
 </template>
 
 <script setup>
+// Import Vue composables
 import { onMounted, onUnmounted, ref } from 'vue'
+
+// Use Nuxt composables
+const route = useRoute()
 
 // Reactive state
 const mobileMenuOpen = ref(false)
 const navVisible = ref(true)
 const lastScrollY = ref(0)
+const navHeight = ref(72) // Default height
 
 // Navigation visibility on scroll
 const handleScroll = () => {
   const currentScrollY = window.scrollY
 
   if (currentScrollY < 100) {
-    // Always show navbar when near top
     navVisible.value = true
   } else if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
-    // Hide navbar when scrolling down
     navVisible.value = false
-    // Close mobile menu when hiding
     mobileMenuOpen.value = false
   } else if (currentScrollY < lastScrollY.value) {
-    // Show navbar when scrolling up
     navVisible.value = true
   }
 
@@ -181,13 +161,55 @@ const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
 
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false
+}
+
+// Calculate nav height dynamically
+const updateNavHeight = () => {
+  const nav = document.querySelector('nav')
+  if (nav) {
+    navHeight.value = nav.offsetHeight
+  }
+}
+
 onMounted(() => {
-  // Add scroll listener
   window.addEventListener('scroll', handleScroll, { passive: true })
   lastScrollY.value = window.scrollY
+  updateNavHeight()
+
+  // Update nav height on resize
+  window.addEventListener('resize', updateNavHeight)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('resize', updateNavHeight)
 })
 </script>
+
+<style scoped>
+/* Custom transitions for mobile menu */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(100%);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
+}
+</style>

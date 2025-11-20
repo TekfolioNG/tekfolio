@@ -1,73 +1,76 @@
 <template>
-    <section class="py-20 px-6 bg-white">
+    <section class="py-16 lg:py-20 px-6 bg-gray-200">
         <div class="max-w-4xl mx-auto">
             <!-- Form Header -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-barlow-extrabold text-gray-900 mb-6">
-                    Get in Touch
-                </h2>
-                <p class="text-xl text-gray-800 max-w-2xl mx-auto">
-                    Have a question or want to explore how we can support your business? <br>We’d love to hear from
-                    you.</br>
+            <div class="text-center mb-10 lg:mb-12">
+                <div class="inline-flex items-center gap-3 mb-4">
+                    <div class="w-3 h-3 bg-[#4D7EFF] rounded-full"></div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 uppercase tracking-wide">
+                        Book a Clarity Session
+                    </h2>
+                </div>
+                <p class="text-lg text-gray-900 max-w-2xl mx-auto">
+                    Gain fresh perspective, identify next steps, and receive expert guidance
+                    on your project or business concern. Send us a message to get started.
                 </p>
             </div>
 
             <!-- Contact Form -->
             <form ref="form" @submit.prevent="submitForm"
-                class="bg-blue-50 rounded-2xl shadow-xl p-8 md:p-10 border border-gray-100">
+                class="bg-gradient-to-br from-gray-50 to-blue-50/30 rounded-2xl shadow-xl p-6 md:p-10 border border-gray-100">
                 <!-- Hidden input for Web3Forms -->
                 <input type="hidden" name="access_key" value="59310f29-a1aa-4e2f-9cfc-ad41b973abfe">
-                <input type="hidden" name="subject"
-                    value="New Contact Form Submission from Elevation Consulting Website">
-                <input type="hidden" name="from_name" value="Elevation Consulting Website">
+                <input type="hidden" name="subject" value="New Contact Form Submission from LiteraForge Website">
+                <input type="hidden" name="from_name" value="LiteraForge Website">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <!-- Form Grid -->
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                     <!-- Name Field -->
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                        <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">
                             Full Name *
                         </label>
                         <input type="text" id="name" name="name" v-model="formData.name" required
-                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0077AA] focus:border-transparent transition-colors duration-300 shadow-sm"
+                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#4D7EFF] focus:border-transparent transition-all duration-300 shadow-sm"
                             placeholder="Your full name">
                     </div>
 
                     <!-- Email Field -->
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                        <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">
                             Email Address *
                         </label>
                         <input type="email" id="email" name="email" v-model="formData.email" required
-                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0077AA] focus:border-transparent transition-colors duration-300 shadow-sm"
+                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#4D7EFF] focus:border-transparent transition-all duration-300 shadow-sm"
                             placeholder="e.g myname@gmail.com">
                     </div>
                 </div>
 
                 <!-- Phone Field -->
                 <div class="mb-6">
-                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                    <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">
                         Phone Number
                     </label>
                     <input type="tel" id="phone" name="phone" v-model="formData.phone"
-                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0077AA] focus:border-transparent transition-colors duration-300 shadow-sm"
+                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#4D7EFF] focus:border-transparent transition-all duration-300 shadow-sm"
                         placeholder="+234 000 000 0000">
                 </div>
 
                 <!-- Subject Field -->
                 <div class="mb-6">
-                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                    <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">
                         Subject *
                     </label>
                     <select id="subject" name="subject" v-model="formData.subject" required
-                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0077AA] focus:border-transparent transition-colors duration-300 shadow-sm">
+                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#4D7EFF] focus:border-transparent transition-all duration-300 shadow-sm">
                         <option value="" disabled selected>Select a subject</option>
                         <option value="General Inquiry">General Inquiry</option>
-                        <option value="Consulting Services">Consulting Services</option>
+                        <option value="Ghostwriting Services">Ghostwriting Services</option>
+                        <option value="Publishing Services">Publishing Services</option>
                         <option value="Advisory Services">Advisory Services</option>
-                        <option value="Training Programs">Training Programs</option>
-                        <option value="Business Development">Business Development</option>
+                        <option value="Productivity Training">Productivity Training</option>
+                        <option value="Content Strategy">Content Strategy</option>
                         <option value="Partnership Opportunity">Partnership Opportunity</option>
                         <option value="Other">Other</option>
                     </select>
@@ -75,18 +78,18 @@
 
                 <!-- Message Field -->
                 <div class="mb-8">
-                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                    <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">
                         Message *
                     </label>
                     <textarea id="message" name="message" v-model="formData.message" required rows="5"
-                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0077AA] focus:border-transparent transition-colors duration-300 shadow-sm"
-                        placeholder="Tell us about your business needs or inquiry..."></textarea>
+                        class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#4D7EFF] focus:border-transparent transition-all duration-300 shadow-sm"
+                        placeholder="Tell us about your project or inquiry..."></textarea>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit" :disabled="isSubmitting"
-                        class="px-8 py-4 bg-[#0077AA] hover:bg-[#005580] text-white font-barlow-extrabold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0077AA] disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg uppercase">
+                        class="px-8 py-4 bg-[#4D7EFF] hover:bg-[#3D6EEF] text-white font-bold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4D7EFF] disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg uppercase tracking-wide">
                         <span v-if="!isSubmitting">Send Message</span>
                         <span v-else class="flex items-center justify-center">
                             <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +106,8 @@
                 </div>
 
                 <!-- Success/Error Messages -->
-                <div v-if="submitMessage" class="mt-6 p-4 rounded-lg text-center" :class="submitMessageClass">
+                <div v-if="submitMessage" class="mt-6 p-4 rounded-lg text-center font-medium"
+                    :class="submitMessageClass">
                     {{ submitMessage }}
                 </div>
             </form>
@@ -136,13 +140,13 @@ const submitForm = async () => {
     try {
         // Prepare form data for Web3Forms
         const formDataToSend = new FormData()
-        formDataToSend.append('access_key', '59310f29-a1aa-4e2f-9cfc-ad41b973abfe') // Replace with actual key
+        formDataToSend.append('access_key', '59310f29-a1aa-4e2f-9cfc-ad41b973abfe')
         formDataToSend.append('name', formData.name)
         formDataToSend.append('email', formData.email)
         formDataToSend.append('phone', formData.phone)
         formDataToSend.append('subject', formData.subject)
         formDataToSend.append('message', formData.message)
-        formDataToSend.append('botcheck', '') // Anti-bot field
+        formDataToSend.append('botcheck', '')
 
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -152,7 +156,6 @@ const submitForm = async () => {
         const result = await response.json()
 
         if (result.success) {
-            // Success
             submitMessage.value = 'Thank you! Your message has been sent successfully. We will get back to you soon.'
             submitMessageClass.value = 'bg-green-100 text-green-700'
 
@@ -165,11 +168,9 @@ const submitForm = async () => {
                 message: ''
             })
         } else {
-            // Error from Web3Forms
             throw new Error(result.message || 'Failed to send message')
         }
     } catch (error) {
-        // Network or other errors
         console.error('Form submission error:', error)
         submitMessage.value = 'Sorry, there was an error sending your message. Please try again later or contact us directly.'
         submitMessageClass.value = 'bg-red-100 text-red-700'
@@ -180,20 +181,12 @@ const submitForm = async () => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
-
-.font-barlow-extrabold {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
 /* Custom focus styles */
 input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 119, 170, 0.1);
+    box-shadow: 0 0 0 3px rgba(77, 126, 255, 0.1);
 }
 
 /* Transitions */
@@ -205,6 +198,6 @@ select {
 
 /* Enhanced shadow */
 form {
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
 }
 </style>

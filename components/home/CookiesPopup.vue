@@ -4,7 +4,7 @@
             <div v-if="isVisible" class="cookies-popup">
                 <div class="cookies-content">
                     <p class="cookies-text text-center text-pretty">
-                        This site uses cookies to improve your experience. You can restrict cookies through your
+                        This website uses cookies to improve your experience. You can restrict cookies through your
                         browser; however that may impair site functionality.
                     </p>
                     <div class="button-container">

@@ -156,7 +156,7 @@
                                 </div>
 
                                 <!-- Main Image -->
-                                <img src="~/assets/img/Cta1-literaforge.png"
+                                <img src="~/assets/img/cta1-literaforge.png"
                                     alt="LiteraForge - Collaborative Writing Process"
                                     class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
                                     loading="lazy" decoding="async" />

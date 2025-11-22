@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 definePageMeta({
     layout: "home"
 });
@@ -6,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-    <LandingHero11 />
-    <LandingTraining />
-    <HomeCta2></HomeCta2>
+    <LandingHero14 />
+    <LandingPublishing />
+    <HomeCta1></HomeCta1>
 </template>

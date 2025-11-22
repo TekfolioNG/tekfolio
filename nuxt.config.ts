@@ -83,16 +83,6 @@ export default defineNuxtConfig({
     }
   },
 
-  hooks: {
-    'pages:extend'(pages) {
-      pages.push({
-        name: '404',
-        path: '/:catchAll(.*)*',
-        file: '~/error.vue'
-      })
-    }
-  },
-
   experimental: {
     payloadExtraction: false,
   },

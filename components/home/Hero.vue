@@ -1,232 +1,344 @@
 <template>
-  <main class="relative w-screen h-screen overflow-hidden">
-    <!-- Navy Blue Paper Texture Background -->
-    <div class="absolute inset-0 w-full h-full z-0">
-      <img src="/assets/img/paper-bg4.avif" alt="Paper Texture" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-navy-overlay"></div>
+  <main class="relative w-full min-h-screen overflow-hidden bg-white pb-16 md:pb-16">
+    <!-- Content Container -->
+    <div class="container mx-auto px-6 md:px-12 lg:px-16 min-h-screen flex items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 lg:gap-12 items-center w-full py-8 md:py-12 lg:py-0">
+
+        <!-- Left Side - Hero Text Content (3/5 on desktop) -->
+        <div class="text-center lg:text-left order-2 lg:order-1 lg:col-span-3 space-y-3 md:space-y-5 lg:pr-8 lg:pt-16">
+          <!-- Headlines with styled "Built Differently" -->
+          <div class="space-y-1">
+            <h1 class="hero-headline leading-[1.1]">
+              <span class="block text-gray-900 text-3xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold">
+                Your Tech Advantage.
+              </span>
+              <span class="relative inline-block mt-1">
+                <span class="text-gradient text-3xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold">
+                  Built Differently
+                </span>
+                <!-- Stylish circular accent -->
+                <svg class="accent-circle absolute -inset-2 -z-10 w-[110%] sm:w-[105%] md:w-full" viewBox="0 0 200 80"
+                  preserveAspectRatio="none">
+                  <ellipse cx="100" cy="40" rx="98" ry="38" fill="none" stroke="url(#gradient)" stroke-width="2"
+                    opacity="0.3" />
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#5B21B6;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <!-- Double underline with brand colors -->
+                <svg class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[65%] sm:w-full h-3" viewBox="0 0 200 12"
+                  fill="none">
+                  <path d="M2 7C50 4 100 2 198 6" stroke="url(#underlineGradient1)" stroke-width="2.5"
+                    stroke-linecap="round" fill="none" />
+                  <path d="M2 10C50 7 100 5 198 9" stroke="url(#underlineGradient2)" stroke-width="2.5"
+                    stroke-linecap="round" fill="none" />
+                  <defs>
+                    <linearGradient id="underlineGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#5B21B6;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="underlineGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.6" />
+                      <stop offset="100%" style="stop-color:#5B21B6;stop-opacity:0.6" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+
+            </h1>
+          </div>
+
+          <!-- Description -->
+          <p
+            class="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+            We build fast, reliable digital products that help businesses operate with clarity and confidence.
+            Professional, modern web apps, mobile experiences, and cloud-ready systems engineered for real growth.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2 md:pt-4">
+            <!-- Primary CTA - Gradient Button -->
+            <NuxtLink to="/contact"
+              class="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-700 to-blue-600 text-white font-bold text-base lg:text-lg rounded-xl overflow-hidden shadow-lg cta-button">
+              <span class="relative flex items-center gap-2 z-10">
+                Start Your Project
+                <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
+                  </path>
+                </svg>
+              </span>
+            </NuxtLink>
+
+            <!-- Secondary CTA - Outlined with gradient border -->
+            <NuxtLink to="/work"
+              class="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold text-base lg:text-lg rounded-xl button-gradient-border cta-button">
+              <span class="relative flex items-center gap-2 z-10">
+                See Our Work
+                <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
+                  </path>
+                </svg>
+              </span>
+            </NuxtLink>
+          </div>
+        </div>
+
+        <!-- Right Side - Lottie Animation (2/5 on desktop) -->
+        <div
+          class="relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] order-1 lg:order-2 lg:col-span-2 flex items-center justify-center">
+          <div id="lottie-animation" class="lottie-container w-full h-full flex items-center justify-center">
+            <!-- Lottie will be loaded here via JavaScript -->
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Content Container -->
-    <div class="absolute inset-0 z-10 flex items-center pt-4 md:pt-20 pb-4 md:pb-8">
-      <div class="container mx-auto px-4 md:px-8 lg:px-12 h-full max-h-screen overflow-y-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center min-h-full py-4 md:py-0">
-
-          <!-- Left Side - Hero Text Content -->
-          <div class="text-center lg:text-left order-2 lg:order-1 space-y-3 md:space-y-4">
-            <!-- Static Headlines -->
-            <div class="space-y-1 md:space-y-2">
-              <h1
-                class="text-white text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight drop-shadow-lg">
-                We Transform Ideas<br />Into Impact
-              </h1>
-              <h3
-                class="text-gold text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight drop-shadow-md">
-                …And Your Story Into Published Legacy
-              </h3>
-            </div>
-
-            <!-- Description -->
-            <p
-              class="text-gray-100 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
-              We help businesses, leaders, and authors bring bold visions to life, turning them into structured
-              solutions through advisory, productivity training, ghostwriting, and publishing.
-            </p>
-
-            <!-- Stats - Hidden on mobile -->
-            <div class="hidden md:flex flex-wrap justify-center lg:justify-start gap-2 md:gap-4 text-white py-2">
-              <div class="text-center">
-                <p class="text-lg md:text-2xl font-bold text-gold">80+</p>
-                <p class="text-xs md:text-sm text-gray-300">Books Published</p>
-              </div>
-              <div class="text-center">
-                <p class="text-lg md:text-2xl font-bold text-gold">70+</p>
-                <p class="text-xs md:text-sm text-gray-300">Ghostwriting Projects</p>
-              </div>
-              <div class="text-center">
-                <p class="text-lg md:text-2xl font-bold text-gold">500+</p>
-                <p class="text-xs md:text-sm text-gray-300">Employees Trained</p>
-              </div>
-            </div>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center lg:justify-start pt-2">
-              <!-- Primary CTA -->
-              <NuxtLink to="/about-us"
-                class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 md:px-6 py-3 md:py-3 bg-[#0246d5] hover:bg-[#0236b5] text-white font-bold text-sm md:text-base rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-                How We're Different
-                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </NuxtLink>
-
-              <!-- Secondary CTA -->
-              <NuxtLink to="/contact"
-                class="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 md:px-6 py-3 md:py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold text-sm md:text-base rounded-lg transition-all duration-300">
-                Book a Clarity Session
-                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </NuxtLink>
+    <!-- Trust Indicators - Positioned at the bottom of the section -->
+    <div class="absolute bottom-2 md:bottom-4 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 sm:px-6">
+      <!-- Desktop: Single Card -->
+      <div class="hidden md:block bg-gray-100 rounded-xl shadow-lg px-6 sm:px-8 py-4 sm:py-5 border border-gray-100"
+        style="box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.55), 0 4px 6px -2px rgba(0, 0, 0, 0.35);">
+        <div class="flex flex-row gap-8 lg:gap-12 items-center justify-center">
+          <!-- Indicator 1 -->
+          <div class="flex items-start gap-3 flex-1 text-left">
+            <img src="~/assets/home/img/security.png" alt="Security"
+              class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 brand-icon-filter" />
+            <div>
+              <h3 class="text-gray-900 font-bold text-sm sm:text-base md:text-lg mb-1">Trusted by Businesses in Nigeria
+                and Beyond</h3>
+              <p class="text-gray-900 text-xs sm:text-sm md:text-base">Reliable digital solutions built for
+                long-term performance.</p>
             </div>
           </div>
 
-          <!-- Right Side - Scrolling Book Covers (Desktop) / Top (Mobile) -->
-          <div
-            class="relative h-[300px] sm:h-[320px] md:h-[380px] lg:h-[520px] order-1 lg:order-2 flex items-center justify-center pt-4 md:pt-0">
-            <div class="book-display-container">
-              <transition name="fade-book" mode="out-in">
-                <div :key="currentBookIndex" class="book-item-display">
-                  <img :src="books[currentBookIndex]" :alt="`Book Cover ${currentBookIndex + 1}`"
-                    class="w-full h-auto rounded-lg shadow-2xl book-cover-image" />
-                </div>
-              </transition>
+          <!-- Divider -->
+          <div class="w-px h-12 lg:h-14 bg-gradient-to-b from-purple-700 to-blue-600"></div>
+
+          <!-- Indicator 2 -->
+          <div class="flex items-start gap-3 flex-1 text-left">
+            <img src="~/assets/home/img/quality.png" alt="Quality"
+              class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 brand-icon-filter" />
+            <div>
+              <h3 class="text-gray-900 font-bold text-sm sm:text-base md:text-lg mb-1">Quality, Delivered
+                Fast</h3>
+              <p class="text-gray-900 text-xs sm:text-sm md:text-base">Speed without compromise plus rapid development.
+              </p>
             </div>
           </div>
-
         </div>
       </div>
+
+      <!-- Mobile: Two Separate Cards Side by Side -->
+      <div class="grid grid-cols-2 gap-3 md:hidden">
+        <!-- Card 1 -->
+        <div class="bg-gray-100 rounded-xl shadow-lg px-4 py-4 border border-gray-100"
+          style="box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.55), 0 4px 6px -2px rgba(0, 0, 0, 0.35);">
+          <div class="flex flex-col items-center text-center gap-2">
+            <div>
+              <h3 class="text-gray-900 font-bold text-xs mb-1">Trusted by Businesses in Nigeria</h3>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-100 rounded-xl shadow-lg px-4 py-4 border border-gray-100"
+          style="box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.55), 0 4px 6px -2px rgba(0, 0, 0, 0.35);">
+          <div class="flex flex-col items-center text-center gap-2">
+            <div>
+              <h3 class="text-gray-900 font-bold text-xs mb-1">Quality, Delivered Fast. No Compromise.</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle gradient overlay at bottom for depth -->
+    <div
+      class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50/50 to-transparent pointer-events-none">
     </div>
   </main>
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from 'vue';
-
-// Import book cover images
-import book9 from '~/assets/img/book-literaforge11.png';
-import book12 from '~/assets/img/book-literaforge17.png';
-import book2 from '~/assets/img/book-literaforge2.png';
-import book8 from '~/assets/img/book-literaforge22.png';
-import book4 from '~/assets/img/book-literaforge4.png';
-import book5 from '~/assets/img/book-literaforge5.png';
-import book3 from '~/assets/img/book-literaforge7.png';
-import { default as book10 } from '~/assets/img/book-literaforge8.png';
-import book7 from '~/assets/img/book-literaforge9.png';
-
-const books = [book2, book3, book4, book5, book7, book8, book9, book10, book12];
-
-const currentBookIndex = ref(0);
-let bookTimer = null;
-
-// Rotate books every 3 seconds (1 second faster)
-const rotateBooks = () => {
-  bookTimer = setInterval(() => {
-    currentBookIndex.value = (currentBookIndex.value + 1) % books.length;
-  }, 4000);
-};
+import { onMounted } from 'vue';
 
 onMounted(() => {
-  // Start book rotation
-  rotateBooks();
-});
+  // Load Lottie player script and initialize
+  const loadLottie = async () => {
+    // Check if script already exists
+    if (!document.querySelector('script[src*="dotlottie-player"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs';
+      script.type = 'module';
+      document.head.appendChild(script);
 
-onBeforeUnmount(() => {
-  if (bookTimer) clearInterval(bookTimer);
+      // Wait for script to load
+      await new Promise((resolve) => {
+        script.onload = resolve;
+      });
+    }
+
+    // Create and configure the player
+    const container = document.getElementById('lottie-animation');
+    if (container && !container.querySelector('dotlottie-player')) {
+      const player = document.createElement('dotlottie-player');
+      player.setAttribute('src', 'https://lottie.host/1617352f-c57b-4585-8f08-721e4a949c01/IX6yVMPCQM.lottie');
+      player.setAttribute('background', 'transparent');
+      player.setAttribute('speed', '1');
+      player.setAttribute('loop', '');
+      player.setAttribute('autoplay', '');
+      player.style.width = '100%';
+      player.style.height = '100%';
+      container.appendChild(player);
+    }
+  };
+
+  loadLottie();
 });
 </script>
 
 <style scoped>
-/* Custom colors */
-.text-gold {
-  color: #D4AF37;
+/* Brand gradient colors from logo - Deeper gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #4C1D95 0%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.bg-gold {
-  background-color: #D4AF37;
+/* Hero headline animation */
+.hero-headline {
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.bg-gold-dark {
-  background-color: #C9A32B;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.bg-blue-brand {
-  background-color: #4D7EFF;
+/* Lottie container styling with gradient glow */
+.lottie-container {
+  filter: drop-shadow(0 10px 40px rgba(91, 33, 182, 0.15));
 }
 
-.bg-navy-overlay {
-  background-color: rgba(15, 23, 42, 0.6);
-}
-
-/* Book fade transition - faster (1.2s instead of 1.6s) */
-.fade-book-enter-active,
-.fade-book-leave-active {
-  transition: all 0.3s ease-in-out;
-}
-
-.fade-book-enter-from {
+/* Circular accent animation */
+.accent-circle {
   opacity: 0;
-  transform: translateX(30px);
+  animation: fadeInCircle 1.2s ease-out 0.3s forwards;
 }
 
-.fade-book-leave-to {
+@keyframes fadeInCircle {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Double underline with draw animation */
+.double-underline {
   opacity: 0;
-  transform: translateX(-30px);
+  animation: drawLines 1.2s ease-out 0.6s forwards;
 }
 
-/* Book display container */
-.book-display-container {
-  width: 100%;
-  margin: 0 auto;
+@keyframes drawLines {
+  from {
+    opacity: 0;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+  }
+
+  to {
+    opacity: 1;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0;
+  }
 }
 
-.book-item-display {
-  width: 100%;
+/* Smooth button hover transitions */
+.cta-button {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
 }
 
-/* Enhanced book cover images - sharper and better quality */
-.book-cover-image {
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  filter: contrast(1.08) brightness(1.02);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-font-smoothing: subpixel-antialiased;
+.cta-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px -10px rgba(91, 33, 182, 0.4);
 }
 
-/* Enhanced text shadows */
-.drop-shadow-md {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+/* Gradient border button effect */
+.button-gradient-border {
+  position: relative;
+  background: white;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.drop-shadow-lg {
-  text-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+.button-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 2px;
+  background: linear-gradient(135deg, #5B21B6, #3B82F6);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
-/* Full width */
-.w-screen {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-}
-
-/* Mobile responsive - slightly larger sizes */
+/* Responsive adjustments */
 @media (max-width: 640px) {
-  .book-display-container {
-    max-width: 220px;
+  .hero-headline span {
+    font-size: 1.75rem;
+  }
+
+  .double-underline {
+    height: 20px;
   }
 }
 
-/* Small mobile adjustments - slightly larger */
-@media (min-width: 640px) and (max-width: 767px) {
-  .book-display-container {
-    max-width: 260px;
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-headline span {
+    font-size: 2rem;
+  }
+
+  .double-underline {
+    height: 20px;
   }
 }
 
-/* Tablet adjustments - slightly larger */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .book-display-container {
-    max-width: 280px;
-  }
-}
-
-/* Desktop - slightly larger */
 @media (min-width: 1024px) {
-  .book-display-container {
-    max-width: 360px;
+  .double-underline {
+    height: 20px;
   }
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Brand color filter for icons */
+.brand-icon-filter {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(89%) saturate(2686%) hue-rotate(251deg) brightness(91%) contrast(93%);
 }
 </style>

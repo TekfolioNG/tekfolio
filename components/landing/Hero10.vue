@@ -113,7 +113,7 @@
 
 <script setup>
 // Import images from assets directory
-import aboutUsImage from '~/assets/img/about-us-literaforge.JPG';
+import aboutUsImage from '~/assets/img/about-us-literaforge.jpeg';
 import ourStoryImage from '~/assets/img/our-story-literaforge.jpg';
 </script>
 

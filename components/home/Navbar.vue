@@ -1,66 +1,95 @@
 <template>
-  <nav
-    class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-200/60 transition-all duration-300"
-    :class="{ '-translate-y-full': !navVisible }">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-      <div class="flex justify-between items-center h-18 lg:h-24">
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-all duration-300" :class="[
+    { '-translate-y-full': !navVisible },
+    isDarkMode
+      ? 'bg-gradient-to-r from-purple-900/95 to-blue-900/95 border-purple-700/30'
+      : 'border-gray-200/20'
+  ]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 lg:h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <NuxtLink to="/"
-            class="inline-block bg-white rounded-lg px-3 py-2 shadow-md hover:shadow-lg transition-shadow duration-200">
-            <img src="/assets/img/literaforge-logo.png" alt="LiteraForge Logo" class="h-10 md:h-12 lg:h-16" />
+          <NuxtLink to="/" class="inline-block rounded-lg px-2 py-1 hover:opacity-80 transition-opacity duration-200">
+            <img :src="isDarkMode ? '/tekfolio-full2.png' : '/tekfolio-full.png'" alt="Tekfolio Logo"
+              class="h-8 md:h-8 lg:h-12 transition-opacity duration-300" />
           </NuxtLink>
         </div>
 
-        <!-- Desktop Navigation - Slightly Left of Center -->
-        <div class="hidden lg:flex lg:items-center lg:absolute lg:left-[45%] lg:-translate-x-1/2 lg:space-x-6">
-          <!-- About Us -->
-          <NuxtLink to="/about-us"
-            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
-            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/about-us' }">
-            About Us
+        <!-- Desktop Navigation - Centered -->
+        <div class="hidden lg:flex lg:items-center lg:space-x-0.5 xl:space-x-0.5">
+          <!-- Enterprise Web Solutions -->
+          <NuxtLink to="/web-solutions"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/web-solutions'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Web Solutions
           </NuxtLink>
 
-          <!-- Business Solutions -->
-          <NuxtLink to="/business-solutions"
-            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
-            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/business-solutions' }">
-            Business Solutions
+          <!-- Mobile App Development -->
+          <NuxtLink to="/mobile-apps"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/mobile-apps'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Mobile Apps
+          </NuxtLink>
+          
+          <!-- Cloud & Security -->
+          <NuxtLink to="/cloud-security"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/cloud-security'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Cloud & Security
           </NuxtLink>
 
-          <!-- Staff Training -->
-          <NuxtLink to="/training"
-            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
-            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/training' }">
-            Staff Training
+          <!-- SEO & Performance -->
+          <NuxtLink to="/seo-performance"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/seo-performance'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            SEO & Performance
           </NuxtLink>
 
-          <!-- Ghostwriting -->
-          <NuxtLink to="/ghostwriting"
-            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
-            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/ghostwriting' }">
-            Ghostwriting
+          <!-- Creative Coding -->
+          <NuxtLink to="/creative-coding"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/creative-coding'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Creative Coding
           </NuxtLink>
 
-          <!-- Publishing -->
-          <NuxtLink to="/publishing"
-            class="text-base text-white hover:text-[#4D7EFF] font-bold transition-colors duration-200 border-b-2 border-transparent hover:border-[#4D7EFF] pb-1 uppercase"
-            :class="{ 'text-[#4D7EFF] border-[#4D7EFF]': route.path === '/publishing' }">
-            Publishing
+
+          <!-- Company -->
+          <NuxtLink to="/company"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/company'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Company
           </NuxtLink>
         </div>
 
         <!-- Right Side - Contact Button -->
-        <div class="flex items-center space-x-4 lg:space-x-6 ml-auto">
-          <!-- Contact Us - Desktop Only -->
+        <div class="flex items-center space-x-3 lg:space-x-4">
+          <!-- Ready to Start - Desktop Only -->
           <NuxtLink to="/contact"
-            class="hidden lg:inline-flex items-center px-5 py-2.5 bg-[#4D7EFF] hover:bg-[#3D6EEF] hover:shadow-lg hover:shadow-[#4D7EFF]/30 hover:scale-105 text-white font-medium rounded-lg transition-all duration-200 uppercase">
-            Book A Clarity Session
+            class="hidden lg:inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-purple-700 to-blue-600 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-105 text-white font-bold text-sm xl:text-base rounded-lg transition-all duration-200">
+            Ready to Start?
           </NuxtLink>
 
           <!-- Mobile Menu Button -->
-          <button @click="toggleMobileMenu"
-            class="lg:hidden p-2 rounded-lg text-white hover:bg-gray-800/80 hover:text-[#4D7EFF] transition-colors duration-200"
+          <button @click="toggleMobileMenu" class="lg:hidden p-2 rounded-lg transition-colors duration-200"
+            :class="isDarkMode ? 'text-gray-100 hover:bg-white/10' : 'text-gray-700 hover:bg-gray-100'"
             aria-label="Toggle mobile menu">
             <Icon v-if="!mobileMenuOpen" name="lucide:menu" class="w-6 h-6" />
             <Icon v-else name="lucide:x" class="w-6 h-6" />
@@ -79,48 +108,76 @@
     <!-- Mobile Menu -->
     <Transition name="slide">
       <div v-if="mobileMenuOpen"
-        class="lg:hidden fixed right-0 bg-gray-900/98 backdrop-blur-md border-l border-gray-200/60 overflow-y-auto z-50 w-80 max-w-full h-[calc(100vh-72px)]">
-        <div class="px-4 py-6 space-y-1">
-          <!-- Mobile About Us -->
-          <NuxtLink to="/about-us"
-            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
-            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/about-us' }" @click="closeMobileMenu">
-            About Us
+        class="lg:hidden fixed right-0 backdrop-blur-md border-l overflow-y-auto z-50 w-72 max-w-full h-[calc(100vh-64px)]"
+        :class="isDarkMode
+          ? 'bg-gradient-to-b from-purple-900/98 to-blue-900/98 border-purple-700/40'
+          : 'bg-white/98 border-gray-200/60'">
+        <div class="px-4 py-6 space-y-2">
+          <!-- Mobile Web Solutions -->
+          <NuxtLink to="/web-solutions" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/web-solutions'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Enterprise Web Solutions
           </NuxtLink>
 
-          <!-- Mobile Business Solutions -->
-          <NuxtLink to="/business-solutions"
-            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
-            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/business-solutions' }" @click="closeMobileMenu">
-            Business Solutions
+          <!-- Mobile Mobile Apps -->
+          <NuxtLink to="/mobile-apps" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/mobile-apps'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Mobile App Development
+          </NuxtLink>         
+
+          <!-- Mobile Cloud & Security -->
+          <NuxtLink to="/cloud-security" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/cloud-security'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Cloud Migration & Security
           </NuxtLink>
 
-          <!-- Mobile Staff Training -->
-          <NuxtLink to="/training"
-            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
-            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/training' }" @click="closeMobileMenu">
-            Staff Training
+          <!-- Mobile SEO & Performance -->
+          <NuxtLink to="/seo-performance" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/seo-performance'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            SEO & Performance Optimization
           </NuxtLink>
 
-          <!-- Mobile Ghostwriting -->
-          <NuxtLink to="/ghostwriting"
-            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
-            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/ghostwriting' }" @click="closeMobileMenu">
-            Ghostwriting
+      <!-- Mobile Creative Coding -->
+          <NuxtLink to="/creative-coding" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/creative-coding'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Creative Coding & Interactive
           </NuxtLink>
 
-          <!-- Mobile Publishing -->
-          <NuxtLink to="/publishing"
-            class="block font-medium text-white hover:text-[#4D7EFF] hover:bg-gray-800/50 px-3 py-3 rounded-lg transition-all uppercase"
-            :class="{ 'text-[#4D7EFF] bg-gray-800/50': route.path === '/publishing' }" @click="closeMobileMenu">
-            Publishing
+          <!-- Mobile Company -->
+          <NuxtLink to="/company" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/company'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Company
           </NuxtLink>
 
           <!-- Mobile Contact Button -->
           <NuxtLink to="/contact"
-            class="block w-full text-center mt-6 px-4 py-3 bg-[#4D7EFF] hover:bg-[#3D6EEF] hover:shadow-lg text-white font-medium rounded-lg transition-all duration-200 uppercase"
+            class="block w-full text-center mt-6 px-4 py-3 bg-gradient-to-r from-purple-700 to-blue-600 hover:shadow-lg text-white font-bold rounded-lg transition-all duration-200"
             @click="closeMobileMenu">
-            Book A Clarity Session
+            Ready to Start?
           </NuxtLink>
         </div>
       </div>
@@ -139,7 +196,8 @@ const route = useRoute()
 const mobileMenuOpen = ref(false)
 const navVisible = ref(true)
 const lastScrollY = ref(0)
-const navHeight = ref(72) // Default height
+const navHeight = ref(64)
+const isDarkMode = ref(false)
 
 // Navigation visibility on scroll
 const handleScroll = () => {
@@ -155,6 +213,11 @@ const handleScroll = () => {
   }
 
   lastScrollY.value = currentScrollY
+}
+
+// Dark mode on mouse move
+const handleMouseMove = () => {
+  isDarkMode.value = true
 }
 
 const toggleMobileMenu = () => {
@@ -175,6 +238,7 @@ const updateNavHeight = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('mousemove', handleMouseMove, { passive: true })
   lastScrollY.value = window.scrollY
   updateNavHeight()
 
@@ -184,6 +248,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('mousemove', handleMouseMove)
   window.removeEventListener('resize', updateNavHeight)
 })
 </script>

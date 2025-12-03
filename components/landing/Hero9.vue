@@ -59,7 +59,7 @@ import aboutUsImage from '~/assets/img/elevation-biz-dev.jpg';
 
 <style scoped>
 /* Import Barlow font if not already imported globally */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+
 
 .font-barlow-extrabold {
     font-family: 'Barlow', sans-serif;

@@ -184,9 +184,7 @@
                             <!-- Video Element -->
                             <video ref="creativeSampleVideo" class="absolute inset-0 w-full h-full object-cover"
                                 preload="metadata" playsinline>
-                                <source
-                                    src="https://pub-b093fb1bbec143f2bf250c4cd137a160.r2.dev/creative-sample-with-audio2.mp4"
-                                    type="video/mp4">
+                                <source src="https://tekfolio.ng/creative-sample-with-audio2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
 

@@ -1,9 +1,8 @@
 <template>
-    <section class="relative w-full py-2 md:py-8 md:-mb-32 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-
+    <section class="relative w-full -mb-8 md:-mb-40 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
             <!-- Header -->
-            <div class="text-center space-y-3">
+            <div class="text-center space-y-3 py-12 md:py-16">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
                     <span class="text-gray-900">Africa-Engineered. </span>
                     <span class="text-gradient">Global-Standard. </span>
@@ -25,7 +24,7 @@
 
                 <!-- Stats Grid - Positioned Above Globe -->
                 <div
-                    class="relative z-10 grid grid-cols-2 md:flex md:justify-center md:items-start -gap-3 md:-gap-3 lg:-gap-4 px-4 md:px-8 lg:px-12 py-8">
+                    class="relative z-10 grid grid-cols-2 md:flex md:justify-center md:items-start -gap-3 md:-gap-3 lg:-gap-4 px-4 md:px-8 lg:px-12">
 
                     <!-- Stat 1 -->
                     <div class="stat-card">

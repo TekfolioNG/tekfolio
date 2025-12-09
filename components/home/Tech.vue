@@ -1,6 +1,6 @@
 <template>
     <section class="relative w-full bg-gradient-to-b from-white to-gray-200 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
 
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
 

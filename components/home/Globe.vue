@@ -1,11 +1,11 @@
 <template>
-    <section class="relative w-full py-16 md:py-24 bg-white overflow-hidden">
+    <section class="relative w-full py-2 md:py-8 md:-mb-32 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
 
             <!-- Header -->
             <div class="text-center space-y-3">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
-                    <span class="text-gray-900">Africa-Built. </span>
+                    <span class="text-gray-900">Africa-Engineered. </span>
                     <span class="text-gradient">Global-Standard. </span>
                     <span class="text-gray-900">Future-Ready.</span>
                 </h2>
@@ -43,7 +43,7 @@
                     <!-- Stat 2 -->
                     <div class="stat-card">
                         <div class="stat-number">{{ animatedStats.stat2 }}%+</div>
-                        <div class="stat-label">Client satisfaction rate</div>
+                        <div class="stat-label">Client satisfaction and repeat engagement rate</div>
                     </div>
 
                     <!-- Divider 2 -->
@@ -56,7 +56,7 @@
                     <!-- Stat 3 -->
                     <div class="stat-card">
                         <div class="stat-number">{{ animatedStats.stat3 }}+</div>
-                        <div class="stat-label">Years of combined team expertise</div>
+                        <div class="stat-label">Years of combined team expertise + experience</div>
                     </div>
 
                     <!-- Divider 3 -->

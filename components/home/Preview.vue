@@ -5,7 +5,7 @@
             <div class="container mx-auto px-4 md:px-8 lg:px-12">
                 <div class="max-w-4xl mx-auto text-center">
                     <!-- Header -->
-                    <h2 class="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-medium leading-tight mb-2">
+                    <h2 class="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2">
                         Our e-solutions are smart, simple and secure
                     </h2>
 

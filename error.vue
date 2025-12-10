@@ -24,7 +24,7 @@
             <div class="relative z-10 max-w-6xl mx-auto px-8 md:px-16 lg:px-24 w-full">
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Left Column - Text Content -->
-                    <div class="space-y-6">
+                    <div class="space-y-6 order-2 lg:order-1">
                         <!-- Heading -->
                         <h1
                             class="text-3xl md:text-5xl lg:text-5xl font-black text-gray-900 leading-tight barlow-condensed">
@@ -59,7 +59,7 @@
                     </div>
 
                     <!-- Right Column - Lottie Animation -->
-                    <div class="flex justify-center lg:justify-end relative">
+                    <div class="flex justify-center lg:justify-end relative order-1 lg:order-2">
                         <!-- Animation Container -->
                         <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]">
 

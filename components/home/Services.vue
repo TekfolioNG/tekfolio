@@ -159,7 +159,7 @@
                 </div>
 
                 <!-- Lottie Animation -->
-                <div class="order-1 lg:order-2 relative h-[340px] md:h-[400px] lg:h-[450px]">
+                <div class="order-1 lg:order-2 relative h-[170px] md:h-[220px] lg:h-[280px]">
                     <div id="lottie-seo-performance" class="w-full h-full mb-3 md:mb-4"></div>
                 </div>
             </div>
@@ -173,17 +173,14 @@
                 <div class="order-1 lg:order-1 space-y-2">
 
                     <!-- Video Container -->
-                    <div class="relative h-[320px] md:h-[280px] lg:h-[450px]">
+                    <div class="relative w-full h-[200px] md:h-[250px] lg:h-[310px] max-w-3xl mx-auto">
                         <div class="relative w-full h-full rounded-lg overflow-hidden shadow-lg">
 
-                            <!-- Cover Image -->
-                            <img src="/sketch-sample.png" alt="Creative Coding Sample Preview"
-                                class="absolute inset-0 w-full h-full object-contain lg:scale-90"
-                                :class="{ 'opacity-0': isVideoPlaying }">
 
                             <!-- Video Element -->
-                            <video ref="creativeSampleVideo" class="absolute inset-0 w-full h-full object-cover"
-                                preload="metadata" playsinline>
+                            <video ref="creativeSampleVideo"
+                                class="absolute inset-0 w-full h-[200px] md:h-[250px] lg:h-[310px]" preload="metadata"
+                                playsinline>
                                 <source
                                     src="https://pub-b093fb1bbec143f2bf250c4cd137a160.r2.dev/creative-sample-with-audio2.mp4"
                                     type="video/mp4">
@@ -201,7 +198,6 @@
                                         viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round">
                                         <polygon points="6 3 20 12 6 21 6 3" fill="currentColor" stroke="none" />
-
                                     </svg>
                                 </div>
                             </div>
@@ -213,7 +209,7 @@
                                     class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-2xl">
                                     <!-- Lucide Pause Icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gradient"
+                                        class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-purple-700"
                                         viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="6" y="4" width="4" height="16" fill="currentColor" stroke="none" />
@@ -250,7 +246,6 @@
                     <p class="text-gradient text-sm md:text-base font-semibold text-center lg:text-left">
                         ▶ Play the sample to experience what's possible.
                     </p>
-
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">

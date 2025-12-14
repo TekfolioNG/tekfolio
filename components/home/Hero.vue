@@ -74,7 +74,7 @@
             </NuxtLink>
 
             <!-- Secondary CTA - Outlined with gradient border -->
-            <NuxtLink to="/work"
+            <NuxtLink to="/case-studies"
               class="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold text-base lg:text-lg rounded-xl button-gradient-border cta-button">
               <span class="relative flex items-center gap-2 z-10">
                 See Our Work

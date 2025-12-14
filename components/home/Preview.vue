@@ -14,15 +14,15 @@
                         <div class="rotating-text-container">
                             <p
                                 class="rotating-text text-gradient-animated text-2xl md:text-3xl lg:text-4xl font-medium absolute w-full">
-                                Custom-built websites that feel effortless
+                                Custom-built web apps that feel effortless
                             </p>
                             <p
                                 class="rotating-text text-gradient-animated text-2xl md:text-3xl lg:text-4xl font-medium absolute w-full">
-                                Modern apps engineered for growth
+                                Next-gen mobile apps engineered for growth
                             </p>
                             <p
                                 class="rotating-text text-gradient-animated text-2xl md:text-3xl lg:text-4xl font-medium absolute w-full">
-                                Cloud solutions that scale as you do
+                                Data-powered cloud solutions that scale
                             </p>
                         </div>
                     </div>

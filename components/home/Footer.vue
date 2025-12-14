@@ -149,6 +149,11 @@
               </NuxtLink>
             </li>
             <li>
+              <NuxtLink to="/creative-coding" class="text-gray-400 hover:text-white hover:underline transition-colors">
+                Data Engineering & Analytics
+              </NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="/seo-performance" class="text-gray-400 hover:text-white hover:underline transition-colors">
                 SEO & Performance
               </NuxtLink>
@@ -158,6 +163,7 @@
                 Creative Coding
               </NuxtLink>
             </li>
+
           </ul>
         </div>
 
@@ -168,6 +174,16 @@
             <li>
               <NuxtLink to="/company" class="text-gray-400 hover:text-white hover:underline transition-colors">
                 About Tekfolio
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/team" class="text-gray-400 hover:text-white hover:underline transition-colors">
+                Our Team
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/case-studies" class="text-gray-400 hover:text-white hover:underline transition-colors">
+                Our Work
               </NuxtLink>
             </li>
             <li>

@@ -118,6 +118,7 @@ import ecoplatinum from '../assets/img/ecoplatinum.png';
 import literaforge from '../assets/img/lliteraforge.png';
 import petabiz from '../assets/img/petabiz.png';
 import ppil from '../assets/img/ppil.png';
+import sefa from '../assets/img/sefa.png';
 import syntanium from '../assets/img/syntanium.png';
 import veraverde from '../assets/img/veraverde.png';
 import wilsonsamson from '../assets/img/wilsonsamson.png';
@@ -127,27 +128,27 @@ const currentTestimonial = ref(0);
 
 const testimonials = [
     {
-        name: "James Nnamdi",
+        name: "Wilson Samson",
         designation: "Managing Partner",
-        company: "SEFA ENERGY GLOBAL",
+        company: "LiteraForge Ltd",
         quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
     },
     {
-        name: "Adebayo Ogunlade",
-        designation: "CTO",
-        company: "Syntanium Digital",
-        quote: "Tekfolio brought clarity to a complex project. The team was structured, responsive, and focused on delivering something that worked well from day one."
+        name: "Gbolahan Shelika",
+        designation: "CEO",
+        company: "Elevation Consulting",
+        quote: "Tekfolio is just an awesome company; they have handled over 4 projects for me, and they all turned out amazing 👏. I had a wonderful experience working with them. Kudos"
     },
     {
-        name: "Sarah Mitchell",
-        designation: "Head of Product",
-        company: "EcoPlatinum",
-        quote: "What stood out was their attention to detail and how well they understood our business goals. The final product was fast, stable, and easy to scale."
+        name: "Regina Obi",
+        designation: "Managing Director",
+        company: "Sefa Energy Global Ltd",
+        quote: "Exceptional and swift service delivery."
     },
     {
-        name: "Chidi Okeke",
-        designation: "Founder & CEO",
-        company: "LiteraForge",
+        name: "James Ladipo",
+        designation: "CEO",
+        company: "Petabiz Nigeria",
         quote: "Tekfolio felt more like a partner than a vendor. Communication was clear, delivery met expectations, and they actually hit their deadlines."
     }
 ];
@@ -158,6 +159,7 @@ const clientLogos = [
     { name: "PetaBiz", src: petabiz, url: "https://petabiz.com" },
     { name: "PPIL", src: ppil, url: "https://ppil.com.ng/" },
     { name: "Syntanium", src: syntanium, url: "https://syntaniumenergy.com/" },
+    { name: "Sefa", src: sefa, url: "https://sefaenergy.com/" },
     { name: "VeraVerde", src: veraverde, url: "https://veraverde.org/" },
     { name: "Wilson & Samson", src: wilsonsamson, url: "https://wilsonsamson.com/" },
     { name: "Xstrato", src: xstrato, url: "https://xstratoprime.com/" }, { name: "Akorite", src: akorite, url: "https://akoritetravels.com/" }

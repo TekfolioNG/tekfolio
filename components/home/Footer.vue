@@ -130,7 +130,7 @@
         </div>
 
         <!-- Solutions Column -->
-        <div class="text-center md:text-left md:pl-6 md:-mr-4">
+        <div class="text-center md:text-left md:pl-8 md:-mr-4">
           <h3 class="text-white font-semibold mb-4 text-lg">OUR SOLUTIONS</h3>
           <ul class="space-y-3">
             <li>

@@ -4,9 +4,14 @@
     <!-- CTA Section - Get Started -->
     <div class="bg-gray-800 border-b border-gray-700">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-10">
-          Get Started with Digital Excellence
-        </h2>
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+            Ready to Build Your Next Digital Success?
+          </h2>
+          <p class="text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
+            Let's discuss your goals and shape the right technical approach for your business.
+          </p>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -16,19 +21,21 @@
             <div class="flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-400" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                <line x1="16" x2="16" y1="2" y2="6" />
+                <line x1="8" x2="8" y1="2" y2="6" />
+                <line x1="3" x2="21" y1="10" y2="10" />
               </svg>
             </div>
             <div>
               <h4 class="text-white font-semibold mb-2">Get Free Consultation</h4>
-              <p class="text-gray-400 text-sm mb-3">Schedule a call with our experts to discuss your project and get
-                personalized advice.</p>
+              <p class="text-gray-400 text-sm mb-3">
+                Have an idea or early requirements, but not sure where to start? Schedule a focused call to review
+                scope and next steps.
+              </p>
               <NuxtLink to="/contact"
                 class="text-purple-400 hover:text-purple-300 text-sm font-medium inline-flex items-center gap-1">
-                Book Now
+                Talk to Us
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14" />
@@ -51,7 +58,9 @@
             </div>
             <div>
               <h4 class="text-white font-semibold mb-2">Need Help Choosing?</h4>
-              <p class="text-gray-400 text-sm mb-3">Get a personalized service recommendation for your specific needs.
+              <p class="text-gray-400 text-sm mb-3">
+                We can help you explore your options, answer your questions, and even create a
+                quick prototype to visualize your idea.
               </p>
               <NuxtLink to="/contact"
                 class="text-purple-400 hover:text-purple-300 text-sm font-medium inline-flex items-center gap-1">
@@ -65,23 +74,27 @@
             </div>
           </div>
 
-          <!-- Talk to Expert Card -->
+          <!-- Start Project Card -->
           <div
             class="flex flex-col md:flex-row items-center md:items-start space-y-3 md:space-y-0 md:space-x-4 text-center md:text-left">
             <div class="flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-400" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                <path d="M9 18h6" />
+                <path d="M10 22h4" />
               </svg>
             </div>
             <div>
-              <h4 class="text-white font-semibold mb-2">Talk to an Expert</h4>
-              <p class="text-gray-400 text-sm mb-3">Have questions or want to discuss your project? Get in touch with
-                our team.</p>
+              <h4 class="text-white font-semibold mb-2">Start Your Project Today</h4>
+              <p class="text-gray-400 text-sm mb-3">
+                Ready to move forward? Share your requirements and receive a detailed proposal tailored to your specific
+                needs and timeline.
+              </p>
               <NuxtLink to="/contact"
                 class="text-purple-400 hover:text-purple-300 text-sm font-medium inline-flex items-center gap-1">
-                Contact Us
+                Get Started
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14" />
@@ -102,21 +115,22 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
 
         <!-- Logo and About -->
-        <div class="space-y-6 text-center md:text-left">
+        <div class="space-y-4 text-center md:text-left md:pl-4 md:-mr-8">
           <!-- Logo -->
           <NuxtLink to="/" class="inline-block">
             <img src="/tekfolio.svg" alt="Tekfolio Logo" class="h-16 lg:h-18 mx-auto md:mx-0" />
           </NuxtLink>
 
           <!-- About Text -->
-          <p class="text-gray-300 text-sm leading-relaxed">
-            Empowering businesses with cutting-edge digital solutions. From web development to cloud security, we
-            transform ideas into impactful digital experiences.
+          <p class="text-gray-300 text-base leading-relaxed">
+            Tekfolio builds fast, reliable digital products for modern businesses.
+            We combine thoughtful design, clean engineering, and practical problem-solving to deliver software that
+            scales.
           </p>
         </div>
 
         <!-- Solutions Column -->
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-left md:pl-6 md:-mr-4">
           <h3 class="text-white font-semibold mb-4 text-lg">OUR SOLUTIONS</h3>
           <ul class="space-y-3">
             <li>
@@ -148,7 +162,7 @@
         </div>
 
         <!-- Company Column -->
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-left md:ml-12">
           <h3 class="text-white font-semibold mb-4 text-lg">OUR COMPANY</h3>
           <ul class="space-y-3">
             <li>
@@ -170,7 +184,7 @@
         </div>
 
         <!-- Contact Information Column -->
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-left md:ml-4 ">
           <h3 class="text-white font-semibold mb-4 text-lg">CONTACT US</h3>
           <div class="space-y-3">
             <!-- Address -->

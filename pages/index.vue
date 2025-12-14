@@ -62,5 +62,5 @@ useHead({
   <HomeServices />
   <HomeGlobe />
   <HomeTech />
-  <HomeCta2></HomeCta2>
+  <HomeClients />
 </template>

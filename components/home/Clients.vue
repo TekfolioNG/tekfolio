@@ -1,369 +1,340 @@
 <template>
-    <section class="py-8 md:py-12 bg-gradient-to-br from-blue-50/30 to-white relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute top-20 right-10 w-40 h-40 bg-blue-100/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 left-10 w-32 h-32 bg-blue-200/20 rounded-full blur-2xl"></div>
+    <section class="relative w-full bg-gradient-to-b from-white to-gray-200">
 
-        <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
-            <!-- Section Header with Image -->
-            <div class="mb-12 md:mb-16">
-                <!-- Badge and Main Heading - Centered on all screens -->
-                <div class="text-center mb-8 md:mb-10">
-                    <div class="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full mb-6">
-                        <div class="w-2 h-2 bg-[#4D7EFF] rounded-full"></div>
-                        <span class="text-[#4D7EFF] font-semibold text-xs sm:text-sm uppercase tracking-wide">Success
-                            Stories</span>
-                    </div>
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-                        Real Results. <span class="text-[#4D7EFF]">Real Stories.</span>
-                    </h2>
-                </div>
-
-                <!-- Grid Layout: Description Left, Image Right on Desktop -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
-                    <!-- Description Text - Left on Desktop, Top on Mobile -->
-                    <div class="text-center lg:text-left order-1 lg:order-1">
-                        <p class="text-lg md:text-xl lg:text-2xl text-gray-800 leading-relaxed italic">
-                            We measure success by the lives we've helped shape, the stories we've brought to life, and
-                            the
-                            businesses we've empowered — with measurable outcomes and lasting impact.
-                        </p>
-                    </div>
-
-                    <!-- Image - Right on Desktop, Below Text on Mobile -->
-                    <div class="order-2 lg:order-2">
-                        <div
-                            class="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-                            <img src="/assets/img/book-author-LiteraForge.jpg" alt="Book Author Success Story"
-                                class="w-full h-auto object-cover" />
-                            <!-- Overlay gradient for depth -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="mb-16 md:mb-20">
-                <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8 md:mb-10">
-                    By the <span class="text-[#4D7EFF]">Numbers</span>
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/books-literaforge.png" alt="Books Published"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.booksPublished }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Books Published</div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/ghostwriting-literaforge.png" alt="Ghostwriting Projects"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.ghostwriting }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Ghostwriting Projects</div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/clarity-literaforge.png" alt="Clarity Sessions"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.claritySessions }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Clarity Sessions Facilitated
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/author-literaforge.png" alt="Authors Supported"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.authors }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Authors Supported</div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/proposal-literaforge.png" alt="Business Proposals"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.proposals }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Winning Business Proposals
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-[#4D7EFF]/20 group text-center">
-                        <div class="flex flex-col items-center mb-4">
-                            <div class="w-20 h-20 md:w-24 md:h-24 mb-4 flex items-center justify-center">
-                                <img src="~/assets/img/training-literaforge.png" alt="Employees Trained"
-                                    class="w-full h-full object-contain filter-brand-color" />
-                            </div>
-                            <div
-                                class="text-4xl md:text-5xl font-bold text-[#4D7EFF] group-hover:scale-110 transition-transform duration-500">
-                                {{ animatedStats.employeesTrained }}+
-                            </div>
-                        </div>
-                        <div class="text-base md:text-lg font-semibold text-gray-900">Employees Trained</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonials Section -->
-            <div>
-                <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8 md:mb-10">
-                    What Our <span class="text-[#4D7EFF]">Clients Say</span>
-                </h3>
-
-                <!-- Testimonial Carousel -->
-                <div class="relative max-w-4xl lg:max-w-3xl mx-auto">
-                    <!-- Carousel Container -->
-                    <div class="overflow-hidden">
-                        <div class="transition-transform duration-500 ease-out"
-                            :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-                            <div class="flex">
-                                <div v-for="(testimonial, index) in testimonials" :key="index"
-                                    class="w-full flex-shrink-0">
-                                    <div
-                                        class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
-                                        <div class="flex flex-col lg:flex-row items-center gap-6 md:gap-8">
-                                            <!-- Author Info - Right side on desktop -->
-                                            <div
-                                                class="lg:order-2 flex flex-col items-center text-center lg:w-40 lg:items-end lg:text-right">
-                                                <img :src="testimonial.image" :alt="testimonial.name"
-                                                    class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-[#4D7EFF]/20 shadow-lg mb-3" />
-                                                <div>
-                                                    <div class="font-bold text-gray-900 text-base md:text-lg">
-                                                        {{ testimonial.name }}
-                                                    </div>
-                                                    <div class="text-gray-600 text-sm md:text-base mb-2">
-                                                        {{ testimonial.title }}
-                                                    </div>
-                                                    <div
-                                                        class="text-[#4D7EFF] font-semibold text-xs md:text-sm bg-blue-50 px-2 py-1 rounded-md inline-block">
-                                                        {{ testimonial.company }}
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Testimonial Content - Left side on desktop -->
-                                            <div class="lg:order-1 flex-1 text-center lg:text-left">
-                                                <!-- Quote Icon -->
-                                                <div class="mb-4 flex lg:block justify-center">
-                                                    <Quote class="w-8 h-8 md:w-10 md:h-10 text-[#4D7EFF]/20" />
-                                                </div>
-
-                                                <!-- Testimonial Text -->
-                                                <p
-                                                    class="text-base md:text-lg text-gray-900 leading-relaxed mb-0 italic">
-                                                    "{{ testimonial.text }}"
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Dots Indicator -->
-                    <div class="flex justify-center gap-2 mt-6">
-                        <button v-for="(testimonial, index) in testimonials" :key="index"
-                            @click="goToTestimonial(index)" :class="[
-                                'w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300',
-                                currentIndex === index ? 'bg-[#4D7EFF] w-6 md:w-8' : 'bg-gray-300 hover:bg-gray-400'
-                            ]">
-                        </button>
-                    </div>
-
-                    <!-- Navigation Buttons -->
-                    <div class="flex justify-center gap-3 mt-6">
-                        <button @click="previousTestimonial"
-                            class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-[#4D7EFF] hover:text-white text-gray-700 border border-gray-100">
-                            <ChevronLeft class="w-5 h-5 md:w-6 md:h-6" />
-                        </button>
-                        <button @click="nextTestimonial"
-                            class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-[#4D7EFF] hover:text-white text-gray-700 border border-gray-100">
-                            <ChevronRight class="w-5 h-5 md:w-6 md:h-6" />
-                        </button>
-                    </div>
-                </div>
+        <!-- Section Heading -->
+        <div class="w-full py-12 md:py-16 text-center">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+                    <span class="text-gray-900">Trusted by </span>
+                    <span class="text-gradient">Forward-Thinking</span>
+                    <span class="text-gray-900"> Brands & Organizations</span>
+                </h2>
             </div>
         </div>
+
+        <!-- Main Testimonial Section with Gradient Background -->
+        <div
+            class="w-full relative bg-gradient-to-r from-purple-900/95 to-blue-900/95 border-purple-700/30 pt-1 pb-8 md:pb-12">
+
+            <div class="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+
+                <!-- Light content box extending beyond gradient at top -->
+                <div
+                    class="bg-gradient-to-b from-white to-gray-200 pt-20 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20 px-6 md:px-10 lg:px-12 -mt-6 md:-mt-8">
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+                        <!-- Left Side - Client Info (3 columns on desktop) -->
+                        <div class="lg:col-span-3 text-center lg:text-left">
+                            <div class="space-y-2">
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">
+                                    {{ testimonials[currentTestimonial].name }}
+                                </h3>
+                                <p class="text-base md:text-lg font-semibold text-gradient">
+                                    {{ testimonials[currentTestimonial].designation }}
+                                </p>
+                                <p class="text-sm md:text-base text-gray-900">
+                                    {{ testimonials[currentTestimonial].company }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side - Testimonial Quote Only (9 columns on desktop) -->
+                        <div class="lg:col-span-9">
+                            <div class="relative">
+                                <svg class="absolute -top-4 -left-2 w-10 h-10 text-purple-500 opacity-25"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p
+                                    class="text-lg md:text-xl lg:text-2xl text-gray-900 leading-relaxed pl-8 font-normal italic">
+                                    {{ testimonials[currentTestimonial].quote }}
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation Controls -->
+                    <div class="flex items-center justify-center gap-4 mt-12 md:mt-16">
+                        <!-- Previous Button -->
+                        <button @click="previousTestimonial" class="nav-button" aria-label="Previous testimonial">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Indicator Dots -->
+                        <div class="flex gap-2">
+                            <button v-for="(testimonial, index) in testimonials" :key="index"
+                                @click="goToTestimonial(index)" class="indicator-dot"
+                                :class="{ 'active': index === currentTestimonial }"
+                                :aria-label="`Go to testimonial ${index + 1}`"></button>
+                        </div>
+
+                        <!-- Next Button -->
+                        <button @click="nextTestimonial" class="nav-button" aria-label="Next testimonial">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Bottom Section: Client Logos Scrolling -->
+                    <div class="w-full pt-12 md:pt-16 overflow-hidden border-t border-gray-300 mt-12 md:mt-16">
+                        <div class="logo-scroll-container">
+                            <div class="logo-scroll-track">
+                                <!-- First set of logos -->
+                                <a v-for="logo in clientLogos" :key="logo.name" :href="logo.url" target="_blank"
+                                    rel="noopener noreferrer" class="logo-item">
+                                    <img :src="logo.src" :alt="logo.name" class="client-logo" />
+                                </a>
+                                <!-- Duplicate set for seamless loop -->
+                                <a v-for="logo in clientLogos" :key="`${logo.name}-dup`" :href="logo.url"
+                                    target="_blank" rel="noopener noreferrer" class="logo-item">
+                                    <img :src="logo.src" :alt="logo.name" class="client-logo" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </section>
 </template>
 
 <script setup>
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-vue-next';
-import { onMounted, onUnmounted, reactive, ref } from 'vue';
-import pix1 from '~/assets/img/pix1.png';
-import pix2 from '~/assets/img/pix2.png';
-import pix3 from '~/assets/img/pix3.png';
-import pix4 from '~/assets/img/pix4.png';
-import pix5 from '~/assets/img/pix5.png';
+import { ref } from 'vue';
 
-const currentIndex = ref(0);
+// Import logos with correct path format
+import akorite from '../assets/img/akorite.png';
+import ecoplatinum from '../assets/img/ecoplatinum.png';
+import literaforge from '../assets/img/lliteraforge.png';
+import petabiz from '../assets/img/petabiz.png';
+import ppil from '../assets/img/ppil.png';
+import syntanium from '../assets/img/syntanium.png';
+import veraverde from '../assets/img/veraverde.png';
+import wilsonsamson from '../assets/img/wilsonsamson.png';
+import xstrato from '../assets/img/xstrato.png';
 
-// Stats animation
-const animatedStats = reactive({
-    booksPublished: 0,
-    ghostwriting: 0,
-    claritySessions: 0,
-    authors: 0,
-    proposals: 0,
-    employeesTrained: 0
-});
-
-const targetStats = {
-    booksPublished: 80,
-    ghostwriting: 70,
-    claritySessions: 500,
-    authors: 25,
-    proposals: 50,
-    employeesTrained: 500
-};
-
-const animateValue = (key, target, duration = 2000) => {
-    const start = 0;
-    const increment = target / (duration / 16);
-    let current = start;
-
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            animatedStats[key] = target;
-            clearInterval(timer);
-        } else {
-            animatedStats[key] = Math.floor(current);
-        }
-    }, 16);
-};
+const currentTestimonial = ref(0);
 
 const testimonials = [
     {
-        text: "Litera-Forge helped me turn my scattered ideas into a published book I'm proud of. Their process was seamless and empowering.",
-        name: "Tolu A.",
-        title: "Author & Entrepreneur",
-        company: "Innovate Africa",
-        image: pix1
+        name: "James Nnamdi",
+        designation: "Managing Partner",
+        company: "SEFA ENERGY GLOBAL",
+        quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
     },
     {
-        text: "The clarity session gave me direction I didn't know I needed. I left with a roadmap and renewed confidence.",
-        name: "Chinedu O.",
-        title: "Startup Founder",
-        company: "TechVille Solutions",
-        image: pix2
+        name: "Adebayo Ogunlade",
+        designation: "CTO",
+        company: "Syntanium Digital",
+        quote: "Tekfolio brought clarity to a complex project. The team was structured, responsive, and focused on delivering something that worked well from day one."
     },
     {
-        text: "Our team productivity jumped after the training. The sessions were practical, engaging, and immediately applicable.",
-        name: "Ada Obi",
-        title: "HR Manager",
-        company: "Global Enterprises Ltd",
-        image: pix3
+        name: "Sarah Mitchell",
+        designation: "Head of Product",
+        company: "EcoPlatinum",
+        quote: "What stood out was their attention to detail and how well they understood our business goals. The final product was fast, stable, and easy to scale."
     },
     {
-        text: "I finally got my business proposal right—and it landed us our biggest client yet.",
-        name: "Femi K.",
-        title: "Consultant",
-        company: "Strategic Partners Inc",
-        image: pix4
-    },
-    {
-        text: "Working with your team on our book projects has been nothing short of exceptional. You consistently deliver high-quality work on time, with seamless support from cover design to ISBN and printing. I’d highly recommend your services to any author seeking a smooth and professional publishing experience.",
-        name: "Prophet Fanny Ekpekurede",
-        title: "Superintendent",
-        company: "Yeshua's Hill Global Churches",
-        image: pix5
+        name: "Chidi Okeke",
+        designation: "Founder & CEO",
+        company: "LiteraForge",
+        quote: "Tekfolio felt more like a partner than a vendor. Communication was clear, delivery met expectations, and they actually hit their deadlines."
     }
 ];
 
+const clientLogos = [
+    { name: "EcoPlatinum", src: ecoplatinum, url: "https://ecoplatinumgroup.com/" },
+    { name: "LiteraForge", src: literaforge, url: "https://www.literaforge.com/" },
+    { name: "PetaBiz", src: petabiz, url: "https://petabiz.com" },
+    { name: "PPIL", src: ppil, url: "https://ppil.com.ng/" },
+    { name: "Syntanium", src: syntanium, url: "https://syntaniumenergy.com/" },
+    { name: "VeraVerde", src: veraverde, url: "https://veraverde.org/" },
+    { name: "Wilson & Samson", src: wilsonsamson, url: "https://wilsonsamson.com/" },
+    { name: "Xstrato", src: xstrato, url: "https://xstratoprime.com/" }, { name: "Akorite", src: akorite, url: "https://akoritetravels.com/" }
+];
+
 const nextTestimonial = () => {
-    currentIndex.value = (currentIndex.value + 1) % testimonials.length;
+    currentTestimonial.value = (currentTestimonial.value + 1) % testimonials.length;
 };
 
 const previousTestimonial = () => {
-    currentIndex.value = (currentIndex.value - 1 + testimonials.length) % testimonials.length;
+    currentTestimonial.value = currentTestimonial.value === 0
+        ? testimonials.length - 1
+        : currentTestimonial.value - 1;
 };
 
 const goToTestimonial = (index) => {
-    currentIndex.value = index;
+    currentTestimonial.value = index;
 };
-
-// Auto-advance carousel
-let intervalId;
-onMounted(() => {
-    // Animate stats on mount
-    Object.keys(targetStats).forEach(key => {
-        animateValue(key, targetStats[key]);
-    });
-
-    // Start carousel auto-advance
-    intervalId = setInterval(() => {
-        nextTestimonial();
-    }, 5000);
-});
-
-onUnmounted(() => {
-    if (intervalId) {
-        clearInterval(intervalId);
-    }
-});
 </script>
 
 <style scoped>
-/* Custom smooth transitions */
-.transition-transform {
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/* Brand gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.shadow-3xl {
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+/* Navigation Buttons */
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(124, 58, 237, 0.05);
+    color: #6B7280;
+    transition: all 0.3s ease;
+    border: 1.5px solid #D1D5DB;
+    cursor: pointer;
 }
 
-/* CSS filter to apply brand color #4D7EFF to images */
-.filter-brand-color {
-    filter: brightness(0) saturate(100%) invert(45%) sepia(98%) saturate(1815%) hue-rotate(214deg) brightness(102%) contrast(101%);
-    transition: filter 0.3s ease;
+.nav-button:hover {
+
+    color: #7C3AED;
+    border-color: #7C3AED;
+    background: transparent;
 }
 
-.group:hover .filter-brand-color {
-    filter: brightness(0) saturate(100%) invert(45%) sepia(98%) saturate(1815%) hue-rotate(214deg) brightness(110%) contrast(101%);
+.nav-button:active {
+    transform: scale(0.95);
+}
+
+/* Navigation Indicator Dots */
+.indicator-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D1D5DB;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.indicator-dot:hover {
+    background: #9CA3AF;
+}
+
+.indicator-dot.active {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Logo scrolling animation */
+.logo-scroll-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.logo-scroll-track {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.client-logo {
+    height: 50px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.logo-item:hover .client-logo {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.logo-scroll-container:hover .logo-scroll-track {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .logo-item {
+        padding: 0 0.875rem;
+        min-width: 120px;
+    }
+
+    .client-logo {
+        height: 40px;
+        max-width: 130px;
+    }
+
+    .nav-button {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo-item {
+        padding: 0 0.75rem;
+        min-width: 100px;
+    }
+
+    .client-logo {
+        height: 35px;
+        max-width: 110px;
+    }
+
+    .nav-button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-button svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .indicator-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .indicator-dot.active {
+        width: 18px;
+    }
 }
 </style>

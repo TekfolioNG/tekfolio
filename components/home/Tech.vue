@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <!-- Right Side - Floating Tech Logos -->
+                <!-- Right Side - Static Tech Logos with Shadows -->
                 <div class="relative h-[400px] md:h-[350px] lg:h-[400px] order-2 lg:col-span-3 -mt-8 md:mt-0 lg:mt-0 ">
                     <div class="floating-container">
 
@@ -76,7 +76,7 @@
 </template>
 
 <script setup>
-// No JavaScript needed - pure CSS animations
+// No JavaScript needed
 </script>
 
 <style scoped>
@@ -99,7 +99,7 @@
     transform: scale(1.1);
 }
 
-/* Base floating logo styling */
+/* Base logo styling - static with shadows */
 .logo-float {
     position: absolute;
     width: 90px;
@@ -110,131 +110,83 @@
     padding: 1rem;
     background: white;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Static shadow - enhanced depth */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15),
+        0 6px 12px rgba(0, 0, 0, 0.12),
+        0 3px 6px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
 }
 
 .logo-float:hover {
-    box-shadow: 0 12px 24px rgba(91, 33, 182, 0.15);
+    box-shadow: 0 12px 28px rgba(91, 33, 182, 0.2),
+        0 8px 16px rgba(91, 33, 182, 0.12),
+        0 4px 8px rgba(91, 33, 182, 0.08);
     transform: translateY(-4px);
 }
 
-/* Individual logo positions and animations - 4 per row layout, much closer spacing */
+/* Individual logo positions - NO ANIMATIONS */
 
 /* Row 1 */
 .logo-1 {
-    top: 20%;
+    top: 12%;
     left: 16%;
-    animation: floatTiltRight 8s ease-in-out infinite;
 }
 
 .logo-2 {
-    top: 20%;
+    top: 12%;
     left: 32%;
-    animation: floatTiltLeft 9s ease-in-out infinite 0.5s;
 }
 
 .logo-3 {
-    top: 20%;
+    top: 12%;
     left: 48%;
-    animation: floatTiltRight 8.5s ease-in-out infinite 1s;
 }
 
 .logo-4 {
-    top: 20%;
+    top: 12%;
     right: 23%;
-    animation: floatTiltLeft 9.5s ease-in-out infinite 1.5s;
 }
 
 /* Row 2 */
 .logo-5 {
-    top: 48%;
+    top: 40%;
     left: 16%;
-    animation: floatTiltRight 9s ease-in-out infinite 0.3s;
 }
 
 .logo-6 {
-    top: 48%;
+    top: 40%;
     left: 32%;
-    animation: floatTiltLeft 8.5s ease-in-out infinite 0.8s;
 }
 
 .logo-7 {
-    top: 48%;
+    top: 40%;
     left: 48%;
-    animation: floatTiltRight 9.2s ease-in-out infinite 1.2s;
 }
 
 .logo-8 {
-    top: 48%;
+    top: 40%;
     right: 23%;
-    animation: floatTiltLeft 8.8s ease-in-out infinite 1.7s;
 }
 
 /* Row 3 */
 .logo-9 {
-    top: 75%;
+    top: 68%;
     left: 16%;
-    animation: floatTiltLeft 8.7s ease-in-out infinite 0.6s;
 }
 
 .logo-10 {
-    top: 75%;
+    top: 68%;
     left: 32%;
-    animation: floatTiltRight 9.3s ease-in-out infinite 1.1s;
 }
 
 .logo-11 {
-    top: 75%;
+    top: 68%;
     left: 48%;
-    animation: floatTiltLeft 8.9s ease-in-out infinite 1.6s;
 }
 
 .logo-12 {
-    top: 75%;
+    top: 68%;
     right: 23%;
-    animation: floatTiltRight 9.1s ease-in-out infinite 2s;
-}
-
-/* More subtle float and tilt animations */
-@keyframes floatTiltRight {
-
-    0%,
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translateY(-8px) rotate(1deg);
-    }
-
-    50% {
-        transform: translateY(-5px) rotate(0deg);
-    }
-
-    75% {
-        transform: translateY(-10px) rotate(-0.8deg);
-    }
-}
-
-@keyframes floatTiltLeft {
-
-    0%,
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translateY(-7px) rotate(-1deg);
-    }
-
-    50% {
-        transform: translateY(-12px) rotate(0deg);
-    }
-
-    75% {
-        transform: translateY(-6px) rotate(0.8deg);
-    }
 }
 
 /* Responsive adjustments */

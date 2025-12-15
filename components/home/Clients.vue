@@ -134,9 +134,9 @@ const testimonials = [
         quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
     },
     {
-        name: "Gbolahan Shelika",
+        name: "Emeka Uchela",
         designation: "CEO",
-        company: "Elevation Consulting",
+        company: "Syntanium Energy Ltd",
         quote: "Tekfolio is just an awesome company; they have handled over 4 projects for me, and they all turned out amazing 👏. I had a wonderful experience working with them. Kudos"
     },
     {
@@ -144,6 +144,12 @@ const testimonials = [
         designation: "Managing Director",
         company: "Sefa Energy Global Ltd",
         quote: "Exceptional and swift service delivery."
+    },
+    {
+        name: "Gbolahan Shelika",
+        designation: "Managing Partner",
+        company: "Elevation Consulting Ltd",
+        quote: "Tekfolio embodies everything a competent and professional digital partner should be. They took time to understand what we needed and made the whole process easy from start to finish. Communication was clear, they were patient with our requests, and the final result met our expectations. We would gladly recommend Tekfolio to any business looking to build a solid website.."
     },
     {
         name: "James Ladipo",

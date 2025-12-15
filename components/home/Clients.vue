@@ -127,17 +127,18 @@ import xstrato from '../assets/img/xstrato.png';
 const currentTestimonial = ref(0);
 
 const testimonials = [
-    {
-        name: "Wilson Samson",
-        designation: "Managing Partner",
-        company: "LiteraForge Ltd",
-        quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
-    },
+
     {
         name: "Emeka Uchela",
         designation: "CEO",
         company: "Syntanium Energy Ltd",
         quote: "Tekfolio is just an awesome company; they have handled over 4 projects for me, and they all turned out amazing 👏. I had a wonderful experience working with them. Kudos"
+    },
+    {
+        name: "Wilson Samson",
+        designation: "Managing Partner",
+        company: "LiteraForge Ltd",
+        quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
     },
     {
         name: "Regina Obi",

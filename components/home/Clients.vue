@@ -138,7 +138,7 @@ const testimonials = [
         name: "Wilson Samson",
         designation: "Managing Partner",
         company: "LiteraForge Ltd",
-        quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines. More importantly, their service delivery was without question swift and exceptional."
+        quote: "I love that Tekfolio always moves fast without cutting corners. Clean code, clear communication, and realistic deadlines that prioritize the client's interest nonetheless."
     },
     {
         name: "Regina Obi",
@@ -150,7 +150,7 @@ const testimonials = [
         name: "Gbolahan Shelika",
         designation: "Managing Partner",
         company: "Elevation Consulting Ltd",
-        quote: "Tekfolio embodies everything a competent and professional digital partner should be. They took time to understand what we needed and made the whole process easy from start to finish. Communication was clear, they were patient with our requests, and the final result met our expectations. We would gladly recommend Tekfolio to any business looking to build a solid website.."
+        quote: "Tekfolio embodies everything a competent and professional digital partner should be. They took time to understand what we needed and made the whole process easy from start to finish. Communication was clear, they were patient with our requests, and the final result met our expectations. We would gladly recommend Tekfolio to any business looking to build a solid web or mobile app."
     },
     {
         name: "James Ladipo",

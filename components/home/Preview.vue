@@ -6,7 +6,7 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <!-- Header -->
                     <h2 class="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2">
-                        Our e-solutions are smart, simple and secure
+                        Smart, simple, and secure digital solutions
                     </h2>
 
                     <!-- Rotating Text with Slide Animation -->
@@ -22,7 +22,7 @@
                             </p>
                             <p
                                 class="rotating-text text-gradient-animated text-2xl md:text-3xl lg:text-4xl font-medium absolute w-full">
-                                Data-powered cloud solutions that scale
+                                Cloud-powered data analytics and platforms
                             </p>
                         </div>
                     </div>

@@ -87,23 +87,24 @@
             <!-- Service 3: Cloud Migration & Security (Animation Left, Text Right) -->
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center mb-2 md:mb-3">
                 <!-- Lottie Animation -->
-                <div class="order-1 lg:order-1 relative h-[230px] md:h-[350px] lg:h-[400px]">
-                    <div id="lottie-cloud-security" class="w-full h-full"></div>
+                <div class="order-1 lg:order-1 relative h-[220px] md:h-[340px] lg:h-[390px]">
+                    <div id="lottie-cloud" class="w-full h-full"></div>
                 </div>
 
                 <!-- Text Content -->
                 <div class="order-2 space-y-1 px-2 lg:pl-8">
                     <h2
                         class="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-center lg:text-left">
-                        Cloud Migration & Security
+                        Cloud & Data Engineering
                     </h2>
                     <h3 class="text-base md:text-lg font-semibold text-gradient text-center lg:text-left">
-                        Cloud-Powered. Security-Driven.
+                        Cloud-Powered. Secure By Design.
                     </h3>
                     <p
                         class="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium text-center lg:text-left">
-                        Modern cloud infrastructure with enterprise-grade security. We help you deploy, optimize, and
-                        protect your digital assets so your operations stay efficient, resilient, and online.
+                        We design, migrate, and manage modern cloud infrastructure while building reliable data
+                        pipelines and analytics-ready systems. Your platforms stay secure, scalable, and structured for
+                        insight, performance, and growth.
                     </p>
 
                     <!-- CTA Buttons -->
@@ -318,8 +319,8 @@ onMounted(() => {
                 src: 'https://lottie.host/eb675f8c-4b20-48c4-ae92-3b864c447497/nT5yaC5iA0.lottie'
             },
             {
-                containerId: 'lottie-cloud-security',
-                src: 'https://lottie.host/100103e2-edb5-4c3c-a423-bfb5f11d8f7a/XaehZYMOP4.lottie'
+                containerId: 'lottie-cloud',
+                src: 'https://lottie.host/49587e08-ce13-48ba-b024-f2aac1336a13/lMFiLM8kZl.lottie'
             },
             {
                 containerId: 'lottie-seo-performance',

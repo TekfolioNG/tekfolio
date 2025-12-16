@@ -61,86 +61,32 @@
             </Transition>
           </div>
 
-          <!-- Cloud & Engineering Dropdown -->
-          <div class="relative" @mouseenter="cloudDropdownOpen = true" @mouseleave="cloudDropdownOpen = false">
-            <button
-              class="flex items-center gap-1 text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg"
-              :class="['/cloud-security', '/data-engineering'].includes(route.path)
-                ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                : isDarkMode
-                  ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                  : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-              Cloud & Engineering
-              <Icon name="lucide:chevron-down" class="w-4 h-4 transition-transform duration-200"
-                :class="{ 'rotate-180': cloudDropdownOpen }" />
-            </button>
+          <!-- Cloud & Data Engineering (No Dropdown) -->
+          <NuxtLink to="/cloud-data-engineering"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg whitespace-nowrap"
+            :class="route.path === '/cloud-data-engineering'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            Cloud & Data Engineering
+          </NuxtLink>
 
-            <Transition name="dropdown">
-              <div v-if="cloudDropdownOpen"
-                class="absolute top-full left-0 mt-1 w-64 rounded-lg shadow-xl overflow-hidden backdrop-blur-md" :class="isDarkMode
-                  ? 'bg-gradient-to-b from-purple-900/98 to-blue-900/98 border border-purple-700/40'
-                  : 'bg-white/98 border border-gray-200/60'">
-                <div class="py-2">
-                  <NuxtLink to="/cloud-security"
-                    class="block px-4 py-2.5 text-sm font-semibold transition-all duration-200"
-                    :class="route.path === '/cloud-security'
-                      ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                      : isDarkMode
-                        ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                        : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-                    Cloud Migration & Security
-                  </NuxtLink>
-                  <NuxtLink to="/data-engineering"
-                    class="block px-4 py-2.5 text-sm font-semibold transition-all duration-200"
-                    :class="route.path === '/data-engineering'
-                      ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                      : isDarkMode
-                        ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                        : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-                    Data Engineering & Analytics
-                  </NuxtLink>
-                </div>
-              </div>
-            </Transition>
-          </div>
-
-          <!-- Growth & Optimization Dropdown -->
-          <div class="relative" @mouseenter="growthDropdownOpen = true" @mouseleave="growthDropdownOpen = false">
-            <button
-              class="flex items-center gap-1 text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg"
-              :class="route.path === '/seo-performance'
-                ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                : isDarkMode
-                  ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                  : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-              Growth & Optimization
-              <Icon name="lucide:chevron-down" class="w-4 h-4 transition-transform duration-200"
-                :class="{ 'rotate-180': growthDropdownOpen }" />
-            </button>
-
-            <Transition name="dropdown">
-              <div v-if="growthDropdownOpen"
-                class="absolute top-full left-0 mt-1 w-56 rounded-lg shadow-xl overflow-hidden backdrop-blur-md" :class="isDarkMode
-                  ? 'bg-gradient-to-b from-purple-900/98 to-blue-900/98 border border-purple-700/40'
-                  : 'bg-white/98 border border-gray-200/60'">
-                <div class="py-2">
-                  <NuxtLink to="/seo-performance"
-                    class="block px-4 py-2.5 text-sm font-semibold transition-all duration-200"
-                    :class="route.path === '/seo-performance'
-                      ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                      : isDarkMode
-                        ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                        : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-                    SEO & Performance
-                  </NuxtLink>
-                </div>
-              </div>
-            </Transition>
-          </div>
+          <!-- SEO & Performance (No Dropdown) -->
+          <NuxtLink to="/seo-performance"
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg whitespace-nowrap"
+            :class="route.path === '/seo-performance'
+              ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+              : isDarkMode
+                ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+            SEO & Performance
+          </NuxtLink>
 
           <!-- Creative Coding (No Dropdown) -->
           <NuxtLink to="/creative-coding"
-            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg" :class="route.path === '/creative-coding'
+            class="text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg whitespace-nowrap"
+            :class="route.path === '/creative-coding'
               ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
               : isDarkMode
                 ? 'text-gray-100 hover:text-white hover:bg-white/10'
@@ -152,7 +98,7 @@
           <div class="relative" @mouseenter="companyDropdownOpen = true" @mouseleave="companyDropdownOpen = false">
             <button
               class="flex items-center gap-1 text-sm xl:text-base font-semibold transition-all duration-200 px-4 py-2 rounded-lg"
-              :class="['/company', '/about-us', '/our-team', '/case-studies'].includes(route.path)
+              :class="['/company', '/about-us', '/our-team', '/case-studies', '/blog'].includes(route.path)
                 ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
                 : isDarkMode
                   ? 'text-gray-100 hover:text-white hover:bg-white/10'
@@ -192,6 +138,14 @@
                         ? 'text-gray-100 hover:text-white hover:bg-white/10'
                         : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
                     Case Studies
+                  </NuxtLink>
+                  <NuxtLink to="/blog" class="block px-4 py-2.5 text-sm font-semibold transition-all duration-200"
+                    :class="route.path === '/blog'
+                      ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+                      : isDarkMode
+                        ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                        : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
+                    Blog & Insights
                   </NuxtLink>
                 </div>
               </div>
@@ -269,70 +223,25 @@
             </Transition>
           </div>
 
-          <!-- Mobile Cloud & Engineering Section -->
-          <div class="space-y-1">
-            <button @click="mobileCloudOpen = !mobileCloudOpen"
-              class="w-full flex items-center justify-between font-semibold px-4 py-3 rounded-lg transition-all" :class="['/cloud-security', '/data-engineering'].includes(route.path)
-                ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                : isDarkMode
-                  ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                  : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-              Cloud & Engineering
-              <Icon name="lucide:chevron-down" class="w-4 h-4 transition-transform duration-200"
-                :class="{ 'rotate-180': mobileCloudOpen }" />
-            </button>
+          <!-- Mobile Cloud & Data Engineering -->
+          <NuxtLink to="/cloud-data-engineering" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/cloud-data-engineering'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            Cloud & Data Engineering
+          </NuxtLink>
 
-            <Transition name="mobile-dropdown">
-              <div v-if="mobileCloudOpen" class="pl-4 space-y-1">
-                <NuxtLink to="/cloud-security" class="block font-semibold px-4 py-2.5 rounded-lg text-sm transition-all"
-                  :class="route.path === '/cloud-security'
-                    ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                    : isDarkMode
-                      ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                      : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
-                  @click="closeMobileMenu">
-                  Cloud Migration & Security
-                </NuxtLink>
-                <NuxtLink to="/data-engineering"
-                  class="block font-semibold px-4 py-2.5 rounded-lg text-sm transition-all"
-                  :class="route.path === '/data-engineering'
-                    ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                    : isDarkMode
-                      ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                      : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'" @click="closeMobileMenu">
-                  Data Engineering & Analytics
-                </NuxtLink>
-              </div>
-            </Transition>
-          </div>
-
-          <!-- Mobile Growth & Optimization Section -->
-          <div class="space-y-1">
-            <button @click="mobileGrowthOpen = !mobileGrowthOpen"
-              class="w-full flex items-center justify-between font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/seo-performance'
-                ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                : isDarkMode
-                  ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                  : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'">
-              Growth & Optimization
-              <Icon name="lucide:chevron-down" class="w-4 h-4 transition-transform duration-200"
-                :class="{ 'rotate-180': mobileGrowthOpen }" />
-            </button>
-
-            <Transition name="mobile-dropdown">
-              <div v-if="mobileGrowthOpen" class="pl-4 space-y-1">
-                <NuxtLink to="/seo-performance"
-                  class="block font-semibold px-4 py-2.5 rounded-lg text-sm transition-all"
-                  :class="route.path === '/seo-performance'
-                    ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
-                    : isDarkMode
-                      ? 'text-gray-100 hover:text-white hover:bg-white/10'
-                      : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'" @click="closeMobileMenu">
-                  SEO & Performance
-                </NuxtLink>
-              </div>
-            </Transition>
-          </div>
+          <!-- Mobile SEO & Performance -->
+          <NuxtLink to="/seo-performance" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/seo-performance'
+            ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+            : isDarkMode
+              ? 'text-gray-100 hover:text-white hover:bg-white/10'
+              : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'"
+            @click="closeMobileMenu">
+            SEO & Performance
+          </NuxtLink>
 
           <!-- Mobile Creative Coding -->
           <NuxtLink to="/creative-coding" class="block font-semibold px-4 py-3 rounded-lg transition-all" :class="route.path === '/creative-coding'
@@ -347,7 +256,7 @@
           <!-- Mobile Company Section -->
           <div class="space-y-1">
             <button @click="mobileCompanyOpen = !mobileCompanyOpen"
-              class="w-full flex items-center justify-between font-semibold px-4 py-3 rounded-lg transition-all" :class="['/company', '/about-us', '/our-team', '/case-studies'].includes(route.path)
+              class="w-full flex items-center justify-between font-semibold px-4 py-3 rounded-lg transition-all" :class="['/company', '/about-us', '/our-team', '/case-studies', '/blog'].includes(route.path)
                 ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
                 : isDarkMode
                   ? 'text-gray-100 hover:text-white hover:bg-white/10'
@@ -386,6 +295,14 @@
                   @click="closeMobileMenu">
                   Case Studies
                 </NuxtLink>
+                <NuxtLink to="/blog" class="block font-semibold px-4 py-2.5 rounded-lg text-sm transition-all"
+                  :class="route.path === '/blog'
+                    ? 'text-white bg-gradient-to-r from-purple-700 to-blue-600'
+                    : isDarkMode
+                      ? 'text-gray-100 hover:text-white hover:bg-white/10'
+                      : 'text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-700 hover:to-blue-600'" @click="closeMobileMenu">
+                  Blog & Insights
+                </NuxtLink>
               </div>
             </Transition>
           </div>
@@ -416,14 +333,10 @@ const isDarkMode = ref(false)
 
 // Desktop dropdown states
 const nextGenDropdownOpen = ref(false)
-const cloudDropdownOpen = ref(false)
-const growthDropdownOpen = ref(false)
 const companyDropdownOpen = ref(false)
 
 // Mobile dropdown states
 const mobileNextGenOpen = ref(false)
-const mobileCloudOpen = ref(false)
-const mobileGrowthOpen = ref(false)
 const mobileCompanyOpen = ref(false)
 
 const handleScroll = () => {
@@ -435,8 +348,6 @@ const handleScroll = () => {
     navVisible.value = false
     mobileMenuOpen.value = false
     nextGenDropdownOpen.value = false
-    cloudDropdownOpen.value = false
-    growthDropdownOpen.value = false
     companyDropdownOpen.value = false
   } else if (currentScrollY < lastScrollY.value) {
     navVisible.value = true
@@ -456,8 +367,6 @@ const toggleMobileMenu = () => {
 const closeMobileMenu = () => {
   mobileMenuOpen.value = false
   mobileNextGenOpen.value = false
-  mobileCloudOpen.value = false
-  mobileGrowthOpen.value = false
   mobileCompanyOpen.value = false
 }
 

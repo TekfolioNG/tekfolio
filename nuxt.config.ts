@@ -3,8 +3,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      sanityProjectId: process.env.NUXT_PUBLIC_SANITY_PROJECT_ID || '',
-      sanityDataset: process.env.NUXT_PUBLIC_SANITY_DATASET || 'production',
+     sanity: {  // ← Add this nested structure
+      projectId: process.env.NUXT_PUBLIC_SANITY_PROJECT_ID || '',
+      dataset: process.env.NUXT_PUBLIC_SANITY_DATASET || 'production',
+    }
     },
     // Private keys (only available on server-side)
     web3formsKey: process.env.WEB3FORMS_KEY,

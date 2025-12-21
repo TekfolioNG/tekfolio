@@ -3,7 +3,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      sanityProjectId: process.env.NUXT_PUBLIC_SANITY_PROJECT_ID || '',
+      sanityProjectId: process.env.NUXT_PUBLIC_SANITY_PROJECT_ID,
       sanityDataset: process.env.NUXT_PUBLIC_SANITY_DATASET || 'production',
     },
     // Private keys (only available on server-side)
@@ -83,8 +83,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/blog', '/blog/**'] 
+      routes: ['/']
     },
     cloudflare: {
       pages: {

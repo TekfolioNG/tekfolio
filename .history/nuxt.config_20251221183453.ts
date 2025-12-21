@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       failOnError: false,
       crawlLinks: false,
       routes: ['/'],
-      ignore: ['/blog', '/blog/**'] 
+      ignore: ['/blog', '/blog/**']
     },
     cloudflare: {
       pages: {

@@ -72,7 +72,7 @@
 
 <script setup>
 const route = useRoute()
-const { client, urlFor, isConfigured } = useSanity()
+const { client, urlFor } = useSanity()
 
 const query = `*[_type == "post" && slug.current == $slug][0] {
   _id,
@@ -100,27 +100,10 @@ const query = `*[_type == "post" && slug.current == $slug][0] {
 
 const { data: post, pending } = await useAsyncData(
     `post-${route.params.slug}`,
-    async () => {
-        if (!isConfigured || !client) {
-            console.warn('Sanity is not configured, cannot fetch post')
-            return null
-        }
-
-        try {
-            const result = await client.fetch(query, { slug: route.params.slug })
-            return result
-        } catch (err) {
-            console.error('Failed to fetch blog post:', err)
-            return null
-        }
-    },
-    {
-        default: () => null
-    }
+    () => client.fetch(query, { slug: route.params.slug })
 )
 
 const formatDate = (date) => {
-    if (!date) return ''
     return new Date(date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',

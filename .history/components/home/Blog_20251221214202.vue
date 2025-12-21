@@ -1,6 +1,6 @@
 <template>
   <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="container mx-auto px-4">
       <!-- Section Header -->
       <div class="text-center md:text-left mb-12">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
@@ -36,9 +36,8 @@
           <div class="p-6">
             <!-- Category Badge -->
             <div v-if="post.categories && post.categories.length > 0" class="mb-3">
-              <span v-for="category in post.categories" :key="category._id"
-                class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full mr-2 font-medium">
-                {{ category.title }}
+              <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full font-medium">
+                {{ post.categories[0].title }}
               </span>
             </div>
 
@@ -48,20 +47,9 @@
             </h3>
 
             <!-- Post Excerpt -->
-            <p v-if="post.excerpt" class="text-gray-900 mb-4 line-clamp-3">
+            <p v-if="post.excerpt" class="text-gray-600 mb-4 line-clamp-3">
               {{ post.excerpt }}
             </p>
-
-            <!-- Read Insight Link -->
-            <div class="mb-4">
-              <span
-                class="inline-flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all">
-                Read Insight
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </span>
-            </div>
 
             <!-- Post Meta -->
             <div class="flex items-center justify-between text-sm text-gray-500 pt-4 border-t">

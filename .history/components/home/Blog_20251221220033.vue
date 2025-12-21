@@ -36,9 +36,8 @@
           <div class="p-6">
             <!-- Category Badge -->
             <div v-if="post.categories && post.categories.length > 0" class="mb-3">
-              <span v-for="category in post.categories" :key="category._id"
-                class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full mr-2 font-medium">
-                {{ category.title }}
+              <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full font-medium">
+                {{ post.categories[0].title }}
               </span>
             </div>
 

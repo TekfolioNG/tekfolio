@@ -1,6 +1,6 @@
 <template>
-    <div class="min-h-screen bg-gray-50">
-        <div class="container mx-auto px-6 sm:px-8 lg:px-12 py-24 mt-20">
+    <div class="min-h-screen bg-gray-50 mt-8">
+        <div class="container mx-auto px-4 py-12">
             <div v-if="pending" class="text-center py-20">
                 <div
                     class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-purple-600 border-t-transparent">
@@ -37,7 +37,7 @@
                             {{ post.title }}
                         </h2>
 
-                        <p v-if="post.excerpt" class="text-gray-900 mb-4 line-clamp-3">
+                        <p v-if="post.excerpt" class="text-gray-600 mb-4 line-clamp-3">
                             {{ post.excerpt }}
                         </p>
 

@@ -37,7 +37,7 @@
                             {{ post.title }}
                         </h2>
 
-                        <p v-if="post.excerpt" class="text-gray-900 mb-4 line-clamp-3">
+                        <p v-if="post.excerpt" class="text-gray-600 mb-4 line-clamp-3">
                             {{ post.excerpt }}
                         </p>
 

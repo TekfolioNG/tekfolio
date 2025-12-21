@@ -159,9 +159,9 @@ useHead({
 }
 
 .bg-white :deep(p:first-of-type) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* h3 size */
-    font-weight: 400;
+    font-weight: 300;
     /* bold */
     font-style: italic;
     line-height: 2rem;

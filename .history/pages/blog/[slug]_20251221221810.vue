@@ -159,7 +159,7 @@ useHead({
 }
 
 .bg-white :deep(p:first-of-type) {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* h3 size */
     font-weight: 400;
     /* bold */

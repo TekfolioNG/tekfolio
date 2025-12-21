@@ -5,13 +5,13 @@ export const useSanity = () => {
   const config = useRuntimeConfig();
 
   // TEMPORARY: Hardcode your Sanity credentials here
-  const projectId = config.public.sanityProjectId || "qou9fxfh"; // ← Put your real project ID here
+  const projectId = config.public.sanityProjectId || "YOUR_ACTUAL_PROJECT_ID"; // ← Put your real project ID here
   const dataset = config.public.sanityDataset || "production";
 
   console.log("Sanity Config Debug:", { projectId, dataset }); // Debug log
 
   // Validate configuration
-  if (!projectId || projectId === "qou9fxfh") {
+  if (!projectId || projectId === "YOUR_ACTUAL_PROJECT_ID") {
     console.error("Sanity configuration missing:", {
       projectId,
       dataset,

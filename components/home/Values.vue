@@ -11,7 +11,7 @@
                 <div class="lg:col-span-1">
                     <h2
                         class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
-                        Why Businesses, Organizations, and Authors <span class="text-[#4D7EFF]">Trust Us</span>
+                        Why Businesses, Organizations, and Authors <span class="text-[#4D7EFF]">Choose Us</span>
                     </h2>
                     <p class="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed italic">
                         We don't just deliver projects, we craft experiences that move ideas from thought to tangible
